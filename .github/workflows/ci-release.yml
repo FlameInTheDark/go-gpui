@@ -1,0 +1,64 @@
+name: CI and release
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+          cache-dependency-path: go.mod
+      - name: Install Linux test fonts
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core fonts-dejavu-extra fonts-liberation
+      - run: go build ./...
+      - name: Test on Linux
+        if: runner.os == 'Linux'
+        run: go test ./...
+      # These tests assert metrics from fonts that are not in the Windows
+      # test environment. Other text and Windows renderer tests still run.
+      - name: Test on Windows
+        if: runner.os == 'Windows'
+        run: >-
+          go test ./... -skip
+          '^(TestBidiClosestIndexForXRountrips|TestCombiningMarkPositioning|TestMarkToBaseAnchors|TestArabicJoiningForms|TestEmojiZWJLigature|TestFontResolution|TestRasterizeGlyph)$'
+
+  release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: semantic-release-main
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

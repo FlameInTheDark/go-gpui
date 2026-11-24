@@ -1,0 +1,10 @@
+{
+  "name": "go-gpui-release",
+  "private": true,
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "25.0.9"
+  }
+}
