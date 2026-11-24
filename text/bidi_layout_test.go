@@ -98,12 +98,34 @@ func TestBidiClosestIndexForXRountrips(t *testing.T) {
 			t.Fatalf("boundary x=%.1f idx=%d: closest just right = %d", b.x, b.index, got)
 		}
 	}
-	// A logical index shared by two visual slots (BiDi boundary
-	// ambiguity, e.g. the caret before/after the Hebrew run) maps to the
-	// visually-first slot.
-	x := l.XForIndex(10).AsF32()
-	if x != 32 {
-		t.Fatalf("XForIndex(10) = %.1f, want 32 (first slot)", x)
+	// The byte offset after ג has two visual slots: the left edge of ג
+	// (the RTL glyph is visually first) and the following space. Derive
+	// the positions from the shaped glyphs rather than assuming a font's
+	// advances for the preceding "abc ".
+	lastHebrew := len("abc אב")
+	boundary := len("abc אבג")
+	var first, second geometry.Pixels
+	var foundFirst, foundSecond bool
+	for _, run := range l.Runs {
+		for _, glyph := range run.Glyphs {
+			switch glyph.Index {
+			case lastHebrew:
+				first, foundFirst = glyph.Position.X, true
+			case boundary:
+				second, foundSecond = glyph.Position.X, true
+			}
+		}
+	}
+	if !foundFirst || !foundSecond || first >= second {
+		t.Fatalf("expected two ordered BiDi slots at byte %d: first=%v (%t), second=%v (%t)", boundary, first, foundFirst, second, foundSecond)
+	}
+	for _, x := range []geometry.Pixels{first, second} {
+		if index := l.ClosestIndexForX(x); index != boundary {
+			t.Fatalf("ClosestIndexForX(%v) = %d, want %d at the BiDi boundary", x, index, boundary)
+		}
+	}
+	if x := l.XForIndex(boundary); x != first {
+		t.Fatalf("XForIndex(%d) = %v, want %v (first slot, second at %v)", boundary, x, first, second)
 	}
 }
 
