@@ -1,7 +1,8 @@
-// Package render implements gpui's scene graph and a pure-Go software
-// rasterizer. The per-pixel math (quad SDFs, borders, gradients, shadows,
-// underlines, sprites) is ported verbatim from the upstream wgsl shaders in
-// crates/gpui_wgpu/src/shaders.wgsl so output is pixel-faithful.
+// Package render implements go-gpui's scene primitives, sprite atlas, path
+// and gradient support, and a pure-Go software rasterizer. A Scene collects
+// primitives for presentation by a platform backend. Most applications use
+// the window and elements packages rather than creating scenes directly;
+// this package is useful for custom renderers and backend implementations.
 package render
 
 import (

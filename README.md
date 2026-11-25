@@ -37,7 +37,9 @@ func main() {
 
 ## Next steps
 
+- **[Documentation index](docs/index.md):** find features, guides, and package API references.
 - **[Tutorial](docs/tutorial.md):** add clicks, manage state, and test without a display.
+- **[State, events, and goroutines](docs/reactivity.md):** typed signals, observers, and safely returning worker results to the UI.
 - **[Counter](examples/counter):** run `go run ./examples/counter` from a checkout for a small interactive app.
 - **[More examples](docs/examples.md):** task list, gallery, and virtual lists.
 - **[Flint](https://github.com/FlameInTheDark/flint):** the former editor example, now a separate project built with go-gpui.

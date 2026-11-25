@@ -1,8 +1,8 @@
 package app
 
-// Subscription cancels a registered observer/subscription when released.
-// The zero value is a no-op. Callers must keep it or call Detach to leak
-// deliberately (Go has no destructors, so cancellation is explicit).
+// Subscription is a handle for explicitly cancelling a registered callback.
+// The zero value is a no-op. Discarding a Subscription does not cancel it:
+// Go has no destructors, so call Cancel when the callback is no longer needed.
 type Subscription struct {
 	unsubscribe func()
 	detached    bool
@@ -13,14 +13,16 @@ func NewSubscription(unsubscribe func()) Subscription {
 	return Subscription{unsubscribe: unsubscribe}
 }
 
-// Cancel unsubscribes.
+// Cancel unsubscribes. For app subscriptions, call it on the app thread.
 func (s Subscription) Cancel() {
 	if s.unsubscribe != nil {
 		s.unsubscribe()
 	}
 }
 
-// Detach makes the subscription live until its emitter dies.
+// Detach leaves the callback registered. Because cancellation is explicit in
+// Go, discarding the handle also leaves the callback registered; Detach does
+// not prevent a retained copy from calling Cancel.
 func (s Subscription) Detach() { s.detached = true }
 
 // Join merges two subscriptions.

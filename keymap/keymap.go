@@ -1,3 +1,8 @@
+// Package keymap parses keystrokes and context predicates and resolves them
+// against ordered action bindings. A binding may contain multiple keystrokes;
+// BindingsForInput reports both complete matches and incomplete prefixes.
+// Later bindings and more specific contexts can take precedence. See package
+// action for defining and registering the commands associated with bindings.
 package keymap
 
 import (
@@ -12,15 +17,21 @@ import (
 // predicate and a source-tier index (smaller = stronger, user bindings
 // override defaults).
 type Binding struct {
-	Action    action.Action
-	Keystroke []Keystroke // multi-stroke, e.g. cmd-k + cmd-t
+	// Action is the command to dispatch when the binding matches.
+	Action action.Action
+	// Keystroke is the sequence to match, such as cmd-k followed by cmd-t.
+	Keystroke []Keystroke
+	// Predicate restricts the binding to matching contexts; nil is unrestricted.
 	Predicate Predicate
-	Meta      uint32 // source tier; NoAction suppression compares tiers
+	// Meta is the source tier used when NoAction suppresses bindings.
+	Meta uint32
 	// ActionInput is the raw JSON input for display purposes.
 	ActionInput string
 }
 
-// NewBinding parses keystrokes and a context predicate.
+// NewBinding parses a space-separated sequence of keystrokes and an optional
+// context predicate. It returns an error for an empty or invalid sequence or
+// an invalid predicate. os controls platform-specific modifier interpretation.
 func NewBinding(keystrokes string, act action.Action, context string, os OS) (Binding, error) {
 	var ks []Keystroke
 	for _, tok := range strings.Fields(keystrokes) {
@@ -67,6 +78,8 @@ func (b Binding) matchKeystrokes(typed []Keystroke, os OS) (full, pending bool) 
 
 // Keymap is the ordered binding list plus resolution.
 type Keymap struct {
+	// Bindings contains the bindings in insertion order. Use AddBindings to
+	// append entries so suppression bookkeeping is updated as well.
 	Bindings        []Binding
 	disabledIndices []int
 	os              OS

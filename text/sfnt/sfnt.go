@@ -1,7 +1,7 @@
 // Package sfnt is a pure-Go parser for TrueType/OpenType fonts (the tables
 // gpui needs: head, hhea, maxp, hmtx, cmap, glyf, loca, kern, OS/2, post,
-// name and the GSUB/GPOS shaping tables). TrueType (glyf) outlines are
-// supported for rasterization; CFF outlines are parsed for metrics only.
+// name and the GSUB/GPOS shaping tables). Glyph outlines can come from
+// TrueType glyf data or supported CFF Type2 charstrings.
 package sfnt
 
 import (

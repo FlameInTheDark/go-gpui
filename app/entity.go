@@ -1,12 +1,20 @@
-// Package app implements gpui's reactive core: the App context, entities,
-// the effect queue (with upstream's exact flush ordering), subscriptions,
-// globals and executors.
+// Package app implements go-gpui's reactive core: app-owned entities,
+// contexts, state observers, typed events, globals, and executors.
 //
-// Ownership model (ported from _ownership_and_data_flow.rs): the App owns
-// all entity state. Entity handles are refcounted claims on an id; they
-// only grant access while an App is present. cx.Notify() declares "state
-// changed"; effects (observers, subscribers, defers) run in FIFO order at
-// the end of the outermost update.
+// An Entity is a handle to state owned by an App. Update an entity through
+// its context and call Context.Notify to report a state change, or call
+// Context.Emit to send a typed event to subscribers. Effects are processed in
+// FIFO order after the outermost update. Observe and Subscribe registrations
+// become active through a deferred effect.
+//
+// App, its entities and contexts, and its foreground queue are not safe for
+// concurrent use. Confine them to the application thread. For worker results,
+// use the native platform's DispatchOnMainThread to return to the event loop
+// before accessing UI state. The headless platform dispatches inline and does
+// not provide this cross-goroutine handoff. BackgroundExecutor runs work on
+// its own goroutines; it does not make App operations safe from workers.
+//
+// See the repository's docs/reactivity.md for examples and lifecycle details.
 package app
 
 import (
@@ -137,13 +145,15 @@ type Entity[T any] struct {
 // ID returns the entity id.
 func (e Entity[T]) ID() EntityID { return e.id }
 
-// IsValid reports whether the handle refers to a live app.
+// IsValid reports whether the handle has an app pointer. It does not check
+// whether the entity is still present in the app.
 func (e Entity[T]) IsValid() bool { return e.app != nil }
 
 // EntityIDOf returns the id (any entity type).
 func EntityIDOf[T any](e Entity[T]) EntityID { return e.id }
 
-// Clone bumps the refcount and returns a new handle.
+// Clone increments the entity's reference count and returns an additional
+// owned handle. Call Release once for each owned handle.
 func (e Entity[T]) Clone() Entity[T] {
 	if e.app != nil {
 		e.app.entities.bumpRefcount(e.id)
@@ -151,7 +161,9 @@ func (e Entity[T]) Clone() Entity[T] {
 	return e
 }
 
-// Release drops a strong reference.
+// Release drops a strong reference. Handles are values: copying one does not
+// create a new reference, and Release does not clear other copies. Use Clone
+// before sharing ownership and release each owned reference exactly once.
 func (e Entity[T]) Release() {
 	if e.app != nil {
 		e.app.entities.release(e.id)
@@ -164,7 +176,9 @@ func (e Entity[T]) Weak() WeakEntity[T] {
 	return WeakEntity[T]{id: e.id, app: e.app}
 }
 
-// Read returns a view of the entity's state.
+// Read returns a pointer to the entity's state. It panics if the entity is
+// missing. Use the pointer on the app thread and treat it as read-only; use
+// Update to make changes and Notify to report them.
 func (e Entity[T]) Read(cx *App) *T {
 	v, ok := cx.entities.get(e.id)
 	if !ok {
@@ -178,8 +192,9 @@ func (e Entity[T]) ReadWith(cx *App, f func(*T)) {
 	f(e.Read(cx))
 }
 
-// Update leases the entity, runs f with a Context, restores and returns f's
-// result.
+// Update leases the entity, runs f with a Context, restores it, and returns
+// f's result. It panics if the entity is missing or already being updated.
+// Call Context.Notify inside f when a state change should be observed.
 func (e Entity[T]) Update(cx *App, f func(*T, *Context[T]) any) any {
 	return cx.updateEntityErased(e.id, func(v any, cxAny *App) any {
 		return f(v.(*T), &Context[T]{App: cxAny, entity: e.id})
@@ -192,7 +207,8 @@ func (e Entity[T]) UpdateIn(cx *App, f func(*T, *Context[T]) any) any {
 	return e.Update(cx, f)
 }
 
-// Write replaces the state and notifies.
+// Write replaces the state. It does not notify observers; use Update and
+// Context.Notify when the change should be observed.
 func (e Entity[T]) Write(cx *App, value T) {
 	e.Update(cx, func(t *T, _ *Context[T]) any {
 		*t = value

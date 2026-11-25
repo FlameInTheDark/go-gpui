@@ -36,7 +36,9 @@ type Canvas struct {
 	paintFn    func(bounds geometry.Bounds[geometry.Pixels], w *gpui.Window)
 }
 
-// NewCanvas creates a canvas with prepaint and paint callbacks.
+// NewCanvas creates a canvas with optional prepaint and paint callbacks.
+// Each callback receives the canvas bounds in logical pixels and the window;
+// either callback may be nil. Use paint to issue window painting operations.
 func NewCanvas(prepaint func(bounds geometry.Bounds[geometry.Pixels], w *gpui.Window), paint func(bounds geometry.Bounds[geometry.Pixels], w *gpui.Window)) *Canvas {
 	return &Canvas{st: style.NewStyleRefinement(), prepaintFn: prepaint, paintFn: paint}
 }

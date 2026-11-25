@@ -1,13 +1,19 @@
 // Enums of the gpui style system, ported from style.rs / scene.rs /
 // platform.rs. Each mirrors a CSS-like concept used by the layout and paint
 // pipelines.
+
 package style
 
 import (
 	gc "github.com/FlameInTheDark/go-gpui/color"
 )
 
-// Display controls whether an element participates in layout.
+// Display selects the layout algorithm used for an element's children, or
+// removes the element from layout entirely (CSS display).
+//
+// The numeric values are part of the style API only; the layout package has
+// its own Display type with different numbering and the gpui package converts
+// between them.
 type Display uint8
 
 const (
@@ -21,7 +27,8 @@ const (
 	DisplayNone Display = 3
 )
 
-// Visibility controls painting while keeping layout.
+// Visibility controls painting while keeping the element in layout (CSS
+// visibility).
 type Visibility uint8
 
 const (
@@ -31,7 +38,7 @@ const (
 	VisibilityHidden Visibility = 1
 )
 
-// Position selects the positioning scheme.
+// Position selects the positioning scheme (CSS position).
 type Position uint8
 
 const (
@@ -43,7 +50,8 @@ const (
 	PositionAbsolute Position = 1
 )
 
-// FlexDirection is the main-axis direction.
+// FlexDirection is the main-axis direction of a flex container (CSS
+// flex-direction).
 type FlexDirection uint8
 
 const (
@@ -57,15 +65,16 @@ const (
 	FlexDirectionColumnReverse FlexDirection = 3
 )
 
-// IsReverse reports whether the direction is reversed.
+// IsReverse reports whether the direction is one of the reversed variants.
 func (d FlexDirection) IsReverse() bool {
 	return d == FlexDirectionRowReverse || d == FlexDirectionColumnReverse
 }
 
-// IsRow reports whether the direction is horizontal.
+// IsRow reports whether the main axis is horizontal (row or row-reverse).
 func (d FlexDirection) IsRow() bool { return d == FlexDirectionRow || d == FlexDirectionRowReverse }
 
-// FlexWrap controls line wrapping of flex children.
+// FlexWrap controls whether flex children wrap onto several lines (CSS
+// flex-wrap).
 type FlexWrap uint8
 
 const (
@@ -77,7 +86,8 @@ const (
 	FlexWrapWrapReverse FlexWrap = 2
 )
 
-// Overflow controls scrolling and clipping per axis.
+// Overflow controls clipping and scrolling of content that exceeds the
+// element bounds, per axis (CSS overflow-x / overflow-y).
 type Overflow uint8
 
 const (
@@ -94,8 +104,9 @@ const (
 	OverflowScroll Overflow = 3
 )
 
-// AlignItems aligns children on the cross axis (also the type of
-// AlignSelf / JustifyItems / JustifySelf).
+// AlignItems aligns children on the cross axis (CSS align-items). It is also
+// the type of AlignSelf. Start/End are physical; FlexStart/FlexEnd follow
+// the flow direction and swap under reversed flow.
 type AlignItems uint8
 
 const (
@@ -124,8 +135,9 @@ const (
 	AlignItemsStretch AlignItems = 6
 )
 
-// AlignContent distributes lines on the cross axis (also the type of
-// JustifyContent).
+// AlignContent distributes wrapped lines on the cross axis (CSS
+// align-content). It is also the type of JustifyContent, which distributes
+// children on the main axis.
 type AlignContent uint8
 
 const (
@@ -149,7 +161,7 @@ const (
 	AlignContentSpaceAround AlignContent = 8
 )
 
-// BorderStyle selects solid or dashed borders.
+// BorderStyle selects solid or dashed borders (CSS border-style).
 type BorderStyle uint8
 
 const (
@@ -159,30 +171,55 @@ const (
 	BorderStyleDashed BorderStyle = 1
 )
 
-// CursorStyle mirrors the platform mouse cursor vocabulary.
+// CursorStyle mirrors the platform mouse cursor vocabulary. It is what
+// [StyleRefinement.CursorPointer] and friends store in the style; the window
+// translates it to the native cursor.
 type CursorStyle uint8
 
 const (
+	// CursorArrow is the default arrow.
 	CursorArrow CursorStyle = iota
+	// CursorIBeam is the text-selection I-beam.
 	CursorIBeam
+	// CursorCrosshair is a precise-picking crosshair.
 	CursorCrosshair
+	// CursorClosedHand is the closed (grabbing) hand.
 	CursorClosedHand
+	// CursorOpenHand is the open (grab) hand.
 	CursorOpenHand
+	// CursorPointingHand is the pointing hand used over links and buttons.
 	CursorPointingHand
+	// CursorResizeLeft resizes the left edge.
 	CursorResizeLeft
+	// CursorResizeRight resizes the right edge.
 	CursorResizeRight
+	// CursorResizeLeftRight is the horizontal two-way resize cursor.
 	CursorResizeLeftRight
+	// CursorResizeUp resizes the top edge.
 	CursorResizeUp
+	// CursorResizeDown resizes the bottom edge.
 	CursorResizeDown
+	// CursorResizeUpDown is the vertical two-way resize cursor.
 	CursorResizeUpDown
+	// CursorResizeUpLeftDownRight is the diagonal resize cursor running
+	// from top-left to bottom-right.
 	CursorResizeUpLeftDownRight
+	// CursorResizeUpRightDownLeft is the diagonal resize cursor running
+	// from top-right to bottom-left.
 	CursorResizeUpRightDownLeft
+	// CursorResizeColumn resizes a column (horizontal splitter).
 	CursorResizeColumn
+	// CursorResizeRow resizes a row (vertical splitter).
 	CursorResizeRow
+	// CursorIBeamCursorForVerticalLayout is the I-beam for vertical text.
 	CursorIBeamCursorForVerticalLayout
+	// CursorOperationNotAllowed signals a disallowed operation.
 	CursorOperationNotAllowed
+	// CursorDragLink signals that dropping creates a link.
 	CursorDragLink
+	// CursorDragCopy signals that dropping copies the dragged item.
 	CursorDragCopy
+	// CursorContextualMenu signals that a context menu is available.
 	CursorContextualMenu
 )
 
@@ -266,7 +303,8 @@ func MouseCursorForStyle(c CursorStyle) MouseCursor {
 	}
 }
 
-// ObjectFit selects how images fill their bounds.
+// ObjectFit selects how an image is fitted into its bounds (CSS
+// object-fit).
 type ObjectFit uint8
 
 const (
@@ -282,7 +320,8 @@ const (
 	ObjectFitNone ObjectFit = 4
 )
 
-// WhiteSpace controls text wrapping.
+// WhiteSpace controls text wrapping (CSS white-space, restricted to
+// normal and nowrap).
 type WhiteSpace uint8
 
 const (
@@ -292,14 +331,17 @@ const (
 	WhiteSpaceNowrap WhiteSpace = 1
 )
 
-// TextOverflow selects the ellipsis behavior for overflowing text.
-// The string payload is the affix (usually "…").
+// TextOverflow selects how text that does not fit is truncated (CSS
+// text-overflow, extended with start and middle truncation).
 type TextOverflow struct {
-	Kind  TextOverflowKind
+	// Kind selects which part of the text is cut.
+	Kind TextOverflowKind
+	// Affix is the replacement text inserted where the text was cut,
+	// usually [DefaultEllipsis].
 	Affix string
 }
 
-// TextOverflowKind discriminates TextOverflow.
+// TextOverflowKind selects where a [TextOverflow] cuts the text.
 type TextOverflowKind uint8
 
 const (
@@ -311,10 +353,11 @@ const (
 	TextOverflowTruncateMiddle TextOverflowKind = 2
 )
 
-// DefaultEllipsis is the default truncation affix.
+// DefaultEllipsis is the default truncation affix, the single character
+// U+2026 HORIZONTAL ELLIPSIS.
 const DefaultEllipsis = "…"
 
-// TextAlign selects horizontal text alignment.
+// TextAlign selects horizontal text alignment (CSS text-align).
 type TextAlign uint8
 
 const (
@@ -326,32 +369,44 @@ const (
 	TextAlignRight TextAlign = 2
 )
 
-// BoxShadow is a single box shadow. Paint order: drop shadows, background,
-// inset shadows.
+// BoxShadow is a single box shadow (CSS box-shadow). Paint order: drop
+// shadows, background, inset shadows. All lengths are logical pixels.
 type BoxShadow struct {
-	Color        gc.Hsla
-	OffsetX      float32
-	OffsetY      float32
-	BlurRadius   float32
+	// Color is the shadow color, including its opacity.
+	Color gc.Hsla
+	// OffsetX and OffsetY move the shadow right and down; negative values
+	// move it left and up.
+	OffsetX float32
+	OffsetY float32
+	// BlurRadius softens the edge; 0 is a hard edge.
+	BlurRadius float32
+	// SpreadRadius grows (positive) or shrinks (negative) the shadow shape
+	// before blurring.
 	SpreadRadius float32
-	Inset        bool
+	// Inset paints the shadow inside the box instead of behind it.
+	Inset bool
 }
 
-// NewBoxShadow constructs a drop shadow with the given offset and color.
+// NewBoxShadow constructs a drop shadow with the given offset (logical
+// pixels) and color, no blur and no spread. Chain [BoxShadow.WithBlurRadius],
+// [BoxShadow.WithSpreadRadius] and [BoxShadow.WithInset] to refine it.
 func NewBoxShadow(offsetX, offsetY float32, color gc.Hsla) BoxShadow {
 	return BoxShadow{Color: color, OffsetX: offsetX, OffsetY: offsetY}
 }
 
-// WithBlurRadius sets the blur radius.
+// WithBlurRadius returns a copy of the shadow with the blur radius set, in
+// logical pixels.
 func (b BoxShadow) WithBlurRadius(r float32) BoxShadow { b.BlurRadius = r; return b }
 
-// WithSpreadRadius sets the spread radius.
+// WithSpreadRadius returns a copy of the shadow with the spread radius set,
+// in logical pixels; negative values shrink the shadow.
 func (b BoxShadow) WithSpreadRadius(r float32) BoxShadow { b.SpreadRadius = r; return b }
 
-// WithInset makes the shadow an inset (inner) shadow.
+// WithInset returns a copy of the shadow marked as an inset (inner) shadow.
 func (b BoxShadow) WithInset() BoxShadow { b.Inset = true; return b }
 
-// GridTemplateMinSize selects the min track size for grid templates.
+// GridTemplateMinSize selects how the minimum track size of a repeated grid
+// template is computed.
 type GridTemplateMinSize uint8
 
 const (
@@ -363,9 +418,13 @@ const (
 	GridTemplateMinSizeMaxContent GridTemplateMinSize = 2
 )
 
-// GridTemplate describes a repeated track pattern.
+// GridTemplate describes a repeated track pattern: Repeat equal tracks whose
+// sizing is selected by MinSize. It is the value behind
+// [StyleRefinement.SetGridCols] and [StyleRefinement.SetGridRows].
 type GridTemplate struct {
-	Repeat  uint16
+	// Repeat is the number of tracks (CSS repeat(n, ...)).
+	Repeat uint16
+	// MinSize selects the track sizing function.
 	MinSize GridTemplateMinSize
 }
 

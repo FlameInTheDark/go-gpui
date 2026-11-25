@@ -84,7 +84,9 @@ type UniformList struct {
 	yFlipped bool
 }
 
-// NewUniformList creates a uniform list.
+// NewUniformList creates a virtualized list of itemCount fixed-height rows.
+// It measures one item and applies that height to every row. renderItem
+// builds the element for an index as needed.
 func NewUniformList(itemCount int, renderItem func(ix int, w *gpui.Window) gpui.Element) *UniformList {
 	return &UniformList{
 		st:            style.NewStyleRefinement(),

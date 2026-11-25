@@ -14,12 +14,16 @@ import (
 // default tab_size).
 const TabWidthEm = 4
 
-// ShapedGlyph is one positioned glyph (gpui's ShapedGlyph).
+// ShapedGlyph is one positioned glyph in a shaped run.
 type ShapedGlyph struct {
-	ID       uint32
+	// ID is the glyph identifier in the run's font.
+	ID uint32
+	// Position is the glyph's logical-pixel position within the line.
 	Position geometry.Point[geometry.Pixels]
-	Index    int // UTF-8 byte offset in the line
-	IsEmoji  bool
+	// Index is the UTF-8 byte offset of the glyph's cluster in the line.
+	Index int
+	// IsEmoji reports whether the glyph uses an emoji font.
+	IsEmoji bool
 }
 
 // ShapedRun groups glyphs sharing a font.
@@ -28,9 +32,11 @@ type ShapedRun struct {
 	Glyphs []ShapedGlyph
 }
 
-// FontRun is a shaping input span (gpui's FontRun).
+// FontRun specifies a font for a span of shaping input.
 type FontRun struct {
-	Len    int // UTF-8 bytes
+	// Len is the span's length in UTF-8 bytes, not runes.
+	Len int
+	// FontID identifies the primary font; shaping may choose fallback fonts.
 	FontID FontID
 }
 
@@ -97,11 +103,6 @@ type wrapCacheKey struct {
 	maxLines int
 }
 
-// WrapBoundaries returns the wrap boundaries for a shaped line at the
-// given width, memoized per (layout, width, maxLines). Computing
-// boundaries is quadratic in line length; without the cache a wrapped
-// editor frame recomputed the identical result for every visible line on
-// every redraw.
 // WrapResult bundles a line's wrap boundaries with the continuation-row
 // indent (upstream IndentAdjustment::SameIndent).
 type WrapResult struct {
@@ -109,6 +110,9 @@ type WrapResult struct {
 	Indent     float32
 }
 
+// WrapBoundaries returns wrap boundaries for a shaped line at the given
+// width, memoized per layout, width and maximum line count. text must be the
+// same text used to produce l.
 func (s *System) WrapBoundaries(l *LineLayout, text string, wrapWidth geometry.Pixels, maxLines int) []WrapBoundary {
 	return s.WrapBoundariesWithIndent(l, text, wrapWidth, maxLines).Boundaries
 }

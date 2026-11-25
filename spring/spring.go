@@ -11,14 +11,19 @@ import (
 // CriticalDampingTolerance matches upstream.
 const CriticalDampingTolerance = 1e-4
 
-// Config is a spring configuration.
+// Config describes a damped spring. Construct it with NewConfig to normalize
+// invalid parameters; the zero value is not a valid spring configuration.
 type Config struct {
-	Stiffness float32 // > 0
-	Damping   float32 // >= 0
-	Mass      float32 // > 0
+	// Stiffness controls the restoring force and must be positive.
+	Stiffness float32
+	// Damping controls energy loss and must be non-negative.
+	Damping float32
+	// Mass must be positive.
+	Mass float32
 }
 
-// NewConfig validates and constructs a config.
+// NewConfig constructs a configuration, replacing non-positive or NaN
+// stiffness and mass with 1, and negative or NaN damping with 0.
 func NewConfig(stiffness, damping, mass float32) Config {
 	if !(stiffness > 0) || stiffness != stiffness {
 		stiffness = 1
@@ -32,7 +37,8 @@ func NewConfig(stiffness, damping, mass float32) Config {
 	return Config{Stiffness: stiffness, Damping: damping, Mass: mass}
 }
 
-// Canonical returns (omega0, zeta).
+// Canonical returns the undamped angular frequency omega0 and damping ratio
+// zeta for the configuration.
 func (c Config) Canonical() (float64, float64) {
 	omega0 := math.Sqrt(float64(c.Stiffness / c.Mass))
 	zeta := float64(c.Damping) / (2 * math.Sqrt(float64(c.Stiffness*c.Mass)))
@@ -41,12 +47,14 @@ func (c Config) Canonical() (float64, float64) {
 
 // State is a spring's position and velocity.
 type State struct {
+	// Position is the current spring position.
 	Position float32
+	// Velocity is the rate of change of position per second.
 	Velocity float32
 }
 
-// Step advances the spring exactly by dt towards a fixed target
-// (upstream SpringConfig::step).
+// Step advances the spring by dt towards a fixed target using an analytic
+// solution. It returns state unchanged when dt is zero or negative.
 func (c Config) Step(state State, target float32, dt time.Duration) State {
 	if dt <= 0 {
 		return state

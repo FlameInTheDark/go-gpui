@@ -11,17 +11,26 @@ import (
 // normal, 700 is bold.
 type FontWeight float32
 
-// Common weights.
+// Common OpenType/CSS weight values.
 const (
-	WeightThin       FontWeight = 100
+	// WeightThin is weight 100.
+	WeightThin FontWeight = 100
+	// WeightExtraLight is weight 200.
 	WeightExtraLight FontWeight = 200
-	WeightLight      FontWeight = 300
-	WeightNormal     FontWeight = 400
-	WeightMedium     FontWeight = 500
-	WeightSemibold   FontWeight = 600
-	WeightBold       FontWeight = 700
-	WeightExtrabold  FontWeight = 800
-	WeightBlack      FontWeight = 900
+	// WeightLight is weight 300.
+	WeightLight FontWeight = 300
+	// WeightNormal is weight 400.
+	WeightNormal FontWeight = 400
+	// WeightMedium is weight 500.
+	WeightMedium FontWeight = 500
+	// WeightSemibold is weight 600.
+	WeightSemibold FontWeight = 600
+	// WeightBold is weight 700.
+	WeightBold FontWeight = 700
+	// WeightExtrabold is weight 800.
+	WeightExtrabold FontWeight = 800
+	// WeightBlack is weight 900.
+	WeightBlack FontWeight = 900
 )
 
 // BOLD is the bold weight (700).

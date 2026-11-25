@@ -8,40 +8,67 @@ import (
 
 // UnderlineStyle describes a text underline.
 type UnderlineStyle struct {
+	// Thickness is the line thickness in logical pixels.
 	Thickness float32
-	Color     *gc.Hsla
-	Wavy      bool
+	// Color is the line color; nil uses the text color.
+	Color *gc.Hsla
+	// Wavy draws a squiggly line instead of a straight one.
+	Wavy bool
 }
 
-// StrikethroughStyle describes strikethrough.
+// StrikethroughStyle describes a line drawn through the middle of text.
 type StrikethroughStyle struct {
+	// Thickness is the line thickness in logical pixels.
 	Thickness float32
-	Color     *gc.Hsla
+	// Color is the line color; nil uses the text color.
+	Color *gc.Hsla
 }
 
 // TextStyle is the concrete text style (the "resolved" form). It mirrors
-// upstream TextStyle, which is refineable; the *Refinement form below is the
-// partial-update view used while cascading.
+// upstream TextStyle, which is refineable; [TextStyleRefinement] is the
+// partial-update view used while cascading. Text style is inherited: a
+// descendant starts from its parent's resolved TextStyle and applies its own
+// refinement on top.
+//
+// Start from [DefaultTextStyle]; the zero value has transparent-black text
+// (alpha 0), an empty family and a zero font size.
 type TextStyle struct {
-	Color           gc.Hsla
-	FontFamily      string
-	FontFeatures    font.FontFeatures
-	FontFallbacks   *font.FontFallbacks
-	FontSize        geometry.AbsoluteLength
-	LineHeight      geometry.DefiniteLength
-	FontWeight      font.FontWeight
-	FontStyle       font.FontStyle
+	// Color is the text (foreground) color.
+	Color gc.Hsla
+	// FontFamily is the font family name.
+	FontFamily string
+	// FontFeatures are the enabled OpenType features.
+	FontFeatures font.FontFeatures
+	// FontFallbacks lists fallback families, nil for none.
+	FontFallbacks *font.FontFallbacks
+	// FontSize is the font size; rem sizes resolve against the window rem size.
+	FontSize geometry.AbsoluteLength
+	// LineHeight is the line height. A fraction is a multiple of FontSize.
+	LineHeight geometry.DefiniteLength
+	// FontWeight is the font weight.
+	FontWeight font.FontWeight
+	// FontStyle is normal, italic or oblique.
+	FontStyle font.FontStyle
+	// BackgroundColor is painted behind the glyphs, nil for none.
 	BackgroundColor *gc.Hsla
-	Underline       *UnderlineStyle
-	Strikethrough   *StrikethroughStyle
-	WhiteSpace      WhiteSpace
-	TextOverflow    *TextOverflow
-	TextAlign       TextAlign
-	LineClamp       *int
+	// Underline is the underline decoration, nil for none.
+	Underline *UnderlineStyle
+	// Strikethrough is the strikethrough decoration, nil for none.
+	Strikethrough *StrikethroughStyle
+	// WhiteSpace selects wrapping behavior.
+	WhiteSpace WhiteSpace
+	// TextOverflow selects truncation of overflowing text, nil for none.
+	TextOverflow *TextOverflow
+	// TextAlign is the horizontal alignment.
+	TextAlign TextAlign
+	// LineClamp limits the number of visible lines, nil for no limit.
+	LineClamp *int
 }
 
-// DefaultTextStyle returns the upstream defaults: black 1rem text with a
-// phi() line height of the system UI font.
+// DefaultTextStyle returns the upstream defaults: opaque black text in the
+// system UI font (".SystemUIFont"), 1rem size, normal weight and style, a
+// line height of [geometry.Phi] (about 1.618 times the font size), normal
+// white-space and left alignment.
 func DefaultTextStyle() TextStyle {
 	return TextStyle{
 		Color:        gc.Black(),
@@ -56,7 +83,8 @@ func DefaultTextStyle() TextStyle {
 	}
 }
 
-// Font resolves the text style into a font descriptor.
+// ToFont resolves the family, weight, style, features and fallbacks of the
+// text style into a [font.Font] descriptor.
 func (ts TextStyle) ToFont() font.Font {
 	return font.Font{
 		Family:    ts.FontFamily,
@@ -67,12 +95,17 @@ func (ts TextStyle) ToFont() font.Font {
 	}
 }
 
-// LineHeightInPixels resolves the line height against a rem size.
+// LineHeightInPixels resolves the line height to whole logical pixels
+// (rounded): a fractional line height is multiplied by FontSize, which is in
+// turn resolved against remSize (the window rem size in pixels).
 func (ts TextStyle) LineHeightInPixels(remSize geometry.Pixels) float32 {
 	return ts.LineHeight.ToPixels(ts.FontSize, remSize).Round().AsF32()
 }
 
-// Refine applies a partial text style on top of this one.
+// Refine applies ref on top of ts. Set fields overwrite, unset fields keep
+// the current value. Underline, Strikethrough and TextOverflow can be
+// removed explicitly through the Clear* flags of the refinement. ref must
+// not be nil.
 func (ts *TextStyle) Refine(ref *TextStyleRefinement) {
 	if ref.Color != nil {
 		ts.Color = *ref.Color
@@ -136,30 +169,38 @@ func (ts *TextStyle) Refine(ref *TextStyleRefinement) {
 	}
 }
 
-// TextStyleRefinement is the partial (all-optional) form of TextStyle used
-// by the cascade and the Styled builder API.
+// TextStyleRefinement is the partial (all-optional) form of [TextStyle] used
+// by the cascade and the Styled builder API: a nil field means "not set".
+// Fields mirror [TextStyle]. Because nil already means "inherit", the
+// optional decorations carry a Clear* flag to say "explicitly none".
 type TextStyleRefinement struct {
-	Color              *gc.Hsla
-	FontFamily         *string
-	FontFeatures       *font.FontFeatures
-	FontFallbacks      *font.FontFallbacks
-	FontSize           *geometry.AbsoluteLength
-	LineHeight         *geometry.DefiniteLength
-	FontWeight         *font.FontWeight
-	FontStyle          *font.FontStyle
-	BackgroundColor    *gc.Hsla
-	Underline          *UnderlineStyle
-	ClearUnderline     bool
-	Strikethrough      *StrikethroughStyle
+	Color           *gc.Hsla
+	FontFamily      *string
+	FontFeatures    *font.FontFeatures
+	FontFallbacks   *font.FontFallbacks
+	FontSize        *geometry.AbsoluteLength
+	LineHeight      *geometry.DefiniteLength
+	FontWeight      *font.FontWeight
+	FontStyle       *font.FontStyle
+	BackgroundColor *gc.Hsla
+	Underline       *UnderlineStyle
+	// ClearUnderline removes an inherited underline when Underline is nil.
+	ClearUnderline bool
+	Strikethrough  *StrikethroughStyle
+	// ClearStrikethrough removes an inherited strikethrough when
+	// Strikethrough is nil.
 	ClearStrikethrough bool
 	WhiteSpace         *WhiteSpace
 	TextOverflow       *TextOverflow
-	ClearTextOverflow  bool
-	TextAlign          *TextAlign
-	LineClamp          *int
+	// ClearTextOverflow removes inherited truncation when TextOverflow is
+	// nil.
+	ClearTextOverflow bool
+	TextAlign         *TextAlign
+	LineClamp         *int
 }
 
-// IsEmpty reports whether nothing is set.
+// IsEmpty reports whether nothing is set, including the Clear* flags. A nil
+// receiver is empty.
 func (r *TextStyleRefinement) IsEmpty() bool { return r == nil || r.isEmpty() }
 
 func (r *TextStyleRefinement) isEmpty() bool {
@@ -171,8 +212,9 @@ func (r *TextStyleRefinement) isEmpty() bool {
 		!r.ClearTextOverflow && r.TextAlign == nil && r.LineClamp == nil
 }
 
-// Merge returns a refinement equivalent to applying r then other (other
-// wins), recursing into nested values.
+// Merge returns a refinement equivalent to applying r and then other (other
+// wins). A Clear* flag in other drops the matching value from r. If either
+// side is nil the other is returned as is, not copied.
 func (r *TextStyleRefinement) Merge(other *TextStyleRefinement) *TextStyleRefinement {
 	if r == nil {
 		return other
@@ -242,19 +284,30 @@ func (r *TextStyleRefinement) Merge(other *TextStyleRefinement) *TextStyleRefine
 }
 
 // HighlightStyle is a partial style overlay for text ranges (editor
-// highlights). Mirrors upstream HighlightStyle semantics.
+// highlights). Mirrors upstream HighlightStyle semantics; apply it with
+// [TextStyle.Highlight].
 type HighlightStyle struct {
-	Color           *gc.Hsla
-	FontWeight      *font.FontWeight
-	FontStyle       *font.FontStyle
+	// Color is blended over the text color (alpha-over), not replaced.
+	Color *gc.Hsla
+	// FontWeight replaces the weight.
+	FontWeight *font.FontWeight
+	// FontStyle replaces the style.
+	FontStyle *font.FontStyle
+	// BackgroundColor replaces the text background.
 	BackgroundColor *gc.Hsla
-	Underline       *UnderlineStyle
-	Strikethrough   *StrikethroughStyle
-	FadeOut         *float32
+	// Underline replaces the underline.
+	Underline *UnderlineStyle
+	// Strikethrough replaces the strikethrough.
+	Strikethrough *StrikethroughStyle
+	// FadeOut reduces the resulting text alpha by this factor in [0, 1]
+	// (1 makes the text fully transparent).
+	FadeOut *float32
 }
 
-// Highlight applies the highlight over this text style (upstream
-// TextStyle::highlight): color blends, fade multiplies, others replace.
+// Highlight returns a copy of ts with h applied (upstream
+// TextStyle::highlight): the highlight color blends over the text color,
+// FadeOut reduces the alpha, and the other set fields replace the current
+// values. ts itself is not modified.
 func (ts TextStyle) Highlight(h HighlightStyle) TextStyle {
 	out := ts
 	if h.Color != nil {

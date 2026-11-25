@@ -593,9 +593,11 @@ func SetMainThreadDispatcher(dispatch func(func())) {
 // MainDispatcherInstalled reports whether a platform dispatcher is present.
 func MainDispatcherInstalled() bool { return mainDispatcher.Load() != nil }
 
-// DispatchOnMainThread runs f on the main thread when a dispatcher is
-// installed; otherwise f runs inline on the calling thread (single-threaded
-// platforms and tests publish synchronously).
+// DispatchOnMainThread passes f to the installed platform dispatcher, or runs
+// it inline on the calling goroutine if no dispatcher is installed. The
+// headless platform also dispatches inline. Consequently, this function does
+// not always marshal work to the app thread; check the installed backend's
+// behavior before using it to publish worker results.
 func DispatchOnMainThread(f func()) {
 	if v := mainDispatcher.Load(); v != nil {
 		v.(func(func()))(f)

@@ -8,14 +8,28 @@
 //
 // The tables mirror the upstream editor's crates/gpui_macros/src/styles.rs.
 //
-// Usage: go run ./cmd/genstyles
+// Every generated style method carries a godoc comment produced from the
+// templates in this file (see scaleComment, familyDocs and shadowMethods);
+// edit the templates, never the generated files. style/styled_gen.go is run
+// through go/format by the generator, so a regeneration is gofmt-clean.
+//
+// Run it from the repository root:
+//
+//	go run ./cmd/genstyles
+//
+// The numeric scale follows Tailwind: one unit is 0.25rem (W_4 = 1rem),
+// "px" is one pixel, "full" is 100%, and N_M suffixes (1_2, 2_3, ...) are
+// fractions of the parent size. Negative variants (M_Neg_4) exist for the
+// margin and inset families only.
 package main
 
 import (
 	"bytes"
 	"fmt"
+	"go/format"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 )
 
@@ -130,7 +144,8 @@ import (
 		}
 		if f.autoOK {
 			name := methodName(f.prefix, "auto")
-			fmt.Fprintf(&b, "// %s sets the value to auto.\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.AutoLength()) }\n\n", name, name, f.paramName)
+			d := familyDocs[f.prefix]
+			fmt.Fprintf(&b, "// %s sets the %s to auto (Tailwind %s).\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.AutoLength()) }\n\n", name, d.what, tailwindClass(d.tw, "auto"), name, f.paramName)
 		}
 		if f.fullOK {
 			emitCall(&b, f, "full", f.kind, "relative", "1", 1)
@@ -149,11 +164,16 @@ import (
 		{"border_b", "BorderB"}, {"border_l", "BorderL"},
 		{"border_x", "BorderX"}, {"border_y", "BorderY"},
 	}
+	borderSides := map[string]string{
+		"border": "all sides", "border_t": "the top side", "border_r": "the right side",
+		"border_b": "the bottom side", "border_l": "the left side",
+		"border_x": "the left and right sides", "border_y": "the top and bottom sides",
+	}
 	for _, f := range borderFamilies {
 		for _, w := range []string{"0", "1", "2", "4", "8"} {
 			name := methodName(f.prefix, w)
-			fmt.Fprintf(&b, "// %s sets the border width to %spx.\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.PixelsLength(geometry.Px(%s))) }\n\n",
-				name, w, name, f.param, w)
+			fmt.Fprintf(&b, "// %s sets the border width on %s to %spx (Tailwind %s).\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.PixelsLength(geometry.Px(%s))) }\n\n",
+				name, borderSides[f.prefix], w, tailwindClass(strings.ReplaceAll(f.prefix, "_", "-"), w), name, f.param, w)
 		}
 	}
 
@@ -164,6 +184,12 @@ import (
 		{"rounded_tl", "RoundedTL"}, {"rounded_tr", "RoundedTR"},
 		{"rounded_bl", "RoundedBL"}, {"rounded_br", "RoundedBR"},
 	}
+	cornerWhere := map[string]string{
+		"rounded": "all corners", "rounded_t": "the top corners", "rounded_b": "the bottom corners",
+		"rounded_r": "the right corners", "rounded_l": "the left corners",
+		"rounded_tl": "the top-left corner", "rounded_tr": "the top-right corner",
+		"rounded_bl": "the bottom-left corner", "rounded_br": "the bottom-right corner",
+	}
 	cornerSuffixes := []struct{ suffix, rem string }{
 		{"none", "0"}, {"xs", "0.125"}, {"sm", "0.25"}, {"md", "0.375"},
 		{"lg", "0.5"}, {"xl", "0.75"}, {"2xl", "1.0"}, {"3xl", "1.5"},
@@ -171,12 +197,16 @@ import (
 	for _, f := range cornerFamilies {
 		for _, s := range cornerSuffixes {
 			name := methodName(f.prefix, s.suffix)
-			fmt.Fprintf(&b, "// %s sets the corner radius to %s.\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.RemsLength(geometry.Rems(%s))) }\n\n",
-				name, s.suffix, name, f.param, s.rem)
+			radius := "0"
+			if s.rem != "0" {
+				radius = s.rem + "rem"
+			}
+			fmt.Fprintf(&b, "// %s sets the corner radius of %s to %s (Tailwind %s).\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.RemsLength(geometry.Rems(%s))) }\n\n",
+				name, cornerWhere[f.prefix], radius, tailwindClass(strings.ReplaceAll(f.prefix, "_", "-"), s.suffix), name, f.param, s.rem)
 		}
 		name := methodName(f.prefix, "full")
-		fmt.Fprintf(&b, "// %s sets a fully rounded corner.\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.PixelsLength(geometry.Px(9999))) }\n\n",
-			name, name, f.param)
+		fmt.Fprintf(&b, "// %s sets the corner radius of %s to 9999px\n// (Tailwind %s). Painting clamps radii to half the shorter side, so the result\n// is a pill or circle.\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(geometry.PixelsLength(geometry.Px(9999))) }\n\n",
+			name, cornerWhere[f.prefix], tailwindClass(strings.ReplaceAll(f.prefix, "_", "-"), "full"), name, f.param)
 	}
 
 	// Shadows (exact upstream constants).
@@ -188,11 +218,14 @@ import (
 		{"xl", "1.25"}, {"2xl", "1.5"}, {"3xl", "1.875"},
 	}
 	for _, s := range textSizes {
-		fmt.Fprintf(&b, "\n// Text%s sets the font size to %srem.\nfunc (r *StyleRefinement) Text%s() *StyleRefinement { return r.TextSize(geometry.RemsLength(geometry.Rems(%s))) }\n",
-			goCase(s.suffix), s.rem, goCase(s.suffix), s.rem)
+		fmt.Fprintf(&b, "\n// Text%s sets the font size to %srem (Tailwind text-%s). The line height is not changed.\nfunc (r *StyleRefinement) Text%s() *StyleRefinement { return r.TextSize(geometry.RemsLength(geometry.Rems(%s))) }\n",
+			goCase(s.suffix), s.rem, s.suffix, goCase(s.suffix), s.rem)
 	}
 
-	out := b.Bytes()
+	out, err := format.Source(b.Bytes())
+	if err != nil {
+		panic(err)
+	}
 	dst := filepath.Join("style", "styled_gen.go")
 	if err := os.WriteFile(dst, out, 0o644); err != nil {
 		panic(err)
@@ -200,23 +233,26 @@ import (
 	fmt.Printf("wrote %s (%d bytes)\n", dst, len(out))
 }
 
-const shadowMethods = `// Shadow sets the box shadows.
+const shadowMethods = `// Shadow replaces the box shadow list with shadows (CSS box-shadow). The shadows
+// paint in order; see [BoxShadow] and [NewBoxShadow]. A nil slice leaves the
+// shadow unset (inherited from the cascade), unlike [StyleRefinement.ShadowNone].
 func (r *StyleRefinement) Shadow(shadows []BoxShadow) *StyleRefinement { r.BoxShadow = shadows; return r }
 
-// ShadowNone clears the box shadow.
+// ShadowNone sets an explicit empty shadow list, removing any shadow set by an
+// earlier layer of the cascade (Tailwind shadow-none).
 func (r *StyleRefinement) ShadowNone() *StyleRefinement { r.BoxShadow = []BoxShadow{}; return r }
 
-// Shadow2xs sets a 2xs box shadow.
+// Shadow2xs sets a single 1px-offset shadow at 5% black opacity (Tailwind shadow-2xs).
 func (r *StyleRefinement) Shadow2xs() *StyleRefinement {
 	return r.Shadow([]BoxShadow{NewBoxShadow(0, 1, gc.HSLA(0, 0, 0, 0.05))})
 }
 
-// ShadowXs sets an xs box shadow.
+// ShadowXs sets a 1px-offset, 2px-blur shadow at 5% black opacity (Tailwind shadow-xs).
 func (r *StyleRefinement) ShadowXs() *StyleRefinement {
 	return r.Shadow([]BoxShadow{NewBoxShadow(0, 1, gc.HSLA(0, 0, 0, 0.05)).WithBlurRadius(2)})
 }
 
-// ShadowSm sets a sm box shadow.
+// ShadowSm sets the two-layer small shadow at 10% black opacity (Tailwind shadow-sm).
 func (r *StyleRefinement) ShadowSm() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 1, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(3),
@@ -224,7 +260,7 @@ func (r *StyleRefinement) ShadowSm() *StyleRefinement {
 	})
 }
 
-// ShadowMd sets an md box shadow.
+// ShadowMd sets the two-layer medium shadow at 10% black opacity (Tailwind shadow-md).
 func (r *StyleRefinement) ShadowMd() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 4, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(6).WithSpreadRadius(-1),
@@ -232,7 +268,7 @@ func (r *StyleRefinement) ShadowMd() *StyleRefinement {
 	})
 }
 
-// ShadowLg sets an lg box shadow.
+// ShadowLg sets the two-layer large shadow at 10% black opacity (Tailwind shadow-lg).
 func (r *StyleRefinement) ShadowLg() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 10, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(15).WithSpreadRadius(-3),
@@ -240,7 +276,7 @@ func (r *StyleRefinement) ShadowLg() *StyleRefinement {
 	})
 }
 
-// ShadowXl sets an xl box shadow.
+// ShadowXl sets the two-layer extra-large shadow at 10% black opacity (Tailwind shadow-xl).
 func (r *StyleRefinement) ShadowXl() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 20, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(25).WithSpreadRadius(-5),
@@ -248,7 +284,7 @@ func (r *StyleRefinement) ShadowXl() *StyleRefinement {
 	})
 }
 
-// Shadow2xl sets a 2xl box shadow.
+// Shadow2xl sets the two-layer 2xl shadow at 10% black opacity (Tailwind shadow-2xl).
 func (r *StyleRefinement) Shadow2xl() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 25, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(50).WithSpreadRadius(-12),
@@ -615,7 +651,89 @@ func emitCall(b *bytes.Buffer, f family, suffix, kind, ctor, value string, sign 
 		}
 	}
 	name := methodName(f.prefix, suffix)
-	fmt.Fprintf(b, "// %s is the %q scale value.\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(%s) }\n\n", name, suffix, name, f.paramName, expr)
+	fmt.Fprintf(b, "// %s\nfunc (r *StyleRefinement) %s() *StyleRefinement { return r.%s(%s) }\n\n", scaleComment(name, f, suffix, ctor, value, sign), name, f.paramName, expr)
+}
+
+// familyDoc names the CSS property a numeric scale family writes and its
+// Tailwind class prefix, for the generated comments.
+type familyDoc struct {
+	what string // "width": completes "sets the <what> to ..."
+	tw   string // Tailwind class prefix: "w", "min-w", "gap-x", ...
+}
+
+var familyDocs = map[string]familyDoc{
+	"w": {"width", "w"}, "h": {"height", "h"}, "size": {"width and height", "size"},
+	"min_w": {"minimum width", "min-w"}, "min_h": {"minimum height", "min-h"},
+	"max_w": {"maximum width", "max-w"}, "max_h": {"maximum height", "max-h"},
+	"m": {"margin on all sides", "m"}, "mt": {"top margin", "mt"}, "mb": {"bottom margin", "mb"},
+	"my": {"top and bottom margin", "my"}, "mx": {"left and right margin", "mx"},
+	"ml": {"left margin", "ml"}, "mr": {"right margin", "mr"},
+	"p": {"padding on all sides", "p"}, "pt": {"top padding", "pt"}, "pb": {"bottom padding", "pb"},
+	"py": {"top and bottom padding", "py"}, "px": {"left and right padding", "px"},
+	"pl": {"left padding", "pl"}, "pr": {"right padding", "pr"},
+	"gap": {"row and column gap", "gap"}, "gap_x": {"column gap", "gap-x"}, "gap_y": {"row gap", "gap-y"},
+	"top": {"top inset", "top"}, "bottom": {"bottom inset", "bottom"},
+	"left": {"left inset", "left"}, "right": {"right inset", "right"},
+	"inset": {"inset on all four sides", "inset"},
+}
+
+// tailwindClass builds the Tailwind class for a prefix and a generator
+// suffix: ("w", "0p5") -> "w-0.5", ("m", "neg_1_2") -> "-m-1/2".
+func tailwindClass(prefix, suffix string) string {
+	neg := strings.HasPrefix(suffix, "neg_")
+	s := strings.TrimPrefix(suffix, "neg_")
+	s = strings.ReplaceAll(s, "p5", ".5")
+	s = strings.ReplaceAll(s, "_", "/")
+	cls := prefix + "-" + s
+	if neg {
+		cls = "-" + cls
+	}
+	return cls
+}
+
+// scaleComment renders the godoc sentence of one numeric scale method.
+func scaleComment(name string, f family, suffix, ctor, value string, sign int) string {
+	d := familyDocs[f.prefix]
+	var val string
+	switch ctor {
+	case "relative":
+		if suffix == "full" {
+			val = "100% of the parent size"
+		} else {
+			val = fractionPercent(suffix, sign) + " of the parent size"
+		}
+	case "px":
+		val = signedNumber(value, sign) + "px"
+	default:
+		val = signedNumber(value, sign) + "rem"
+	}
+	return fmt.Sprintf("%s sets the %s to %s (Tailwind %s).", name, d.what, val, tailwindClass(d.tw, suffix))
+}
+
+// signedNumber formats a numeric literal compactly ("2.0" -> "2"),
+// negated when sign < 0 and the value is non-zero.
+func signedNumber(value string, sign int) string {
+	v, err := strconv.ParseFloat(value, 64)
+	if err != nil {
+		panic(err)
+	}
+	if sign < 0 && v != 0 {
+		v = -v
+	}
+	return strconv.FormatFloat(v, 'f', -1, 64)
+}
+
+// fractionPercent turns a suffix such as "1_3" or "neg_5_6" into "33.33%"
+// (negated for neg_ suffixes).
+func fractionPercent(suffix string, sign int) string {
+	parts := strings.Split(strings.TrimPrefix(suffix, "neg_"), "_")
+	num, _ := strconv.ParseFloat(parts[0], 64)
+	den, _ := strconv.ParseFloat(parts[1], 64)
+	pct := num / den * 100
+	if sign < 0 {
+		pct = -pct
+	}
+	return strconv.FormatFloat(pct, 'g', 4, 64) + "%"
 }
 
 // methodName builds the Go method name for prefix+suffix: "w"+"8" -> "W_8",

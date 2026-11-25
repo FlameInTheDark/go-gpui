@@ -1,6 +1,8 @@
-// Package platform defines the platform abstraction layer: input events,
-// window options and the Platform / PlatformWindow interfaces that OS
-// backends implement (headless, X11, Wayland, Windows).
+// Package platform defines input events, window options, and the Platform and
+// PlatformWindow interfaces implemented by the native and headless backends.
+// Most applications can select a native backend with platform/auto; tests can
+// use platform/headless to render and deliver synthetic input without a display.
+// Backends differ in their support for dialogs, clipboard, and other services.
 package platform
 
 import (
@@ -586,16 +588,26 @@ const (
 // WindowCallbacks are the events a platform window reports back to the
 // gpui Window. The backend is constructed with these.
 type WindowCallbacks struct {
+	// OnRequestFrame handles a request to render a frame.
 	OnRequestFrame func(RequestFrameOptions)
-	OnInput        func(Input) DispatchEventResult
+	// OnInput dispatches an input event and returns its dispatch result.
+	OnInput func(Input) DispatchEventResult
+	// OnActiveStatus reports changes in whether the window is active.
 	OnActiveStatus func(bool)
-	OnVisibility   func(bool)
-	OnHoverStatus  func(bool)
-	OnResize       func(size geometry.Size[geometry.Pixels], scaleFactor float32)
-	OnMoved        func()
-	OnShouldClose  func() bool
-	OnClose        func()
-	OnAppearance   func(color.WindowAppearance)
+	// OnVisibility reports changes in whether the window is visible.
+	OnVisibility func(bool)
+	// OnHoverStatus reports changes in whether the pointer hovers the window.
+	OnHoverStatus func(bool)
+	// OnResize reports the new logical size and display scale factor.
+	OnResize func(size geometry.Size[geometry.Pixels], scaleFactor float32)
+	// OnMoved reports that the window moved.
+	OnMoved func()
+	// OnShouldClose may veto a close request by returning false, where supported.
+	OnShouldClose func() bool
+	// OnClose reports that the window closed.
+	OnClose func()
+	// OnAppearance reports a change in system appearance.
+	OnAppearance func(color.WindowAppearance)
 	// OnImePositionRequest asks the app for the current caret position
 	// (logical pixels, window-relative) so the platform can place the
 	// IME candidate window; nil means the origin (upstream reads it
@@ -658,7 +670,10 @@ type Platform interface {
 	// SetCursor applies a system cursor shape (upstream
 	// set_cursor_style).
 	SetCursor(style MouseCursorStyle)
-	// DispatchOnMainThread runs a function on the main thread.
+	// DispatchOnMainThread requests that f run on the platform's UI loop.
+	// Native backends queue work for their event loop; the headless backend
+	// runs f inline on the caller, so it cannot marshal work from a goroutine.
+	// Custom implementations may have different scheduling behavior.
 	DispatchOnMainThread(f func())
 	// Now returns the platform clock (fake-able in tests).
 	Now() time.Time

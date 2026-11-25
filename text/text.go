@@ -1,8 +1,3 @@
-// Package text implements gpui's text system in pure Go: font discovery,
-// shaping (GSUB ligatures/substitutions + GPOS/legacy kerning), line
-// layout, wrapping (UAX#14-style break opportunities), the ShapedLine /
-// LineLayout model with upstream's exact index<->pixel mapping, and a
-// glyph rasterizer.
 package text
 
 import (

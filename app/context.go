@@ -30,7 +30,9 @@ func (c *Context[T]) WeakEntity() WeakEntity[T] {
 	return WeakEntity[T]{id: c.entity, app: c.App}
 }
 
-// Notify declares that this entity's state changed.
+// Notify declares that this entity's state changed. Pending notifications for
+// the same entity are coalesced until the notification effect is processed.
+// Call it on the app thread.
 func (c *Context[T]) Notify() { c.App.Notify(c.entity) }
 
 // Updater returns a function for changing this entity and notifying its
@@ -49,14 +51,17 @@ func (c *Context[T]) Updater() func(func(*T)) {
 	}
 }
 
-// Emit publishes a typed event from this entity.
+// Emit queues a typed event from this entity. Subscribers match the event's
+// exact dynamic type, so emitting a value and a pointer to it are distinct.
+// Call it on the app thread.
 func (c *Context[T]) Emit(event any) { c.App.Emit(c.entity, event) }
 
 // Defer schedules a callback for the end of the outermost update.
 func (c *Context[T]) Defer(f func(*App)) { c.App.Defer(f) }
 
-// Spawn runs f on the foreground queue with this context (upstream
-// Context::spawn).
+// Spawn queues f on the foreground queue with this entity's context. Like
+// App.Spawn, it must be called on the app thread and runs when Pump drains
+// the queue; it is not a worker-to-UI handoff.
 func (c *Context[T]) Spawn(f func(*Context[T])) {
 	self := c.entity
 	c.App.Spawn(func(cx *App) {
@@ -64,8 +69,9 @@ func (c *Context[T]) Spawn(f func(*Context[T])) {
 	})
 }
 
-// NewEntity creates an entity owned by the app; build receives a Context
-// for the new entity.
+// NewEntity creates an entity owned by the app; build receives a Context for
+// the new entity. It returns an owned handle that should eventually be
+// released, and panics if the app is quitting.
 func NewEntity[T any](a *App, build func(*Context[T]) T) Entity[T] {
 	if a.quitting {
 		panic("cannot create entities while app is quitting")
@@ -91,7 +97,8 @@ func ReserveEntity[T any](a *App) (Entity[T], func(T)) {
 // Observe registers a callback that fires when the given entity notifies.
 // The callback receives the OBSERVER's own state plus a handle to the
 // observed entity, mirroring Context::observe. The observer auto-unsubscribes
-// when either entity is released.
+// when either entity is released. Registration is activated by a deferred
+// effect; notifications processed before activation are not delivered.
 func Observe[T, W any](c *Context[T], entity Entity[W], f func(*T, Entity[W], *Context[T])) Subscription {
 	target := entity.Weak()
 	self := c.WeakEntity()
@@ -130,8 +137,11 @@ func observeInternal(a *App, targetID EntityID, handler func(*App) bool) Subscri
 	return Subscription{unsubscribe: func() { *sub.state = subDropped }}
 }
 
-// Subscribe registers a typed event listener on an entity. Only events
-// whose dynamic type matches E invoke f.
+// Subscribe registers a typed event listener on an entity. Only events whose
+// dynamic type exactly matches E invoke f. The callback receives a pointer
+// to a copy of the event value. Registration is activated by a deferred effect;
+// events processed before activation are not delivered. Cancel the returned
+// subscription explicitly when it is no longer needed.
 func Subscribe[T, W, E any](c *Context[T], entity Entity[W], f func(*E, Entity[W], *Context[T])) Subscription {
 	var zero E
 	eventType := eventTypeOf(zero)
@@ -149,7 +159,10 @@ func Subscribe[T, W, E any](c *Context[T], entity Entity[W], f func(*E, Entity[W
 	})
 }
 
-// SubscribeSelf subscribes to this entity's own events.
+// SubscribeSelf subscribes to this entity's own events. The current
+// implementation releases an entity reference after each callback, although
+// the weak-handle upgrade does not acquire one. This can release the entity
+// prematurely; prefer Subscribe with a separate listener until this is fixed.
 func SubscribeSelf[T, E any](c *Context[T], f func(*E, *Context[T])) Subscription {
 	var zero E
 	eventType := eventTypeOf(zero)
@@ -246,8 +259,9 @@ var (
 	currentNewEntitySet bool
 )
 
-// Spawn runs f on the foreground queue (the app thread), flushing effects
-// after it completes.
+// Spawn queues f for the app thread, flushing effects after it completes.
+// The queue is not goroutine-safe: call Spawn on the app thread, not from a
+// worker goroutine. Pump runs queued callbacks.
 func (a *App) Spawn(f func(*App)) {
 	a.foregroundQueue = append(a.foregroundQueue, f)
 }
@@ -363,8 +377,10 @@ func (t *BackgroundTask) isCancelled() bool {
 	return t.cancelled
 }
 
-// BackgroundExecutor runs closures on a small goroutine pool, queued by
-// priority (upstream scheduler::BackgroundExecutor's PriorityQueue).
+// BackgroundExecutor runs closures on a four-goroutine pool, queued by
+// priority. Enqueueing tasks is synchronized, but their callbacks must not
+// access App or entity state concurrently with the app thread. Construct an
+// executor with NewBackgroundExecutor rather than using its zero value.
 type BackgroundExecutor struct {
 	mu   sync.Mutex
 	cond *sync.Cond
@@ -442,9 +458,9 @@ func (be *BackgroundExecutor) Now() time.Time { return time.Now() }
 // Foreground tasks (upstream ForegroundExecutor::spawn's Task)
 // ---------------------------------------------------------------------------
 
-// ForegroundTask is a handle to a closure queued onto the main thread.
-// Cancelling before the queue drains prevents the closure from running;
-// Done reports when the closure ran or was cancelled.
+// ForegroundTask is a handle to a closure queued onto the app thread.
+// Cancelling before the queue drains prevents the closure from running.
+// Done closes when the closure starts or is cancelled, not when it finishes.
 type ForegroundTask struct {
 	mu        sync.Mutex
 	fn        func(*App)
@@ -453,10 +469,9 @@ type ForegroundTask struct {
 	done      chan struct{}
 }
 
-// SpawnForeground queues f to run on the main thread (via the existing
-// foreground queue that Pump drains) and returns a cancellable handle
-// (upstream ForegroundExecutor::spawn). Cancellation before the queue
-// drains means the closure never runs.
+// SpawnForeground queues f for Pump and returns a cancellable handle.
+// Cancellation before the queue drains prevents f from running. Enqueuing is
+// not goroutine-safe; call SpawnForeground on the app thread.
 func (a *App) SpawnForeground(f func(*App)) *ForegroundTask {
 	t := &ForegroundTask{fn: f, done: make(chan struct{})}
 	a.foregroundQueue = append(a.foregroundQueue, func(cx *App) {
@@ -495,5 +510,6 @@ func (t *ForegroundTask) Cancel() {
 	close(t.done)
 }
 
-// Done returns a channel closed when the closure ran or was cancelled.
+// Done returns a channel closed when the closure starts or is cancelled.
+// It does not wait for a running closure to finish.
 func (t *ForegroundTask) Done() <-chan struct{} { return t.done }

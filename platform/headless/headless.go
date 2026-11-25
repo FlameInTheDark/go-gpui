@@ -110,7 +110,9 @@ func (p *Platform) WriteClipboard(item platform.ClipboardItem) {
 	p.mu.Unlock()
 }
 
-// DispatchOnMainThread runs f immediately (single-threaded tests).
+// DispatchOnMainThread runs f immediately on the calling goroutine. It does
+// not move work to a separate UI goroutine; tests must arrange to access app
+// and window state from their owning goroutine.
 func (p *Platform) DispatchOnMainThread(f func()) { f() }
 
 // Now returns the wall clock.

@@ -11,15 +11,21 @@ import (
 // matching action (window.dispatch_keystroke / bindings_for_action).
 
 // SetKeymap installs the window's keymap (upstream App-level key bindings
-// apply to every window; per-window keymaps are also supported).
+// apply to every window; per-window keymaps are also supported). Each window
+// has its own keymap; a nil keymap disables binding dispatch. The keymap is
+// consulted at input time, so it may be replaced or edited at any point
+// between frames. Call on the UI goroutine.
 func (w *Window) SetKeymap(k *keymap.Keymap) { w.keymap = k }
 
-// KeymapOf returns the window keymap.
+// KeymapOf returns the window keymap, or nil if none was installed.
 func (w *Window) KeymapOf() *keymap.Keymap { return w.keymap }
 
-// WithKeyContext pushes a key context for f (upstream
-// window.with_key_context, used during prepaint). Contexts pushed during
-// prepaint become the dispatch context stack for the next input events.
+// WithKeyContext pushes the key context ctx for the duration of f (upstream
+// window.with_key_context). Call it during prepaint. Contexts pushed during
+// prepaint become the dispatch context stack for the next input events, and
+// bindings with a context predicate are matched against that stack. ctx uses
+// the keymap context syntax ("Editor", "Editor mode=insert"); an empty or
+// unparsable ctx just runs f without pushing anything.
 func (w *Window) WithKeyContext(ctx string, f func()) {
 	if ctx == "" {
 		f()
@@ -54,7 +60,10 @@ func (w *Window) dispatchKeystroke(ks keymap.Keystroke) (matched action.Action, 
 	return bindings[len(bindings)-1].Action, false
 }
 
-// BindingsForActionName lists enabled bindings whose action name matches.
+// BindingsForActionName lists the bindings whose action's Name equals
+// actName and that are enabled under the current key context stack, with the
+// most recently added binding first (highest precedence first). It returns
+// nil when no keymap is installed. Use it to show shortcut hints.
 func (w *Window) BindingsForActionName(actName string) []keymap.Binding {
 	if w.keymap == nil {
 		return nil
@@ -73,7 +82,8 @@ func (w *Window) BindingsForActionName(actName string) []keymap.Binding {
 }
 
 // HighestPrecedenceBindingForAction returns the binding that would win for
-// the action in the current key contexts.
+// the action named actName in the current key contexts, and false if there is
+// none (including when no keymap is installed).
 func (w *Window) HighestPrecedenceBindingForAction(actName string) (keymap.Binding, bool) {
 	for _, b := range w.BindingsForActionName(actName) {
 		if _, ok := w.keymap.BindingEnabled(b, w.keyContextStack); ok {
@@ -83,8 +93,11 @@ func (w *Window) HighestPrecedenceBindingForAction(actName string) (keymap.Bindi
 	return keymap.Binding{}, false
 }
 
-// IsActionAvailable reports whether any listener was registered for the
-// action this frame (upstream window.is_action_available).
+// IsActionAvailable reports whether any [OnAction] listener was registered for
+// the action named actName in the last rendered frame (upstream
+// window.is_action_available). Names are those given to [RegisterActionName],
+// or Go type strings for unregistered types. Useful to enable or disable menu
+// items.
 func (w *Window) IsActionAvailable(actName string) bool {
 	for _, al := range w.renderedFrame.actionListeners {
 		if al.typeName == actName {
@@ -94,7 +107,8 @@ func (w *Window) IsActionAvailable(actName string) bool {
 	return false
 }
 
-// AvailableActions lists action names with registered listeners.
+// AvailableActions lists the distinct names of actions that have listeners in
+// the last rendered frame, in first-registered-first order.
 func (w *Window) AvailableActions() []string {
 	seen := map[string]bool{}
 	var out []string
@@ -107,16 +121,20 @@ func (w *Window) AvailableActions() []string {
 	return out
 }
 
-// PendingKeystrokes returns the unmatched multi-key prefix typed so far.
+// PendingKeystrokes returns a copy of the multi-key prefix typed so far that
+// partially matches a binding (for example "ctrl-k" while waiting for the
+// second chord). It is empty when no multi-key sequence is in progress.
 func (w *Window) PendingKeystrokes() []keymap.Keystroke {
 	return append([]keymap.Keystroke(nil), w.pendingKeystrokes...)
 }
 
-// HasPendingKeystrokes reports a partially matched multi-key binding.
+// HasPendingKeystrokes reports whether a multi-key binding is partially
+// matched, that is, whether [Window.PendingKeystrokes] is non-empty.
 func (w *Window) HasPendingKeystrokes() bool { return len(w.pendingKeystrokes) > 0 }
 
-// PossibleBindingsForInput lists bindings that extend the typed prefix (for
-// which-key style UIs).
+// PossibleBindingsForInput lists the bindings that could complete the
+// pending multi-key prefix under the current key contexts (for which-key
+// style UIs). It returns nil when no keymap is installed.
 func (w *Window) PossibleBindingsForInput() []keymap.Binding {
 	if w.keymap == nil {
 		return nil

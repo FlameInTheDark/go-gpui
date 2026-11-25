@@ -9,9539 +9,9560 @@ import (
 	"github.com/FlameInTheDark/go-gpui/geometry"
 )
 
-// W_0 is the "0" scale value.
+// W_0 sets the width to 0rem (Tailwind w-0).
 func (r *StyleRefinement) W_0() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// W_0p5 is the "0p5" scale value.
+// W_0p5 sets the width to 0.125rem (Tailwind w-0.5).
 func (r *StyleRefinement) W_0p5() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// W_1 is the "1" scale value.
+// W_1 sets the width to 0.25rem (Tailwind w-1).
 func (r *StyleRefinement) W_1() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// W_1p5 is the "1p5" scale value.
+// W_1p5 sets the width to 0.375rem (Tailwind w-1.5).
 func (r *StyleRefinement) W_1p5() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// W_2 is the "2" scale value.
+// W_2 sets the width to 0.5rem (Tailwind w-2).
 func (r *StyleRefinement) W_2() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// W_2p5 is the "2p5" scale value.
+// W_2p5 sets the width to 0.625rem (Tailwind w-2.5).
 func (r *StyleRefinement) W_2p5() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// W_3 is the "3" scale value.
+// W_3 sets the width to 0.75rem (Tailwind w-3).
 func (r *StyleRefinement) W_3() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// W_3p5 is the "3p5" scale value.
+// W_3p5 sets the width to 0.875rem (Tailwind w-3.5).
 func (r *StyleRefinement) W_3p5() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// W_4 is the "4" scale value.
+// W_4 sets the width to 1rem (Tailwind w-4).
 func (r *StyleRefinement) W_4() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// W_5 is the "5" scale value.
+// W_5 sets the width to 1.25rem (Tailwind w-5).
 func (r *StyleRefinement) W_5() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// W_6 is the "6" scale value.
+// W_6 sets the width to 1.5rem (Tailwind w-6).
 func (r *StyleRefinement) W_6() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// W_7 is the "7" scale value.
+// W_7 sets the width to 1.75rem (Tailwind w-7).
 func (r *StyleRefinement) W_7() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// W_8 is the "8" scale value.
+// W_8 sets the width to 2rem (Tailwind w-8).
 func (r *StyleRefinement) W_8() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// W_9 is the "9" scale value.
+// W_9 sets the width to 2.25rem (Tailwind w-9).
 func (r *StyleRefinement) W_9() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// W_10 is the "10" scale value.
+// W_10 sets the width to 2.5rem (Tailwind w-10).
 func (r *StyleRefinement) W_10() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// W_11 is the "11" scale value.
+// W_11 sets the width to 2.75rem (Tailwind w-11).
 func (r *StyleRefinement) W_11() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// W_12 is the "12" scale value.
+// W_12 sets the width to 3rem (Tailwind w-12).
 func (r *StyleRefinement) W_12() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// W_16 is the "16" scale value.
+// W_16 sets the width to 4rem (Tailwind w-16).
 func (r *StyleRefinement) W_16() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// W_20 is the "20" scale value.
+// W_20 sets the width to 5rem (Tailwind w-20).
 func (r *StyleRefinement) W_20() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// W_24 is the "24" scale value.
+// W_24 sets the width to 6rem (Tailwind w-24).
 func (r *StyleRefinement) W_24() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// W_32 is the "32" scale value.
+// W_32 sets the width to 8rem (Tailwind w-32).
 func (r *StyleRefinement) W_32() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// W_40 is the "40" scale value.
+// W_40 sets the width to 10rem (Tailwind w-40).
 func (r *StyleRefinement) W_40() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// W_48 is the "48" scale value.
+// W_48 sets the width to 12rem (Tailwind w-48).
 func (r *StyleRefinement) W_48() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// W_56 is the "56" scale value.
+// W_56 sets the width to 14rem (Tailwind w-56).
 func (r *StyleRefinement) W_56() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// W_64 is the "64" scale value.
+// W_64 sets the width to 16rem (Tailwind w-64).
 func (r *StyleRefinement) W_64() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// W_72 is the "72" scale value.
+// W_72 sets the width to 18rem (Tailwind w-72).
 func (r *StyleRefinement) W_72() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// W_80 is the "80" scale value.
+// W_80 sets the width to 20rem (Tailwind w-80).
 func (r *StyleRefinement) W_80() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// W_96 is the "96" scale value.
+// W_96 sets the width to 24rem (Tailwind w-96).
 func (r *StyleRefinement) W_96() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// W_112 is the "112" scale value.
+// W_112 sets the width to 28rem (Tailwind w-112).
 func (r *StyleRefinement) W_112() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// W_128 is the "128" scale value.
+// W_128 sets the width to 32rem (Tailwind w-128).
 func (r *StyleRefinement) W_128() *StyleRefinement {
 	return r.W(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// W_Px is the "px" scale value.
+// W_Px sets the width to 1px (Tailwind w-px).
 func (r *StyleRefinement) W_Px() *StyleRefinement {
 	return r.W(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// W_Auto sets the value to auto.
+// W_Auto sets the width to auto (Tailwind w-auto).
 func (r *StyleRefinement) W_Auto() *StyleRefinement { return r.W(geometry.AutoLength()) }
 
-// W_Full is the "full" scale value.
+// W_Full sets the width to 100% of the parent size (Tailwind w-full).
 func (r *StyleRefinement) W_Full() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// W_1_2 is the "1_2" scale value.
+// W_1_2 sets the width to 50% of the parent size (Tailwind w-1/2).
 func (r *StyleRefinement) W_1_2() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// W_1_3 is the "1_3" scale value.
+// W_1_3 sets the width to 33.33% of the parent size (Tailwind w-1/3).
 func (r *StyleRefinement) W_1_3() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// W_2_3 is the "2_3" scale value.
+// W_2_3 sets the width to 66.67% of the parent size (Tailwind w-2/3).
 func (r *StyleRefinement) W_2_3() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// W_1_4 is the "1_4" scale value.
+// W_1_4 sets the width to 25% of the parent size (Tailwind w-1/4).
 func (r *StyleRefinement) W_1_4() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// W_2_4 is the "2_4" scale value.
+// W_2_4 sets the width to 50% of the parent size (Tailwind w-2/4).
 func (r *StyleRefinement) W_2_4() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// W_3_4 is the "3_4" scale value.
+// W_3_4 sets the width to 75% of the parent size (Tailwind w-3/4).
 func (r *StyleRefinement) W_3_4() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// W_1_5 is the "1_5" scale value.
+// W_1_5 sets the width to 20% of the parent size (Tailwind w-1/5).
 func (r *StyleRefinement) W_1_5() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// W_2_5 is the "2_5" scale value.
+// W_2_5 sets the width to 40% of the parent size (Tailwind w-2/5).
 func (r *StyleRefinement) W_2_5() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// W_3_5 is the "3_5" scale value.
+// W_3_5 sets the width to 60% of the parent size (Tailwind w-3/5).
 func (r *StyleRefinement) W_3_5() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// W_4_5 is the "4_5" scale value.
+// W_4_5 sets the width to 80% of the parent size (Tailwind w-4/5).
 func (r *StyleRefinement) W_4_5() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// W_1_6 is the "1_6" scale value.
+// W_1_6 sets the width to 16.67% of the parent size (Tailwind w-1/6).
 func (r *StyleRefinement) W_1_6() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// W_5_6 is the "5_6" scale value.
+// W_5_6 sets the width to 83.33% of the parent size (Tailwind w-5/6).
 func (r *StyleRefinement) W_5_6() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// W_1_12 is the "1_12" scale value.
+// W_1_12 sets the width to 8.333% of the parent size (Tailwind w-1/12).
 func (r *StyleRefinement) W_1_12() *StyleRefinement {
 	return r.W(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// H_0 is the "0" scale value.
+// H_0 sets the height to 0rem (Tailwind h-0).
 func (r *StyleRefinement) H_0() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// H_0p5 is the "0p5" scale value.
+// H_0p5 sets the height to 0.125rem (Tailwind h-0.5).
 func (r *StyleRefinement) H_0p5() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// H_1 is the "1" scale value.
+// H_1 sets the height to 0.25rem (Tailwind h-1).
 func (r *StyleRefinement) H_1() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// H_1p5 is the "1p5" scale value.
+// H_1p5 sets the height to 0.375rem (Tailwind h-1.5).
 func (r *StyleRefinement) H_1p5() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// H_2 is the "2" scale value.
+// H_2 sets the height to 0.5rem (Tailwind h-2).
 func (r *StyleRefinement) H_2() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// H_2p5 is the "2p5" scale value.
+// H_2p5 sets the height to 0.625rem (Tailwind h-2.5).
 func (r *StyleRefinement) H_2p5() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// H_3 is the "3" scale value.
+// H_3 sets the height to 0.75rem (Tailwind h-3).
 func (r *StyleRefinement) H_3() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// H_3p5 is the "3p5" scale value.
+// H_3p5 sets the height to 0.875rem (Tailwind h-3.5).
 func (r *StyleRefinement) H_3p5() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// H_4 is the "4" scale value.
+// H_4 sets the height to 1rem (Tailwind h-4).
 func (r *StyleRefinement) H_4() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// H_5 is the "5" scale value.
+// H_5 sets the height to 1.25rem (Tailwind h-5).
 func (r *StyleRefinement) H_5() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// H_6 is the "6" scale value.
+// H_6 sets the height to 1.5rem (Tailwind h-6).
 func (r *StyleRefinement) H_6() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// H_7 is the "7" scale value.
+// H_7 sets the height to 1.75rem (Tailwind h-7).
 func (r *StyleRefinement) H_7() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// H_8 is the "8" scale value.
+// H_8 sets the height to 2rem (Tailwind h-8).
 func (r *StyleRefinement) H_8() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// H_9 is the "9" scale value.
+// H_9 sets the height to 2.25rem (Tailwind h-9).
 func (r *StyleRefinement) H_9() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// H_10 is the "10" scale value.
+// H_10 sets the height to 2.5rem (Tailwind h-10).
 func (r *StyleRefinement) H_10() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// H_11 is the "11" scale value.
+// H_11 sets the height to 2.75rem (Tailwind h-11).
 func (r *StyleRefinement) H_11() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// H_12 is the "12" scale value.
+// H_12 sets the height to 3rem (Tailwind h-12).
 func (r *StyleRefinement) H_12() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// H_16 is the "16" scale value.
+// H_16 sets the height to 4rem (Tailwind h-16).
 func (r *StyleRefinement) H_16() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// H_20 is the "20" scale value.
+// H_20 sets the height to 5rem (Tailwind h-20).
 func (r *StyleRefinement) H_20() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// H_24 is the "24" scale value.
+// H_24 sets the height to 6rem (Tailwind h-24).
 func (r *StyleRefinement) H_24() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// H_32 is the "32" scale value.
+// H_32 sets the height to 8rem (Tailwind h-32).
 func (r *StyleRefinement) H_32() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// H_40 is the "40" scale value.
+// H_40 sets the height to 10rem (Tailwind h-40).
 func (r *StyleRefinement) H_40() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// H_48 is the "48" scale value.
+// H_48 sets the height to 12rem (Tailwind h-48).
 func (r *StyleRefinement) H_48() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// H_56 is the "56" scale value.
+// H_56 sets the height to 14rem (Tailwind h-56).
 func (r *StyleRefinement) H_56() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// H_64 is the "64" scale value.
+// H_64 sets the height to 16rem (Tailwind h-64).
 func (r *StyleRefinement) H_64() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// H_72 is the "72" scale value.
+// H_72 sets the height to 18rem (Tailwind h-72).
 func (r *StyleRefinement) H_72() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// H_80 is the "80" scale value.
+// H_80 sets the height to 20rem (Tailwind h-80).
 func (r *StyleRefinement) H_80() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// H_96 is the "96" scale value.
+// H_96 sets the height to 24rem (Tailwind h-96).
 func (r *StyleRefinement) H_96() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// H_112 is the "112" scale value.
+// H_112 sets the height to 28rem (Tailwind h-112).
 func (r *StyleRefinement) H_112() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// H_128 is the "128" scale value.
+// H_128 sets the height to 32rem (Tailwind h-128).
 func (r *StyleRefinement) H_128() *StyleRefinement {
 	return r.H(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// H_Px is the "px" scale value.
+// H_Px sets the height to 1px (Tailwind h-px).
 func (r *StyleRefinement) H_Px() *StyleRefinement {
 	return r.H(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// H_Auto sets the value to auto.
+// H_Auto sets the height to auto (Tailwind h-auto).
 func (r *StyleRefinement) H_Auto() *StyleRefinement { return r.H(geometry.AutoLength()) }
 
-// H_Full is the "full" scale value.
+// H_Full sets the height to 100% of the parent size (Tailwind h-full).
 func (r *StyleRefinement) H_Full() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// H_1_2 is the "1_2" scale value.
+// H_1_2 sets the height to 50% of the parent size (Tailwind h-1/2).
 func (r *StyleRefinement) H_1_2() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// H_1_3 is the "1_3" scale value.
+// H_1_3 sets the height to 33.33% of the parent size (Tailwind h-1/3).
 func (r *StyleRefinement) H_1_3() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// H_2_3 is the "2_3" scale value.
+// H_2_3 sets the height to 66.67% of the parent size (Tailwind h-2/3).
 func (r *StyleRefinement) H_2_3() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// H_1_4 is the "1_4" scale value.
+// H_1_4 sets the height to 25% of the parent size (Tailwind h-1/4).
 func (r *StyleRefinement) H_1_4() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// H_2_4 is the "2_4" scale value.
+// H_2_4 sets the height to 50% of the parent size (Tailwind h-2/4).
 func (r *StyleRefinement) H_2_4() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// H_3_4 is the "3_4" scale value.
+// H_3_4 sets the height to 75% of the parent size (Tailwind h-3/4).
 func (r *StyleRefinement) H_3_4() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// H_1_5 is the "1_5" scale value.
+// H_1_5 sets the height to 20% of the parent size (Tailwind h-1/5).
 func (r *StyleRefinement) H_1_5() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// H_2_5 is the "2_5" scale value.
+// H_2_5 sets the height to 40% of the parent size (Tailwind h-2/5).
 func (r *StyleRefinement) H_2_5() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// H_3_5 is the "3_5" scale value.
+// H_3_5 sets the height to 60% of the parent size (Tailwind h-3/5).
 func (r *StyleRefinement) H_3_5() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// H_4_5 is the "4_5" scale value.
+// H_4_5 sets the height to 80% of the parent size (Tailwind h-4/5).
 func (r *StyleRefinement) H_4_5() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// H_1_6 is the "1_6" scale value.
+// H_1_6 sets the height to 16.67% of the parent size (Tailwind h-1/6).
 func (r *StyleRefinement) H_1_6() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// H_5_6 is the "5_6" scale value.
+// H_5_6 sets the height to 83.33% of the parent size (Tailwind h-5/6).
 func (r *StyleRefinement) H_5_6() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// H_1_12 is the "1_12" scale value.
+// H_1_12 sets the height to 8.333% of the parent size (Tailwind h-1/12).
 func (r *StyleRefinement) H_1_12() *StyleRefinement {
 	return r.H(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Size_0 is the "0" scale value.
+// Size_0 sets the width and height to 0rem (Tailwind size-0).
 func (r *StyleRefinement) Size_0() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Size_0p5 is the "0p5" scale value.
+// Size_0p5 sets the width and height to 0.125rem (Tailwind size-0.5).
 func (r *StyleRefinement) Size_0p5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Size_1 is the "1" scale value.
+// Size_1 sets the width and height to 0.25rem (Tailwind size-1).
 func (r *StyleRefinement) Size_1() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Size_1p5 is the "1p5" scale value.
+// Size_1p5 sets the width and height to 0.375rem (Tailwind size-1.5).
 func (r *StyleRefinement) Size_1p5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Size_2 is the "2" scale value.
+// Size_2 sets the width and height to 0.5rem (Tailwind size-2).
 func (r *StyleRefinement) Size_2() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Size_2p5 is the "2p5" scale value.
+// Size_2p5 sets the width and height to 0.625rem (Tailwind size-2.5).
 func (r *StyleRefinement) Size_2p5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Size_3 is the "3" scale value.
+// Size_3 sets the width and height to 0.75rem (Tailwind size-3).
 func (r *StyleRefinement) Size_3() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Size_3p5 is the "3p5" scale value.
+// Size_3p5 sets the width and height to 0.875rem (Tailwind size-3.5).
 func (r *StyleRefinement) Size_3p5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Size_4 is the "4" scale value.
+// Size_4 sets the width and height to 1rem (Tailwind size-4).
 func (r *StyleRefinement) Size_4() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Size_5 is the "5" scale value.
+// Size_5 sets the width and height to 1.25rem (Tailwind size-5).
 func (r *StyleRefinement) Size_5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Size_6 is the "6" scale value.
+// Size_6 sets the width and height to 1.5rem (Tailwind size-6).
 func (r *StyleRefinement) Size_6() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Size_7 is the "7" scale value.
+// Size_7 sets the width and height to 1.75rem (Tailwind size-7).
 func (r *StyleRefinement) Size_7() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Size_8 is the "8" scale value.
+// Size_8 sets the width and height to 2rem (Tailwind size-8).
 func (r *StyleRefinement) Size_8() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Size_9 is the "9" scale value.
+// Size_9 sets the width and height to 2.25rem (Tailwind size-9).
 func (r *StyleRefinement) Size_9() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Size_10 is the "10" scale value.
+// Size_10 sets the width and height to 2.5rem (Tailwind size-10).
 func (r *StyleRefinement) Size_10() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Size_11 is the "11" scale value.
+// Size_11 sets the width and height to 2.75rem (Tailwind size-11).
 func (r *StyleRefinement) Size_11() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Size_12 is the "12" scale value.
+// Size_12 sets the width and height to 3rem (Tailwind size-12).
 func (r *StyleRefinement) Size_12() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Size_16 is the "16" scale value.
+// Size_16 sets the width and height to 4rem (Tailwind size-16).
 func (r *StyleRefinement) Size_16() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Size_20 is the "20" scale value.
+// Size_20 sets the width and height to 5rem (Tailwind size-20).
 func (r *StyleRefinement) Size_20() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Size_24 is the "24" scale value.
+// Size_24 sets the width and height to 6rem (Tailwind size-24).
 func (r *StyleRefinement) Size_24() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Size_32 is the "32" scale value.
+// Size_32 sets the width and height to 8rem (Tailwind size-32).
 func (r *StyleRefinement) Size_32() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Size_40 is the "40" scale value.
+// Size_40 sets the width and height to 10rem (Tailwind size-40).
 func (r *StyleRefinement) Size_40() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Size_48 is the "48" scale value.
+// Size_48 sets the width and height to 12rem (Tailwind size-48).
 func (r *StyleRefinement) Size_48() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Size_56 is the "56" scale value.
+// Size_56 sets the width and height to 14rem (Tailwind size-56).
 func (r *StyleRefinement) Size_56() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Size_64 is the "64" scale value.
+// Size_64 sets the width and height to 16rem (Tailwind size-64).
 func (r *StyleRefinement) Size_64() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Size_72 is the "72" scale value.
+// Size_72 sets the width and height to 18rem (Tailwind size-72).
 func (r *StyleRefinement) Size_72() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Size_80 is the "80" scale value.
+// Size_80 sets the width and height to 20rem (Tailwind size-80).
 func (r *StyleRefinement) Size_80() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Size_96 is the "96" scale value.
+// Size_96 sets the width and height to 24rem (Tailwind size-96).
 func (r *StyleRefinement) Size_96() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Size_112 is the "112" scale value.
+// Size_112 sets the width and height to 28rem (Tailwind size-112).
 func (r *StyleRefinement) Size_112() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Size_128 is the "128" scale value.
+// Size_128 sets the width and height to 32rem (Tailwind size-128).
 func (r *StyleRefinement) Size_128() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Size_Px is the "px" scale value.
+// Size_Px sets the width and height to 1px (Tailwind size-px).
 func (r *StyleRefinement) Size_Px() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Size_Auto sets the value to auto.
+// Size_Auto sets the width and height to auto (Tailwind size-auto).
 func (r *StyleRefinement) Size_Auto() *StyleRefinement {
 	return r.SetSizeUniform(geometry.AutoLength())
 }
 
-// Size_Full is the "full" scale value.
+// Size_Full sets the width and height to 100% of the parent size (Tailwind size-full).
 func (r *StyleRefinement) Size_Full() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// Size_1_2 is the "1_2" scale value.
+// Size_1_2 sets the width and height to 50% of the parent size (Tailwind size-1/2).
 func (r *StyleRefinement) Size_1_2() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Size_1_3 is the "1_3" scale value.
+// Size_1_3 sets the width and height to 33.33% of the parent size (Tailwind size-1/3).
 func (r *StyleRefinement) Size_1_3() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Size_2_3 is the "2_3" scale value.
+// Size_2_3 sets the width and height to 66.67% of the parent size (Tailwind size-2/3).
 func (r *StyleRefinement) Size_2_3() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Size_1_4 is the "1_4" scale value.
+// Size_1_4 sets the width and height to 25% of the parent size (Tailwind size-1/4).
 func (r *StyleRefinement) Size_1_4() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Size_2_4 is the "2_4" scale value.
+// Size_2_4 sets the width and height to 50% of the parent size (Tailwind size-2/4).
 func (r *StyleRefinement) Size_2_4() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Size_3_4 is the "3_4" scale value.
+// Size_3_4 sets the width and height to 75% of the parent size (Tailwind size-3/4).
 func (r *StyleRefinement) Size_3_4() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Size_1_5 is the "1_5" scale value.
+// Size_1_5 sets the width and height to 20% of the parent size (Tailwind size-1/5).
 func (r *StyleRefinement) Size_1_5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Size_2_5 is the "2_5" scale value.
+// Size_2_5 sets the width and height to 40% of the parent size (Tailwind size-2/5).
 func (r *StyleRefinement) Size_2_5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Size_3_5 is the "3_5" scale value.
+// Size_3_5 sets the width and height to 60% of the parent size (Tailwind size-3/5).
 func (r *StyleRefinement) Size_3_5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Size_4_5 is the "4_5" scale value.
+// Size_4_5 sets the width and height to 80% of the parent size (Tailwind size-4/5).
 func (r *StyleRefinement) Size_4_5() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Size_1_6 is the "1_6" scale value.
+// Size_1_6 sets the width and height to 16.67% of the parent size (Tailwind size-1/6).
 func (r *StyleRefinement) Size_1_6() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Size_5_6 is the "5_6" scale value.
+// Size_5_6 sets the width and height to 83.33% of the parent size (Tailwind size-5/6).
 func (r *StyleRefinement) Size_5_6() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Size_1_12 is the "1_12" scale value.
+// Size_1_12 sets the width and height to 8.333% of the parent size (Tailwind size-1/12).
 func (r *StyleRefinement) Size_1_12() *StyleRefinement {
 	return r.SetSizeUniform(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// MinW_0 is the "0" scale value.
+// MinW_0 sets the minimum width to 0rem (Tailwind min-w-0).
 func (r *StyleRefinement) MinW_0() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// MinW_0p5 is the "0p5" scale value.
+// MinW_0p5 sets the minimum width to 0.125rem (Tailwind min-w-0.5).
 func (r *StyleRefinement) MinW_0p5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// MinW_1 is the "1" scale value.
+// MinW_1 sets the minimum width to 0.25rem (Tailwind min-w-1).
 func (r *StyleRefinement) MinW_1() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// MinW_1p5 is the "1p5" scale value.
+// MinW_1p5 sets the minimum width to 0.375rem (Tailwind min-w-1.5).
 func (r *StyleRefinement) MinW_1p5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// MinW_2 is the "2" scale value.
+// MinW_2 sets the minimum width to 0.5rem (Tailwind min-w-2).
 func (r *StyleRefinement) MinW_2() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// MinW_2p5 is the "2p5" scale value.
+// MinW_2p5 sets the minimum width to 0.625rem (Tailwind min-w-2.5).
 func (r *StyleRefinement) MinW_2p5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// MinW_3 is the "3" scale value.
+// MinW_3 sets the minimum width to 0.75rem (Tailwind min-w-3).
 func (r *StyleRefinement) MinW_3() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// MinW_3p5 is the "3p5" scale value.
+// MinW_3p5 sets the minimum width to 0.875rem (Tailwind min-w-3.5).
 func (r *StyleRefinement) MinW_3p5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// MinW_4 is the "4" scale value.
+// MinW_4 sets the minimum width to 1rem (Tailwind min-w-4).
 func (r *StyleRefinement) MinW_4() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// MinW_5 is the "5" scale value.
+// MinW_5 sets the minimum width to 1.25rem (Tailwind min-w-5).
 func (r *StyleRefinement) MinW_5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// MinW_6 is the "6" scale value.
+// MinW_6 sets the minimum width to 1.5rem (Tailwind min-w-6).
 func (r *StyleRefinement) MinW_6() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// MinW_7 is the "7" scale value.
+// MinW_7 sets the minimum width to 1.75rem (Tailwind min-w-7).
 func (r *StyleRefinement) MinW_7() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// MinW_8 is the "8" scale value.
+// MinW_8 sets the minimum width to 2rem (Tailwind min-w-8).
 func (r *StyleRefinement) MinW_8() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// MinW_9 is the "9" scale value.
+// MinW_9 sets the minimum width to 2.25rem (Tailwind min-w-9).
 func (r *StyleRefinement) MinW_9() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// MinW_10 is the "10" scale value.
+// MinW_10 sets the minimum width to 2.5rem (Tailwind min-w-10).
 func (r *StyleRefinement) MinW_10() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// MinW_11 is the "11" scale value.
+// MinW_11 sets the minimum width to 2.75rem (Tailwind min-w-11).
 func (r *StyleRefinement) MinW_11() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// MinW_12 is the "12" scale value.
+// MinW_12 sets the minimum width to 3rem (Tailwind min-w-12).
 func (r *StyleRefinement) MinW_12() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// MinW_16 is the "16" scale value.
+// MinW_16 sets the minimum width to 4rem (Tailwind min-w-16).
 func (r *StyleRefinement) MinW_16() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// MinW_20 is the "20" scale value.
+// MinW_20 sets the minimum width to 5rem (Tailwind min-w-20).
 func (r *StyleRefinement) MinW_20() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// MinW_24 is the "24" scale value.
+// MinW_24 sets the minimum width to 6rem (Tailwind min-w-24).
 func (r *StyleRefinement) MinW_24() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// MinW_32 is the "32" scale value.
+// MinW_32 sets the minimum width to 8rem (Tailwind min-w-32).
 func (r *StyleRefinement) MinW_32() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// MinW_40 is the "40" scale value.
+// MinW_40 sets the minimum width to 10rem (Tailwind min-w-40).
 func (r *StyleRefinement) MinW_40() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// MinW_48 is the "48" scale value.
+// MinW_48 sets the minimum width to 12rem (Tailwind min-w-48).
 func (r *StyleRefinement) MinW_48() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// MinW_56 is the "56" scale value.
+// MinW_56 sets the minimum width to 14rem (Tailwind min-w-56).
 func (r *StyleRefinement) MinW_56() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// MinW_64 is the "64" scale value.
+// MinW_64 sets the minimum width to 16rem (Tailwind min-w-64).
 func (r *StyleRefinement) MinW_64() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// MinW_72 is the "72" scale value.
+// MinW_72 sets the minimum width to 18rem (Tailwind min-w-72).
 func (r *StyleRefinement) MinW_72() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// MinW_80 is the "80" scale value.
+// MinW_80 sets the minimum width to 20rem (Tailwind min-w-80).
 func (r *StyleRefinement) MinW_80() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// MinW_96 is the "96" scale value.
+// MinW_96 sets the minimum width to 24rem (Tailwind min-w-96).
 func (r *StyleRefinement) MinW_96() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// MinW_112 is the "112" scale value.
+// MinW_112 sets the minimum width to 28rem (Tailwind min-w-112).
 func (r *StyleRefinement) MinW_112() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// MinW_128 is the "128" scale value.
+// MinW_128 sets the minimum width to 32rem (Tailwind min-w-128).
 func (r *StyleRefinement) MinW_128() *StyleRefinement {
 	return r.MinW(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// MinW_Px is the "px" scale value.
+// MinW_Px sets the minimum width to 1px (Tailwind min-w-px).
 func (r *StyleRefinement) MinW_Px() *StyleRefinement {
 	return r.MinW(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// MinW_Full is the "full" scale value.
+// MinW_Full sets the minimum width to 100% of the parent size (Tailwind min-w-full).
 func (r *StyleRefinement) MinW_Full() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// MinW_1_2 is the "1_2" scale value.
+// MinW_1_2 sets the minimum width to 50% of the parent size (Tailwind min-w-1/2).
 func (r *StyleRefinement) MinW_1_2() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MinW_1_3 is the "1_3" scale value.
+// MinW_1_3 sets the minimum width to 33.33% of the parent size (Tailwind min-w-1/3).
 func (r *StyleRefinement) MinW_1_3() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// MinW_2_3 is the "2_3" scale value.
+// MinW_2_3 sets the minimum width to 66.67% of the parent size (Tailwind min-w-2/3).
 func (r *StyleRefinement) MinW_2_3() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// MinW_1_4 is the "1_4" scale value.
+// MinW_1_4 sets the minimum width to 25% of the parent size (Tailwind min-w-1/4).
 func (r *StyleRefinement) MinW_1_4() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// MinW_2_4 is the "2_4" scale value.
+// MinW_2_4 sets the minimum width to 50% of the parent size (Tailwind min-w-2/4).
 func (r *StyleRefinement) MinW_2_4() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MinW_3_4 is the "3_4" scale value.
+// MinW_3_4 sets the minimum width to 75% of the parent size (Tailwind min-w-3/4).
 func (r *StyleRefinement) MinW_3_4() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// MinW_1_5 is the "1_5" scale value.
+// MinW_1_5 sets the minimum width to 20% of the parent size (Tailwind min-w-1/5).
 func (r *StyleRefinement) MinW_1_5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// MinW_2_5 is the "2_5" scale value.
+// MinW_2_5 sets the minimum width to 40% of the parent size (Tailwind min-w-2/5).
 func (r *StyleRefinement) MinW_2_5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// MinW_3_5 is the "3_5" scale value.
+// MinW_3_5 sets the minimum width to 60% of the parent size (Tailwind min-w-3/5).
 func (r *StyleRefinement) MinW_3_5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// MinW_4_5 is the "4_5" scale value.
+// MinW_4_5 sets the minimum width to 80% of the parent size (Tailwind min-w-4/5).
 func (r *StyleRefinement) MinW_4_5() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// MinW_1_6 is the "1_6" scale value.
+// MinW_1_6 sets the minimum width to 16.67% of the parent size (Tailwind min-w-1/6).
 func (r *StyleRefinement) MinW_1_6() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// MinW_5_6 is the "5_6" scale value.
+// MinW_5_6 sets the minimum width to 83.33% of the parent size (Tailwind min-w-5/6).
 func (r *StyleRefinement) MinW_5_6() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// MinW_1_12 is the "1_12" scale value.
+// MinW_1_12 sets the minimum width to 8.333% of the parent size (Tailwind min-w-1/12).
 func (r *StyleRefinement) MinW_1_12() *StyleRefinement {
 	return r.MinW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// MinH_0 is the "0" scale value.
+// MinH_0 sets the minimum height to 0rem (Tailwind min-h-0).
 func (r *StyleRefinement) MinH_0() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// MinH_0p5 is the "0p5" scale value.
+// MinH_0p5 sets the minimum height to 0.125rem (Tailwind min-h-0.5).
 func (r *StyleRefinement) MinH_0p5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// MinH_1 is the "1" scale value.
+// MinH_1 sets the minimum height to 0.25rem (Tailwind min-h-1).
 func (r *StyleRefinement) MinH_1() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// MinH_1p5 is the "1p5" scale value.
+// MinH_1p5 sets the minimum height to 0.375rem (Tailwind min-h-1.5).
 func (r *StyleRefinement) MinH_1p5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// MinH_2 is the "2" scale value.
+// MinH_2 sets the minimum height to 0.5rem (Tailwind min-h-2).
 func (r *StyleRefinement) MinH_2() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// MinH_2p5 is the "2p5" scale value.
+// MinH_2p5 sets the minimum height to 0.625rem (Tailwind min-h-2.5).
 func (r *StyleRefinement) MinH_2p5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// MinH_3 is the "3" scale value.
+// MinH_3 sets the minimum height to 0.75rem (Tailwind min-h-3).
 func (r *StyleRefinement) MinH_3() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// MinH_3p5 is the "3p5" scale value.
+// MinH_3p5 sets the minimum height to 0.875rem (Tailwind min-h-3.5).
 func (r *StyleRefinement) MinH_3p5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// MinH_4 is the "4" scale value.
+// MinH_4 sets the minimum height to 1rem (Tailwind min-h-4).
 func (r *StyleRefinement) MinH_4() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// MinH_5 is the "5" scale value.
+// MinH_5 sets the minimum height to 1.25rem (Tailwind min-h-5).
 func (r *StyleRefinement) MinH_5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// MinH_6 is the "6" scale value.
+// MinH_6 sets the minimum height to 1.5rem (Tailwind min-h-6).
 func (r *StyleRefinement) MinH_6() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// MinH_7 is the "7" scale value.
+// MinH_7 sets the minimum height to 1.75rem (Tailwind min-h-7).
 func (r *StyleRefinement) MinH_7() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// MinH_8 is the "8" scale value.
+// MinH_8 sets the minimum height to 2rem (Tailwind min-h-8).
 func (r *StyleRefinement) MinH_8() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// MinH_9 is the "9" scale value.
+// MinH_9 sets the minimum height to 2.25rem (Tailwind min-h-9).
 func (r *StyleRefinement) MinH_9() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// MinH_10 is the "10" scale value.
+// MinH_10 sets the minimum height to 2.5rem (Tailwind min-h-10).
 func (r *StyleRefinement) MinH_10() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// MinH_11 is the "11" scale value.
+// MinH_11 sets the minimum height to 2.75rem (Tailwind min-h-11).
 func (r *StyleRefinement) MinH_11() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// MinH_12 is the "12" scale value.
+// MinH_12 sets the minimum height to 3rem (Tailwind min-h-12).
 func (r *StyleRefinement) MinH_12() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// MinH_16 is the "16" scale value.
+// MinH_16 sets the minimum height to 4rem (Tailwind min-h-16).
 func (r *StyleRefinement) MinH_16() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// MinH_20 is the "20" scale value.
+// MinH_20 sets the minimum height to 5rem (Tailwind min-h-20).
 func (r *StyleRefinement) MinH_20() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// MinH_24 is the "24" scale value.
+// MinH_24 sets the minimum height to 6rem (Tailwind min-h-24).
 func (r *StyleRefinement) MinH_24() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// MinH_32 is the "32" scale value.
+// MinH_32 sets the minimum height to 8rem (Tailwind min-h-32).
 func (r *StyleRefinement) MinH_32() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// MinH_40 is the "40" scale value.
+// MinH_40 sets the minimum height to 10rem (Tailwind min-h-40).
 func (r *StyleRefinement) MinH_40() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// MinH_48 is the "48" scale value.
+// MinH_48 sets the minimum height to 12rem (Tailwind min-h-48).
 func (r *StyleRefinement) MinH_48() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// MinH_56 is the "56" scale value.
+// MinH_56 sets the minimum height to 14rem (Tailwind min-h-56).
 func (r *StyleRefinement) MinH_56() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// MinH_64 is the "64" scale value.
+// MinH_64 sets the minimum height to 16rem (Tailwind min-h-64).
 func (r *StyleRefinement) MinH_64() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// MinH_72 is the "72" scale value.
+// MinH_72 sets the minimum height to 18rem (Tailwind min-h-72).
 func (r *StyleRefinement) MinH_72() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// MinH_80 is the "80" scale value.
+// MinH_80 sets the minimum height to 20rem (Tailwind min-h-80).
 func (r *StyleRefinement) MinH_80() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// MinH_96 is the "96" scale value.
+// MinH_96 sets the minimum height to 24rem (Tailwind min-h-96).
 func (r *StyleRefinement) MinH_96() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// MinH_112 is the "112" scale value.
+// MinH_112 sets the minimum height to 28rem (Tailwind min-h-112).
 func (r *StyleRefinement) MinH_112() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// MinH_128 is the "128" scale value.
+// MinH_128 sets the minimum height to 32rem (Tailwind min-h-128).
 func (r *StyleRefinement) MinH_128() *StyleRefinement {
 	return r.MinH(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// MinH_Px is the "px" scale value.
+// MinH_Px sets the minimum height to 1px (Tailwind min-h-px).
 func (r *StyleRefinement) MinH_Px() *StyleRefinement {
 	return r.MinH(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// MinH_Full is the "full" scale value.
+// MinH_Full sets the minimum height to 100% of the parent size (Tailwind min-h-full).
 func (r *StyleRefinement) MinH_Full() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// MinH_1_2 is the "1_2" scale value.
+// MinH_1_2 sets the minimum height to 50% of the parent size (Tailwind min-h-1/2).
 func (r *StyleRefinement) MinH_1_2() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MinH_1_3 is the "1_3" scale value.
+// MinH_1_3 sets the minimum height to 33.33% of the parent size (Tailwind min-h-1/3).
 func (r *StyleRefinement) MinH_1_3() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// MinH_2_3 is the "2_3" scale value.
+// MinH_2_3 sets the minimum height to 66.67% of the parent size (Tailwind min-h-2/3).
 func (r *StyleRefinement) MinH_2_3() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// MinH_1_4 is the "1_4" scale value.
+// MinH_1_4 sets the minimum height to 25% of the parent size (Tailwind min-h-1/4).
 func (r *StyleRefinement) MinH_1_4() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// MinH_2_4 is the "2_4" scale value.
+// MinH_2_4 sets the minimum height to 50% of the parent size (Tailwind min-h-2/4).
 func (r *StyleRefinement) MinH_2_4() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MinH_3_4 is the "3_4" scale value.
+// MinH_3_4 sets the minimum height to 75% of the parent size (Tailwind min-h-3/4).
 func (r *StyleRefinement) MinH_3_4() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// MinH_1_5 is the "1_5" scale value.
+// MinH_1_5 sets the minimum height to 20% of the parent size (Tailwind min-h-1/5).
 func (r *StyleRefinement) MinH_1_5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// MinH_2_5 is the "2_5" scale value.
+// MinH_2_5 sets the minimum height to 40% of the parent size (Tailwind min-h-2/5).
 func (r *StyleRefinement) MinH_2_5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// MinH_3_5 is the "3_5" scale value.
+// MinH_3_5 sets the minimum height to 60% of the parent size (Tailwind min-h-3/5).
 func (r *StyleRefinement) MinH_3_5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// MinH_4_5 is the "4_5" scale value.
+// MinH_4_5 sets the minimum height to 80% of the parent size (Tailwind min-h-4/5).
 func (r *StyleRefinement) MinH_4_5() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// MinH_1_6 is the "1_6" scale value.
+// MinH_1_6 sets the minimum height to 16.67% of the parent size (Tailwind min-h-1/6).
 func (r *StyleRefinement) MinH_1_6() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// MinH_5_6 is the "5_6" scale value.
+// MinH_5_6 sets the minimum height to 83.33% of the parent size (Tailwind min-h-5/6).
 func (r *StyleRefinement) MinH_5_6() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// MinH_1_12 is the "1_12" scale value.
+// MinH_1_12 sets the minimum height to 8.333% of the parent size (Tailwind min-h-1/12).
 func (r *StyleRefinement) MinH_1_12() *StyleRefinement {
 	return r.MinH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// MaxW_0 is the "0" scale value.
+// MaxW_0 sets the maximum width to 0rem (Tailwind max-w-0).
 func (r *StyleRefinement) MaxW_0() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// MaxW_0p5 is the "0p5" scale value.
+// MaxW_0p5 sets the maximum width to 0.125rem (Tailwind max-w-0.5).
 func (r *StyleRefinement) MaxW_0p5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// MaxW_1 is the "1" scale value.
+// MaxW_1 sets the maximum width to 0.25rem (Tailwind max-w-1).
 func (r *StyleRefinement) MaxW_1() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// MaxW_1p5 is the "1p5" scale value.
+// MaxW_1p5 sets the maximum width to 0.375rem (Tailwind max-w-1.5).
 func (r *StyleRefinement) MaxW_1p5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// MaxW_2 is the "2" scale value.
+// MaxW_2 sets the maximum width to 0.5rem (Tailwind max-w-2).
 func (r *StyleRefinement) MaxW_2() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// MaxW_2p5 is the "2p5" scale value.
+// MaxW_2p5 sets the maximum width to 0.625rem (Tailwind max-w-2.5).
 func (r *StyleRefinement) MaxW_2p5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// MaxW_3 is the "3" scale value.
+// MaxW_3 sets the maximum width to 0.75rem (Tailwind max-w-3).
 func (r *StyleRefinement) MaxW_3() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// MaxW_3p5 is the "3p5" scale value.
+// MaxW_3p5 sets the maximum width to 0.875rem (Tailwind max-w-3.5).
 func (r *StyleRefinement) MaxW_3p5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// MaxW_4 is the "4" scale value.
+// MaxW_4 sets the maximum width to 1rem (Tailwind max-w-4).
 func (r *StyleRefinement) MaxW_4() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// MaxW_5 is the "5" scale value.
+// MaxW_5 sets the maximum width to 1.25rem (Tailwind max-w-5).
 func (r *StyleRefinement) MaxW_5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// MaxW_6 is the "6" scale value.
+// MaxW_6 sets the maximum width to 1.5rem (Tailwind max-w-6).
 func (r *StyleRefinement) MaxW_6() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// MaxW_7 is the "7" scale value.
+// MaxW_7 sets the maximum width to 1.75rem (Tailwind max-w-7).
 func (r *StyleRefinement) MaxW_7() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// MaxW_8 is the "8" scale value.
+// MaxW_8 sets the maximum width to 2rem (Tailwind max-w-8).
 func (r *StyleRefinement) MaxW_8() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// MaxW_9 is the "9" scale value.
+// MaxW_9 sets the maximum width to 2.25rem (Tailwind max-w-9).
 func (r *StyleRefinement) MaxW_9() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// MaxW_10 is the "10" scale value.
+// MaxW_10 sets the maximum width to 2.5rem (Tailwind max-w-10).
 func (r *StyleRefinement) MaxW_10() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// MaxW_11 is the "11" scale value.
+// MaxW_11 sets the maximum width to 2.75rem (Tailwind max-w-11).
 func (r *StyleRefinement) MaxW_11() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// MaxW_12 is the "12" scale value.
+// MaxW_12 sets the maximum width to 3rem (Tailwind max-w-12).
 func (r *StyleRefinement) MaxW_12() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// MaxW_16 is the "16" scale value.
+// MaxW_16 sets the maximum width to 4rem (Tailwind max-w-16).
 func (r *StyleRefinement) MaxW_16() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// MaxW_20 is the "20" scale value.
+// MaxW_20 sets the maximum width to 5rem (Tailwind max-w-20).
 func (r *StyleRefinement) MaxW_20() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// MaxW_24 is the "24" scale value.
+// MaxW_24 sets the maximum width to 6rem (Tailwind max-w-24).
 func (r *StyleRefinement) MaxW_24() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// MaxW_32 is the "32" scale value.
+// MaxW_32 sets the maximum width to 8rem (Tailwind max-w-32).
 func (r *StyleRefinement) MaxW_32() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// MaxW_40 is the "40" scale value.
+// MaxW_40 sets the maximum width to 10rem (Tailwind max-w-40).
 func (r *StyleRefinement) MaxW_40() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// MaxW_48 is the "48" scale value.
+// MaxW_48 sets the maximum width to 12rem (Tailwind max-w-48).
 func (r *StyleRefinement) MaxW_48() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// MaxW_56 is the "56" scale value.
+// MaxW_56 sets the maximum width to 14rem (Tailwind max-w-56).
 func (r *StyleRefinement) MaxW_56() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// MaxW_64 is the "64" scale value.
+// MaxW_64 sets the maximum width to 16rem (Tailwind max-w-64).
 func (r *StyleRefinement) MaxW_64() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// MaxW_72 is the "72" scale value.
+// MaxW_72 sets the maximum width to 18rem (Tailwind max-w-72).
 func (r *StyleRefinement) MaxW_72() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// MaxW_80 is the "80" scale value.
+// MaxW_80 sets the maximum width to 20rem (Tailwind max-w-80).
 func (r *StyleRefinement) MaxW_80() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// MaxW_96 is the "96" scale value.
+// MaxW_96 sets the maximum width to 24rem (Tailwind max-w-96).
 func (r *StyleRefinement) MaxW_96() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// MaxW_112 is the "112" scale value.
+// MaxW_112 sets the maximum width to 28rem (Tailwind max-w-112).
 func (r *StyleRefinement) MaxW_112() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// MaxW_128 is the "128" scale value.
+// MaxW_128 sets the maximum width to 32rem (Tailwind max-w-128).
 func (r *StyleRefinement) MaxW_128() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// MaxW_Px is the "px" scale value.
+// MaxW_Px sets the maximum width to 1px (Tailwind max-w-px).
 func (r *StyleRefinement) MaxW_Px() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// MaxW_Full is the "full" scale value.
+// MaxW_Full sets the maximum width to 100% of the parent size (Tailwind max-w-full).
 func (r *StyleRefinement) MaxW_Full() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// MaxW_1_2 is the "1_2" scale value.
+// MaxW_1_2 sets the maximum width to 50% of the parent size (Tailwind max-w-1/2).
 func (r *StyleRefinement) MaxW_1_2() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MaxW_1_3 is the "1_3" scale value.
+// MaxW_1_3 sets the maximum width to 33.33% of the parent size (Tailwind max-w-1/3).
 func (r *StyleRefinement) MaxW_1_3() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// MaxW_2_3 is the "2_3" scale value.
+// MaxW_2_3 sets the maximum width to 66.67% of the parent size (Tailwind max-w-2/3).
 func (r *StyleRefinement) MaxW_2_3() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// MaxW_1_4 is the "1_4" scale value.
+// MaxW_1_4 sets the maximum width to 25% of the parent size (Tailwind max-w-1/4).
 func (r *StyleRefinement) MaxW_1_4() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// MaxW_2_4 is the "2_4" scale value.
+// MaxW_2_4 sets the maximum width to 50% of the parent size (Tailwind max-w-2/4).
 func (r *StyleRefinement) MaxW_2_4() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MaxW_3_4 is the "3_4" scale value.
+// MaxW_3_4 sets the maximum width to 75% of the parent size (Tailwind max-w-3/4).
 func (r *StyleRefinement) MaxW_3_4() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// MaxW_1_5 is the "1_5" scale value.
+// MaxW_1_5 sets the maximum width to 20% of the parent size (Tailwind max-w-1/5).
 func (r *StyleRefinement) MaxW_1_5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// MaxW_2_5 is the "2_5" scale value.
+// MaxW_2_5 sets the maximum width to 40% of the parent size (Tailwind max-w-2/5).
 func (r *StyleRefinement) MaxW_2_5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// MaxW_3_5 is the "3_5" scale value.
+// MaxW_3_5 sets the maximum width to 60% of the parent size (Tailwind max-w-3/5).
 func (r *StyleRefinement) MaxW_3_5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// MaxW_4_5 is the "4_5" scale value.
+// MaxW_4_5 sets the maximum width to 80% of the parent size (Tailwind max-w-4/5).
 func (r *StyleRefinement) MaxW_4_5() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// MaxW_1_6 is the "1_6" scale value.
+// MaxW_1_6 sets the maximum width to 16.67% of the parent size (Tailwind max-w-1/6).
 func (r *StyleRefinement) MaxW_1_6() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// MaxW_5_6 is the "5_6" scale value.
+// MaxW_5_6 sets the maximum width to 83.33% of the parent size (Tailwind max-w-5/6).
 func (r *StyleRefinement) MaxW_5_6() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// MaxW_1_12 is the "1_12" scale value.
+// MaxW_1_12 sets the maximum width to 8.333% of the parent size (Tailwind max-w-1/12).
 func (r *StyleRefinement) MaxW_1_12() *StyleRefinement {
 	return r.MaxW(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// MaxH_0 is the "0" scale value.
+// MaxH_0 sets the maximum height to 0rem (Tailwind max-h-0).
 func (r *StyleRefinement) MaxH_0() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// MaxH_0p5 is the "0p5" scale value.
+// MaxH_0p5 sets the maximum height to 0.125rem (Tailwind max-h-0.5).
 func (r *StyleRefinement) MaxH_0p5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// MaxH_1 is the "1" scale value.
+// MaxH_1 sets the maximum height to 0.25rem (Tailwind max-h-1).
 func (r *StyleRefinement) MaxH_1() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// MaxH_1p5 is the "1p5" scale value.
+// MaxH_1p5 sets the maximum height to 0.375rem (Tailwind max-h-1.5).
 func (r *StyleRefinement) MaxH_1p5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// MaxH_2 is the "2" scale value.
+// MaxH_2 sets the maximum height to 0.5rem (Tailwind max-h-2).
 func (r *StyleRefinement) MaxH_2() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// MaxH_2p5 is the "2p5" scale value.
+// MaxH_2p5 sets the maximum height to 0.625rem (Tailwind max-h-2.5).
 func (r *StyleRefinement) MaxH_2p5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// MaxH_3 is the "3" scale value.
+// MaxH_3 sets the maximum height to 0.75rem (Tailwind max-h-3).
 func (r *StyleRefinement) MaxH_3() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// MaxH_3p5 is the "3p5" scale value.
+// MaxH_3p5 sets the maximum height to 0.875rem (Tailwind max-h-3.5).
 func (r *StyleRefinement) MaxH_3p5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// MaxH_4 is the "4" scale value.
+// MaxH_4 sets the maximum height to 1rem (Tailwind max-h-4).
 func (r *StyleRefinement) MaxH_4() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// MaxH_5 is the "5" scale value.
+// MaxH_5 sets the maximum height to 1.25rem (Tailwind max-h-5).
 func (r *StyleRefinement) MaxH_5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// MaxH_6 is the "6" scale value.
+// MaxH_6 sets the maximum height to 1.5rem (Tailwind max-h-6).
 func (r *StyleRefinement) MaxH_6() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// MaxH_7 is the "7" scale value.
+// MaxH_7 sets the maximum height to 1.75rem (Tailwind max-h-7).
 func (r *StyleRefinement) MaxH_7() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// MaxH_8 is the "8" scale value.
+// MaxH_8 sets the maximum height to 2rem (Tailwind max-h-8).
 func (r *StyleRefinement) MaxH_8() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// MaxH_9 is the "9" scale value.
+// MaxH_9 sets the maximum height to 2.25rem (Tailwind max-h-9).
 func (r *StyleRefinement) MaxH_9() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// MaxH_10 is the "10" scale value.
+// MaxH_10 sets the maximum height to 2.5rem (Tailwind max-h-10).
 func (r *StyleRefinement) MaxH_10() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// MaxH_11 is the "11" scale value.
+// MaxH_11 sets the maximum height to 2.75rem (Tailwind max-h-11).
 func (r *StyleRefinement) MaxH_11() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// MaxH_12 is the "12" scale value.
+// MaxH_12 sets the maximum height to 3rem (Tailwind max-h-12).
 func (r *StyleRefinement) MaxH_12() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// MaxH_16 is the "16" scale value.
+// MaxH_16 sets the maximum height to 4rem (Tailwind max-h-16).
 func (r *StyleRefinement) MaxH_16() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// MaxH_20 is the "20" scale value.
+// MaxH_20 sets the maximum height to 5rem (Tailwind max-h-20).
 func (r *StyleRefinement) MaxH_20() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// MaxH_24 is the "24" scale value.
+// MaxH_24 sets the maximum height to 6rem (Tailwind max-h-24).
 func (r *StyleRefinement) MaxH_24() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// MaxH_32 is the "32" scale value.
+// MaxH_32 sets the maximum height to 8rem (Tailwind max-h-32).
 func (r *StyleRefinement) MaxH_32() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// MaxH_40 is the "40" scale value.
+// MaxH_40 sets the maximum height to 10rem (Tailwind max-h-40).
 func (r *StyleRefinement) MaxH_40() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// MaxH_48 is the "48" scale value.
+// MaxH_48 sets the maximum height to 12rem (Tailwind max-h-48).
 func (r *StyleRefinement) MaxH_48() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// MaxH_56 is the "56" scale value.
+// MaxH_56 sets the maximum height to 14rem (Tailwind max-h-56).
 func (r *StyleRefinement) MaxH_56() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// MaxH_64 is the "64" scale value.
+// MaxH_64 sets the maximum height to 16rem (Tailwind max-h-64).
 func (r *StyleRefinement) MaxH_64() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// MaxH_72 is the "72" scale value.
+// MaxH_72 sets the maximum height to 18rem (Tailwind max-h-72).
 func (r *StyleRefinement) MaxH_72() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// MaxH_80 is the "80" scale value.
+// MaxH_80 sets the maximum height to 20rem (Tailwind max-h-80).
 func (r *StyleRefinement) MaxH_80() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// MaxH_96 is the "96" scale value.
+// MaxH_96 sets the maximum height to 24rem (Tailwind max-h-96).
 func (r *StyleRefinement) MaxH_96() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// MaxH_112 is the "112" scale value.
+// MaxH_112 sets the maximum height to 28rem (Tailwind max-h-112).
 func (r *StyleRefinement) MaxH_112() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// MaxH_128 is the "128" scale value.
+// MaxH_128 sets the maximum height to 32rem (Tailwind max-h-128).
 func (r *StyleRefinement) MaxH_128() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// MaxH_Px is the "px" scale value.
+// MaxH_Px sets the maximum height to 1px (Tailwind max-h-px).
 func (r *StyleRefinement) MaxH_Px() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// MaxH_Full is the "full" scale value.
+// MaxH_Full sets the maximum height to 100% of the parent size (Tailwind max-h-full).
 func (r *StyleRefinement) MaxH_Full() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// MaxH_1_2 is the "1_2" scale value.
+// MaxH_1_2 sets the maximum height to 50% of the parent size (Tailwind max-h-1/2).
 func (r *StyleRefinement) MaxH_1_2() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MaxH_1_3 is the "1_3" scale value.
+// MaxH_1_3 sets the maximum height to 33.33% of the parent size (Tailwind max-h-1/3).
 func (r *StyleRefinement) MaxH_1_3() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// MaxH_2_3 is the "2_3" scale value.
+// MaxH_2_3 sets the maximum height to 66.67% of the parent size (Tailwind max-h-2/3).
 func (r *StyleRefinement) MaxH_2_3() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// MaxH_1_4 is the "1_4" scale value.
+// MaxH_1_4 sets the maximum height to 25% of the parent size (Tailwind max-h-1/4).
 func (r *StyleRefinement) MaxH_1_4() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// MaxH_2_4 is the "2_4" scale value.
+// MaxH_2_4 sets the maximum height to 50% of the parent size (Tailwind max-h-2/4).
 func (r *StyleRefinement) MaxH_2_4() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// MaxH_3_4 is the "3_4" scale value.
+// MaxH_3_4 sets the maximum height to 75% of the parent size (Tailwind max-h-3/4).
 func (r *StyleRefinement) MaxH_3_4() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// MaxH_1_5 is the "1_5" scale value.
+// MaxH_1_5 sets the maximum height to 20% of the parent size (Tailwind max-h-1/5).
 func (r *StyleRefinement) MaxH_1_5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// MaxH_2_5 is the "2_5" scale value.
+// MaxH_2_5 sets the maximum height to 40% of the parent size (Tailwind max-h-2/5).
 func (r *StyleRefinement) MaxH_2_5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// MaxH_3_5 is the "3_5" scale value.
+// MaxH_3_5 sets the maximum height to 60% of the parent size (Tailwind max-h-3/5).
 func (r *StyleRefinement) MaxH_3_5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// MaxH_4_5 is the "4_5" scale value.
+// MaxH_4_5 sets the maximum height to 80% of the parent size (Tailwind max-h-4/5).
 func (r *StyleRefinement) MaxH_4_5() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// MaxH_1_6 is the "1_6" scale value.
+// MaxH_1_6 sets the maximum height to 16.67% of the parent size (Tailwind max-h-1/6).
 func (r *StyleRefinement) MaxH_1_6() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// MaxH_5_6 is the "5_6" scale value.
+// MaxH_5_6 sets the maximum height to 83.33% of the parent size (Tailwind max-h-5/6).
 func (r *StyleRefinement) MaxH_5_6() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// MaxH_1_12 is the "1_12" scale value.
+// MaxH_1_12 sets the maximum height to 8.333% of the parent size (Tailwind max-h-1/12).
 func (r *StyleRefinement) MaxH_1_12() *StyleRefinement {
 	return r.MaxH(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// M_0 is the "0" scale value.
+// M_0 sets the margin on all sides to 0rem (Tailwind m-0).
 func (r *StyleRefinement) M_0() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// M_0p5 is the "0p5" scale value.
+// M_0p5 sets the margin on all sides to 0.125rem (Tailwind m-0.5).
 func (r *StyleRefinement) M_0p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// M_1 is the "1" scale value.
+// M_1 sets the margin on all sides to 0.25rem (Tailwind m-1).
 func (r *StyleRefinement) M_1() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// M_1p5 is the "1p5" scale value.
+// M_1p5 sets the margin on all sides to 0.375rem (Tailwind m-1.5).
 func (r *StyleRefinement) M_1p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// M_2 is the "2" scale value.
+// M_2 sets the margin on all sides to 0.5rem (Tailwind m-2).
 func (r *StyleRefinement) M_2() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// M_2p5 is the "2p5" scale value.
+// M_2p5 sets the margin on all sides to 0.625rem (Tailwind m-2.5).
 func (r *StyleRefinement) M_2p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// M_3 is the "3" scale value.
+// M_3 sets the margin on all sides to 0.75rem (Tailwind m-3).
 func (r *StyleRefinement) M_3() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// M_3p5 is the "3p5" scale value.
+// M_3p5 sets the margin on all sides to 0.875rem (Tailwind m-3.5).
 func (r *StyleRefinement) M_3p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// M_4 is the "4" scale value.
+// M_4 sets the margin on all sides to 1rem (Tailwind m-4).
 func (r *StyleRefinement) M_4() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// M_5 is the "5" scale value.
+// M_5 sets the margin on all sides to 1.25rem (Tailwind m-5).
 func (r *StyleRefinement) M_5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// M_6 is the "6" scale value.
+// M_6 sets the margin on all sides to 1.5rem (Tailwind m-6).
 func (r *StyleRefinement) M_6() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// M_7 is the "7" scale value.
+// M_7 sets the margin on all sides to 1.75rem (Tailwind m-7).
 func (r *StyleRefinement) M_7() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// M_8 is the "8" scale value.
+// M_8 sets the margin on all sides to 2rem (Tailwind m-8).
 func (r *StyleRefinement) M_8() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// M_9 is the "9" scale value.
+// M_9 sets the margin on all sides to 2.25rem (Tailwind m-9).
 func (r *StyleRefinement) M_9() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// M_10 is the "10" scale value.
+// M_10 sets the margin on all sides to 2.5rem (Tailwind m-10).
 func (r *StyleRefinement) M_10() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// M_11 is the "11" scale value.
+// M_11 sets the margin on all sides to 2.75rem (Tailwind m-11).
 func (r *StyleRefinement) M_11() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// M_12 is the "12" scale value.
+// M_12 sets the margin on all sides to 3rem (Tailwind m-12).
 func (r *StyleRefinement) M_12() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// M_16 is the "16" scale value.
+// M_16 sets the margin on all sides to 4rem (Tailwind m-16).
 func (r *StyleRefinement) M_16() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// M_20 is the "20" scale value.
+// M_20 sets the margin on all sides to 5rem (Tailwind m-20).
 func (r *StyleRefinement) M_20() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// M_24 is the "24" scale value.
+// M_24 sets the margin on all sides to 6rem (Tailwind m-24).
 func (r *StyleRefinement) M_24() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// M_32 is the "32" scale value.
+// M_32 sets the margin on all sides to 8rem (Tailwind m-32).
 func (r *StyleRefinement) M_32() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// M_40 is the "40" scale value.
+// M_40 sets the margin on all sides to 10rem (Tailwind m-40).
 func (r *StyleRefinement) M_40() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// M_48 is the "48" scale value.
+// M_48 sets the margin on all sides to 12rem (Tailwind m-48).
 func (r *StyleRefinement) M_48() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// M_56 is the "56" scale value.
+// M_56 sets the margin on all sides to 14rem (Tailwind m-56).
 func (r *StyleRefinement) M_56() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// M_64 is the "64" scale value.
+// M_64 sets the margin on all sides to 16rem (Tailwind m-64).
 func (r *StyleRefinement) M_64() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// M_72 is the "72" scale value.
+// M_72 sets the margin on all sides to 18rem (Tailwind m-72).
 func (r *StyleRefinement) M_72() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// M_80 is the "80" scale value.
+// M_80 sets the margin on all sides to 20rem (Tailwind m-80).
 func (r *StyleRefinement) M_80() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// M_96 is the "96" scale value.
+// M_96 sets the margin on all sides to 24rem (Tailwind m-96).
 func (r *StyleRefinement) M_96() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// M_112 is the "112" scale value.
+// M_112 sets the margin on all sides to 28rem (Tailwind m-112).
 func (r *StyleRefinement) M_112() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// M_128 is the "128" scale value.
+// M_128 sets the margin on all sides to 32rem (Tailwind m-128).
 func (r *StyleRefinement) M_128() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// M_Px is the "px" scale value.
+// M_Px sets the margin on all sides to 1px (Tailwind m-px).
 func (r *StyleRefinement) M_Px() *StyleRefinement {
 	return r.M(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// M_Neg_0p5 is the "neg_0p5" scale value.
+// M_Neg_0p5 sets the margin on all sides to -0.125rem (Tailwind -m-0.5).
 func (r *StyleRefinement) M_Neg_0p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// M_Neg_1 is the "neg_1" scale value.
+// M_Neg_1 sets the margin on all sides to -0.25rem (Tailwind -m-1).
 func (r *StyleRefinement) M_Neg_1() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// M_Neg_1p5 is the "neg_1p5" scale value.
+// M_Neg_1p5 sets the margin on all sides to -0.375rem (Tailwind -m-1.5).
 func (r *StyleRefinement) M_Neg_1p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// M_Neg_2 is the "neg_2" scale value.
+// M_Neg_2 sets the margin on all sides to -0.5rem (Tailwind -m-2).
 func (r *StyleRefinement) M_Neg_2() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// M_Neg_2p5 is the "neg_2p5" scale value.
+// M_Neg_2p5 sets the margin on all sides to -0.625rem (Tailwind -m-2.5).
 func (r *StyleRefinement) M_Neg_2p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// M_Neg_3 is the "neg_3" scale value.
+// M_Neg_3 sets the margin on all sides to -0.75rem (Tailwind -m-3).
 func (r *StyleRefinement) M_Neg_3() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// M_Neg_3p5 is the "neg_3p5" scale value.
+// M_Neg_3p5 sets the margin on all sides to -0.875rem (Tailwind -m-3.5).
 func (r *StyleRefinement) M_Neg_3p5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// M_Neg_4 is the "neg_4" scale value.
+// M_Neg_4 sets the margin on all sides to -1rem (Tailwind -m-4).
 func (r *StyleRefinement) M_Neg_4() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// M_Neg_5 is the "neg_5" scale value.
+// M_Neg_5 sets the margin on all sides to -1.25rem (Tailwind -m-5).
 func (r *StyleRefinement) M_Neg_5() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// M_Neg_6 is the "neg_6" scale value.
+// M_Neg_6 sets the margin on all sides to -1.5rem (Tailwind -m-6).
 func (r *StyleRefinement) M_Neg_6() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// M_Neg_7 is the "neg_7" scale value.
+// M_Neg_7 sets the margin on all sides to -1.75rem (Tailwind -m-7).
 func (r *StyleRefinement) M_Neg_7() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// M_Neg_8 is the "neg_8" scale value.
+// M_Neg_8 sets the margin on all sides to -2rem (Tailwind -m-8).
 func (r *StyleRefinement) M_Neg_8() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// M_Neg_9 is the "neg_9" scale value.
+// M_Neg_9 sets the margin on all sides to -2.25rem (Tailwind -m-9).
 func (r *StyleRefinement) M_Neg_9() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// M_Neg_10 is the "neg_10" scale value.
+// M_Neg_10 sets the margin on all sides to -2.5rem (Tailwind -m-10).
 func (r *StyleRefinement) M_Neg_10() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// M_Neg_11 is the "neg_11" scale value.
+// M_Neg_11 sets the margin on all sides to -2.75rem (Tailwind -m-11).
 func (r *StyleRefinement) M_Neg_11() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// M_Neg_12 is the "neg_12" scale value.
+// M_Neg_12 sets the margin on all sides to -3rem (Tailwind -m-12).
 func (r *StyleRefinement) M_Neg_12() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// M_Neg_16 is the "neg_16" scale value.
+// M_Neg_16 sets the margin on all sides to -4rem (Tailwind -m-16).
 func (r *StyleRefinement) M_Neg_16() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// M_Neg_20 is the "neg_20" scale value.
+// M_Neg_20 sets the margin on all sides to -5rem (Tailwind -m-20).
 func (r *StyleRefinement) M_Neg_20() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// M_Neg_24 is the "neg_24" scale value.
+// M_Neg_24 sets the margin on all sides to -6rem (Tailwind -m-24).
 func (r *StyleRefinement) M_Neg_24() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// M_Neg_32 is the "neg_32" scale value.
+// M_Neg_32 sets the margin on all sides to -8rem (Tailwind -m-32).
 func (r *StyleRefinement) M_Neg_32() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// M_Neg_40 is the "neg_40" scale value.
+// M_Neg_40 sets the margin on all sides to -10rem (Tailwind -m-40).
 func (r *StyleRefinement) M_Neg_40() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// M_Neg_48 is the "neg_48" scale value.
+// M_Neg_48 sets the margin on all sides to -12rem (Tailwind -m-48).
 func (r *StyleRefinement) M_Neg_48() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// M_Neg_56 is the "neg_56" scale value.
+// M_Neg_56 sets the margin on all sides to -14rem (Tailwind -m-56).
 func (r *StyleRefinement) M_Neg_56() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// M_Neg_64 is the "neg_64" scale value.
+// M_Neg_64 sets the margin on all sides to -16rem (Tailwind -m-64).
 func (r *StyleRefinement) M_Neg_64() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// M_Neg_72 is the "neg_72" scale value.
+// M_Neg_72 sets the margin on all sides to -18rem (Tailwind -m-72).
 func (r *StyleRefinement) M_Neg_72() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// M_Neg_80 is the "neg_80" scale value.
+// M_Neg_80 sets the margin on all sides to -20rem (Tailwind -m-80).
 func (r *StyleRefinement) M_Neg_80() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// M_Neg_96 is the "neg_96" scale value.
+// M_Neg_96 sets the margin on all sides to -24rem (Tailwind -m-96).
 func (r *StyleRefinement) M_Neg_96() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// M_Neg_112 is the "neg_112" scale value.
+// M_Neg_112 sets the margin on all sides to -28rem (Tailwind -m-112).
 func (r *StyleRefinement) M_Neg_112() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// M_Neg_128 is the "neg_128" scale value.
+// M_Neg_128 sets the margin on all sides to -32rem (Tailwind -m-128).
 func (r *StyleRefinement) M_Neg_128() *StyleRefinement {
 	return r.M(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// M_Neg_px is the "neg_px" scale value.
+// M_Neg_px sets the margin on all sides to -1px (Tailwind -m-px).
 func (r *StyleRefinement) M_Neg_px() *StyleRefinement {
 	return r.M(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// M_Auto sets the value to auto.
+// M_Auto sets the margin on all sides to auto (Tailwind m-auto).
 func (r *StyleRefinement) M_Auto() *StyleRefinement { return r.M(geometry.AutoLength()) }
 
-// M_1_2 is the "1_2" scale value.
+// M_1_2 sets the margin on all sides to 50% of the parent size (Tailwind m-1/2).
 func (r *StyleRefinement) M_1_2() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// M_Neg_1_2 is the "neg_1_2" scale value.
+// M_Neg_1_2 sets the margin on all sides to -50% of the parent size (Tailwind -m-1/2).
 func (r *StyleRefinement) M_Neg_1_2() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// M_1_3 is the "1_3" scale value.
+// M_1_3 sets the margin on all sides to 33.33% of the parent size (Tailwind m-1/3).
 func (r *StyleRefinement) M_1_3() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// M_Neg_1_3 is the "neg_1_3" scale value.
+// M_Neg_1_3 sets the margin on all sides to -33.33% of the parent size (Tailwind -m-1/3).
 func (r *StyleRefinement) M_Neg_1_3() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// M_2_3 is the "2_3" scale value.
+// M_2_3 sets the margin on all sides to 66.67% of the parent size (Tailwind m-2/3).
 func (r *StyleRefinement) M_2_3() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// M_Neg_2_3 is the "neg_2_3" scale value.
+// M_Neg_2_3 sets the margin on all sides to -66.67% of the parent size (Tailwind -m-2/3).
 func (r *StyleRefinement) M_Neg_2_3() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// M_1_4 is the "1_4" scale value.
+// M_1_4 sets the margin on all sides to 25% of the parent size (Tailwind m-1/4).
 func (r *StyleRefinement) M_1_4() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// M_Neg_1_4 is the "neg_1_4" scale value.
+// M_Neg_1_4 sets the margin on all sides to -25% of the parent size (Tailwind -m-1/4).
 func (r *StyleRefinement) M_Neg_1_4() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// M_2_4 is the "2_4" scale value.
+// M_2_4 sets the margin on all sides to 50% of the parent size (Tailwind m-2/4).
 func (r *StyleRefinement) M_2_4() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// M_Neg_2_4 is the "neg_2_4" scale value.
+// M_Neg_2_4 sets the margin on all sides to -50% of the parent size (Tailwind -m-2/4).
 func (r *StyleRefinement) M_Neg_2_4() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// M_3_4 is the "3_4" scale value.
+// M_3_4 sets the margin on all sides to 75% of the parent size (Tailwind m-3/4).
 func (r *StyleRefinement) M_3_4() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// M_Neg_3_4 is the "neg_3_4" scale value.
+// M_Neg_3_4 sets the margin on all sides to -75% of the parent size (Tailwind -m-3/4).
 func (r *StyleRefinement) M_Neg_3_4() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// M_1_5 is the "1_5" scale value.
+// M_1_5 sets the margin on all sides to 20% of the parent size (Tailwind m-1/5).
 func (r *StyleRefinement) M_1_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// M_Neg_1_5 is the "neg_1_5" scale value.
+// M_Neg_1_5 sets the margin on all sides to -20% of the parent size (Tailwind -m-1/5).
 func (r *StyleRefinement) M_Neg_1_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// M_2_5 is the "2_5" scale value.
+// M_2_5 sets the margin on all sides to 40% of the parent size (Tailwind m-2/5).
 func (r *StyleRefinement) M_2_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// M_Neg_2_5 is the "neg_2_5" scale value.
+// M_Neg_2_5 sets the margin on all sides to -40% of the parent size (Tailwind -m-2/5).
 func (r *StyleRefinement) M_Neg_2_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// M_3_5 is the "3_5" scale value.
+// M_3_5 sets the margin on all sides to 60% of the parent size (Tailwind m-3/5).
 func (r *StyleRefinement) M_3_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// M_Neg_3_5 is the "neg_3_5" scale value.
+// M_Neg_3_5 sets the margin on all sides to -60% of the parent size (Tailwind -m-3/5).
 func (r *StyleRefinement) M_Neg_3_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// M_4_5 is the "4_5" scale value.
+// M_4_5 sets the margin on all sides to 80% of the parent size (Tailwind m-4/5).
 func (r *StyleRefinement) M_4_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// M_Neg_4_5 is the "neg_4_5" scale value.
+// M_Neg_4_5 sets the margin on all sides to -80% of the parent size (Tailwind -m-4/5).
 func (r *StyleRefinement) M_Neg_4_5() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// M_1_6 is the "1_6" scale value.
+// M_1_6 sets the margin on all sides to 16.67% of the parent size (Tailwind m-1/6).
 func (r *StyleRefinement) M_1_6() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// M_Neg_1_6 is the "neg_1_6" scale value.
+// M_Neg_1_6 sets the margin on all sides to -16.67% of the parent size (Tailwind -m-1/6).
 func (r *StyleRefinement) M_Neg_1_6() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// M_5_6 is the "5_6" scale value.
+// M_5_6 sets the margin on all sides to 83.33% of the parent size (Tailwind m-5/6).
 func (r *StyleRefinement) M_5_6() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// M_Neg_5_6 is the "neg_5_6" scale value.
+// M_Neg_5_6 sets the margin on all sides to -83.33% of the parent size (Tailwind -m-5/6).
 func (r *StyleRefinement) M_Neg_5_6() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// M_1_12 is the "1_12" scale value.
+// M_1_12 sets the margin on all sides to 8.333% of the parent size (Tailwind m-1/12).
 func (r *StyleRefinement) M_1_12() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// M_Neg_1_12 is the "neg_1_12" scale value.
+// M_Neg_1_12 sets the margin on all sides to -8.333% of the parent size (Tailwind -m-1/12).
 func (r *StyleRefinement) M_Neg_1_12() *StyleRefinement {
 	return r.M(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Mt_0 is the "0" scale value.
+// Mt_0 sets the top margin to 0rem (Tailwind mt-0).
 func (r *StyleRefinement) Mt_0() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Mt_0p5 is the "0p5" scale value.
+// Mt_0p5 sets the top margin to 0.125rem (Tailwind mt-0.5).
 func (r *StyleRefinement) Mt_0p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Mt_1 is the "1" scale value.
+// Mt_1 sets the top margin to 0.25rem (Tailwind mt-1).
 func (r *StyleRefinement) Mt_1() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Mt_1p5 is the "1p5" scale value.
+// Mt_1p5 sets the top margin to 0.375rem (Tailwind mt-1.5).
 func (r *StyleRefinement) Mt_1p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Mt_2 is the "2" scale value.
+// Mt_2 sets the top margin to 0.5rem (Tailwind mt-2).
 func (r *StyleRefinement) Mt_2() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Mt_2p5 is the "2p5" scale value.
+// Mt_2p5 sets the top margin to 0.625rem (Tailwind mt-2.5).
 func (r *StyleRefinement) Mt_2p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Mt_3 is the "3" scale value.
+// Mt_3 sets the top margin to 0.75rem (Tailwind mt-3).
 func (r *StyleRefinement) Mt_3() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Mt_3p5 is the "3p5" scale value.
+// Mt_3p5 sets the top margin to 0.875rem (Tailwind mt-3.5).
 func (r *StyleRefinement) Mt_3p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Mt_4 is the "4" scale value.
+// Mt_4 sets the top margin to 1rem (Tailwind mt-4).
 func (r *StyleRefinement) Mt_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Mt_5 is the "5" scale value.
+// Mt_5 sets the top margin to 1.25rem (Tailwind mt-5).
 func (r *StyleRefinement) Mt_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Mt_6 is the "6" scale value.
+// Mt_6 sets the top margin to 1.5rem (Tailwind mt-6).
 func (r *StyleRefinement) Mt_6() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Mt_7 is the "7" scale value.
+// Mt_7 sets the top margin to 1.75rem (Tailwind mt-7).
 func (r *StyleRefinement) Mt_7() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Mt_8 is the "8" scale value.
+// Mt_8 sets the top margin to 2rem (Tailwind mt-8).
 func (r *StyleRefinement) Mt_8() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Mt_9 is the "9" scale value.
+// Mt_9 sets the top margin to 2.25rem (Tailwind mt-9).
 func (r *StyleRefinement) Mt_9() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Mt_10 is the "10" scale value.
+// Mt_10 sets the top margin to 2.5rem (Tailwind mt-10).
 func (r *StyleRefinement) Mt_10() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Mt_11 is the "11" scale value.
+// Mt_11 sets the top margin to 2.75rem (Tailwind mt-11).
 func (r *StyleRefinement) Mt_11() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Mt_12 is the "12" scale value.
+// Mt_12 sets the top margin to 3rem (Tailwind mt-12).
 func (r *StyleRefinement) Mt_12() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Mt_16 is the "16" scale value.
+// Mt_16 sets the top margin to 4rem (Tailwind mt-16).
 func (r *StyleRefinement) Mt_16() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Mt_20 is the "20" scale value.
+// Mt_20 sets the top margin to 5rem (Tailwind mt-20).
 func (r *StyleRefinement) Mt_20() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Mt_24 is the "24" scale value.
+// Mt_24 sets the top margin to 6rem (Tailwind mt-24).
 func (r *StyleRefinement) Mt_24() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Mt_32 is the "32" scale value.
+// Mt_32 sets the top margin to 8rem (Tailwind mt-32).
 func (r *StyleRefinement) Mt_32() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Mt_40 is the "40" scale value.
+// Mt_40 sets the top margin to 10rem (Tailwind mt-40).
 func (r *StyleRefinement) Mt_40() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Mt_48 is the "48" scale value.
+// Mt_48 sets the top margin to 12rem (Tailwind mt-48).
 func (r *StyleRefinement) Mt_48() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Mt_56 is the "56" scale value.
+// Mt_56 sets the top margin to 14rem (Tailwind mt-56).
 func (r *StyleRefinement) Mt_56() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Mt_64 is the "64" scale value.
+// Mt_64 sets the top margin to 16rem (Tailwind mt-64).
 func (r *StyleRefinement) Mt_64() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Mt_72 is the "72" scale value.
+// Mt_72 sets the top margin to 18rem (Tailwind mt-72).
 func (r *StyleRefinement) Mt_72() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Mt_80 is the "80" scale value.
+// Mt_80 sets the top margin to 20rem (Tailwind mt-80).
 func (r *StyleRefinement) Mt_80() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Mt_96 is the "96" scale value.
+// Mt_96 sets the top margin to 24rem (Tailwind mt-96).
 func (r *StyleRefinement) Mt_96() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Mt_112 is the "112" scale value.
+// Mt_112 sets the top margin to 28rem (Tailwind mt-112).
 func (r *StyleRefinement) Mt_112() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Mt_128 is the "128" scale value.
+// Mt_128 sets the top margin to 32rem (Tailwind mt-128).
 func (r *StyleRefinement) Mt_128() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Mt_Px is the "px" scale value.
+// Mt_Px sets the top margin to 1px (Tailwind mt-px).
 func (r *StyleRefinement) Mt_Px() *StyleRefinement {
 	return r.Mt(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Mt_Neg_0p5 is the "neg_0p5" scale value.
+// Mt_Neg_0p5 sets the top margin to -0.125rem (Tailwind -mt-0.5).
 func (r *StyleRefinement) Mt_Neg_0p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Mt_Neg_1 is the "neg_1" scale value.
+// Mt_Neg_1 sets the top margin to -0.25rem (Tailwind -mt-1).
 func (r *StyleRefinement) Mt_Neg_1() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Mt_Neg_1p5 is the "neg_1p5" scale value.
+// Mt_Neg_1p5 sets the top margin to -0.375rem (Tailwind -mt-1.5).
 func (r *StyleRefinement) Mt_Neg_1p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Mt_Neg_2 is the "neg_2" scale value.
+// Mt_Neg_2 sets the top margin to -0.5rem (Tailwind -mt-2).
 func (r *StyleRefinement) Mt_Neg_2() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Mt_Neg_2p5 is the "neg_2p5" scale value.
+// Mt_Neg_2p5 sets the top margin to -0.625rem (Tailwind -mt-2.5).
 func (r *StyleRefinement) Mt_Neg_2p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Mt_Neg_3 is the "neg_3" scale value.
+// Mt_Neg_3 sets the top margin to -0.75rem (Tailwind -mt-3).
 func (r *StyleRefinement) Mt_Neg_3() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Mt_Neg_3p5 is the "neg_3p5" scale value.
+// Mt_Neg_3p5 sets the top margin to -0.875rem (Tailwind -mt-3.5).
 func (r *StyleRefinement) Mt_Neg_3p5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Mt_Neg_4 is the "neg_4" scale value.
+// Mt_Neg_4 sets the top margin to -1rem (Tailwind -mt-4).
 func (r *StyleRefinement) Mt_Neg_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Mt_Neg_5 is the "neg_5" scale value.
+// Mt_Neg_5 sets the top margin to -1.25rem (Tailwind -mt-5).
 func (r *StyleRefinement) Mt_Neg_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Mt_Neg_6 is the "neg_6" scale value.
+// Mt_Neg_6 sets the top margin to -1.5rem (Tailwind -mt-6).
 func (r *StyleRefinement) Mt_Neg_6() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Mt_Neg_7 is the "neg_7" scale value.
+// Mt_Neg_7 sets the top margin to -1.75rem (Tailwind -mt-7).
 func (r *StyleRefinement) Mt_Neg_7() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Mt_Neg_8 is the "neg_8" scale value.
+// Mt_Neg_8 sets the top margin to -2rem (Tailwind -mt-8).
 func (r *StyleRefinement) Mt_Neg_8() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Mt_Neg_9 is the "neg_9" scale value.
+// Mt_Neg_9 sets the top margin to -2.25rem (Tailwind -mt-9).
 func (r *StyleRefinement) Mt_Neg_9() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Mt_Neg_10 is the "neg_10" scale value.
+// Mt_Neg_10 sets the top margin to -2.5rem (Tailwind -mt-10).
 func (r *StyleRefinement) Mt_Neg_10() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Mt_Neg_11 is the "neg_11" scale value.
+// Mt_Neg_11 sets the top margin to -2.75rem (Tailwind -mt-11).
 func (r *StyleRefinement) Mt_Neg_11() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Mt_Neg_12 is the "neg_12" scale value.
+// Mt_Neg_12 sets the top margin to -3rem (Tailwind -mt-12).
 func (r *StyleRefinement) Mt_Neg_12() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Mt_Neg_16 is the "neg_16" scale value.
+// Mt_Neg_16 sets the top margin to -4rem (Tailwind -mt-16).
 func (r *StyleRefinement) Mt_Neg_16() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Mt_Neg_20 is the "neg_20" scale value.
+// Mt_Neg_20 sets the top margin to -5rem (Tailwind -mt-20).
 func (r *StyleRefinement) Mt_Neg_20() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Mt_Neg_24 is the "neg_24" scale value.
+// Mt_Neg_24 sets the top margin to -6rem (Tailwind -mt-24).
 func (r *StyleRefinement) Mt_Neg_24() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Mt_Neg_32 is the "neg_32" scale value.
+// Mt_Neg_32 sets the top margin to -8rem (Tailwind -mt-32).
 func (r *StyleRefinement) Mt_Neg_32() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Mt_Neg_40 is the "neg_40" scale value.
+// Mt_Neg_40 sets the top margin to -10rem (Tailwind -mt-40).
 func (r *StyleRefinement) Mt_Neg_40() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Mt_Neg_48 is the "neg_48" scale value.
+// Mt_Neg_48 sets the top margin to -12rem (Tailwind -mt-48).
 func (r *StyleRefinement) Mt_Neg_48() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Mt_Neg_56 is the "neg_56" scale value.
+// Mt_Neg_56 sets the top margin to -14rem (Tailwind -mt-56).
 func (r *StyleRefinement) Mt_Neg_56() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Mt_Neg_64 is the "neg_64" scale value.
+// Mt_Neg_64 sets the top margin to -16rem (Tailwind -mt-64).
 func (r *StyleRefinement) Mt_Neg_64() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Mt_Neg_72 is the "neg_72" scale value.
+// Mt_Neg_72 sets the top margin to -18rem (Tailwind -mt-72).
 func (r *StyleRefinement) Mt_Neg_72() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Mt_Neg_80 is the "neg_80" scale value.
+// Mt_Neg_80 sets the top margin to -20rem (Tailwind -mt-80).
 func (r *StyleRefinement) Mt_Neg_80() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Mt_Neg_96 is the "neg_96" scale value.
+// Mt_Neg_96 sets the top margin to -24rem (Tailwind -mt-96).
 func (r *StyleRefinement) Mt_Neg_96() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Mt_Neg_112 is the "neg_112" scale value.
+// Mt_Neg_112 sets the top margin to -28rem (Tailwind -mt-112).
 func (r *StyleRefinement) Mt_Neg_112() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Mt_Neg_128 is the "neg_128" scale value.
+// Mt_Neg_128 sets the top margin to -32rem (Tailwind -mt-128).
 func (r *StyleRefinement) Mt_Neg_128() *StyleRefinement {
 	return r.Mt(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Mt_Neg_px is the "neg_px" scale value.
+// Mt_Neg_px sets the top margin to -1px (Tailwind -mt-px).
 func (r *StyleRefinement) Mt_Neg_px() *StyleRefinement {
 	return r.Mt(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Mt_Auto sets the value to auto.
+// Mt_Auto sets the top margin to auto (Tailwind mt-auto).
 func (r *StyleRefinement) Mt_Auto() *StyleRefinement { return r.Mt(geometry.AutoLength()) }
 
-// Mt_1_2 is the "1_2" scale value.
+// Mt_1_2 sets the top margin to 50% of the parent size (Tailwind mt-1/2).
 func (r *StyleRefinement) Mt_1_2() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mt_Neg_1_2 is the "neg_1_2" scale value.
+// Mt_Neg_1_2 sets the top margin to -50% of the parent size (Tailwind -mt-1/2).
 func (r *StyleRefinement) Mt_Neg_1_2() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mt_1_3 is the "1_3" scale value.
+// Mt_1_3 sets the top margin to 33.33% of the parent size (Tailwind mt-1/3).
 func (r *StyleRefinement) Mt_1_3() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Mt_Neg_1_3 is the "neg_1_3" scale value.
+// Mt_Neg_1_3 sets the top margin to -33.33% of the parent size (Tailwind -mt-1/3).
 func (r *StyleRefinement) Mt_Neg_1_3() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Mt_2_3 is the "2_3" scale value.
+// Mt_2_3 sets the top margin to 66.67% of the parent size (Tailwind mt-2/3).
 func (r *StyleRefinement) Mt_2_3() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Mt_Neg_2_3 is the "neg_2_3" scale value.
+// Mt_Neg_2_3 sets the top margin to -66.67% of the parent size (Tailwind -mt-2/3).
 func (r *StyleRefinement) Mt_Neg_2_3() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Mt_1_4 is the "1_4" scale value.
+// Mt_1_4 sets the top margin to 25% of the parent size (Tailwind mt-1/4).
 func (r *StyleRefinement) Mt_1_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Mt_Neg_1_4 is the "neg_1_4" scale value.
+// Mt_Neg_1_4 sets the top margin to -25% of the parent size (Tailwind -mt-1/4).
 func (r *StyleRefinement) Mt_Neg_1_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Mt_2_4 is the "2_4" scale value.
+// Mt_2_4 sets the top margin to 50% of the parent size (Tailwind mt-2/4).
 func (r *StyleRefinement) Mt_2_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mt_Neg_2_4 is the "neg_2_4" scale value.
+// Mt_Neg_2_4 sets the top margin to -50% of the parent size (Tailwind -mt-2/4).
 func (r *StyleRefinement) Mt_Neg_2_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mt_3_4 is the "3_4" scale value.
+// Mt_3_4 sets the top margin to 75% of the parent size (Tailwind mt-3/4).
 func (r *StyleRefinement) Mt_3_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Mt_Neg_3_4 is the "neg_3_4" scale value.
+// Mt_Neg_3_4 sets the top margin to -75% of the parent size (Tailwind -mt-3/4).
 func (r *StyleRefinement) Mt_Neg_3_4() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Mt_1_5 is the "1_5" scale value.
+// Mt_1_5 sets the top margin to 20% of the parent size (Tailwind mt-1/5).
 func (r *StyleRefinement) Mt_1_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Mt_Neg_1_5 is the "neg_1_5" scale value.
+// Mt_Neg_1_5 sets the top margin to -20% of the parent size (Tailwind -mt-1/5).
 func (r *StyleRefinement) Mt_Neg_1_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Mt_2_5 is the "2_5" scale value.
+// Mt_2_5 sets the top margin to 40% of the parent size (Tailwind mt-2/5).
 func (r *StyleRefinement) Mt_2_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Mt_Neg_2_5 is the "neg_2_5" scale value.
+// Mt_Neg_2_5 sets the top margin to -40% of the parent size (Tailwind -mt-2/5).
 func (r *StyleRefinement) Mt_Neg_2_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Mt_3_5 is the "3_5" scale value.
+// Mt_3_5 sets the top margin to 60% of the parent size (Tailwind mt-3/5).
 func (r *StyleRefinement) Mt_3_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Mt_Neg_3_5 is the "neg_3_5" scale value.
+// Mt_Neg_3_5 sets the top margin to -60% of the parent size (Tailwind -mt-3/5).
 func (r *StyleRefinement) Mt_Neg_3_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Mt_4_5 is the "4_5" scale value.
+// Mt_4_5 sets the top margin to 80% of the parent size (Tailwind mt-4/5).
 func (r *StyleRefinement) Mt_4_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Mt_Neg_4_5 is the "neg_4_5" scale value.
+// Mt_Neg_4_5 sets the top margin to -80% of the parent size (Tailwind -mt-4/5).
 func (r *StyleRefinement) Mt_Neg_4_5() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Mt_1_6 is the "1_6" scale value.
+// Mt_1_6 sets the top margin to 16.67% of the parent size (Tailwind mt-1/6).
 func (r *StyleRefinement) Mt_1_6() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Mt_Neg_1_6 is the "neg_1_6" scale value.
+// Mt_Neg_1_6 sets the top margin to -16.67% of the parent size (Tailwind -mt-1/6).
 func (r *StyleRefinement) Mt_Neg_1_6() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Mt_5_6 is the "5_6" scale value.
+// Mt_5_6 sets the top margin to 83.33% of the parent size (Tailwind mt-5/6).
 func (r *StyleRefinement) Mt_5_6() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Mt_Neg_5_6 is the "neg_5_6" scale value.
+// Mt_Neg_5_6 sets the top margin to -83.33% of the parent size (Tailwind -mt-5/6).
 func (r *StyleRefinement) Mt_Neg_5_6() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Mt_1_12 is the "1_12" scale value.
+// Mt_1_12 sets the top margin to 8.333% of the parent size (Tailwind mt-1/12).
 func (r *StyleRefinement) Mt_1_12() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Mt_Neg_1_12 is the "neg_1_12" scale value.
+// Mt_Neg_1_12 sets the top margin to -8.333% of the parent size (Tailwind -mt-1/12).
 func (r *StyleRefinement) Mt_Neg_1_12() *StyleRefinement {
 	return r.Mt(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Mb_0 is the "0" scale value.
+// Mb_0 sets the bottom margin to 0rem (Tailwind mb-0).
 func (r *StyleRefinement) Mb_0() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Mb_0p5 is the "0p5" scale value.
+// Mb_0p5 sets the bottom margin to 0.125rem (Tailwind mb-0.5).
 func (r *StyleRefinement) Mb_0p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Mb_1 is the "1" scale value.
+// Mb_1 sets the bottom margin to 0.25rem (Tailwind mb-1).
 func (r *StyleRefinement) Mb_1() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Mb_1p5 is the "1p5" scale value.
+// Mb_1p5 sets the bottom margin to 0.375rem (Tailwind mb-1.5).
 func (r *StyleRefinement) Mb_1p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Mb_2 is the "2" scale value.
+// Mb_2 sets the bottom margin to 0.5rem (Tailwind mb-2).
 func (r *StyleRefinement) Mb_2() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Mb_2p5 is the "2p5" scale value.
+// Mb_2p5 sets the bottom margin to 0.625rem (Tailwind mb-2.5).
 func (r *StyleRefinement) Mb_2p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Mb_3 is the "3" scale value.
+// Mb_3 sets the bottom margin to 0.75rem (Tailwind mb-3).
 func (r *StyleRefinement) Mb_3() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Mb_3p5 is the "3p5" scale value.
+// Mb_3p5 sets the bottom margin to 0.875rem (Tailwind mb-3.5).
 func (r *StyleRefinement) Mb_3p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Mb_4 is the "4" scale value.
+// Mb_4 sets the bottom margin to 1rem (Tailwind mb-4).
 func (r *StyleRefinement) Mb_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Mb_5 is the "5" scale value.
+// Mb_5 sets the bottom margin to 1.25rem (Tailwind mb-5).
 func (r *StyleRefinement) Mb_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Mb_6 is the "6" scale value.
+// Mb_6 sets the bottom margin to 1.5rem (Tailwind mb-6).
 func (r *StyleRefinement) Mb_6() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Mb_7 is the "7" scale value.
+// Mb_7 sets the bottom margin to 1.75rem (Tailwind mb-7).
 func (r *StyleRefinement) Mb_7() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Mb_8 is the "8" scale value.
+// Mb_8 sets the bottom margin to 2rem (Tailwind mb-8).
 func (r *StyleRefinement) Mb_8() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Mb_9 is the "9" scale value.
+// Mb_9 sets the bottom margin to 2.25rem (Tailwind mb-9).
 func (r *StyleRefinement) Mb_9() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Mb_10 is the "10" scale value.
+// Mb_10 sets the bottom margin to 2.5rem (Tailwind mb-10).
 func (r *StyleRefinement) Mb_10() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Mb_11 is the "11" scale value.
+// Mb_11 sets the bottom margin to 2.75rem (Tailwind mb-11).
 func (r *StyleRefinement) Mb_11() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Mb_12 is the "12" scale value.
+// Mb_12 sets the bottom margin to 3rem (Tailwind mb-12).
 func (r *StyleRefinement) Mb_12() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Mb_16 is the "16" scale value.
+// Mb_16 sets the bottom margin to 4rem (Tailwind mb-16).
 func (r *StyleRefinement) Mb_16() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Mb_20 is the "20" scale value.
+// Mb_20 sets the bottom margin to 5rem (Tailwind mb-20).
 func (r *StyleRefinement) Mb_20() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Mb_24 is the "24" scale value.
+// Mb_24 sets the bottom margin to 6rem (Tailwind mb-24).
 func (r *StyleRefinement) Mb_24() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Mb_32 is the "32" scale value.
+// Mb_32 sets the bottom margin to 8rem (Tailwind mb-32).
 func (r *StyleRefinement) Mb_32() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Mb_40 is the "40" scale value.
+// Mb_40 sets the bottom margin to 10rem (Tailwind mb-40).
 func (r *StyleRefinement) Mb_40() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Mb_48 is the "48" scale value.
+// Mb_48 sets the bottom margin to 12rem (Tailwind mb-48).
 func (r *StyleRefinement) Mb_48() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Mb_56 is the "56" scale value.
+// Mb_56 sets the bottom margin to 14rem (Tailwind mb-56).
 func (r *StyleRefinement) Mb_56() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Mb_64 is the "64" scale value.
+// Mb_64 sets the bottom margin to 16rem (Tailwind mb-64).
 func (r *StyleRefinement) Mb_64() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Mb_72 is the "72" scale value.
+// Mb_72 sets the bottom margin to 18rem (Tailwind mb-72).
 func (r *StyleRefinement) Mb_72() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Mb_80 is the "80" scale value.
+// Mb_80 sets the bottom margin to 20rem (Tailwind mb-80).
 func (r *StyleRefinement) Mb_80() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Mb_96 is the "96" scale value.
+// Mb_96 sets the bottom margin to 24rem (Tailwind mb-96).
 func (r *StyleRefinement) Mb_96() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Mb_112 is the "112" scale value.
+// Mb_112 sets the bottom margin to 28rem (Tailwind mb-112).
 func (r *StyleRefinement) Mb_112() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Mb_128 is the "128" scale value.
+// Mb_128 sets the bottom margin to 32rem (Tailwind mb-128).
 func (r *StyleRefinement) Mb_128() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Mb_Px is the "px" scale value.
+// Mb_Px sets the bottom margin to 1px (Tailwind mb-px).
 func (r *StyleRefinement) Mb_Px() *StyleRefinement {
 	return r.Mb(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Mb_Neg_0p5 is the "neg_0p5" scale value.
+// Mb_Neg_0p5 sets the bottom margin to -0.125rem (Tailwind -mb-0.5).
 func (r *StyleRefinement) Mb_Neg_0p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Mb_Neg_1 is the "neg_1" scale value.
+// Mb_Neg_1 sets the bottom margin to -0.25rem (Tailwind -mb-1).
 func (r *StyleRefinement) Mb_Neg_1() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Mb_Neg_1p5 is the "neg_1p5" scale value.
+// Mb_Neg_1p5 sets the bottom margin to -0.375rem (Tailwind -mb-1.5).
 func (r *StyleRefinement) Mb_Neg_1p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Mb_Neg_2 is the "neg_2" scale value.
+// Mb_Neg_2 sets the bottom margin to -0.5rem (Tailwind -mb-2).
 func (r *StyleRefinement) Mb_Neg_2() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Mb_Neg_2p5 is the "neg_2p5" scale value.
+// Mb_Neg_2p5 sets the bottom margin to -0.625rem (Tailwind -mb-2.5).
 func (r *StyleRefinement) Mb_Neg_2p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Mb_Neg_3 is the "neg_3" scale value.
+// Mb_Neg_3 sets the bottom margin to -0.75rem (Tailwind -mb-3).
 func (r *StyleRefinement) Mb_Neg_3() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Mb_Neg_3p5 is the "neg_3p5" scale value.
+// Mb_Neg_3p5 sets the bottom margin to -0.875rem (Tailwind -mb-3.5).
 func (r *StyleRefinement) Mb_Neg_3p5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Mb_Neg_4 is the "neg_4" scale value.
+// Mb_Neg_4 sets the bottom margin to -1rem (Tailwind -mb-4).
 func (r *StyleRefinement) Mb_Neg_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Mb_Neg_5 is the "neg_5" scale value.
+// Mb_Neg_5 sets the bottom margin to -1.25rem (Tailwind -mb-5).
 func (r *StyleRefinement) Mb_Neg_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Mb_Neg_6 is the "neg_6" scale value.
+// Mb_Neg_6 sets the bottom margin to -1.5rem (Tailwind -mb-6).
 func (r *StyleRefinement) Mb_Neg_6() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Mb_Neg_7 is the "neg_7" scale value.
+// Mb_Neg_7 sets the bottom margin to -1.75rem (Tailwind -mb-7).
 func (r *StyleRefinement) Mb_Neg_7() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Mb_Neg_8 is the "neg_8" scale value.
+// Mb_Neg_8 sets the bottom margin to -2rem (Tailwind -mb-8).
 func (r *StyleRefinement) Mb_Neg_8() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Mb_Neg_9 is the "neg_9" scale value.
+// Mb_Neg_9 sets the bottom margin to -2.25rem (Tailwind -mb-9).
 func (r *StyleRefinement) Mb_Neg_9() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Mb_Neg_10 is the "neg_10" scale value.
+// Mb_Neg_10 sets the bottom margin to -2.5rem (Tailwind -mb-10).
 func (r *StyleRefinement) Mb_Neg_10() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Mb_Neg_11 is the "neg_11" scale value.
+// Mb_Neg_11 sets the bottom margin to -2.75rem (Tailwind -mb-11).
 func (r *StyleRefinement) Mb_Neg_11() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Mb_Neg_12 is the "neg_12" scale value.
+// Mb_Neg_12 sets the bottom margin to -3rem (Tailwind -mb-12).
 func (r *StyleRefinement) Mb_Neg_12() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Mb_Neg_16 is the "neg_16" scale value.
+// Mb_Neg_16 sets the bottom margin to -4rem (Tailwind -mb-16).
 func (r *StyleRefinement) Mb_Neg_16() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Mb_Neg_20 is the "neg_20" scale value.
+// Mb_Neg_20 sets the bottom margin to -5rem (Tailwind -mb-20).
 func (r *StyleRefinement) Mb_Neg_20() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Mb_Neg_24 is the "neg_24" scale value.
+// Mb_Neg_24 sets the bottom margin to -6rem (Tailwind -mb-24).
 func (r *StyleRefinement) Mb_Neg_24() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Mb_Neg_32 is the "neg_32" scale value.
+// Mb_Neg_32 sets the bottom margin to -8rem (Tailwind -mb-32).
 func (r *StyleRefinement) Mb_Neg_32() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Mb_Neg_40 is the "neg_40" scale value.
+// Mb_Neg_40 sets the bottom margin to -10rem (Tailwind -mb-40).
 func (r *StyleRefinement) Mb_Neg_40() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Mb_Neg_48 is the "neg_48" scale value.
+// Mb_Neg_48 sets the bottom margin to -12rem (Tailwind -mb-48).
 func (r *StyleRefinement) Mb_Neg_48() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Mb_Neg_56 is the "neg_56" scale value.
+// Mb_Neg_56 sets the bottom margin to -14rem (Tailwind -mb-56).
 func (r *StyleRefinement) Mb_Neg_56() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Mb_Neg_64 is the "neg_64" scale value.
+// Mb_Neg_64 sets the bottom margin to -16rem (Tailwind -mb-64).
 func (r *StyleRefinement) Mb_Neg_64() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Mb_Neg_72 is the "neg_72" scale value.
+// Mb_Neg_72 sets the bottom margin to -18rem (Tailwind -mb-72).
 func (r *StyleRefinement) Mb_Neg_72() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Mb_Neg_80 is the "neg_80" scale value.
+// Mb_Neg_80 sets the bottom margin to -20rem (Tailwind -mb-80).
 func (r *StyleRefinement) Mb_Neg_80() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Mb_Neg_96 is the "neg_96" scale value.
+// Mb_Neg_96 sets the bottom margin to -24rem (Tailwind -mb-96).
 func (r *StyleRefinement) Mb_Neg_96() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Mb_Neg_112 is the "neg_112" scale value.
+// Mb_Neg_112 sets the bottom margin to -28rem (Tailwind -mb-112).
 func (r *StyleRefinement) Mb_Neg_112() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Mb_Neg_128 is the "neg_128" scale value.
+// Mb_Neg_128 sets the bottom margin to -32rem (Tailwind -mb-128).
 func (r *StyleRefinement) Mb_Neg_128() *StyleRefinement {
 	return r.Mb(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Mb_Neg_px is the "neg_px" scale value.
+// Mb_Neg_px sets the bottom margin to -1px (Tailwind -mb-px).
 func (r *StyleRefinement) Mb_Neg_px() *StyleRefinement {
 	return r.Mb(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Mb_Auto sets the value to auto.
+// Mb_Auto sets the bottom margin to auto (Tailwind mb-auto).
 func (r *StyleRefinement) Mb_Auto() *StyleRefinement { return r.Mb(geometry.AutoLength()) }
 
-// Mb_1_2 is the "1_2" scale value.
+// Mb_1_2 sets the bottom margin to 50% of the parent size (Tailwind mb-1/2).
 func (r *StyleRefinement) Mb_1_2() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mb_Neg_1_2 is the "neg_1_2" scale value.
+// Mb_Neg_1_2 sets the bottom margin to -50% of the parent size (Tailwind -mb-1/2).
 func (r *StyleRefinement) Mb_Neg_1_2() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mb_1_3 is the "1_3" scale value.
+// Mb_1_3 sets the bottom margin to 33.33% of the parent size (Tailwind mb-1/3).
 func (r *StyleRefinement) Mb_1_3() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Mb_Neg_1_3 is the "neg_1_3" scale value.
+// Mb_Neg_1_3 sets the bottom margin to -33.33% of the parent size (Tailwind -mb-1/3).
 func (r *StyleRefinement) Mb_Neg_1_3() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Mb_2_3 is the "2_3" scale value.
+// Mb_2_3 sets the bottom margin to 66.67% of the parent size (Tailwind mb-2/3).
 func (r *StyleRefinement) Mb_2_3() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Mb_Neg_2_3 is the "neg_2_3" scale value.
+// Mb_Neg_2_3 sets the bottom margin to -66.67% of the parent size (Tailwind -mb-2/3).
 func (r *StyleRefinement) Mb_Neg_2_3() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Mb_1_4 is the "1_4" scale value.
+// Mb_1_4 sets the bottom margin to 25% of the parent size (Tailwind mb-1/4).
 func (r *StyleRefinement) Mb_1_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Mb_Neg_1_4 is the "neg_1_4" scale value.
+// Mb_Neg_1_4 sets the bottom margin to -25% of the parent size (Tailwind -mb-1/4).
 func (r *StyleRefinement) Mb_Neg_1_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Mb_2_4 is the "2_4" scale value.
+// Mb_2_4 sets the bottom margin to 50% of the parent size (Tailwind mb-2/4).
 func (r *StyleRefinement) Mb_2_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mb_Neg_2_4 is the "neg_2_4" scale value.
+// Mb_Neg_2_4 sets the bottom margin to -50% of the parent size (Tailwind -mb-2/4).
 func (r *StyleRefinement) Mb_Neg_2_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mb_3_4 is the "3_4" scale value.
+// Mb_3_4 sets the bottom margin to 75% of the parent size (Tailwind mb-3/4).
 func (r *StyleRefinement) Mb_3_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Mb_Neg_3_4 is the "neg_3_4" scale value.
+// Mb_Neg_3_4 sets the bottom margin to -75% of the parent size (Tailwind -mb-3/4).
 func (r *StyleRefinement) Mb_Neg_3_4() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Mb_1_5 is the "1_5" scale value.
+// Mb_1_5 sets the bottom margin to 20% of the parent size (Tailwind mb-1/5).
 func (r *StyleRefinement) Mb_1_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Mb_Neg_1_5 is the "neg_1_5" scale value.
+// Mb_Neg_1_5 sets the bottom margin to -20% of the parent size (Tailwind -mb-1/5).
 func (r *StyleRefinement) Mb_Neg_1_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Mb_2_5 is the "2_5" scale value.
+// Mb_2_5 sets the bottom margin to 40% of the parent size (Tailwind mb-2/5).
 func (r *StyleRefinement) Mb_2_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Mb_Neg_2_5 is the "neg_2_5" scale value.
+// Mb_Neg_2_5 sets the bottom margin to -40% of the parent size (Tailwind -mb-2/5).
 func (r *StyleRefinement) Mb_Neg_2_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Mb_3_5 is the "3_5" scale value.
+// Mb_3_5 sets the bottom margin to 60% of the parent size (Tailwind mb-3/5).
 func (r *StyleRefinement) Mb_3_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Mb_Neg_3_5 is the "neg_3_5" scale value.
+// Mb_Neg_3_5 sets the bottom margin to -60% of the parent size (Tailwind -mb-3/5).
 func (r *StyleRefinement) Mb_Neg_3_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Mb_4_5 is the "4_5" scale value.
+// Mb_4_5 sets the bottom margin to 80% of the parent size (Tailwind mb-4/5).
 func (r *StyleRefinement) Mb_4_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Mb_Neg_4_5 is the "neg_4_5" scale value.
+// Mb_Neg_4_5 sets the bottom margin to -80% of the parent size (Tailwind -mb-4/5).
 func (r *StyleRefinement) Mb_Neg_4_5() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Mb_1_6 is the "1_6" scale value.
+// Mb_1_6 sets the bottom margin to 16.67% of the parent size (Tailwind mb-1/6).
 func (r *StyleRefinement) Mb_1_6() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Mb_Neg_1_6 is the "neg_1_6" scale value.
+// Mb_Neg_1_6 sets the bottom margin to -16.67% of the parent size (Tailwind -mb-1/6).
 func (r *StyleRefinement) Mb_Neg_1_6() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Mb_5_6 is the "5_6" scale value.
+// Mb_5_6 sets the bottom margin to 83.33% of the parent size (Tailwind mb-5/6).
 func (r *StyleRefinement) Mb_5_6() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Mb_Neg_5_6 is the "neg_5_6" scale value.
+// Mb_Neg_5_6 sets the bottom margin to -83.33% of the parent size (Tailwind -mb-5/6).
 func (r *StyleRefinement) Mb_Neg_5_6() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Mb_1_12 is the "1_12" scale value.
+// Mb_1_12 sets the bottom margin to 8.333% of the parent size (Tailwind mb-1/12).
 func (r *StyleRefinement) Mb_1_12() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Mb_Neg_1_12 is the "neg_1_12" scale value.
+// Mb_Neg_1_12 sets the bottom margin to -8.333% of the parent size (Tailwind -mb-1/12).
 func (r *StyleRefinement) Mb_Neg_1_12() *StyleRefinement {
 	return r.Mb(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// My_0 is the "0" scale value.
+// My_0 sets the top and bottom margin to 0rem (Tailwind my-0).
 func (r *StyleRefinement) My_0() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// My_0p5 is the "0p5" scale value.
+// My_0p5 sets the top and bottom margin to 0.125rem (Tailwind my-0.5).
 func (r *StyleRefinement) My_0p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// My_1 is the "1" scale value.
+// My_1 sets the top and bottom margin to 0.25rem (Tailwind my-1).
 func (r *StyleRefinement) My_1() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// My_1p5 is the "1p5" scale value.
+// My_1p5 sets the top and bottom margin to 0.375rem (Tailwind my-1.5).
 func (r *StyleRefinement) My_1p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// My_2 is the "2" scale value.
+// My_2 sets the top and bottom margin to 0.5rem (Tailwind my-2).
 func (r *StyleRefinement) My_2() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// My_2p5 is the "2p5" scale value.
+// My_2p5 sets the top and bottom margin to 0.625rem (Tailwind my-2.5).
 func (r *StyleRefinement) My_2p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// My_3 is the "3" scale value.
+// My_3 sets the top and bottom margin to 0.75rem (Tailwind my-3).
 func (r *StyleRefinement) My_3() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// My_3p5 is the "3p5" scale value.
+// My_3p5 sets the top and bottom margin to 0.875rem (Tailwind my-3.5).
 func (r *StyleRefinement) My_3p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// My_4 is the "4" scale value.
+// My_4 sets the top and bottom margin to 1rem (Tailwind my-4).
 func (r *StyleRefinement) My_4() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// My_5 is the "5" scale value.
+// My_5 sets the top and bottom margin to 1.25rem (Tailwind my-5).
 func (r *StyleRefinement) My_5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// My_6 is the "6" scale value.
+// My_6 sets the top and bottom margin to 1.5rem (Tailwind my-6).
 func (r *StyleRefinement) My_6() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// My_7 is the "7" scale value.
+// My_7 sets the top and bottom margin to 1.75rem (Tailwind my-7).
 func (r *StyleRefinement) My_7() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// My_8 is the "8" scale value.
+// My_8 sets the top and bottom margin to 2rem (Tailwind my-8).
 func (r *StyleRefinement) My_8() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// My_9 is the "9" scale value.
+// My_9 sets the top and bottom margin to 2.25rem (Tailwind my-9).
 func (r *StyleRefinement) My_9() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// My_10 is the "10" scale value.
+// My_10 sets the top and bottom margin to 2.5rem (Tailwind my-10).
 func (r *StyleRefinement) My_10() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// My_11 is the "11" scale value.
+// My_11 sets the top and bottom margin to 2.75rem (Tailwind my-11).
 func (r *StyleRefinement) My_11() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// My_12 is the "12" scale value.
+// My_12 sets the top and bottom margin to 3rem (Tailwind my-12).
 func (r *StyleRefinement) My_12() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// My_16 is the "16" scale value.
+// My_16 sets the top and bottom margin to 4rem (Tailwind my-16).
 func (r *StyleRefinement) My_16() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// My_20 is the "20" scale value.
+// My_20 sets the top and bottom margin to 5rem (Tailwind my-20).
 func (r *StyleRefinement) My_20() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// My_24 is the "24" scale value.
+// My_24 sets the top and bottom margin to 6rem (Tailwind my-24).
 func (r *StyleRefinement) My_24() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// My_32 is the "32" scale value.
+// My_32 sets the top and bottom margin to 8rem (Tailwind my-32).
 func (r *StyleRefinement) My_32() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// My_40 is the "40" scale value.
+// My_40 sets the top and bottom margin to 10rem (Tailwind my-40).
 func (r *StyleRefinement) My_40() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// My_48 is the "48" scale value.
+// My_48 sets the top and bottom margin to 12rem (Tailwind my-48).
 func (r *StyleRefinement) My_48() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// My_56 is the "56" scale value.
+// My_56 sets the top and bottom margin to 14rem (Tailwind my-56).
 func (r *StyleRefinement) My_56() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// My_64 is the "64" scale value.
+// My_64 sets the top and bottom margin to 16rem (Tailwind my-64).
 func (r *StyleRefinement) My_64() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// My_72 is the "72" scale value.
+// My_72 sets the top and bottom margin to 18rem (Tailwind my-72).
 func (r *StyleRefinement) My_72() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// My_80 is the "80" scale value.
+// My_80 sets the top and bottom margin to 20rem (Tailwind my-80).
 func (r *StyleRefinement) My_80() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// My_96 is the "96" scale value.
+// My_96 sets the top and bottom margin to 24rem (Tailwind my-96).
 func (r *StyleRefinement) My_96() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// My_112 is the "112" scale value.
+// My_112 sets the top and bottom margin to 28rem (Tailwind my-112).
 func (r *StyleRefinement) My_112() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// My_128 is the "128" scale value.
+// My_128 sets the top and bottom margin to 32rem (Tailwind my-128).
 func (r *StyleRefinement) My_128() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// My_Px is the "px" scale value.
+// My_Px sets the top and bottom margin to 1px (Tailwind my-px).
 func (r *StyleRefinement) My_Px() *StyleRefinement {
 	return r.My(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// My_Neg_0p5 is the "neg_0p5" scale value.
+// My_Neg_0p5 sets the top and bottom margin to -0.125rem (Tailwind -my-0.5).
 func (r *StyleRefinement) My_Neg_0p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// My_Neg_1 is the "neg_1" scale value.
+// My_Neg_1 sets the top and bottom margin to -0.25rem (Tailwind -my-1).
 func (r *StyleRefinement) My_Neg_1() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// My_Neg_1p5 is the "neg_1p5" scale value.
+// My_Neg_1p5 sets the top and bottom margin to -0.375rem (Tailwind -my-1.5).
 func (r *StyleRefinement) My_Neg_1p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// My_Neg_2 is the "neg_2" scale value.
+// My_Neg_2 sets the top and bottom margin to -0.5rem (Tailwind -my-2).
 func (r *StyleRefinement) My_Neg_2() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// My_Neg_2p5 is the "neg_2p5" scale value.
+// My_Neg_2p5 sets the top and bottom margin to -0.625rem (Tailwind -my-2.5).
 func (r *StyleRefinement) My_Neg_2p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// My_Neg_3 is the "neg_3" scale value.
+// My_Neg_3 sets the top and bottom margin to -0.75rem (Tailwind -my-3).
 func (r *StyleRefinement) My_Neg_3() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// My_Neg_3p5 is the "neg_3p5" scale value.
+// My_Neg_3p5 sets the top and bottom margin to -0.875rem (Tailwind -my-3.5).
 func (r *StyleRefinement) My_Neg_3p5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// My_Neg_4 is the "neg_4" scale value.
+// My_Neg_4 sets the top and bottom margin to -1rem (Tailwind -my-4).
 func (r *StyleRefinement) My_Neg_4() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// My_Neg_5 is the "neg_5" scale value.
+// My_Neg_5 sets the top and bottom margin to -1.25rem (Tailwind -my-5).
 func (r *StyleRefinement) My_Neg_5() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// My_Neg_6 is the "neg_6" scale value.
+// My_Neg_6 sets the top and bottom margin to -1.5rem (Tailwind -my-6).
 func (r *StyleRefinement) My_Neg_6() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// My_Neg_7 is the "neg_7" scale value.
+// My_Neg_7 sets the top and bottom margin to -1.75rem (Tailwind -my-7).
 func (r *StyleRefinement) My_Neg_7() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// My_Neg_8 is the "neg_8" scale value.
+// My_Neg_8 sets the top and bottom margin to -2rem (Tailwind -my-8).
 func (r *StyleRefinement) My_Neg_8() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// My_Neg_9 is the "neg_9" scale value.
+// My_Neg_9 sets the top and bottom margin to -2.25rem (Tailwind -my-9).
 func (r *StyleRefinement) My_Neg_9() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// My_Neg_10 is the "neg_10" scale value.
+// My_Neg_10 sets the top and bottom margin to -2.5rem (Tailwind -my-10).
 func (r *StyleRefinement) My_Neg_10() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// My_Neg_11 is the "neg_11" scale value.
+// My_Neg_11 sets the top and bottom margin to -2.75rem (Tailwind -my-11).
 func (r *StyleRefinement) My_Neg_11() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// My_Neg_12 is the "neg_12" scale value.
+// My_Neg_12 sets the top and bottom margin to -3rem (Tailwind -my-12).
 func (r *StyleRefinement) My_Neg_12() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// My_Neg_16 is the "neg_16" scale value.
+// My_Neg_16 sets the top and bottom margin to -4rem (Tailwind -my-16).
 func (r *StyleRefinement) My_Neg_16() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// My_Neg_20 is the "neg_20" scale value.
+// My_Neg_20 sets the top and bottom margin to -5rem (Tailwind -my-20).
 func (r *StyleRefinement) My_Neg_20() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// My_Neg_24 is the "neg_24" scale value.
+// My_Neg_24 sets the top and bottom margin to -6rem (Tailwind -my-24).
 func (r *StyleRefinement) My_Neg_24() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// My_Neg_32 is the "neg_32" scale value.
+// My_Neg_32 sets the top and bottom margin to -8rem (Tailwind -my-32).
 func (r *StyleRefinement) My_Neg_32() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// My_Neg_40 is the "neg_40" scale value.
+// My_Neg_40 sets the top and bottom margin to -10rem (Tailwind -my-40).
 func (r *StyleRefinement) My_Neg_40() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// My_Neg_48 is the "neg_48" scale value.
+// My_Neg_48 sets the top and bottom margin to -12rem (Tailwind -my-48).
 func (r *StyleRefinement) My_Neg_48() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// My_Neg_56 is the "neg_56" scale value.
+// My_Neg_56 sets the top and bottom margin to -14rem (Tailwind -my-56).
 func (r *StyleRefinement) My_Neg_56() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// My_Neg_64 is the "neg_64" scale value.
+// My_Neg_64 sets the top and bottom margin to -16rem (Tailwind -my-64).
 func (r *StyleRefinement) My_Neg_64() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// My_Neg_72 is the "neg_72" scale value.
+// My_Neg_72 sets the top and bottom margin to -18rem (Tailwind -my-72).
 func (r *StyleRefinement) My_Neg_72() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// My_Neg_80 is the "neg_80" scale value.
+// My_Neg_80 sets the top and bottom margin to -20rem (Tailwind -my-80).
 func (r *StyleRefinement) My_Neg_80() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// My_Neg_96 is the "neg_96" scale value.
+// My_Neg_96 sets the top and bottom margin to -24rem (Tailwind -my-96).
 func (r *StyleRefinement) My_Neg_96() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// My_Neg_112 is the "neg_112" scale value.
+// My_Neg_112 sets the top and bottom margin to -28rem (Tailwind -my-112).
 func (r *StyleRefinement) My_Neg_112() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// My_Neg_128 is the "neg_128" scale value.
+// My_Neg_128 sets the top and bottom margin to -32rem (Tailwind -my-128).
 func (r *StyleRefinement) My_Neg_128() *StyleRefinement {
 	return r.My(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// My_Neg_px is the "neg_px" scale value.
+// My_Neg_px sets the top and bottom margin to -1px (Tailwind -my-px).
 func (r *StyleRefinement) My_Neg_px() *StyleRefinement {
 	return r.My(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// My_Auto sets the value to auto.
+// My_Auto sets the top and bottom margin to auto (Tailwind my-auto).
 func (r *StyleRefinement) My_Auto() *StyleRefinement { return r.My(geometry.AutoLength()) }
 
-// My_1_2 is the "1_2" scale value.
+// My_1_2 sets the top and bottom margin to 50% of the parent size (Tailwind my-1/2).
 func (r *StyleRefinement) My_1_2() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// My_Neg_1_2 is the "neg_1_2" scale value.
+// My_Neg_1_2 sets the top and bottom margin to -50% of the parent size (Tailwind -my-1/2).
 func (r *StyleRefinement) My_Neg_1_2() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// My_1_3 is the "1_3" scale value.
+// My_1_3 sets the top and bottom margin to 33.33% of the parent size (Tailwind my-1/3).
 func (r *StyleRefinement) My_1_3() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// My_Neg_1_3 is the "neg_1_3" scale value.
+// My_Neg_1_3 sets the top and bottom margin to -33.33% of the parent size (Tailwind -my-1/3).
 func (r *StyleRefinement) My_Neg_1_3() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// My_2_3 is the "2_3" scale value.
+// My_2_3 sets the top and bottom margin to 66.67% of the parent size (Tailwind my-2/3).
 func (r *StyleRefinement) My_2_3() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// My_Neg_2_3 is the "neg_2_3" scale value.
+// My_Neg_2_3 sets the top and bottom margin to -66.67% of the parent size (Tailwind -my-2/3).
 func (r *StyleRefinement) My_Neg_2_3() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// My_1_4 is the "1_4" scale value.
+// My_1_4 sets the top and bottom margin to 25% of the parent size (Tailwind my-1/4).
 func (r *StyleRefinement) My_1_4() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// My_Neg_1_4 is the "neg_1_4" scale value.
+// My_Neg_1_4 sets the top and bottom margin to -25% of the parent size (Tailwind -my-1/4).
 func (r *StyleRefinement) My_Neg_1_4() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// My_2_4 is the "2_4" scale value.
+// My_2_4 sets the top and bottom margin to 50% of the parent size (Tailwind my-2/4).
 func (r *StyleRefinement) My_2_4() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// My_Neg_2_4 is the "neg_2_4" scale value.
+// My_Neg_2_4 sets the top and bottom margin to -50% of the parent size (Tailwind -my-2/4).
 func (r *StyleRefinement) My_Neg_2_4() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// My_3_4 is the "3_4" scale value.
+// My_3_4 sets the top and bottom margin to 75% of the parent size (Tailwind my-3/4).
 func (r *StyleRefinement) My_3_4() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// My_Neg_3_4 is the "neg_3_4" scale value.
+// My_Neg_3_4 sets the top and bottom margin to -75% of the parent size (Tailwind -my-3/4).
 func (r *StyleRefinement) My_Neg_3_4() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// My_1_5 is the "1_5" scale value.
+// My_1_5 sets the top and bottom margin to 20% of the parent size (Tailwind my-1/5).
 func (r *StyleRefinement) My_1_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// My_Neg_1_5 is the "neg_1_5" scale value.
+// My_Neg_1_5 sets the top and bottom margin to -20% of the parent size (Tailwind -my-1/5).
 func (r *StyleRefinement) My_Neg_1_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// My_2_5 is the "2_5" scale value.
+// My_2_5 sets the top and bottom margin to 40% of the parent size (Tailwind my-2/5).
 func (r *StyleRefinement) My_2_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// My_Neg_2_5 is the "neg_2_5" scale value.
+// My_Neg_2_5 sets the top and bottom margin to -40% of the parent size (Tailwind -my-2/5).
 func (r *StyleRefinement) My_Neg_2_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// My_3_5 is the "3_5" scale value.
+// My_3_5 sets the top and bottom margin to 60% of the parent size (Tailwind my-3/5).
 func (r *StyleRefinement) My_3_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// My_Neg_3_5 is the "neg_3_5" scale value.
+// My_Neg_3_5 sets the top and bottom margin to -60% of the parent size (Tailwind -my-3/5).
 func (r *StyleRefinement) My_Neg_3_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// My_4_5 is the "4_5" scale value.
+// My_4_5 sets the top and bottom margin to 80% of the parent size (Tailwind my-4/5).
 func (r *StyleRefinement) My_4_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// My_Neg_4_5 is the "neg_4_5" scale value.
+// My_Neg_4_5 sets the top and bottom margin to -80% of the parent size (Tailwind -my-4/5).
 func (r *StyleRefinement) My_Neg_4_5() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// My_1_6 is the "1_6" scale value.
+// My_1_6 sets the top and bottom margin to 16.67% of the parent size (Tailwind my-1/6).
 func (r *StyleRefinement) My_1_6() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// My_Neg_1_6 is the "neg_1_6" scale value.
+// My_Neg_1_6 sets the top and bottom margin to -16.67% of the parent size (Tailwind -my-1/6).
 func (r *StyleRefinement) My_Neg_1_6() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// My_5_6 is the "5_6" scale value.
+// My_5_6 sets the top and bottom margin to 83.33% of the parent size (Tailwind my-5/6).
 func (r *StyleRefinement) My_5_6() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// My_Neg_5_6 is the "neg_5_6" scale value.
+// My_Neg_5_6 sets the top and bottom margin to -83.33% of the parent size (Tailwind -my-5/6).
 func (r *StyleRefinement) My_Neg_5_6() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// My_1_12 is the "1_12" scale value.
+// My_1_12 sets the top and bottom margin to 8.333% of the parent size (Tailwind my-1/12).
 func (r *StyleRefinement) My_1_12() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// My_Neg_1_12 is the "neg_1_12" scale value.
+// My_Neg_1_12 sets the top and bottom margin to -8.333% of the parent size (Tailwind -my-1/12).
 func (r *StyleRefinement) My_Neg_1_12() *StyleRefinement {
 	return r.My(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Mx_0 is the "0" scale value.
+// Mx_0 sets the left and right margin to 0rem (Tailwind mx-0).
 func (r *StyleRefinement) Mx_0() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Mx_0p5 is the "0p5" scale value.
+// Mx_0p5 sets the left and right margin to 0.125rem (Tailwind mx-0.5).
 func (r *StyleRefinement) Mx_0p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Mx_1 is the "1" scale value.
+// Mx_1 sets the left and right margin to 0.25rem (Tailwind mx-1).
 func (r *StyleRefinement) Mx_1() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Mx_1p5 is the "1p5" scale value.
+// Mx_1p5 sets the left and right margin to 0.375rem (Tailwind mx-1.5).
 func (r *StyleRefinement) Mx_1p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Mx_2 is the "2" scale value.
+// Mx_2 sets the left and right margin to 0.5rem (Tailwind mx-2).
 func (r *StyleRefinement) Mx_2() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Mx_2p5 is the "2p5" scale value.
+// Mx_2p5 sets the left and right margin to 0.625rem (Tailwind mx-2.5).
 func (r *StyleRefinement) Mx_2p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Mx_3 is the "3" scale value.
+// Mx_3 sets the left and right margin to 0.75rem (Tailwind mx-3).
 func (r *StyleRefinement) Mx_3() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Mx_3p5 is the "3p5" scale value.
+// Mx_3p5 sets the left and right margin to 0.875rem (Tailwind mx-3.5).
 func (r *StyleRefinement) Mx_3p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Mx_4 is the "4" scale value.
+// Mx_4 sets the left and right margin to 1rem (Tailwind mx-4).
 func (r *StyleRefinement) Mx_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Mx_5 is the "5" scale value.
+// Mx_5 sets the left and right margin to 1.25rem (Tailwind mx-5).
 func (r *StyleRefinement) Mx_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Mx_6 is the "6" scale value.
+// Mx_6 sets the left and right margin to 1.5rem (Tailwind mx-6).
 func (r *StyleRefinement) Mx_6() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Mx_7 is the "7" scale value.
+// Mx_7 sets the left and right margin to 1.75rem (Tailwind mx-7).
 func (r *StyleRefinement) Mx_7() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Mx_8 is the "8" scale value.
+// Mx_8 sets the left and right margin to 2rem (Tailwind mx-8).
 func (r *StyleRefinement) Mx_8() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Mx_9 is the "9" scale value.
+// Mx_9 sets the left and right margin to 2.25rem (Tailwind mx-9).
 func (r *StyleRefinement) Mx_9() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Mx_10 is the "10" scale value.
+// Mx_10 sets the left and right margin to 2.5rem (Tailwind mx-10).
 func (r *StyleRefinement) Mx_10() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Mx_11 is the "11" scale value.
+// Mx_11 sets the left and right margin to 2.75rem (Tailwind mx-11).
 func (r *StyleRefinement) Mx_11() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Mx_12 is the "12" scale value.
+// Mx_12 sets the left and right margin to 3rem (Tailwind mx-12).
 func (r *StyleRefinement) Mx_12() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Mx_16 is the "16" scale value.
+// Mx_16 sets the left and right margin to 4rem (Tailwind mx-16).
 func (r *StyleRefinement) Mx_16() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Mx_20 is the "20" scale value.
+// Mx_20 sets the left and right margin to 5rem (Tailwind mx-20).
 func (r *StyleRefinement) Mx_20() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Mx_24 is the "24" scale value.
+// Mx_24 sets the left and right margin to 6rem (Tailwind mx-24).
 func (r *StyleRefinement) Mx_24() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Mx_32 is the "32" scale value.
+// Mx_32 sets the left and right margin to 8rem (Tailwind mx-32).
 func (r *StyleRefinement) Mx_32() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Mx_40 is the "40" scale value.
+// Mx_40 sets the left and right margin to 10rem (Tailwind mx-40).
 func (r *StyleRefinement) Mx_40() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Mx_48 is the "48" scale value.
+// Mx_48 sets the left and right margin to 12rem (Tailwind mx-48).
 func (r *StyleRefinement) Mx_48() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Mx_56 is the "56" scale value.
+// Mx_56 sets the left and right margin to 14rem (Tailwind mx-56).
 func (r *StyleRefinement) Mx_56() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Mx_64 is the "64" scale value.
+// Mx_64 sets the left and right margin to 16rem (Tailwind mx-64).
 func (r *StyleRefinement) Mx_64() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Mx_72 is the "72" scale value.
+// Mx_72 sets the left and right margin to 18rem (Tailwind mx-72).
 func (r *StyleRefinement) Mx_72() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Mx_80 is the "80" scale value.
+// Mx_80 sets the left and right margin to 20rem (Tailwind mx-80).
 func (r *StyleRefinement) Mx_80() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Mx_96 is the "96" scale value.
+// Mx_96 sets the left and right margin to 24rem (Tailwind mx-96).
 func (r *StyleRefinement) Mx_96() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Mx_112 is the "112" scale value.
+// Mx_112 sets the left and right margin to 28rem (Tailwind mx-112).
 func (r *StyleRefinement) Mx_112() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Mx_128 is the "128" scale value.
+// Mx_128 sets the left and right margin to 32rem (Tailwind mx-128).
 func (r *StyleRefinement) Mx_128() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Mx_Px is the "px" scale value.
+// Mx_Px sets the left and right margin to 1px (Tailwind mx-px).
 func (r *StyleRefinement) Mx_Px() *StyleRefinement {
 	return r.Mx(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Mx_Neg_0p5 is the "neg_0p5" scale value.
+// Mx_Neg_0p5 sets the left and right margin to -0.125rem (Tailwind -mx-0.5).
 func (r *StyleRefinement) Mx_Neg_0p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Mx_Neg_1 is the "neg_1" scale value.
+// Mx_Neg_1 sets the left and right margin to -0.25rem (Tailwind -mx-1).
 func (r *StyleRefinement) Mx_Neg_1() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Mx_Neg_1p5 is the "neg_1p5" scale value.
+// Mx_Neg_1p5 sets the left and right margin to -0.375rem (Tailwind -mx-1.5).
 func (r *StyleRefinement) Mx_Neg_1p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Mx_Neg_2 is the "neg_2" scale value.
+// Mx_Neg_2 sets the left and right margin to -0.5rem (Tailwind -mx-2).
 func (r *StyleRefinement) Mx_Neg_2() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Mx_Neg_2p5 is the "neg_2p5" scale value.
+// Mx_Neg_2p5 sets the left and right margin to -0.625rem (Tailwind -mx-2.5).
 func (r *StyleRefinement) Mx_Neg_2p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Mx_Neg_3 is the "neg_3" scale value.
+// Mx_Neg_3 sets the left and right margin to -0.75rem (Tailwind -mx-3).
 func (r *StyleRefinement) Mx_Neg_3() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Mx_Neg_3p5 is the "neg_3p5" scale value.
+// Mx_Neg_3p5 sets the left and right margin to -0.875rem (Tailwind -mx-3.5).
 func (r *StyleRefinement) Mx_Neg_3p5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Mx_Neg_4 is the "neg_4" scale value.
+// Mx_Neg_4 sets the left and right margin to -1rem (Tailwind -mx-4).
 func (r *StyleRefinement) Mx_Neg_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Mx_Neg_5 is the "neg_5" scale value.
+// Mx_Neg_5 sets the left and right margin to -1.25rem (Tailwind -mx-5).
 func (r *StyleRefinement) Mx_Neg_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Mx_Neg_6 is the "neg_6" scale value.
+// Mx_Neg_6 sets the left and right margin to -1.5rem (Tailwind -mx-6).
 func (r *StyleRefinement) Mx_Neg_6() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Mx_Neg_7 is the "neg_7" scale value.
+// Mx_Neg_7 sets the left and right margin to -1.75rem (Tailwind -mx-7).
 func (r *StyleRefinement) Mx_Neg_7() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Mx_Neg_8 is the "neg_8" scale value.
+// Mx_Neg_8 sets the left and right margin to -2rem (Tailwind -mx-8).
 func (r *StyleRefinement) Mx_Neg_8() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Mx_Neg_9 is the "neg_9" scale value.
+// Mx_Neg_9 sets the left and right margin to -2.25rem (Tailwind -mx-9).
 func (r *StyleRefinement) Mx_Neg_9() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Mx_Neg_10 is the "neg_10" scale value.
+// Mx_Neg_10 sets the left and right margin to -2.5rem (Tailwind -mx-10).
 func (r *StyleRefinement) Mx_Neg_10() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Mx_Neg_11 is the "neg_11" scale value.
+// Mx_Neg_11 sets the left and right margin to -2.75rem (Tailwind -mx-11).
 func (r *StyleRefinement) Mx_Neg_11() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Mx_Neg_12 is the "neg_12" scale value.
+// Mx_Neg_12 sets the left and right margin to -3rem (Tailwind -mx-12).
 func (r *StyleRefinement) Mx_Neg_12() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Mx_Neg_16 is the "neg_16" scale value.
+// Mx_Neg_16 sets the left and right margin to -4rem (Tailwind -mx-16).
 func (r *StyleRefinement) Mx_Neg_16() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Mx_Neg_20 is the "neg_20" scale value.
+// Mx_Neg_20 sets the left and right margin to -5rem (Tailwind -mx-20).
 func (r *StyleRefinement) Mx_Neg_20() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Mx_Neg_24 is the "neg_24" scale value.
+// Mx_Neg_24 sets the left and right margin to -6rem (Tailwind -mx-24).
 func (r *StyleRefinement) Mx_Neg_24() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Mx_Neg_32 is the "neg_32" scale value.
+// Mx_Neg_32 sets the left and right margin to -8rem (Tailwind -mx-32).
 func (r *StyleRefinement) Mx_Neg_32() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Mx_Neg_40 is the "neg_40" scale value.
+// Mx_Neg_40 sets the left and right margin to -10rem (Tailwind -mx-40).
 func (r *StyleRefinement) Mx_Neg_40() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Mx_Neg_48 is the "neg_48" scale value.
+// Mx_Neg_48 sets the left and right margin to -12rem (Tailwind -mx-48).
 func (r *StyleRefinement) Mx_Neg_48() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Mx_Neg_56 is the "neg_56" scale value.
+// Mx_Neg_56 sets the left and right margin to -14rem (Tailwind -mx-56).
 func (r *StyleRefinement) Mx_Neg_56() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Mx_Neg_64 is the "neg_64" scale value.
+// Mx_Neg_64 sets the left and right margin to -16rem (Tailwind -mx-64).
 func (r *StyleRefinement) Mx_Neg_64() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Mx_Neg_72 is the "neg_72" scale value.
+// Mx_Neg_72 sets the left and right margin to -18rem (Tailwind -mx-72).
 func (r *StyleRefinement) Mx_Neg_72() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Mx_Neg_80 is the "neg_80" scale value.
+// Mx_Neg_80 sets the left and right margin to -20rem (Tailwind -mx-80).
 func (r *StyleRefinement) Mx_Neg_80() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Mx_Neg_96 is the "neg_96" scale value.
+// Mx_Neg_96 sets the left and right margin to -24rem (Tailwind -mx-96).
 func (r *StyleRefinement) Mx_Neg_96() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Mx_Neg_112 is the "neg_112" scale value.
+// Mx_Neg_112 sets the left and right margin to -28rem (Tailwind -mx-112).
 func (r *StyleRefinement) Mx_Neg_112() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Mx_Neg_128 is the "neg_128" scale value.
+// Mx_Neg_128 sets the left and right margin to -32rem (Tailwind -mx-128).
 func (r *StyleRefinement) Mx_Neg_128() *StyleRefinement {
 	return r.Mx(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Mx_Neg_px is the "neg_px" scale value.
+// Mx_Neg_px sets the left and right margin to -1px (Tailwind -mx-px).
 func (r *StyleRefinement) Mx_Neg_px() *StyleRefinement {
 	return r.Mx(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Mx_Auto sets the value to auto.
+// Mx_Auto sets the left and right margin to auto (Tailwind mx-auto).
 func (r *StyleRefinement) Mx_Auto() *StyleRefinement { return r.Mx(geometry.AutoLength()) }
 
-// Mx_1_2 is the "1_2" scale value.
+// Mx_1_2 sets the left and right margin to 50% of the parent size (Tailwind mx-1/2).
 func (r *StyleRefinement) Mx_1_2() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mx_Neg_1_2 is the "neg_1_2" scale value.
+// Mx_Neg_1_2 sets the left and right margin to -50% of the parent size (Tailwind -mx-1/2).
 func (r *StyleRefinement) Mx_Neg_1_2() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mx_1_3 is the "1_3" scale value.
+// Mx_1_3 sets the left and right margin to 33.33% of the parent size (Tailwind mx-1/3).
 func (r *StyleRefinement) Mx_1_3() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Mx_Neg_1_3 is the "neg_1_3" scale value.
+// Mx_Neg_1_3 sets the left and right margin to -33.33% of the parent size (Tailwind -mx-1/3).
 func (r *StyleRefinement) Mx_Neg_1_3() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Mx_2_3 is the "2_3" scale value.
+// Mx_2_3 sets the left and right margin to 66.67% of the parent size (Tailwind mx-2/3).
 func (r *StyleRefinement) Mx_2_3() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Mx_Neg_2_3 is the "neg_2_3" scale value.
+// Mx_Neg_2_3 sets the left and right margin to -66.67% of the parent size (Tailwind -mx-2/3).
 func (r *StyleRefinement) Mx_Neg_2_3() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Mx_1_4 is the "1_4" scale value.
+// Mx_1_4 sets the left and right margin to 25% of the parent size (Tailwind mx-1/4).
 func (r *StyleRefinement) Mx_1_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Mx_Neg_1_4 is the "neg_1_4" scale value.
+// Mx_Neg_1_4 sets the left and right margin to -25% of the parent size (Tailwind -mx-1/4).
 func (r *StyleRefinement) Mx_Neg_1_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Mx_2_4 is the "2_4" scale value.
+// Mx_2_4 sets the left and right margin to 50% of the parent size (Tailwind mx-2/4).
 func (r *StyleRefinement) Mx_2_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mx_Neg_2_4 is the "neg_2_4" scale value.
+// Mx_Neg_2_4 sets the left and right margin to -50% of the parent size (Tailwind -mx-2/4).
 func (r *StyleRefinement) Mx_Neg_2_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mx_3_4 is the "3_4" scale value.
+// Mx_3_4 sets the left and right margin to 75% of the parent size (Tailwind mx-3/4).
 func (r *StyleRefinement) Mx_3_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Mx_Neg_3_4 is the "neg_3_4" scale value.
+// Mx_Neg_3_4 sets the left and right margin to -75% of the parent size (Tailwind -mx-3/4).
 func (r *StyleRefinement) Mx_Neg_3_4() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Mx_1_5 is the "1_5" scale value.
+// Mx_1_5 sets the left and right margin to 20% of the parent size (Tailwind mx-1/5).
 func (r *StyleRefinement) Mx_1_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Mx_Neg_1_5 is the "neg_1_5" scale value.
+// Mx_Neg_1_5 sets the left and right margin to -20% of the parent size (Tailwind -mx-1/5).
 func (r *StyleRefinement) Mx_Neg_1_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Mx_2_5 is the "2_5" scale value.
+// Mx_2_5 sets the left and right margin to 40% of the parent size (Tailwind mx-2/5).
 func (r *StyleRefinement) Mx_2_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Mx_Neg_2_5 is the "neg_2_5" scale value.
+// Mx_Neg_2_5 sets the left and right margin to -40% of the parent size (Tailwind -mx-2/5).
 func (r *StyleRefinement) Mx_Neg_2_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Mx_3_5 is the "3_5" scale value.
+// Mx_3_5 sets the left and right margin to 60% of the parent size (Tailwind mx-3/5).
 func (r *StyleRefinement) Mx_3_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Mx_Neg_3_5 is the "neg_3_5" scale value.
+// Mx_Neg_3_5 sets the left and right margin to -60% of the parent size (Tailwind -mx-3/5).
 func (r *StyleRefinement) Mx_Neg_3_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Mx_4_5 is the "4_5" scale value.
+// Mx_4_5 sets the left and right margin to 80% of the parent size (Tailwind mx-4/5).
 func (r *StyleRefinement) Mx_4_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Mx_Neg_4_5 is the "neg_4_5" scale value.
+// Mx_Neg_4_5 sets the left and right margin to -80% of the parent size (Tailwind -mx-4/5).
 func (r *StyleRefinement) Mx_Neg_4_5() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Mx_1_6 is the "1_6" scale value.
+// Mx_1_6 sets the left and right margin to 16.67% of the parent size (Tailwind mx-1/6).
 func (r *StyleRefinement) Mx_1_6() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Mx_Neg_1_6 is the "neg_1_6" scale value.
+// Mx_Neg_1_6 sets the left and right margin to -16.67% of the parent size (Tailwind -mx-1/6).
 func (r *StyleRefinement) Mx_Neg_1_6() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Mx_5_6 is the "5_6" scale value.
+// Mx_5_6 sets the left and right margin to 83.33% of the parent size (Tailwind mx-5/6).
 func (r *StyleRefinement) Mx_5_6() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Mx_Neg_5_6 is the "neg_5_6" scale value.
+// Mx_Neg_5_6 sets the left and right margin to -83.33% of the parent size (Tailwind -mx-5/6).
 func (r *StyleRefinement) Mx_Neg_5_6() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Mx_1_12 is the "1_12" scale value.
+// Mx_1_12 sets the left and right margin to 8.333% of the parent size (Tailwind mx-1/12).
 func (r *StyleRefinement) Mx_1_12() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Mx_Neg_1_12 is the "neg_1_12" scale value.
+// Mx_Neg_1_12 sets the left and right margin to -8.333% of the parent size (Tailwind -mx-1/12).
 func (r *StyleRefinement) Mx_Neg_1_12() *StyleRefinement {
 	return r.Mx(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Ml_0 is the "0" scale value.
+// Ml_0 sets the left margin to 0rem (Tailwind ml-0).
 func (r *StyleRefinement) Ml_0() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Ml_0p5 is the "0p5" scale value.
+// Ml_0p5 sets the left margin to 0.125rem (Tailwind ml-0.5).
 func (r *StyleRefinement) Ml_0p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Ml_1 is the "1" scale value.
+// Ml_1 sets the left margin to 0.25rem (Tailwind ml-1).
 func (r *StyleRefinement) Ml_1() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Ml_1p5 is the "1p5" scale value.
+// Ml_1p5 sets the left margin to 0.375rem (Tailwind ml-1.5).
 func (r *StyleRefinement) Ml_1p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Ml_2 is the "2" scale value.
+// Ml_2 sets the left margin to 0.5rem (Tailwind ml-2).
 func (r *StyleRefinement) Ml_2() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Ml_2p5 is the "2p5" scale value.
+// Ml_2p5 sets the left margin to 0.625rem (Tailwind ml-2.5).
 func (r *StyleRefinement) Ml_2p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Ml_3 is the "3" scale value.
+// Ml_3 sets the left margin to 0.75rem (Tailwind ml-3).
 func (r *StyleRefinement) Ml_3() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Ml_3p5 is the "3p5" scale value.
+// Ml_3p5 sets the left margin to 0.875rem (Tailwind ml-3.5).
 func (r *StyleRefinement) Ml_3p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Ml_4 is the "4" scale value.
+// Ml_4 sets the left margin to 1rem (Tailwind ml-4).
 func (r *StyleRefinement) Ml_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Ml_5 is the "5" scale value.
+// Ml_5 sets the left margin to 1.25rem (Tailwind ml-5).
 func (r *StyleRefinement) Ml_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Ml_6 is the "6" scale value.
+// Ml_6 sets the left margin to 1.5rem (Tailwind ml-6).
 func (r *StyleRefinement) Ml_6() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Ml_7 is the "7" scale value.
+// Ml_7 sets the left margin to 1.75rem (Tailwind ml-7).
 func (r *StyleRefinement) Ml_7() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Ml_8 is the "8" scale value.
+// Ml_8 sets the left margin to 2rem (Tailwind ml-8).
 func (r *StyleRefinement) Ml_8() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Ml_9 is the "9" scale value.
+// Ml_9 sets the left margin to 2.25rem (Tailwind ml-9).
 func (r *StyleRefinement) Ml_9() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Ml_10 is the "10" scale value.
+// Ml_10 sets the left margin to 2.5rem (Tailwind ml-10).
 func (r *StyleRefinement) Ml_10() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Ml_11 is the "11" scale value.
+// Ml_11 sets the left margin to 2.75rem (Tailwind ml-11).
 func (r *StyleRefinement) Ml_11() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Ml_12 is the "12" scale value.
+// Ml_12 sets the left margin to 3rem (Tailwind ml-12).
 func (r *StyleRefinement) Ml_12() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Ml_16 is the "16" scale value.
+// Ml_16 sets the left margin to 4rem (Tailwind ml-16).
 func (r *StyleRefinement) Ml_16() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Ml_20 is the "20" scale value.
+// Ml_20 sets the left margin to 5rem (Tailwind ml-20).
 func (r *StyleRefinement) Ml_20() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Ml_24 is the "24" scale value.
+// Ml_24 sets the left margin to 6rem (Tailwind ml-24).
 func (r *StyleRefinement) Ml_24() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Ml_32 is the "32" scale value.
+// Ml_32 sets the left margin to 8rem (Tailwind ml-32).
 func (r *StyleRefinement) Ml_32() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Ml_40 is the "40" scale value.
+// Ml_40 sets the left margin to 10rem (Tailwind ml-40).
 func (r *StyleRefinement) Ml_40() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Ml_48 is the "48" scale value.
+// Ml_48 sets the left margin to 12rem (Tailwind ml-48).
 func (r *StyleRefinement) Ml_48() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Ml_56 is the "56" scale value.
+// Ml_56 sets the left margin to 14rem (Tailwind ml-56).
 func (r *StyleRefinement) Ml_56() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Ml_64 is the "64" scale value.
+// Ml_64 sets the left margin to 16rem (Tailwind ml-64).
 func (r *StyleRefinement) Ml_64() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Ml_72 is the "72" scale value.
+// Ml_72 sets the left margin to 18rem (Tailwind ml-72).
 func (r *StyleRefinement) Ml_72() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Ml_80 is the "80" scale value.
+// Ml_80 sets the left margin to 20rem (Tailwind ml-80).
 func (r *StyleRefinement) Ml_80() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Ml_96 is the "96" scale value.
+// Ml_96 sets the left margin to 24rem (Tailwind ml-96).
 func (r *StyleRefinement) Ml_96() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Ml_112 is the "112" scale value.
+// Ml_112 sets the left margin to 28rem (Tailwind ml-112).
 func (r *StyleRefinement) Ml_112() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Ml_128 is the "128" scale value.
+// Ml_128 sets the left margin to 32rem (Tailwind ml-128).
 func (r *StyleRefinement) Ml_128() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Ml_Px is the "px" scale value.
+// Ml_Px sets the left margin to 1px (Tailwind ml-px).
 func (r *StyleRefinement) Ml_Px() *StyleRefinement {
 	return r.Ml(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Ml_Neg_0p5 is the "neg_0p5" scale value.
+// Ml_Neg_0p5 sets the left margin to -0.125rem (Tailwind -ml-0.5).
 func (r *StyleRefinement) Ml_Neg_0p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Ml_Neg_1 is the "neg_1" scale value.
+// Ml_Neg_1 sets the left margin to -0.25rem (Tailwind -ml-1).
 func (r *StyleRefinement) Ml_Neg_1() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Ml_Neg_1p5 is the "neg_1p5" scale value.
+// Ml_Neg_1p5 sets the left margin to -0.375rem (Tailwind -ml-1.5).
 func (r *StyleRefinement) Ml_Neg_1p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Ml_Neg_2 is the "neg_2" scale value.
+// Ml_Neg_2 sets the left margin to -0.5rem (Tailwind -ml-2).
 func (r *StyleRefinement) Ml_Neg_2() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Ml_Neg_2p5 is the "neg_2p5" scale value.
+// Ml_Neg_2p5 sets the left margin to -0.625rem (Tailwind -ml-2.5).
 func (r *StyleRefinement) Ml_Neg_2p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Ml_Neg_3 is the "neg_3" scale value.
+// Ml_Neg_3 sets the left margin to -0.75rem (Tailwind -ml-3).
 func (r *StyleRefinement) Ml_Neg_3() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Ml_Neg_3p5 is the "neg_3p5" scale value.
+// Ml_Neg_3p5 sets the left margin to -0.875rem (Tailwind -ml-3.5).
 func (r *StyleRefinement) Ml_Neg_3p5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Ml_Neg_4 is the "neg_4" scale value.
+// Ml_Neg_4 sets the left margin to -1rem (Tailwind -ml-4).
 func (r *StyleRefinement) Ml_Neg_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Ml_Neg_5 is the "neg_5" scale value.
+// Ml_Neg_5 sets the left margin to -1.25rem (Tailwind -ml-5).
 func (r *StyleRefinement) Ml_Neg_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Ml_Neg_6 is the "neg_6" scale value.
+// Ml_Neg_6 sets the left margin to -1.5rem (Tailwind -ml-6).
 func (r *StyleRefinement) Ml_Neg_6() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Ml_Neg_7 is the "neg_7" scale value.
+// Ml_Neg_7 sets the left margin to -1.75rem (Tailwind -ml-7).
 func (r *StyleRefinement) Ml_Neg_7() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Ml_Neg_8 is the "neg_8" scale value.
+// Ml_Neg_8 sets the left margin to -2rem (Tailwind -ml-8).
 func (r *StyleRefinement) Ml_Neg_8() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Ml_Neg_9 is the "neg_9" scale value.
+// Ml_Neg_9 sets the left margin to -2.25rem (Tailwind -ml-9).
 func (r *StyleRefinement) Ml_Neg_9() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Ml_Neg_10 is the "neg_10" scale value.
+// Ml_Neg_10 sets the left margin to -2.5rem (Tailwind -ml-10).
 func (r *StyleRefinement) Ml_Neg_10() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Ml_Neg_11 is the "neg_11" scale value.
+// Ml_Neg_11 sets the left margin to -2.75rem (Tailwind -ml-11).
 func (r *StyleRefinement) Ml_Neg_11() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Ml_Neg_12 is the "neg_12" scale value.
+// Ml_Neg_12 sets the left margin to -3rem (Tailwind -ml-12).
 func (r *StyleRefinement) Ml_Neg_12() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Ml_Neg_16 is the "neg_16" scale value.
+// Ml_Neg_16 sets the left margin to -4rem (Tailwind -ml-16).
 func (r *StyleRefinement) Ml_Neg_16() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Ml_Neg_20 is the "neg_20" scale value.
+// Ml_Neg_20 sets the left margin to -5rem (Tailwind -ml-20).
 func (r *StyleRefinement) Ml_Neg_20() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Ml_Neg_24 is the "neg_24" scale value.
+// Ml_Neg_24 sets the left margin to -6rem (Tailwind -ml-24).
 func (r *StyleRefinement) Ml_Neg_24() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Ml_Neg_32 is the "neg_32" scale value.
+// Ml_Neg_32 sets the left margin to -8rem (Tailwind -ml-32).
 func (r *StyleRefinement) Ml_Neg_32() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Ml_Neg_40 is the "neg_40" scale value.
+// Ml_Neg_40 sets the left margin to -10rem (Tailwind -ml-40).
 func (r *StyleRefinement) Ml_Neg_40() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Ml_Neg_48 is the "neg_48" scale value.
+// Ml_Neg_48 sets the left margin to -12rem (Tailwind -ml-48).
 func (r *StyleRefinement) Ml_Neg_48() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Ml_Neg_56 is the "neg_56" scale value.
+// Ml_Neg_56 sets the left margin to -14rem (Tailwind -ml-56).
 func (r *StyleRefinement) Ml_Neg_56() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Ml_Neg_64 is the "neg_64" scale value.
+// Ml_Neg_64 sets the left margin to -16rem (Tailwind -ml-64).
 func (r *StyleRefinement) Ml_Neg_64() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Ml_Neg_72 is the "neg_72" scale value.
+// Ml_Neg_72 sets the left margin to -18rem (Tailwind -ml-72).
 func (r *StyleRefinement) Ml_Neg_72() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Ml_Neg_80 is the "neg_80" scale value.
+// Ml_Neg_80 sets the left margin to -20rem (Tailwind -ml-80).
 func (r *StyleRefinement) Ml_Neg_80() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Ml_Neg_96 is the "neg_96" scale value.
+// Ml_Neg_96 sets the left margin to -24rem (Tailwind -ml-96).
 func (r *StyleRefinement) Ml_Neg_96() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Ml_Neg_112 is the "neg_112" scale value.
+// Ml_Neg_112 sets the left margin to -28rem (Tailwind -ml-112).
 func (r *StyleRefinement) Ml_Neg_112() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Ml_Neg_128 is the "neg_128" scale value.
+// Ml_Neg_128 sets the left margin to -32rem (Tailwind -ml-128).
 func (r *StyleRefinement) Ml_Neg_128() *StyleRefinement {
 	return r.Ml(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Ml_Neg_px is the "neg_px" scale value.
+// Ml_Neg_px sets the left margin to -1px (Tailwind -ml-px).
 func (r *StyleRefinement) Ml_Neg_px() *StyleRefinement {
 	return r.Ml(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Ml_Auto sets the value to auto.
+// Ml_Auto sets the left margin to auto (Tailwind ml-auto).
 func (r *StyleRefinement) Ml_Auto() *StyleRefinement { return r.Ml(geometry.AutoLength()) }
 
-// Ml_1_2 is the "1_2" scale value.
+// Ml_1_2 sets the left margin to 50% of the parent size (Tailwind ml-1/2).
 func (r *StyleRefinement) Ml_1_2() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Ml_Neg_1_2 is the "neg_1_2" scale value.
+// Ml_Neg_1_2 sets the left margin to -50% of the parent size (Tailwind -ml-1/2).
 func (r *StyleRefinement) Ml_Neg_1_2() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Ml_1_3 is the "1_3" scale value.
+// Ml_1_3 sets the left margin to 33.33% of the parent size (Tailwind ml-1/3).
 func (r *StyleRefinement) Ml_1_3() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Ml_Neg_1_3 is the "neg_1_3" scale value.
+// Ml_Neg_1_3 sets the left margin to -33.33% of the parent size (Tailwind -ml-1/3).
 func (r *StyleRefinement) Ml_Neg_1_3() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Ml_2_3 is the "2_3" scale value.
+// Ml_2_3 sets the left margin to 66.67% of the parent size (Tailwind ml-2/3).
 func (r *StyleRefinement) Ml_2_3() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Ml_Neg_2_3 is the "neg_2_3" scale value.
+// Ml_Neg_2_3 sets the left margin to -66.67% of the parent size (Tailwind -ml-2/3).
 func (r *StyleRefinement) Ml_Neg_2_3() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Ml_1_4 is the "1_4" scale value.
+// Ml_1_4 sets the left margin to 25% of the parent size (Tailwind ml-1/4).
 func (r *StyleRefinement) Ml_1_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Ml_Neg_1_4 is the "neg_1_4" scale value.
+// Ml_Neg_1_4 sets the left margin to -25% of the parent size (Tailwind -ml-1/4).
 func (r *StyleRefinement) Ml_Neg_1_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Ml_2_4 is the "2_4" scale value.
+// Ml_2_4 sets the left margin to 50% of the parent size (Tailwind ml-2/4).
 func (r *StyleRefinement) Ml_2_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Ml_Neg_2_4 is the "neg_2_4" scale value.
+// Ml_Neg_2_4 sets the left margin to -50% of the parent size (Tailwind -ml-2/4).
 func (r *StyleRefinement) Ml_Neg_2_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Ml_3_4 is the "3_4" scale value.
+// Ml_3_4 sets the left margin to 75% of the parent size (Tailwind ml-3/4).
 func (r *StyleRefinement) Ml_3_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Ml_Neg_3_4 is the "neg_3_4" scale value.
+// Ml_Neg_3_4 sets the left margin to -75% of the parent size (Tailwind -ml-3/4).
 func (r *StyleRefinement) Ml_Neg_3_4() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Ml_1_5 is the "1_5" scale value.
+// Ml_1_5 sets the left margin to 20% of the parent size (Tailwind ml-1/5).
 func (r *StyleRefinement) Ml_1_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Ml_Neg_1_5 is the "neg_1_5" scale value.
+// Ml_Neg_1_5 sets the left margin to -20% of the parent size (Tailwind -ml-1/5).
 func (r *StyleRefinement) Ml_Neg_1_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Ml_2_5 is the "2_5" scale value.
+// Ml_2_5 sets the left margin to 40% of the parent size (Tailwind ml-2/5).
 func (r *StyleRefinement) Ml_2_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Ml_Neg_2_5 is the "neg_2_5" scale value.
+// Ml_Neg_2_5 sets the left margin to -40% of the parent size (Tailwind -ml-2/5).
 func (r *StyleRefinement) Ml_Neg_2_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Ml_3_5 is the "3_5" scale value.
+// Ml_3_5 sets the left margin to 60% of the parent size (Tailwind ml-3/5).
 func (r *StyleRefinement) Ml_3_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Ml_Neg_3_5 is the "neg_3_5" scale value.
+// Ml_Neg_3_5 sets the left margin to -60% of the parent size (Tailwind -ml-3/5).
 func (r *StyleRefinement) Ml_Neg_3_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Ml_4_5 is the "4_5" scale value.
+// Ml_4_5 sets the left margin to 80% of the parent size (Tailwind ml-4/5).
 func (r *StyleRefinement) Ml_4_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Ml_Neg_4_5 is the "neg_4_5" scale value.
+// Ml_Neg_4_5 sets the left margin to -80% of the parent size (Tailwind -ml-4/5).
 func (r *StyleRefinement) Ml_Neg_4_5() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Ml_1_6 is the "1_6" scale value.
+// Ml_1_6 sets the left margin to 16.67% of the parent size (Tailwind ml-1/6).
 func (r *StyleRefinement) Ml_1_6() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Ml_Neg_1_6 is the "neg_1_6" scale value.
+// Ml_Neg_1_6 sets the left margin to -16.67% of the parent size (Tailwind -ml-1/6).
 func (r *StyleRefinement) Ml_Neg_1_6() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Ml_5_6 is the "5_6" scale value.
+// Ml_5_6 sets the left margin to 83.33% of the parent size (Tailwind ml-5/6).
 func (r *StyleRefinement) Ml_5_6() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Ml_Neg_5_6 is the "neg_5_6" scale value.
+// Ml_Neg_5_6 sets the left margin to -83.33% of the parent size (Tailwind -ml-5/6).
 func (r *StyleRefinement) Ml_Neg_5_6() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Ml_1_12 is the "1_12" scale value.
+// Ml_1_12 sets the left margin to 8.333% of the parent size (Tailwind ml-1/12).
 func (r *StyleRefinement) Ml_1_12() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Ml_Neg_1_12 is the "neg_1_12" scale value.
+// Ml_Neg_1_12 sets the left margin to -8.333% of the parent size (Tailwind -ml-1/12).
 func (r *StyleRefinement) Ml_Neg_1_12() *StyleRefinement {
 	return r.Ml(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Mr_0 is the "0" scale value.
+// Mr_0 sets the right margin to 0rem (Tailwind mr-0).
 func (r *StyleRefinement) Mr_0() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Mr_0p5 is the "0p5" scale value.
+// Mr_0p5 sets the right margin to 0.125rem (Tailwind mr-0.5).
 func (r *StyleRefinement) Mr_0p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Mr_1 is the "1" scale value.
+// Mr_1 sets the right margin to 0.25rem (Tailwind mr-1).
 func (r *StyleRefinement) Mr_1() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Mr_1p5 is the "1p5" scale value.
+// Mr_1p5 sets the right margin to 0.375rem (Tailwind mr-1.5).
 func (r *StyleRefinement) Mr_1p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Mr_2 is the "2" scale value.
+// Mr_2 sets the right margin to 0.5rem (Tailwind mr-2).
 func (r *StyleRefinement) Mr_2() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Mr_2p5 is the "2p5" scale value.
+// Mr_2p5 sets the right margin to 0.625rem (Tailwind mr-2.5).
 func (r *StyleRefinement) Mr_2p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Mr_3 is the "3" scale value.
+// Mr_3 sets the right margin to 0.75rem (Tailwind mr-3).
 func (r *StyleRefinement) Mr_3() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Mr_3p5 is the "3p5" scale value.
+// Mr_3p5 sets the right margin to 0.875rem (Tailwind mr-3.5).
 func (r *StyleRefinement) Mr_3p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Mr_4 is the "4" scale value.
+// Mr_4 sets the right margin to 1rem (Tailwind mr-4).
 func (r *StyleRefinement) Mr_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Mr_5 is the "5" scale value.
+// Mr_5 sets the right margin to 1.25rem (Tailwind mr-5).
 func (r *StyleRefinement) Mr_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Mr_6 is the "6" scale value.
+// Mr_6 sets the right margin to 1.5rem (Tailwind mr-6).
 func (r *StyleRefinement) Mr_6() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Mr_7 is the "7" scale value.
+// Mr_7 sets the right margin to 1.75rem (Tailwind mr-7).
 func (r *StyleRefinement) Mr_7() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Mr_8 is the "8" scale value.
+// Mr_8 sets the right margin to 2rem (Tailwind mr-8).
 func (r *StyleRefinement) Mr_8() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Mr_9 is the "9" scale value.
+// Mr_9 sets the right margin to 2.25rem (Tailwind mr-9).
 func (r *StyleRefinement) Mr_9() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Mr_10 is the "10" scale value.
+// Mr_10 sets the right margin to 2.5rem (Tailwind mr-10).
 func (r *StyleRefinement) Mr_10() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Mr_11 is the "11" scale value.
+// Mr_11 sets the right margin to 2.75rem (Tailwind mr-11).
 func (r *StyleRefinement) Mr_11() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Mr_12 is the "12" scale value.
+// Mr_12 sets the right margin to 3rem (Tailwind mr-12).
 func (r *StyleRefinement) Mr_12() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Mr_16 is the "16" scale value.
+// Mr_16 sets the right margin to 4rem (Tailwind mr-16).
 func (r *StyleRefinement) Mr_16() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Mr_20 is the "20" scale value.
+// Mr_20 sets the right margin to 5rem (Tailwind mr-20).
 func (r *StyleRefinement) Mr_20() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Mr_24 is the "24" scale value.
+// Mr_24 sets the right margin to 6rem (Tailwind mr-24).
 func (r *StyleRefinement) Mr_24() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Mr_32 is the "32" scale value.
+// Mr_32 sets the right margin to 8rem (Tailwind mr-32).
 func (r *StyleRefinement) Mr_32() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Mr_40 is the "40" scale value.
+// Mr_40 sets the right margin to 10rem (Tailwind mr-40).
 func (r *StyleRefinement) Mr_40() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Mr_48 is the "48" scale value.
+// Mr_48 sets the right margin to 12rem (Tailwind mr-48).
 func (r *StyleRefinement) Mr_48() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Mr_56 is the "56" scale value.
+// Mr_56 sets the right margin to 14rem (Tailwind mr-56).
 func (r *StyleRefinement) Mr_56() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Mr_64 is the "64" scale value.
+// Mr_64 sets the right margin to 16rem (Tailwind mr-64).
 func (r *StyleRefinement) Mr_64() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Mr_72 is the "72" scale value.
+// Mr_72 sets the right margin to 18rem (Tailwind mr-72).
 func (r *StyleRefinement) Mr_72() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Mr_80 is the "80" scale value.
+// Mr_80 sets the right margin to 20rem (Tailwind mr-80).
 func (r *StyleRefinement) Mr_80() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Mr_96 is the "96" scale value.
+// Mr_96 sets the right margin to 24rem (Tailwind mr-96).
 func (r *StyleRefinement) Mr_96() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Mr_112 is the "112" scale value.
+// Mr_112 sets the right margin to 28rem (Tailwind mr-112).
 func (r *StyleRefinement) Mr_112() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Mr_128 is the "128" scale value.
+// Mr_128 sets the right margin to 32rem (Tailwind mr-128).
 func (r *StyleRefinement) Mr_128() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Mr_Px is the "px" scale value.
+// Mr_Px sets the right margin to 1px (Tailwind mr-px).
 func (r *StyleRefinement) Mr_Px() *StyleRefinement {
 	return r.Mr(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Mr_Neg_0p5 is the "neg_0p5" scale value.
+// Mr_Neg_0p5 sets the right margin to -0.125rem (Tailwind -mr-0.5).
 func (r *StyleRefinement) Mr_Neg_0p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Mr_Neg_1 is the "neg_1" scale value.
+// Mr_Neg_1 sets the right margin to -0.25rem (Tailwind -mr-1).
 func (r *StyleRefinement) Mr_Neg_1() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Mr_Neg_1p5 is the "neg_1p5" scale value.
+// Mr_Neg_1p5 sets the right margin to -0.375rem (Tailwind -mr-1.5).
 func (r *StyleRefinement) Mr_Neg_1p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Mr_Neg_2 is the "neg_2" scale value.
+// Mr_Neg_2 sets the right margin to -0.5rem (Tailwind -mr-2).
 func (r *StyleRefinement) Mr_Neg_2() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Mr_Neg_2p5 is the "neg_2p5" scale value.
+// Mr_Neg_2p5 sets the right margin to -0.625rem (Tailwind -mr-2.5).
 func (r *StyleRefinement) Mr_Neg_2p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Mr_Neg_3 is the "neg_3" scale value.
+// Mr_Neg_3 sets the right margin to -0.75rem (Tailwind -mr-3).
 func (r *StyleRefinement) Mr_Neg_3() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Mr_Neg_3p5 is the "neg_3p5" scale value.
+// Mr_Neg_3p5 sets the right margin to -0.875rem (Tailwind -mr-3.5).
 func (r *StyleRefinement) Mr_Neg_3p5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Mr_Neg_4 is the "neg_4" scale value.
+// Mr_Neg_4 sets the right margin to -1rem (Tailwind -mr-4).
 func (r *StyleRefinement) Mr_Neg_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Mr_Neg_5 is the "neg_5" scale value.
+// Mr_Neg_5 sets the right margin to -1.25rem (Tailwind -mr-5).
 func (r *StyleRefinement) Mr_Neg_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Mr_Neg_6 is the "neg_6" scale value.
+// Mr_Neg_6 sets the right margin to -1.5rem (Tailwind -mr-6).
 func (r *StyleRefinement) Mr_Neg_6() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Mr_Neg_7 is the "neg_7" scale value.
+// Mr_Neg_7 sets the right margin to -1.75rem (Tailwind -mr-7).
 func (r *StyleRefinement) Mr_Neg_7() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Mr_Neg_8 is the "neg_8" scale value.
+// Mr_Neg_8 sets the right margin to -2rem (Tailwind -mr-8).
 func (r *StyleRefinement) Mr_Neg_8() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Mr_Neg_9 is the "neg_9" scale value.
+// Mr_Neg_9 sets the right margin to -2.25rem (Tailwind -mr-9).
 func (r *StyleRefinement) Mr_Neg_9() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Mr_Neg_10 is the "neg_10" scale value.
+// Mr_Neg_10 sets the right margin to -2.5rem (Tailwind -mr-10).
 func (r *StyleRefinement) Mr_Neg_10() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Mr_Neg_11 is the "neg_11" scale value.
+// Mr_Neg_11 sets the right margin to -2.75rem (Tailwind -mr-11).
 func (r *StyleRefinement) Mr_Neg_11() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Mr_Neg_12 is the "neg_12" scale value.
+// Mr_Neg_12 sets the right margin to -3rem (Tailwind -mr-12).
 func (r *StyleRefinement) Mr_Neg_12() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Mr_Neg_16 is the "neg_16" scale value.
+// Mr_Neg_16 sets the right margin to -4rem (Tailwind -mr-16).
 func (r *StyleRefinement) Mr_Neg_16() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Mr_Neg_20 is the "neg_20" scale value.
+// Mr_Neg_20 sets the right margin to -5rem (Tailwind -mr-20).
 func (r *StyleRefinement) Mr_Neg_20() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Mr_Neg_24 is the "neg_24" scale value.
+// Mr_Neg_24 sets the right margin to -6rem (Tailwind -mr-24).
 func (r *StyleRefinement) Mr_Neg_24() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Mr_Neg_32 is the "neg_32" scale value.
+// Mr_Neg_32 sets the right margin to -8rem (Tailwind -mr-32).
 func (r *StyleRefinement) Mr_Neg_32() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Mr_Neg_40 is the "neg_40" scale value.
+// Mr_Neg_40 sets the right margin to -10rem (Tailwind -mr-40).
 func (r *StyleRefinement) Mr_Neg_40() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Mr_Neg_48 is the "neg_48" scale value.
+// Mr_Neg_48 sets the right margin to -12rem (Tailwind -mr-48).
 func (r *StyleRefinement) Mr_Neg_48() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Mr_Neg_56 is the "neg_56" scale value.
+// Mr_Neg_56 sets the right margin to -14rem (Tailwind -mr-56).
 func (r *StyleRefinement) Mr_Neg_56() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Mr_Neg_64 is the "neg_64" scale value.
+// Mr_Neg_64 sets the right margin to -16rem (Tailwind -mr-64).
 func (r *StyleRefinement) Mr_Neg_64() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Mr_Neg_72 is the "neg_72" scale value.
+// Mr_Neg_72 sets the right margin to -18rem (Tailwind -mr-72).
 func (r *StyleRefinement) Mr_Neg_72() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Mr_Neg_80 is the "neg_80" scale value.
+// Mr_Neg_80 sets the right margin to -20rem (Tailwind -mr-80).
 func (r *StyleRefinement) Mr_Neg_80() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Mr_Neg_96 is the "neg_96" scale value.
+// Mr_Neg_96 sets the right margin to -24rem (Tailwind -mr-96).
 func (r *StyleRefinement) Mr_Neg_96() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Mr_Neg_112 is the "neg_112" scale value.
+// Mr_Neg_112 sets the right margin to -28rem (Tailwind -mr-112).
 func (r *StyleRefinement) Mr_Neg_112() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Mr_Neg_128 is the "neg_128" scale value.
+// Mr_Neg_128 sets the right margin to -32rem (Tailwind -mr-128).
 func (r *StyleRefinement) Mr_Neg_128() *StyleRefinement {
 	return r.Mr(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Mr_Neg_px is the "neg_px" scale value.
+// Mr_Neg_px sets the right margin to -1px (Tailwind -mr-px).
 func (r *StyleRefinement) Mr_Neg_px() *StyleRefinement {
 	return r.Mr(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Mr_Auto sets the value to auto.
+// Mr_Auto sets the right margin to auto (Tailwind mr-auto).
 func (r *StyleRefinement) Mr_Auto() *StyleRefinement { return r.Mr(geometry.AutoLength()) }
 
-// Mr_1_2 is the "1_2" scale value.
+// Mr_1_2 sets the right margin to 50% of the parent size (Tailwind mr-1/2).
 func (r *StyleRefinement) Mr_1_2() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mr_Neg_1_2 is the "neg_1_2" scale value.
+// Mr_Neg_1_2 sets the right margin to -50% of the parent size (Tailwind -mr-1/2).
 func (r *StyleRefinement) Mr_Neg_1_2() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mr_1_3 is the "1_3" scale value.
+// Mr_1_3 sets the right margin to 33.33% of the parent size (Tailwind mr-1/3).
 func (r *StyleRefinement) Mr_1_3() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Mr_Neg_1_3 is the "neg_1_3" scale value.
+// Mr_Neg_1_3 sets the right margin to -33.33% of the parent size (Tailwind -mr-1/3).
 func (r *StyleRefinement) Mr_Neg_1_3() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Mr_2_3 is the "2_3" scale value.
+// Mr_2_3 sets the right margin to 66.67% of the parent size (Tailwind mr-2/3).
 func (r *StyleRefinement) Mr_2_3() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Mr_Neg_2_3 is the "neg_2_3" scale value.
+// Mr_Neg_2_3 sets the right margin to -66.67% of the parent size (Tailwind -mr-2/3).
 func (r *StyleRefinement) Mr_Neg_2_3() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Mr_1_4 is the "1_4" scale value.
+// Mr_1_4 sets the right margin to 25% of the parent size (Tailwind mr-1/4).
 func (r *StyleRefinement) Mr_1_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Mr_Neg_1_4 is the "neg_1_4" scale value.
+// Mr_Neg_1_4 sets the right margin to -25% of the parent size (Tailwind -mr-1/4).
 func (r *StyleRefinement) Mr_Neg_1_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Mr_2_4 is the "2_4" scale value.
+// Mr_2_4 sets the right margin to 50% of the parent size (Tailwind mr-2/4).
 func (r *StyleRefinement) Mr_2_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Mr_Neg_2_4 is the "neg_2_4" scale value.
+// Mr_Neg_2_4 sets the right margin to -50% of the parent size (Tailwind -mr-2/4).
 func (r *StyleRefinement) Mr_Neg_2_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Mr_3_4 is the "3_4" scale value.
+// Mr_3_4 sets the right margin to 75% of the parent size (Tailwind mr-3/4).
 func (r *StyleRefinement) Mr_3_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Mr_Neg_3_4 is the "neg_3_4" scale value.
+// Mr_Neg_3_4 sets the right margin to -75% of the parent size (Tailwind -mr-3/4).
 func (r *StyleRefinement) Mr_Neg_3_4() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Mr_1_5 is the "1_5" scale value.
+// Mr_1_5 sets the right margin to 20% of the parent size (Tailwind mr-1/5).
 func (r *StyleRefinement) Mr_1_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Mr_Neg_1_5 is the "neg_1_5" scale value.
+// Mr_Neg_1_5 sets the right margin to -20% of the parent size (Tailwind -mr-1/5).
 func (r *StyleRefinement) Mr_Neg_1_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Mr_2_5 is the "2_5" scale value.
+// Mr_2_5 sets the right margin to 40% of the parent size (Tailwind mr-2/5).
 func (r *StyleRefinement) Mr_2_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Mr_Neg_2_5 is the "neg_2_5" scale value.
+// Mr_Neg_2_5 sets the right margin to -40% of the parent size (Tailwind -mr-2/5).
 func (r *StyleRefinement) Mr_Neg_2_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Mr_3_5 is the "3_5" scale value.
+// Mr_3_5 sets the right margin to 60% of the parent size (Tailwind mr-3/5).
 func (r *StyleRefinement) Mr_3_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Mr_Neg_3_5 is the "neg_3_5" scale value.
+// Mr_Neg_3_5 sets the right margin to -60% of the parent size (Tailwind -mr-3/5).
 func (r *StyleRefinement) Mr_Neg_3_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Mr_4_5 is the "4_5" scale value.
+// Mr_4_5 sets the right margin to 80% of the parent size (Tailwind mr-4/5).
 func (r *StyleRefinement) Mr_4_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Mr_Neg_4_5 is the "neg_4_5" scale value.
+// Mr_Neg_4_5 sets the right margin to -80% of the parent size (Tailwind -mr-4/5).
 func (r *StyleRefinement) Mr_Neg_4_5() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Mr_1_6 is the "1_6" scale value.
+// Mr_1_6 sets the right margin to 16.67% of the parent size (Tailwind mr-1/6).
 func (r *StyleRefinement) Mr_1_6() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Mr_Neg_1_6 is the "neg_1_6" scale value.
+// Mr_Neg_1_6 sets the right margin to -16.67% of the parent size (Tailwind -mr-1/6).
 func (r *StyleRefinement) Mr_Neg_1_6() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Mr_5_6 is the "5_6" scale value.
+// Mr_5_6 sets the right margin to 83.33% of the parent size (Tailwind mr-5/6).
 func (r *StyleRefinement) Mr_5_6() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Mr_Neg_5_6 is the "neg_5_6" scale value.
+// Mr_Neg_5_6 sets the right margin to -83.33% of the parent size (Tailwind -mr-5/6).
 func (r *StyleRefinement) Mr_Neg_5_6() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Mr_1_12 is the "1_12" scale value.
+// Mr_1_12 sets the right margin to 8.333% of the parent size (Tailwind mr-1/12).
 func (r *StyleRefinement) Mr_1_12() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Mr_Neg_1_12 is the "neg_1_12" scale value.
+// Mr_Neg_1_12 sets the right margin to -8.333% of the parent size (Tailwind -mr-1/12).
 func (r *StyleRefinement) Mr_Neg_1_12() *StyleRefinement {
 	return r.Mr(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// P_0 is the "0" scale value.
+// P_0 sets the padding on all sides to 0px (Tailwind p-0).
 func (r *StyleRefinement) P_0() *StyleRefinement { return r.P(geometry.PixelsDefinite(geometry.Px(0))) }
 
-// P_0p5 is the "0p5" scale value.
+// P_0p5 sets the padding on all sides to 0.125rem (Tailwind p-0.5).
 func (r *StyleRefinement) P_0p5() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// P_1 is the "1" scale value.
+// P_1 sets the padding on all sides to 0.25rem (Tailwind p-1).
 func (r *StyleRefinement) P_1() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// P_1p5 is the "1p5" scale value.
+// P_1p5 sets the padding on all sides to 0.375rem (Tailwind p-1.5).
 func (r *StyleRefinement) P_1p5() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// P_2 is the "2" scale value.
+// P_2 sets the padding on all sides to 0.5rem (Tailwind p-2).
 func (r *StyleRefinement) P_2() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// P_2p5 is the "2p5" scale value.
+// P_2p5 sets the padding on all sides to 0.625rem (Tailwind p-2.5).
 func (r *StyleRefinement) P_2p5() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// P_3 is the "3" scale value.
+// P_3 sets the padding on all sides to 0.75rem (Tailwind p-3).
 func (r *StyleRefinement) P_3() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// P_3p5 is the "3p5" scale value.
+// P_3p5 sets the padding on all sides to 0.875rem (Tailwind p-3.5).
 func (r *StyleRefinement) P_3p5() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// P_4 is the "4" scale value.
+// P_4 sets the padding on all sides to 1rem (Tailwind p-4).
 func (r *StyleRefinement) P_4() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// P_5 is the "5" scale value.
+// P_5 sets the padding on all sides to 1.25rem (Tailwind p-5).
 func (r *StyleRefinement) P_5() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// P_6 is the "6" scale value.
+// P_6 sets the padding on all sides to 1.5rem (Tailwind p-6).
 func (r *StyleRefinement) P_6() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// P_7 is the "7" scale value.
+// P_7 sets the padding on all sides to 1.75rem (Tailwind p-7).
 func (r *StyleRefinement) P_7() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// P_8 is the "8" scale value.
+// P_8 sets the padding on all sides to 2rem (Tailwind p-8).
 func (r *StyleRefinement) P_8() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// P_9 is the "9" scale value.
+// P_9 sets the padding on all sides to 2.25rem (Tailwind p-9).
 func (r *StyleRefinement) P_9() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// P_10 is the "10" scale value.
+// P_10 sets the padding on all sides to 2.5rem (Tailwind p-10).
 func (r *StyleRefinement) P_10() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// P_11 is the "11" scale value.
+// P_11 sets the padding on all sides to 2.75rem (Tailwind p-11).
 func (r *StyleRefinement) P_11() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// P_12 is the "12" scale value.
+// P_12 sets the padding on all sides to 3rem (Tailwind p-12).
 func (r *StyleRefinement) P_12() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// P_16 is the "16" scale value.
+// P_16 sets the padding on all sides to 4rem (Tailwind p-16).
 func (r *StyleRefinement) P_16() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// P_20 is the "20" scale value.
+// P_20 sets the padding on all sides to 5rem (Tailwind p-20).
 func (r *StyleRefinement) P_20() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// P_24 is the "24" scale value.
+// P_24 sets the padding on all sides to 6rem (Tailwind p-24).
 func (r *StyleRefinement) P_24() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// P_32 is the "32" scale value.
+// P_32 sets the padding on all sides to 8rem (Tailwind p-32).
 func (r *StyleRefinement) P_32() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// P_40 is the "40" scale value.
+// P_40 sets the padding on all sides to 10rem (Tailwind p-40).
 func (r *StyleRefinement) P_40() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// P_48 is the "48" scale value.
+// P_48 sets the padding on all sides to 12rem (Tailwind p-48).
 func (r *StyleRefinement) P_48() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// P_56 is the "56" scale value.
+// P_56 sets the padding on all sides to 14rem (Tailwind p-56).
 func (r *StyleRefinement) P_56() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// P_64 is the "64" scale value.
+// P_64 sets the padding on all sides to 16rem (Tailwind p-64).
 func (r *StyleRefinement) P_64() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// P_72 is the "72" scale value.
+// P_72 sets the padding on all sides to 18rem (Tailwind p-72).
 func (r *StyleRefinement) P_72() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// P_80 is the "80" scale value.
+// P_80 sets the padding on all sides to 20rem (Tailwind p-80).
 func (r *StyleRefinement) P_80() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// P_96 is the "96" scale value.
+// P_96 sets the padding on all sides to 24rem (Tailwind p-96).
 func (r *StyleRefinement) P_96() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// P_112 is the "112" scale value.
+// P_112 sets the padding on all sides to 28rem (Tailwind p-112).
 func (r *StyleRefinement) P_112() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// P_128 is the "128" scale value.
+// P_128 sets the padding on all sides to 32rem (Tailwind p-128).
 func (r *StyleRefinement) P_128() *StyleRefinement {
 	return r.P(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// P_Px is the "px" scale value.
+// P_Px sets the padding on all sides to 1px (Tailwind p-px).
 func (r *StyleRefinement) P_Px() *StyleRefinement {
 	return r.P(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// P_1_2 is the "1_2" scale value.
+// P_1_2 sets the padding on all sides to 50% of the parent size (Tailwind p-1/2).
 func (r *StyleRefinement) P_1_2() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.5)) }
 
-// P_1_3 is the "1_3" scale value.
+// P_1_3 sets the padding on all sides to 33.33% of the parent size (Tailwind p-1/3).
 func (r *StyleRefinement) P_1_3() *StyleRefinement { return r.P(geometry.RelativeDefinite(1.0 / 3.0)) }
 
-// P_2_3 is the "2_3" scale value.
+// P_2_3 sets the padding on all sides to 66.67% of the parent size (Tailwind p-2/3).
 func (r *StyleRefinement) P_2_3() *StyleRefinement { return r.P(geometry.RelativeDefinite(2.0 / 3.0)) }
 
-// P_1_4 is the "1_4" scale value.
+// P_1_4 sets the padding on all sides to 25% of the parent size (Tailwind p-1/4).
 func (r *StyleRefinement) P_1_4() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.25)) }
 
-// P_2_4 is the "2_4" scale value.
+// P_2_4 sets the padding on all sides to 50% of the parent size (Tailwind p-2/4).
 func (r *StyleRefinement) P_2_4() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.5)) }
 
-// P_3_4 is the "3_4" scale value.
+// P_3_4 sets the padding on all sides to 75% of the parent size (Tailwind p-3/4).
 func (r *StyleRefinement) P_3_4() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.75)) }
 
-// P_1_5 is the "1_5" scale value.
+// P_1_5 sets the padding on all sides to 20% of the parent size (Tailwind p-1/5).
 func (r *StyleRefinement) P_1_5() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.2)) }
 
-// P_2_5 is the "2_5" scale value.
+// P_2_5 sets the padding on all sides to 40% of the parent size (Tailwind p-2/5).
 func (r *StyleRefinement) P_2_5() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.4)) }
 
-// P_3_5 is the "3_5" scale value.
+// P_3_5 sets the padding on all sides to 60% of the parent size (Tailwind p-3/5).
 func (r *StyleRefinement) P_3_5() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.6)) }
 
-// P_4_5 is the "4_5" scale value.
+// P_4_5 sets the padding on all sides to 80% of the parent size (Tailwind p-4/5).
 func (r *StyleRefinement) P_4_5() *StyleRefinement { return r.P(geometry.RelativeDefinite(0.8)) }
 
-// P_1_6 is the "1_6" scale value.
+// P_1_6 sets the padding on all sides to 16.67% of the parent size (Tailwind p-1/6).
 func (r *StyleRefinement) P_1_6() *StyleRefinement { return r.P(geometry.RelativeDefinite(1.0 / 6.0)) }
 
-// P_5_6 is the "5_6" scale value.
+// P_5_6 sets the padding on all sides to 83.33% of the parent size (Tailwind p-5/6).
 func (r *StyleRefinement) P_5_6() *StyleRefinement { return r.P(geometry.RelativeDefinite(5.0 / 6.0)) }
 
-// P_1_12 is the "1_12" scale value.
+// P_1_12 sets the padding on all sides to 8.333% of the parent size (Tailwind p-1/12).
 func (r *StyleRefinement) P_1_12() *StyleRefinement {
 	return r.P(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Pt_0 is the "0" scale value.
+// Pt_0 sets the top padding to 0px (Tailwind pt-0).
 func (r *StyleRefinement) Pt_0() *StyleRefinement {
 	return r.Pt(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// Pt_0p5 is the "0p5" scale value.
+// Pt_0p5 sets the top padding to 0.125rem (Tailwind pt-0.5).
 func (r *StyleRefinement) Pt_0p5() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// Pt_1 is the "1" scale value.
+// Pt_1 sets the top padding to 0.25rem (Tailwind pt-1).
 func (r *StyleRefinement) Pt_1() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// Pt_1p5 is the "1p5" scale value.
+// Pt_1p5 sets the top padding to 0.375rem (Tailwind pt-1.5).
 func (r *StyleRefinement) Pt_1p5() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// Pt_2 is the "2" scale value.
+// Pt_2 sets the top padding to 0.5rem (Tailwind pt-2).
 func (r *StyleRefinement) Pt_2() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// Pt_2p5 is the "2p5" scale value.
+// Pt_2p5 sets the top padding to 0.625rem (Tailwind pt-2.5).
 func (r *StyleRefinement) Pt_2p5() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// Pt_3 is the "3" scale value.
+// Pt_3 sets the top padding to 0.75rem (Tailwind pt-3).
 func (r *StyleRefinement) Pt_3() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// Pt_3p5 is the "3p5" scale value.
+// Pt_3p5 sets the top padding to 0.875rem (Tailwind pt-3.5).
 func (r *StyleRefinement) Pt_3p5() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// Pt_4 is the "4" scale value.
+// Pt_4 sets the top padding to 1rem (Tailwind pt-4).
 func (r *StyleRefinement) Pt_4() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// Pt_5 is the "5" scale value.
+// Pt_5 sets the top padding to 1.25rem (Tailwind pt-5).
 func (r *StyleRefinement) Pt_5() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// Pt_6 is the "6" scale value.
+// Pt_6 sets the top padding to 1.5rem (Tailwind pt-6).
 func (r *StyleRefinement) Pt_6() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// Pt_7 is the "7" scale value.
+// Pt_7 sets the top padding to 1.75rem (Tailwind pt-7).
 func (r *StyleRefinement) Pt_7() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// Pt_8 is the "8" scale value.
+// Pt_8 sets the top padding to 2rem (Tailwind pt-8).
 func (r *StyleRefinement) Pt_8() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// Pt_9 is the "9" scale value.
+// Pt_9 sets the top padding to 2.25rem (Tailwind pt-9).
 func (r *StyleRefinement) Pt_9() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// Pt_10 is the "10" scale value.
+// Pt_10 sets the top padding to 2.5rem (Tailwind pt-10).
 func (r *StyleRefinement) Pt_10() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// Pt_11 is the "11" scale value.
+// Pt_11 sets the top padding to 2.75rem (Tailwind pt-11).
 func (r *StyleRefinement) Pt_11() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// Pt_12 is the "12" scale value.
+// Pt_12 sets the top padding to 3rem (Tailwind pt-12).
 func (r *StyleRefinement) Pt_12() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// Pt_16 is the "16" scale value.
+// Pt_16 sets the top padding to 4rem (Tailwind pt-16).
 func (r *StyleRefinement) Pt_16() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// Pt_20 is the "20" scale value.
+// Pt_20 sets the top padding to 5rem (Tailwind pt-20).
 func (r *StyleRefinement) Pt_20() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// Pt_24 is the "24" scale value.
+// Pt_24 sets the top padding to 6rem (Tailwind pt-24).
 func (r *StyleRefinement) Pt_24() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// Pt_32 is the "32" scale value.
+// Pt_32 sets the top padding to 8rem (Tailwind pt-32).
 func (r *StyleRefinement) Pt_32() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// Pt_40 is the "40" scale value.
+// Pt_40 sets the top padding to 10rem (Tailwind pt-40).
 func (r *StyleRefinement) Pt_40() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// Pt_48 is the "48" scale value.
+// Pt_48 sets the top padding to 12rem (Tailwind pt-48).
 func (r *StyleRefinement) Pt_48() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// Pt_56 is the "56" scale value.
+// Pt_56 sets the top padding to 14rem (Tailwind pt-56).
 func (r *StyleRefinement) Pt_56() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// Pt_64 is the "64" scale value.
+// Pt_64 sets the top padding to 16rem (Tailwind pt-64).
 func (r *StyleRefinement) Pt_64() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// Pt_72 is the "72" scale value.
+// Pt_72 sets the top padding to 18rem (Tailwind pt-72).
 func (r *StyleRefinement) Pt_72() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// Pt_80 is the "80" scale value.
+// Pt_80 sets the top padding to 20rem (Tailwind pt-80).
 func (r *StyleRefinement) Pt_80() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// Pt_96 is the "96" scale value.
+// Pt_96 sets the top padding to 24rem (Tailwind pt-96).
 func (r *StyleRefinement) Pt_96() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// Pt_112 is the "112" scale value.
+// Pt_112 sets the top padding to 28rem (Tailwind pt-112).
 func (r *StyleRefinement) Pt_112() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// Pt_128 is the "128" scale value.
+// Pt_128 sets the top padding to 32rem (Tailwind pt-128).
 func (r *StyleRefinement) Pt_128() *StyleRefinement {
 	return r.Pt(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// Pt_Px is the "px" scale value.
+// Pt_Px sets the top padding to 1px (Tailwind pt-px).
 func (r *StyleRefinement) Pt_Px() *StyleRefinement {
 	return r.Pt(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// Pt_1_2 is the "1_2" scale value.
+// Pt_1_2 sets the top padding to 50% of the parent size (Tailwind pt-1/2).
 func (r *StyleRefinement) Pt_1_2() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.5)) }
 
-// Pt_1_3 is the "1_3" scale value.
+// Pt_1_3 sets the top padding to 33.33% of the parent size (Tailwind pt-1/3).
 func (r *StyleRefinement) Pt_1_3() *StyleRefinement {
 	return r.Pt(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// Pt_2_3 is the "2_3" scale value.
+// Pt_2_3 sets the top padding to 66.67% of the parent size (Tailwind pt-2/3).
 func (r *StyleRefinement) Pt_2_3() *StyleRefinement {
 	return r.Pt(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// Pt_1_4 is the "1_4" scale value.
+// Pt_1_4 sets the top padding to 25% of the parent size (Tailwind pt-1/4).
 func (r *StyleRefinement) Pt_1_4() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.25)) }
 
-// Pt_2_4 is the "2_4" scale value.
+// Pt_2_4 sets the top padding to 50% of the parent size (Tailwind pt-2/4).
 func (r *StyleRefinement) Pt_2_4() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.5)) }
 
-// Pt_3_4 is the "3_4" scale value.
+// Pt_3_4 sets the top padding to 75% of the parent size (Tailwind pt-3/4).
 func (r *StyleRefinement) Pt_3_4() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.75)) }
 
-// Pt_1_5 is the "1_5" scale value.
+// Pt_1_5 sets the top padding to 20% of the parent size (Tailwind pt-1/5).
 func (r *StyleRefinement) Pt_1_5() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.2)) }
 
-// Pt_2_5 is the "2_5" scale value.
+// Pt_2_5 sets the top padding to 40% of the parent size (Tailwind pt-2/5).
 func (r *StyleRefinement) Pt_2_5() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.4)) }
 
-// Pt_3_5 is the "3_5" scale value.
+// Pt_3_5 sets the top padding to 60% of the parent size (Tailwind pt-3/5).
 func (r *StyleRefinement) Pt_3_5() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.6)) }
 
-// Pt_4_5 is the "4_5" scale value.
+// Pt_4_5 sets the top padding to 80% of the parent size (Tailwind pt-4/5).
 func (r *StyleRefinement) Pt_4_5() *StyleRefinement { return r.Pt(geometry.RelativeDefinite(0.8)) }
 
-// Pt_1_6 is the "1_6" scale value.
+// Pt_1_6 sets the top padding to 16.67% of the parent size (Tailwind pt-1/6).
 func (r *StyleRefinement) Pt_1_6() *StyleRefinement {
 	return r.Pt(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// Pt_5_6 is the "5_6" scale value.
+// Pt_5_6 sets the top padding to 83.33% of the parent size (Tailwind pt-5/6).
 func (r *StyleRefinement) Pt_5_6() *StyleRefinement {
 	return r.Pt(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// Pt_1_12 is the "1_12" scale value.
+// Pt_1_12 sets the top padding to 8.333% of the parent size (Tailwind pt-1/12).
 func (r *StyleRefinement) Pt_1_12() *StyleRefinement {
 	return r.Pt(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Pb_0 is the "0" scale value.
+// Pb_0 sets the bottom padding to 0px (Tailwind pb-0).
 func (r *StyleRefinement) Pb_0() *StyleRefinement {
 	return r.Pb(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// Pb_0p5 is the "0p5" scale value.
+// Pb_0p5 sets the bottom padding to 0.125rem (Tailwind pb-0.5).
 func (r *StyleRefinement) Pb_0p5() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// Pb_1 is the "1" scale value.
+// Pb_1 sets the bottom padding to 0.25rem (Tailwind pb-1).
 func (r *StyleRefinement) Pb_1() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// Pb_1p5 is the "1p5" scale value.
+// Pb_1p5 sets the bottom padding to 0.375rem (Tailwind pb-1.5).
 func (r *StyleRefinement) Pb_1p5() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// Pb_2 is the "2" scale value.
+// Pb_2 sets the bottom padding to 0.5rem (Tailwind pb-2).
 func (r *StyleRefinement) Pb_2() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// Pb_2p5 is the "2p5" scale value.
+// Pb_2p5 sets the bottom padding to 0.625rem (Tailwind pb-2.5).
 func (r *StyleRefinement) Pb_2p5() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// Pb_3 is the "3" scale value.
+// Pb_3 sets the bottom padding to 0.75rem (Tailwind pb-3).
 func (r *StyleRefinement) Pb_3() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// Pb_3p5 is the "3p5" scale value.
+// Pb_3p5 sets the bottom padding to 0.875rem (Tailwind pb-3.5).
 func (r *StyleRefinement) Pb_3p5() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// Pb_4 is the "4" scale value.
+// Pb_4 sets the bottom padding to 1rem (Tailwind pb-4).
 func (r *StyleRefinement) Pb_4() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// Pb_5 is the "5" scale value.
+// Pb_5 sets the bottom padding to 1.25rem (Tailwind pb-5).
 func (r *StyleRefinement) Pb_5() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// Pb_6 is the "6" scale value.
+// Pb_6 sets the bottom padding to 1.5rem (Tailwind pb-6).
 func (r *StyleRefinement) Pb_6() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// Pb_7 is the "7" scale value.
+// Pb_7 sets the bottom padding to 1.75rem (Tailwind pb-7).
 func (r *StyleRefinement) Pb_7() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// Pb_8 is the "8" scale value.
+// Pb_8 sets the bottom padding to 2rem (Tailwind pb-8).
 func (r *StyleRefinement) Pb_8() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// Pb_9 is the "9" scale value.
+// Pb_9 sets the bottom padding to 2.25rem (Tailwind pb-9).
 func (r *StyleRefinement) Pb_9() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// Pb_10 is the "10" scale value.
+// Pb_10 sets the bottom padding to 2.5rem (Tailwind pb-10).
 func (r *StyleRefinement) Pb_10() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// Pb_11 is the "11" scale value.
+// Pb_11 sets the bottom padding to 2.75rem (Tailwind pb-11).
 func (r *StyleRefinement) Pb_11() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// Pb_12 is the "12" scale value.
+// Pb_12 sets the bottom padding to 3rem (Tailwind pb-12).
 func (r *StyleRefinement) Pb_12() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// Pb_16 is the "16" scale value.
+// Pb_16 sets the bottom padding to 4rem (Tailwind pb-16).
 func (r *StyleRefinement) Pb_16() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// Pb_20 is the "20" scale value.
+// Pb_20 sets the bottom padding to 5rem (Tailwind pb-20).
 func (r *StyleRefinement) Pb_20() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// Pb_24 is the "24" scale value.
+// Pb_24 sets the bottom padding to 6rem (Tailwind pb-24).
 func (r *StyleRefinement) Pb_24() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// Pb_32 is the "32" scale value.
+// Pb_32 sets the bottom padding to 8rem (Tailwind pb-32).
 func (r *StyleRefinement) Pb_32() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// Pb_40 is the "40" scale value.
+// Pb_40 sets the bottom padding to 10rem (Tailwind pb-40).
 func (r *StyleRefinement) Pb_40() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// Pb_48 is the "48" scale value.
+// Pb_48 sets the bottom padding to 12rem (Tailwind pb-48).
 func (r *StyleRefinement) Pb_48() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// Pb_56 is the "56" scale value.
+// Pb_56 sets the bottom padding to 14rem (Tailwind pb-56).
 func (r *StyleRefinement) Pb_56() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// Pb_64 is the "64" scale value.
+// Pb_64 sets the bottom padding to 16rem (Tailwind pb-64).
 func (r *StyleRefinement) Pb_64() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// Pb_72 is the "72" scale value.
+// Pb_72 sets the bottom padding to 18rem (Tailwind pb-72).
 func (r *StyleRefinement) Pb_72() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// Pb_80 is the "80" scale value.
+// Pb_80 sets the bottom padding to 20rem (Tailwind pb-80).
 func (r *StyleRefinement) Pb_80() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// Pb_96 is the "96" scale value.
+// Pb_96 sets the bottom padding to 24rem (Tailwind pb-96).
 func (r *StyleRefinement) Pb_96() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// Pb_112 is the "112" scale value.
+// Pb_112 sets the bottom padding to 28rem (Tailwind pb-112).
 func (r *StyleRefinement) Pb_112() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// Pb_128 is the "128" scale value.
+// Pb_128 sets the bottom padding to 32rem (Tailwind pb-128).
 func (r *StyleRefinement) Pb_128() *StyleRefinement {
 	return r.Pb(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// Pb_Px is the "px" scale value.
+// Pb_Px sets the bottom padding to 1px (Tailwind pb-px).
 func (r *StyleRefinement) Pb_Px() *StyleRefinement {
 	return r.Pb(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// Pb_1_2 is the "1_2" scale value.
+// Pb_1_2 sets the bottom padding to 50% of the parent size (Tailwind pb-1/2).
 func (r *StyleRefinement) Pb_1_2() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.5)) }
 
-// Pb_1_3 is the "1_3" scale value.
+// Pb_1_3 sets the bottom padding to 33.33% of the parent size (Tailwind pb-1/3).
 func (r *StyleRefinement) Pb_1_3() *StyleRefinement {
 	return r.Pb(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// Pb_2_3 is the "2_3" scale value.
+// Pb_2_3 sets the bottom padding to 66.67% of the parent size (Tailwind pb-2/3).
 func (r *StyleRefinement) Pb_2_3() *StyleRefinement {
 	return r.Pb(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// Pb_1_4 is the "1_4" scale value.
+// Pb_1_4 sets the bottom padding to 25% of the parent size (Tailwind pb-1/4).
 func (r *StyleRefinement) Pb_1_4() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.25)) }
 
-// Pb_2_4 is the "2_4" scale value.
+// Pb_2_4 sets the bottom padding to 50% of the parent size (Tailwind pb-2/4).
 func (r *StyleRefinement) Pb_2_4() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.5)) }
 
-// Pb_3_4 is the "3_4" scale value.
+// Pb_3_4 sets the bottom padding to 75% of the parent size (Tailwind pb-3/4).
 func (r *StyleRefinement) Pb_3_4() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.75)) }
 
-// Pb_1_5 is the "1_5" scale value.
+// Pb_1_5 sets the bottom padding to 20% of the parent size (Tailwind pb-1/5).
 func (r *StyleRefinement) Pb_1_5() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.2)) }
 
-// Pb_2_5 is the "2_5" scale value.
+// Pb_2_5 sets the bottom padding to 40% of the parent size (Tailwind pb-2/5).
 func (r *StyleRefinement) Pb_2_5() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.4)) }
 
-// Pb_3_5 is the "3_5" scale value.
+// Pb_3_5 sets the bottom padding to 60% of the parent size (Tailwind pb-3/5).
 func (r *StyleRefinement) Pb_3_5() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.6)) }
 
-// Pb_4_5 is the "4_5" scale value.
+// Pb_4_5 sets the bottom padding to 80% of the parent size (Tailwind pb-4/5).
 func (r *StyleRefinement) Pb_4_5() *StyleRefinement { return r.Pb(geometry.RelativeDefinite(0.8)) }
 
-// Pb_1_6 is the "1_6" scale value.
+// Pb_1_6 sets the bottom padding to 16.67% of the parent size (Tailwind pb-1/6).
 func (r *StyleRefinement) Pb_1_6() *StyleRefinement {
 	return r.Pb(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// Pb_5_6 is the "5_6" scale value.
+// Pb_5_6 sets the bottom padding to 83.33% of the parent size (Tailwind pb-5/6).
 func (r *StyleRefinement) Pb_5_6() *StyleRefinement {
 	return r.Pb(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// Pb_1_12 is the "1_12" scale value.
+// Pb_1_12 sets the bottom padding to 8.333% of the parent size (Tailwind pb-1/12).
 func (r *StyleRefinement) Pb_1_12() *StyleRefinement {
 	return r.Pb(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Py_0 is the "0" scale value.
+// Py_0 sets the top and bottom padding to 0px (Tailwind py-0).
 func (r *StyleRefinement) Py_0() *StyleRefinement {
 	return r.Py(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// Py_0p5 is the "0p5" scale value.
+// Py_0p5 sets the top and bottom padding to 0.125rem (Tailwind py-0.5).
 func (r *StyleRefinement) Py_0p5() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// Py_1 is the "1" scale value.
+// Py_1 sets the top and bottom padding to 0.25rem (Tailwind py-1).
 func (r *StyleRefinement) Py_1() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// Py_1p5 is the "1p5" scale value.
+// Py_1p5 sets the top and bottom padding to 0.375rem (Tailwind py-1.5).
 func (r *StyleRefinement) Py_1p5() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// Py_2 is the "2" scale value.
+// Py_2 sets the top and bottom padding to 0.5rem (Tailwind py-2).
 func (r *StyleRefinement) Py_2() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// Py_2p5 is the "2p5" scale value.
+// Py_2p5 sets the top and bottom padding to 0.625rem (Tailwind py-2.5).
 func (r *StyleRefinement) Py_2p5() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// Py_3 is the "3" scale value.
+// Py_3 sets the top and bottom padding to 0.75rem (Tailwind py-3).
 func (r *StyleRefinement) Py_3() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// Py_3p5 is the "3p5" scale value.
+// Py_3p5 sets the top and bottom padding to 0.875rem (Tailwind py-3.5).
 func (r *StyleRefinement) Py_3p5() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// Py_4 is the "4" scale value.
+// Py_4 sets the top and bottom padding to 1rem (Tailwind py-4).
 func (r *StyleRefinement) Py_4() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// Py_5 is the "5" scale value.
+// Py_5 sets the top and bottom padding to 1.25rem (Tailwind py-5).
 func (r *StyleRefinement) Py_5() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// Py_6 is the "6" scale value.
+// Py_6 sets the top and bottom padding to 1.5rem (Tailwind py-6).
 func (r *StyleRefinement) Py_6() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// Py_7 is the "7" scale value.
+// Py_7 sets the top and bottom padding to 1.75rem (Tailwind py-7).
 func (r *StyleRefinement) Py_7() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// Py_8 is the "8" scale value.
+// Py_8 sets the top and bottom padding to 2rem (Tailwind py-8).
 func (r *StyleRefinement) Py_8() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// Py_9 is the "9" scale value.
+// Py_9 sets the top and bottom padding to 2.25rem (Tailwind py-9).
 func (r *StyleRefinement) Py_9() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// Py_10 is the "10" scale value.
+// Py_10 sets the top and bottom padding to 2.5rem (Tailwind py-10).
 func (r *StyleRefinement) Py_10() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// Py_11 is the "11" scale value.
+// Py_11 sets the top and bottom padding to 2.75rem (Tailwind py-11).
 func (r *StyleRefinement) Py_11() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// Py_12 is the "12" scale value.
+// Py_12 sets the top and bottom padding to 3rem (Tailwind py-12).
 func (r *StyleRefinement) Py_12() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// Py_16 is the "16" scale value.
+// Py_16 sets the top and bottom padding to 4rem (Tailwind py-16).
 func (r *StyleRefinement) Py_16() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// Py_20 is the "20" scale value.
+// Py_20 sets the top and bottom padding to 5rem (Tailwind py-20).
 func (r *StyleRefinement) Py_20() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// Py_24 is the "24" scale value.
+// Py_24 sets the top and bottom padding to 6rem (Tailwind py-24).
 func (r *StyleRefinement) Py_24() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// Py_32 is the "32" scale value.
+// Py_32 sets the top and bottom padding to 8rem (Tailwind py-32).
 func (r *StyleRefinement) Py_32() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// Py_40 is the "40" scale value.
+// Py_40 sets the top and bottom padding to 10rem (Tailwind py-40).
 func (r *StyleRefinement) Py_40() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// Py_48 is the "48" scale value.
+// Py_48 sets the top and bottom padding to 12rem (Tailwind py-48).
 func (r *StyleRefinement) Py_48() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// Py_56 is the "56" scale value.
+// Py_56 sets the top and bottom padding to 14rem (Tailwind py-56).
 func (r *StyleRefinement) Py_56() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// Py_64 is the "64" scale value.
+// Py_64 sets the top and bottom padding to 16rem (Tailwind py-64).
 func (r *StyleRefinement) Py_64() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// Py_72 is the "72" scale value.
+// Py_72 sets the top and bottom padding to 18rem (Tailwind py-72).
 func (r *StyleRefinement) Py_72() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// Py_80 is the "80" scale value.
+// Py_80 sets the top and bottom padding to 20rem (Tailwind py-80).
 func (r *StyleRefinement) Py_80() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// Py_96 is the "96" scale value.
+// Py_96 sets the top and bottom padding to 24rem (Tailwind py-96).
 func (r *StyleRefinement) Py_96() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// Py_112 is the "112" scale value.
+// Py_112 sets the top and bottom padding to 28rem (Tailwind py-112).
 func (r *StyleRefinement) Py_112() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// Py_128 is the "128" scale value.
+// Py_128 sets the top and bottom padding to 32rem (Tailwind py-128).
 func (r *StyleRefinement) Py_128() *StyleRefinement {
 	return r.Py(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// Py_Px is the "px" scale value.
+// Py_Px sets the top and bottom padding to 1px (Tailwind py-px).
 func (r *StyleRefinement) Py_Px() *StyleRefinement {
 	return r.Py(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// Py_1_2 is the "1_2" scale value.
+// Py_1_2 sets the top and bottom padding to 50% of the parent size (Tailwind py-1/2).
 func (r *StyleRefinement) Py_1_2() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.5)) }
 
-// Py_1_3 is the "1_3" scale value.
+// Py_1_3 sets the top and bottom padding to 33.33% of the parent size (Tailwind py-1/3).
 func (r *StyleRefinement) Py_1_3() *StyleRefinement {
 	return r.Py(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// Py_2_3 is the "2_3" scale value.
+// Py_2_3 sets the top and bottom padding to 66.67% of the parent size (Tailwind py-2/3).
 func (r *StyleRefinement) Py_2_3() *StyleRefinement {
 	return r.Py(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// Py_1_4 is the "1_4" scale value.
+// Py_1_4 sets the top and bottom padding to 25% of the parent size (Tailwind py-1/4).
 func (r *StyleRefinement) Py_1_4() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.25)) }
 
-// Py_2_4 is the "2_4" scale value.
+// Py_2_4 sets the top and bottom padding to 50% of the parent size (Tailwind py-2/4).
 func (r *StyleRefinement) Py_2_4() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.5)) }
 
-// Py_3_4 is the "3_4" scale value.
+// Py_3_4 sets the top and bottom padding to 75% of the parent size (Tailwind py-3/4).
 func (r *StyleRefinement) Py_3_4() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.75)) }
 
-// Py_1_5 is the "1_5" scale value.
+// Py_1_5 sets the top and bottom padding to 20% of the parent size (Tailwind py-1/5).
 func (r *StyleRefinement) Py_1_5() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.2)) }
 
-// Py_2_5 is the "2_5" scale value.
+// Py_2_5 sets the top and bottom padding to 40% of the parent size (Tailwind py-2/5).
 func (r *StyleRefinement) Py_2_5() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.4)) }
 
-// Py_3_5 is the "3_5" scale value.
+// Py_3_5 sets the top and bottom padding to 60% of the parent size (Tailwind py-3/5).
 func (r *StyleRefinement) Py_3_5() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.6)) }
 
-// Py_4_5 is the "4_5" scale value.
+// Py_4_5 sets the top and bottom padding to 80% of the parent size (Tailwind py-4/5).
 func (r *StyleRefinement) Py_4_5() *StyleRefinement { return r.Py(geometry.RelativeDefinite(0.8)) }
 
-// Py_1_6 is the "1_6" scale value.
+// Py_1_6 sets the top and bottom padding to 16.67% of the parent size (Tailwind py-1/6).
 func (r *StyleRefinement) Py_1_6() *StyleRefinement {
 	return r.Py(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// Py_5_6 is the "5_6" scale value.
+// Py_5_6 sets the top and bottom padding to 83.33% of the parent size (Tailwind py-5/6).
 func (r *StyleRefinement) Py_5_6() *StyleRefinement {
 	return r.Py(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// Py_1_12 is the "1_12" scale value.
+// Py_1_12 sets the top and bottom padding to 8.333% of the parent size (Tailwind py-1/12).
 func (r *StyleRefinement) Py_1_12() *StyleRefinement {
 	return r.Py(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Px_0 is the "0" scale value.
+// Px_0 sets the left and right padding to 0px (Tailwind px-0).
 func (r *StyleRefinement) Px_0() *StyleRefinement {
 	return r.Px(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// Px_0p5 is the "0p5" scale value.
+// Px_0p5 sets the left and right padding to 0.125rem (Tailwind px-0.5).
 func (r *StyleRefinement) Px_0p5() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// Px_1 is the "1" scale value.
+// Px_1 sets the left and right padding to 0.25rem (Tailwind px-1).
 func (r *StyleRefinement) Px_1() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// Px_1p5 is the "1p5" scale value.
+// Px_1p5 sets the left and right padding to 0.375rem (Tailwind px-1.5).
 func (r *StyleRefinement) Px_1p5() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// Px_2 is the "2" scale value.
+// Px_2 sets the left and right padding to 0.5rem (Tailwind px-2).
 func (r *StyleRefinement) Px_2() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// Px_2p5 is the "2p5" scale value.
+// Px_2p5 sets the left and right padding to 0.625rem (Tailwind px-2.5).
 func (r *StyleRefinement) Px_2p5() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// Px_3 is the "3" scale value.
+// Px_3 sets the left and right padding to 0.75rem (Tailwind px-3).
 func (r *StyleRefinement) Px_3() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// Px_3p5 is the "3p5" scale value.
+// Px_3p5 sets the left and right padding to 0.875rem (Tailwind px-3.5).
 func (r *StyleRefinement) Px_3p5() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// Px_4 is the "4" scale value.
+// Px_4 sets the left and right padding to 1rem (Tailwind px-4).
 func (r *StyleRefinement) Px_4() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// Px_5 is the "5" scale value.
+// Px_5 sets the left and right padding to 1.25rem (Tailwind px-5).
 func (r *StyleRefinement) Px_5() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// Px_6 is the "6" scale value.
+// Px_6 sets the left and right padding to 1.5rem (Tailwind px-6).
 func (r *StyleRefinement) Px_6() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// Px_7 is the "7" scale value.
+// Px_7 sets the left and right padding to 1.75rem (Tailwind px-7).
 func (r *StyleRefinement) Px_7() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// Px_8 is the "8" scale value.
+// Px_8 sets the left and right padding to 2rem (Tailwind px-8).
 func (r *StyleRefinement) Px_8() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// Px_9 is the "9" scale value.
+// Px_9 sets the left and right padding to 2.25rem (Tailwind px-9).
 func (r *StyleRefinement) Px_9() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// Px_10 is the "10" scale value.
+// Px_10 sets the left and right padding to 2.5rem (Tailwind px-10).
 func (r *StyleRefinement) Px_10() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// Px_11 is the "11" scale value.
+// Px_11 sets the left and right padding to 2.75rem (Tailwind px-11).
 func (r *StyleRefinement) Px_11() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// Px_12 is the "12" scale value.
+// Px_12 sets the left and right padding to 3rem (Tailwind px-12).
 func (r *StyleRefinement) Px_12() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// Px_16 is the "16" scale value.
+// Px_16 sets the left and right padding to 4rem (Tailwind px-16).
 func (r *StyleRefinement) Px_16() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// Px_20 is the "20" scale value.
+// Px_20 sets the left and right padding to 5rem (Tailwind px-20).
 func (r *StyleRefinement) Px_20() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// Px_24 is the "24" scale value.
+// Px_24 sets the left and right padding to 6rem (Tailwind px-24).
 func (r *StyleRefinement) Px_24() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// Px_32 is the "32" scale value.
+// Px_32 sets the left and right padding to 8rem (Tailwind px-32).
 func (r *StyleRefinement) Px_32() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// Px_40 is the "40" scale value.
+// Px_40 sets the left and right padding to 10rem (Tailwind px-40).
 func (r *StyleRefinement) Px_40() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// Px_48 is the "48" scale value.
+// Px_48 sets the left and right padding to 12rem (Tailwind px-48).
 func (r *StyleRefinement) Px_48() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// Px_56 is the "56" scale value.
+// Px_56 sets the left and right padding to 14rem (Tailwind px-56).
 func (r *StyleRefinement) Px_56() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// Px_64 is the "64" scale value.
+// Px_64 sets the left and right padding to 16rem (Tailwind px-64).
 func (r *StyleRefinement) Px_64() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// Px_72 is the "72" scale value.
+// Px_72 sets the left and right padding to 18rem (Tailwind px-72).
 func (r *StyleRefinement) Px_72() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// Px_80 is the "80" scale value.
+// Px_80 sets the left and right padding to 20rem (Tailwind px-80).
 func (r *StyleRefinement) Px_80() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// Px_96 is the "96" scale value.
+// Px_96 sets the left and right padding to 24rem (Tailwind px-96).
 func (r *StyleRefinement) Px_96() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// Px_112 is the "112" scale value.
+// Px_112 sets the left and right padding to 28rem (Tailwind px-112).
 func (r *StyleRefinement) Px_112() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// Px_128 is the "128" scale value.
+// Px_128 sets the left and right padding to 32rem (Tailwind px-128).
 func (r *StyleRefinement) Px_128() *StyleRefinement {
 	return r.Px(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// Px_Px is the "px" scale value.
+// Px_Px sets the left and right padding to 1px (Tailwind px-px).
 func (r *StyleRefinement) Px_Px() *StyleRefinement {
 	return r.Px(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// Px_1_2 is the "1_2" scale value.
+// Px_1_2 sets the left and right padding to 50% of the parent size (Tailwind px-1/2).
 func (r *StyleRefinement) Px_1_2() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.5)) }
 
-// Px_1_3 is the "1_3" scale value.
+// Px_1_3 sets the left and right padding to 33.33% of the parent size (Tailwind px-1/3).
 func (r *StyleRefinement) Px_1_3() *StyleRefinement {
 	return r.Px(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// Px_2_3 is the "2_3" scale value.
+// Px_2_3 sets the left and right padding to 66.67% of the parent size (Tailwind px-2/3).
 func (r *StyleRefinement) Px_2_3() *StyleRefinement {
 	return r.Px(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// Px_1_4 is the "1_4" scale value.
+// Px_1_4 sets the left and right padding to 25% of the parent size (Tailwind px-1/4).
 func (r *StyleRefinement) Px_1_4() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.25)) }
 
-// Px_2_4 is the "2_4" scale value.
+// Px_2_4 sets the left and right padding to 50% of the parent size (Tailwind px-2/4).
 func (r *StyleRefinement) Px_2_4() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.5)) }
 
-// Px_3_4 is the "3_4" scale value.
+// Px_3_4 sets the left and right padding to 75% of the parent size (Tailwind px-3/4).
 func (r *StyleRefinement) Px_3_4() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.75)) }
 
-// Px_1_5 is the "1_5" scale value.
+// Px_1_5 sets the left and right padding to 20% of the parent size (Tailwind px-1/5).
 func (r *StyleRefinement) Px_1_5() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.2)) }
 
-// Px_2_5 is the "2_5" scale value.
+// Px_2_5 sets the left and right padding to 40% of the parent size (Tailwind px-2/5).
 func (r *StyleRefinement) Px_2_5() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.4)) }
 
-// Px_3_5 is the "3_5" scale value.
+// Px_3_5 sets the left and right padding to 60% of the parent size (Tailwind px-3/5).
 func (r *StyleRefinement) Px_3_5() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.6)) }
 
-// Px_4_5 is the "4_5" scale value.
+// Px_4_5 sets the left and right padding to 80% of the parent size (Tailwind px-4/5).
 func (r *StyleRefinement) Px_4_5() *StyleRefinement { return r.Px(geometry.RelativeDefinite(0.8)) }
 
-// Px_1_6 is the "1_6" scale value.
+// Px_1_6 sets the left and right padding to 16.67% of the parent size (Tailwind px-1/6).
 func (r *StyleRefinement) Px_1_6() *StyleRefinement {
 	return r.Px(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// Px_5_6 is the "5_6" scale value.
+// Px_5_6 sets the left and right padding to 83.33% of the parent size (Tailwind px-5/6).
 func (r *StyleRefinement) Px_5_6() *StyleRefinement {
 	return r.Px(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// Px_1_12 is the "1_12" scale value.
+// Px_1_12 sets the left and right padding to 8.333% of the parent size (Tailwind px-1/12).
 func (r *StyleRefinement) Px_1_12() *StyleRefinement {
 	return r.Px(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Pl_0 is the "0" scale value.
+// Pl_0 sets the left padding to 0px (Tailwind pl-0).
 func (r *StyleRefinement) Pl_0() *StyleRefinement {
 	return r.Pl(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// Pl_0p5 is the "0p5" scale value.
+// Pl_0p5 sets the left padding to 0.125rem (Tailwind pl-0.5).
 func (r *StyleRefinement) Pl_0p5() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// Pl_1 is the "1" scale value.
+// Pl_1 sets the left padding to 0.25rem (Tailwind pl-1).
 func (r *StyleRefinement) Pl_1() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// Pl_1p5 is the "1p5" scale value.
+// Pl_1p5 sets the left padding to 0.375rem (Tailwind pl-1.5).
 func (r *StyleRefinement) Pl_1p5() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// Pl_2 is the "2" scale value.
+// Pl_2 sets the left padding to 0.5rem (Tailwind pl-2).
 func (r *StyleRefinement) Pl_2() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// Pl_2p5 is the "2p5" scale value.
+// Pl_2p5 sets the left padding to 0.625rem (Tailwind pl-2.5).
 func (r *StyleRefinement) Pl_2p5() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// Pl_3 is the "3" scale value.
+// Pl_3 sets the left padding to 0.75rem (Tailwind pl-3).
 func (r *StyleRefinement) Pl_3() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// Pl_3p5 is the "3p5" scale value.
+// Pl_3p5 sets the left padding to 0.875rem (Tailwind pl-3.5).
 func (r *StyleRefinement) Pl_3p5() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// Pl_4 is the "4" scale value.
+// Pl_4 sets the left padding to 1rem (Tailwind pl-4).
 func (r *StyleRefinement) Pl_4() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// Pl_5 is the "5" scale value.
+// Pl_5 sets the left padding to 1.25rem (Tailwind pl-5).
 func (r *StyleRefinement) Pl_5() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// Pl_6 is the "6" scale value.
+// Pl_6 sets the left padding to 1.5rem (Tailwind pl-6).
 func (r *StyleRefinement) Pl_6() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// Pl_7 is the "7" scale value.
+// Pl_7 sets the left padding to 1.75rem (Tailwind pl-7).
 func (r *StyleRefinement) Pl_7() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// Pl_8 is the "8" scale value.
+// Pl_8 sets the left padding to 2rem (Tailwind pl-8).
 func (r *StyleRefinement) Pl_8() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// Pl_9 is the "9" scale value.
+// Pl_9 sets the left padding to 2.25rem (Tailwind pl-9).
 func (r *StyleRefinement) Pl_9() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// Pl_10 is the "10" scale value.
+// Pl_10 sets the left padding to 2.5rem (Tailwind pl-10).
 func (r *StyleRefinement) Pl_10() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// Pl_11 is the "11" scale value.
+// Pl_11 sets the left padding to 2.75rem (Tailwind pl-11).
 func (r *StyleRefinement) Pl_11() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// Pl_12 is the "12" scale value.
+// Pl_12 sets the left padding to 3rem (Tailwind pl-12).
 func (r *StyleRefinement) Pl_12() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// Pl_16 is the "16" scale value.
+// Pl_16 sets the left padding to 4rem (Tailwind pl-16).
 func (r *StyleRefinement) Pl_16() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// Pl_20 is the "20" scale value.
+// Pl_20 sets the left padding to 5rem (Tailwind pl-20).
 func (r *StyleRefinement) Pl_20() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// Pl_24 is the "24" scale value.
+// Pl_24 sets the left padding to 6rem (Tailwind pl-24).
 func (r *StyleRefinement) Pl_24() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// Pl_32 is the "32" scale value.
+// Pl_32 sets the left padding to 8rem (Tailwind pl-32).
 func (r *StyleRefinement) Pl_32() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// Pl_40 is the "40" scale value.
+// Pl_40 sets the left padding to 10rem (Tailwind pl-40).
 func (r *StyleRefinement) Pl_40() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// Pl_48 is the "48" scale value.
+// Pl_48 sets the left padding to 12rem (Tailwind pl-48).
 func (r *StyleRefinement) Pl_48() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// Pl_56 is the "56" scale value.
+// Pl_56 sets the left padding to 14rem (Tailwind pl-56).
 func (r *StyleRefinement) Pl_56() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// Pl_64 is the "64" scale value.
+// Pl_64 sets the left padding to 16rem (Tailwind pl-64).
 func (r *StyleRefinement) Pl_64() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// Pl_72 is the "72" scale value.
+// Pl_72 sets the left padding to 18rem (Tailwind pl-72).
 func (r *StyleRefinement) Pl_72() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// Pl_80 is the "80" scale value.
+// Pl_80 sets the left padding to 20rem (Tailwind pl-80).
 func (r *StyleRefinement) Pl_80() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// Pl_96 is the "96" scale value.
+// Pl_96 sets the left padding to 24rem (Tailwind pl-96).
 func (r *StyleRefinement) Pl_96() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// Pl_112 is the "112" scale value.
+// Pl_112 sets the left padding to 28rem (Tailwind pl-112).
 func (r *StyleRefinement) Pl_112() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// Pl_128 is the "128" scale value.
+// Pl_128 sets the left padding to 32rem (Tailwind pl-128).
 func (r *StyleRefinement) Pl_128() *StyleRefinement {
 	return r.Pl(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// Pl_Px is the "px" scale value.
+// Pl_Px sets the left padding to 1px (Tailwind pl-px).
 func (r *StyleRefinement) Pl_Px() *StyleRefinement {
 	return r.Pl(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// Pl_1_2 is the "1_2" scale value.
+// Pl_1_2 sets the left padding to 50% of the parent size (Tailwind pl-1/2).
 func (r *StyleRefinement) Pl_1_2() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.5)) }
 
-// Pl_1_3 is the "1_3" scale value.
+// Pl_1_3 sets the left padding to 33.33% of the parent size (Tailwind pl-1/3).
 func (r *StyleRefinement) Pl_1_3() *StyleRefinement {
 	return r.Pl(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// Pl_2_3 is the "2_3" scale value.
+// Pl_2_3 sets the left padding to 66.67% of the parent size (Tailwind pl-2/3).
 func (r *StyleRefinement) Pl_2_3() *StyleRefinement {
 	return r.Pl(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// Pl_1_4 is the "1_4" scale value.
+// Pl_1_4 sets the left padding to 25% of the parent size (Tailwind pl-1/4).
 func (r *StyleRefinement) Pl_1_4() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.25)) }
 
-// Pl_2_4 is the "2_4" scale value.
+// Pl_2_4 sets the left padding to 50% of the parent size (Tailwind pl-2/4).
 func (r *StyleRefinement) Pl_2_4() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.5)) }
 
-// Pl_3_4 is the "3_4" scale value.
+// Pl_3_4 sets the left padding to 75% of the parent size (Tailwind pl-3/4).
 func (r *StyleRefinement) Pl_3_4() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.75)) }
 
-// Pl_1_5 is the "1_5" scale value.
+// Pl_1_5 sets the left padding to 20% of the parent size (Tailwind pl-1/5).
 func (r *StyleRefinement) Pl_1_5() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.2)) }
 
-// Pl_2_5 is the "2_5" scale value.
+// Pl_2_5 sets the left padding to 40% of the parent size (Tailwind pl-2/5).
 func (r *StyleRefinement) Pl_2_5() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.4)) }
 
-// Pl_3_5 is the "3_5" scale value.
+// Pl_3_5 sets the left padding to 60% of the parent size (Tailwind pl-3/5).
 func (r *StyleRefinement) Pl_3_5() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.6)) }
 
-// Pl_4_5 is the "4_5" scale value.
+// Pl_4_5 sets the left padding to 80% of the parent size (Tailwind pl-4/5).
 func (r *StyleRefinement) Pl_4_5() *StyleRefinement { return r.Pl(geometry.RelativeDefinite(0.8)) }
 
-// Pl_1_6 is the "1_6" scale value.
+// Pl_1_6 sets the left padding to 16.67% of the parent size (Tailwind pl-1/6).
 func (r *StyleRefinement) Pl_1_6() *StyleRefinement {
 	return r.Pl(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// Pl_5_6 is the "5_6" scale value.
+// Pl_5_6 sets the left padding to 83.33% of the parent size (Tailwind pl-5/6).
 func (r *StyleRefinement) Pl_5_6() *StyleRefinement {
 	return r.Pl(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// Pl_1_12 is the "1_12" scale value.
+// Pl_1_12 sets the left padding to 8.333% of the parent size (Tailwind pl-1/12).
 func (r *StyleRefinement) Pl_1_12() *StyleRefinement {
 	return r.Pl(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Pr_0 is the "0" scale value.
+// Pr_0 sets the right padding to 0px (Tailwind pr-0).
 func (r *StyleRefinement) Pr_0() *StyleRefinement {
 	return r.Pr(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// Pr_0p5 is the "0p5" scale value.
+// Pr_0p5 sets the right padding to 0.125rem (Tailwind pr-0.5).
 func (r *StyleRefinement) Pr_0p5() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// Pr_1 is the "1" scale value.
+// Pr_1 sets the right padding to 0.25rem (Tailwind pr-1).
 func (r *StyleRefinement) Pr_1() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// Pr_1p5 is the "1p5" scale value.
+// Pr_1p5 sets the right padding to 0.375rem (Tailwind pr-1.5).
 func (r *StyleRefinement) Pr_1p5() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// Pr_2 is the "2" scale value.
+// Pr_2 sets the right padding to 0.5rem (Tailwind pr-2).
 func (r *StyleRefinement) Pr_2() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// Pr_2p5 is the "2p5" scale value.
+// Pr_2p5 sets the right padding to 0.625rem (Tailwind pr-2.5).
 func (r *StyleRefinement) Pr_2p5() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// Pr_3 is the "3" scale value.
+// Pr_3 sets the right padding to 0.75rem (Tailwind pr-3).
 func (r *StyleRefinement) Pr_3() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// Pr_3p5 is the "3p5" scale value.
+// Pr_3p5 sets the right padding to 0.875rem (Tailwind pr-3.5).
 func (r *StyleRefinement) Pr_3p5() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// Pr_4 is the "4" scale value.
+// Pr_4 sets the right padding to 1rem (Tailwind pr-4).
 func (r *StyleRefinement) Pr_4() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// Pr_5 is the "5" scale value.
+// Pr_5 sets the right padding to 1.25rem (Tailwind pr-5).
 func (r *StyleRefinement) Pr_5() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// Pr_6 is the "6" scale value.
+// Pr_6 sets the right padding to 1.5rem (Tailwind pr-6).
 func (r *StyleRefinement) Pr_6() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// Pr_7 is the "7" scale value.
+// Pr_7 sets the right padding to 1.75rem (Tailwind pr-7).
 func (r *StyleRefinement) Pr_7() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// Pr_8 is the "8" scale value.
+// Pr_8 sets the right padding to 2rem (Tailwind pr-8).
 func (r *StyleRefinement) Pr_8() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// Pr_9 is the "9" scale value.
+// Pr_9 sets the right padding to 2.25rem (Tailwind pr-9).
 func (r *StyleRefinement) Pr_9() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// Pr_10 is the "10" scale value.
+// Pr_10 sets the right padding to 2.5rem (Tailwind pr-10).
 func (r *StyleRefinement) Pr_10() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// Pr_11 is the "11" scale value.
+// Pr_11 sets the right padding to 2.75rem (Tailwind pr-11).
 func (r *StyleRefinement) Pr_11() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// Pr_12 is the "12" scale value.
+// Pr_12 sets the right padding to 3rem (Tailwind pr-12).
 func (r *StyleRefinement) Pr_12() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// Pr_16 is the "16" scale value.
+// Pr_16 sets the right padding to 4rem (Tailwind pr-16).
 func (r *StyleRefinement) Pr_16() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// Pr_20 is the "20" scale value.
+// Pr_20 sets the right padding to 5rem (Tailwind pr-20).
 func (r *StyleRefinement) Pr_20() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// Pr_24 is the "24" scale value.
+// Pr_24 sets the right padding to 6rem (Tailwind pr-24).
 func (r *StyleRefinement) Pr_24() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// Pr_32 is the "32" scale value.
+// Pr_32 sets the right padding to 8rem (Tailwind pr-32).
 func (r *StyleRefinement) Pr_32() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// Pr_40 is the "40" scale value.
+// Pr_40 sets the right padding to 10rem (Tailwind pr-40).
 func (r *StyleRefinement) Pr_40() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// Pr_48 is the "48" scale value.
+// Pr_48 sets the right padding to 12rem (Tailwind pr-48).
 func (r *StyleRefinement) Pr_48() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// Pr_56 is the "56" scale value.
+// Pr_56 sets the right padding to 14rem (Tailwind pr-56).
 func (r *StyleRefinement) Pr_56() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// Pr_64 is the "64" scale value.
+// Pr_64 sets the right padding to 16rem (Tailwind pr-64).
 func (r *StyleRefinement) Pr_64() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// Pr_72 is the "72" scale value.
+// Pr_72 sets the right padding to 18rem (Tailwind pr-72).
 func (r *StyleRefinement) Pr_72() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// Pr_80 is the "80" scale value.
+// Pr_80 sets the right padding to 20rem (Tailwind pr-80).
 func (r *StyleRefinement) Pr_80() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// Pr_96 is the "96" scale value.
+// Pr_96 sets the right padding to 24rem (Tailwind pr-96).
 func (r *StyleRefinement) Pr_96() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// Pr_112 is the "112" scale value.
+// Pr_112 sets the right padding to 28rem (Tailwind pr-112).
 func (r *StyleRefinement) Pr_112() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// Pr_128 is the "128" scale value.
+// Pr_128 sets the right padding to 32rem (Tailwind pr-128).
 func (r *StyleRefinement) Pr_128() *StyleRefinement {
 	return r.Pr(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// Pr_Px is the "px" scale value.
+// Pr_Px sets the right padding to 1px (Tailwind pr-px).
 func (r *StyleRefinement) Pr_Px() *StyleRefinement {
 	return r.Pr(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// Pr_1_2 is the "1_2" scale value.
+// Pr_1_2 sets the right padding to 50% of the parent size (Tailwind pr-1/2).
 func (r *StyleRefinement) Pr_1_2() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.5)) }
 
-// Pr_1_3 is the "1_3" scale value.
+// Pr_1_3 sets the right padding to 33.33% of the parent size (Tailwind pr-1/3).
 func (r *StyleRefinement) Pr_1_3() *StyleRefinement {
 	return r.Pr(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// Pr_2_3 is the "2_3" scale value.
+// Pr_2_3 sets the right padding to 66.67% of the parent size (Tailwind pr-2/3).
 func (r *StyleRefinement) Pr_2_3() *StyleRefinement {
 	return r.Pr(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// Pr_1_4 is the "1_4" scale value.
+// Pr_1_4 sets the right padding to 25% of the parent size (Tailwind pr-1/4).
 func (r *StyleRefinement) Pr_1_4() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.25)) }
 
-// Pr_2_4 is the "2_4" scale value.
+// Pr_2_4 sets the right padding to 50% of the parent size (Tailwind pr-2/4).
 func (r *StyleRefinement) Pr_2_4() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.5)) }
 
-// Pr_3_4 is the "3_4" scale value.
+// Pr_3_4 sets the right padding to 75% of the parent size (Tailwind pr-3/4).
 func (r *StyleRefinement) Pr_3_4() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.75)) }
 
-// Pr_1_5 is the "1_5" scale value.
+// Pr_1_5 sets the right padding to 20% of the parent size (Tailwind pr-1/5).
 func (r *StyleRefinement) Pr_1_5() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.2)) }
 
-// Pr_2_5 is the "2_5" scale value.
+// Pr_2_5 sets the right padding to 40% of the parent size (Tailwind pr-2/5).
 func (r *StyleRefinement) Pr_2_5() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.4)) }
 
-// Pr_3_5 is the "3_5" scale value.
+// Pr_3_5 sets the right padding to 60% of the parent size (Tailwind pr-3/5).
 func (r *StyleRefinement) Pr_3_5() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.6)) }
 
-// Pr_4_5 is the "4_5" scale value.
+// Pr_4_5 sets the right padding to 80% of the parent size (Tailwind pr-4/5).
 func (r *StyleRefinement) Pr_4_5() *StyleRefinement { return r.Pr(geometry.RelativeDefinite(0.8)) }
 
-// Pr_1_6 is the "1_6" scale value.
+// Pr_1_6 sets the right padding to 16.67% of the parent size (Tailwind pr-1/6).
 func (r *StyleRefinement) Pr_1_6() *StyleRefinement {
 	return r.Pr(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// Pr_5_6 is the "5_6" scale value.
+// Pr_5_6 sets the right padding to 83.33% of the parent size (Tailwind pr-5/6).
 func (r *StyleRefinement) Pr_5_6() *StyleRefinement {
 	return r.Pr(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// Pr_1_12 is the "1_12" scale value.
+// Pr_1_12 sets the right padding to 8.333% of the parent size (Tailwind pr-1/12).
 func (r *StyleRefinement) Pr_1_12() *StyleRefinement {
 	return r.Pr(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Gap_0 is the "0" scale value.
+// Gap_0 sets the row and column gap to 0px (Tailwind gap-0).
 func (r *StyleRefinement) Gap_0() *StyleRefinement {
 	return r.SetGap(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// Gap_0p5 is the "0p5" scale value.
+// Gap_0p5 sets the row and column gap to 0.125rem (Tailwind gap-0.5).
 func (r *StyleRefinement) Gap_0p5() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// Gap_1 is the "1" scale value.
+// Gap_1 sets the row and column gap to 0.25rem (Tailwind gap-1).
 func (r *StyleRefinement) Gap_1() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// Gap_1p5 is the "1p5" scale value.
+// Gap_1p5 sets the row and column gap to 0.375rem (Tailwind gap-1.5).
 func (r *StyleRefinement) Gap_1p5() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// Gap_2 is the "2" scale value.
+// Gap_2 sets the row and column gap to 0.5rem (Tailwind gap-2).
 func (r *StyleRefinement) Gap_2() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// Gap_2p5 is the "2p5" scale value.
+// Gap_2p5 sets the row and column gap to 0.625rem (Tailwind gap-2.5).
 func (r *StyleRefinement) Gap_2p5() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// Gap_3 is the "3" scale value.
+// Gap_3 sets the row and column gap to 0.75rem (Tailwind gap-3).
 func (r *StyleRefinement) Gap_3() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// Gap_3p5 is the "3p5" scale value.
+// Gap_3p5 sets the row and column gap to 0.875rem (Tailwind gap-3.5).
 func (r *StyleRefinement) Gap_3p5() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// Gap_4 is the "4" scale value.
+// Gap_4 sets the row and column gap to 1rem (Tailwind gap-4).
 func (r *StyleRefinement) Gap_4() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// Gap_5 is the "5" scale value.
+// Gap_5 sets the row and column gap to 1.25rem (Tailwind gap-5).
 func (r *StyleRefinement) Gap_5() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// Gap_6 is the "6" scale value.
+// Gap_6 sets the row and column gap to 1.5rem (Tailwind gap-6).
 func (r *StyleRefinement) Gap_6() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// Gap_7 is the "7" scale value.
+// Gap_7 sets the row and column gap to 1.75rem (Tailwind gap-7).
 func (r *StyleRefinement) Gap_7() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// Gap_8 is the "8" scale value.
+// Gap_8 sets the row and column gap to 2rem (Tailwind gap-8).
 func (r *StyleRefinement) Gap_8() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// Gap_9 is the "9" scale value.
+// Gap_9 sets the row and column gap to 2.25rem (Tailwind gap-9).
 func (r *StyleRefinement) Gap_9() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// Gap_10 is the "10" scale value.
+// Gap_10 sets the row and column gap to 2.5rem (Tailwind gap-10).
 func (r *StyleRefinement) Gap_10() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// Gap_11 is the "11" scale value.
+// Gap_11 sets the row and column gap to 2.75rem (Tailwind gap-11).
 func (r *StyleRefinement) Gap_11() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// Gap_12 is the "12" scale value.
+// Gap_12 sets the row and column gap to 3rem (Tailwind gap-12).
 func (r *StyleRefinement) Gap_12() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// Gap_16 is the "16" scale value.
+// Gap_16 sets the row and column gap to 4rem (Tailwind gap-16).
 func (r *StyleRefinement) Gap_16() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// Gap_20 is the "20" scale value.
+// Gap_20 sets the row and column gap to 5rem (Tailwind gap-20).
 func (r *StyleRefinement) Gap_20() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// Gap_24 is the "24" scale value.
+// Gap_24 sets the row and column gap to 6rem (Tailwind gap-24).
 func (r *StyleRefinement) Gap_24() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// Gap_32 is the "32" scale value.
+// Gap_32 sets the row and column gap to 8rem (Tailwind gap-32).
 func (r *StyleRefinement) Gap_32() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// Gap_40 is the "40" scale value.
+// Gap_40 sets the row and column gap to 10rem (Tailwind gap-40).
 func (r *StyleRefinement) Gap_40() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// Gap_48 is the "48" scale value.
+// Gap_48 sets the row and column gap to 12rem (Tailwind gap-48).
 func (r *StyleRefinement) Gap_48() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// Gap_56 is the "56" scale value.
+// Gap_56 sets the row and column gap to 14rem (Tailwind gap-56).
 func (r *StyleRefinement) Gap_56() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// Gap_64 is the "64" scale value.
+// Gap_64 sets the row and column gap to 16rem (Tailwind gap-64).
 func (r *StyleRefinement) Gap_64() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// Gap_72 is the "72" scale value.
+// Gap_72 sets the row and column gap to 18rem (Tailwind gap-72).
 func (r *StyleRefinement) Gap_72() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// Gap_80 is the "80" scale value.
+// Gap_80 sets the row and column gap to 20rem (Tailwind gap-80).
 func (r *StyleRefinement) Gap_80() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// Gap_96 is the "96" scale value.
+// Gap_96 sets the row and column gap to 24rem (Tailwind gap-96).
 func (r *StyleRefinement) Gap_96() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// Gap_112 is the "112" scale value.
+// Gap_112 sets the row and column gap to 28rem (Tailwind gap-112).
 func (r *StyleRefinement) Gap_112() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// Gap_128 is the "128" scale value.
+// Gap_128 sets the row and column gap to 32rem (Tailwind gap-128).
 func (r *StyleRefinement) Gap_128() *StyleRefinement {
 	return r.SetGap(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// Gap_Px is the "px" scale value.
+// Gap_Px sets the row and column gap to 1px (Tailwind gap-px).
 func (r *StyleRefinement) Gap_Px() *StyleRefinement {
 	return r.SetGap(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// Gap_1_2 is the "1_2" scale value.
+// Gap_1_2 sets the row and column gap to 50% of the parent size (Tailwind gap-1/2).
 func (r *StyleRefinement) Gap_1_2() *StyleRefinement { return r.SetGap(geometry.RelativeDefinite(0.5)) }
 
-// Gap_1_3 is the "1_3" scale value.
+// Gap_1_3 sets the row and column gap to 33.33% of the parent size (Tailwind gap-1/3).
 func (r *StyleRefinement) Gap_1_3() *StyleRefinement {
 	return r.SetGap(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// Gap_2_3 is the "2_3" scale value.
+// Gap_2_3 sets the row and column gap to 66.67% of the parent size (Tailwind gap-2/3).
 func (r *StyleRefinement) Gap_2_3() *StyleRefinement {
 	return r.SetGap(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// Gap_1_4 is the "1_4" scale value.
+// Gap_1_4 sets the row and column gap to 25% of the parent size (Tailwind gap-1/4).
 func (r *StyleRefinement) Gap_1_4() *StyleRefinement {
 	return r.SetGap(geometry.RelativeDefinite(0.25))
 }
 
-// Gap_2_4 is the "2_4" scale value.
+// Gap_2_4 sets the row and column gap to 50% of the parent size (Tailwind gap-2/4).
 func (r *StyleRefinement) Gap_2_4() *StyleRefinement { return r.SetGap(geometry.RelativeDefinite(0.5)) }
 
-// Gap_3_4 is the "3_4" scale value.
+// Gap_3_4 sets the row and column gap to 75% of the parent size (Tailwind gap-3/4).
 func (r *StyleRefinement) Gap_3_4() *StyleRefinement {
 	return r.SetGap(geometry.RelativeDefinite(0.75))
 }
 
-// Gap_1_5 is the "1_5" scale value.
+// Gap_1_5 sets the row and column gap to 20% of the parent size (Tailwind gap-1/5).
 func (r *StyleRefinement) Gap_1_5() *StyleRefinement { return r.SetGap(geometry.RelativeDefinite(0.2)) }
 
-// Gap_2_5 is the "2_5" scale value.
+// Gap_2_5 sets the row and column gap to 40% of the parent size (Tailwind gap-2/5).
 func (r *StyleRefinement) Gap_2_5() *StyleRefinement { return r.SetGap(geometry.RelativeDefinite(0.4)) }
 
-// Gap_3_5 is the "3_5" scale value.
+// Gap_3_5 sets the row and column gap to 60% of the parent size (Tailwind gap-3/5).
 func (r *StyleRefinement) Gap_3_5() *StyleRefinement { return r.SetGap(geometry.RelativeDefinite(0.6)) }
 
-// Gap_4_5 is the "4_5" scale value.
+// Gap_4_5 sets the row and column gap to 80% of the parent size (Tailwind gap-4/5).
 func (r *StyleRefinement) Gap_4_5() *StyleRefinement { return r.SetGap(geometry.RelativeDefinite(0.8)) }
 
-// Gap_1_6 is the "1_6" scale value.
+// Gap_1_6 sets the row and column gap to 16.67% of the parent size (Tailwind gap-1/6).
 func (r *StyleRefinement) Gap_1_6() *StyleRefinement {
 	return r.SetGap(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// Gap_5_6 is the "5_6" scale value.
+// Gap_5_6 sets the row and column gap to 83.33% of the parent size (Tailwind gap-5/6).
 func (r *StyleRefinement) Gap_5_6() *StyleRefinement {
 	return r.SetGap(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// Gap_1_12 is the "1_12" scale value.
+// Gap_1_12 sets the row and column gap to 8.333% of the parent size (Tailwind gap-1/12).
 func (r *StyleRefinement) Gap_1_12() *StyleRefinement {
 	return r.SetGap(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// GapX_0 is the "0" scale value.
+// GapX_0 sets the column gap to 0px (Tailwind gap-x-0).
 func (r *StyleRefinement) GapX_0() *StyleRefinement {
 	return r.SetGapX(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// GapX_0p5 is the "0p5" scale value.
+// GapX_0p5 sets the column gap to 0.125rem (Tailwind gap-x-0.5).
 func (r *StyleRefinement) GapX_0p5() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// GapX_1 is the "1" scale value.
+// GapX_1 sets the column gap to 0.25rem (Tailwind gap-x-1).
 func (r *StyleRefinement) GapX_1() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// GapX_1p5 is the "1p5" scale value.
+// GapX_1p5 sets the column gap to 0.375rem (Tailwind gap-x-1.5).
 func (r *StyleRefinement) GapX_1p5() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// GapX_2 is the "2" scale value.
+// GapX_2 sets the column gap to 0.5rem (Tailwind gap-x-2).
 func (r *StyleRefinement) GapX_2() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// GapX_2p5 is the "2p5" scale value.
+// GapX_2p5 sets the column gap to 0.625rem (Tailwind gap-x-2.5).
 func (r *StyleRefinement) GapX_2p5() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// GapX_3 is the "3" scale value.
+// GapX_3 sets the column gap to 0.75rem (Tailwind gap-x-3).
 func (r *StyleRefinement) GapX_3() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// GapX_3p5 is the "3p5" scale value.
+// GapX_3p5 sets the column gap to 0.875rem (Tailwind gap-x-3.5).
 func (r *StyleRefinement) GapX_3p5() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// GapX_4 is the "4" scale value.
+// GapX_4 sets the column gap to 1rem (Tailwind gap-x-4).
 func (r *StyleRefinement) GapX_4() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// GapX_5 is the "5" scale value.
+// GapX_5 sets the column gap to 1.25rem (Tailwind gap-x-5).
 func (r *StyleRefinement) GapX_5() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// GapX_6 is the "6" scale value.
+// GapX_6 sets the column gap to 1.5rem (Tailwind gap-x-6).
 func (r *StyleRefinement) GapX_6() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// GapX_7 is the "7" scale value.
+// GapX_7 sets the column gap to 1.75rem (Tailwind gap-x-7).
 func (r *StyleRefinement) GapX_7() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// GapX_8 is the "8" scale value.
+// GapX_8 sets the column gap to 2rem (Tailwind gap-x-8).
 func (r *StyleRefinement) GapX_8() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// GapX_9 is the "9" scale value.
+// GapX_9 sets the column gap to 2.25rem (Tailwind gap-x-9).
 func (r *StyleRefinement) GapX_9() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// GapX_10 is the "10" scale value.
+// GapX_10 sets the column gap to 2.5rem (Tailwind gap-x-10).
 func (r *StyleRefinement) GapX_10() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// GapX_11 is the "11" scale value.
+// GapX_11 sets the column gap to 2.75rem (Tailwind gap-x-11).
 func (r *StyleRefinement) GapX_11() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// GapX_12 is the "12" scale value.
+// GapX_12 sets the column gap to 3rem (Tailwind gap-x-12).
 func (r *StyleRefinement) GapX_12() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// GapX_16 is the "16" scale value.
+// GapX_16 sets the column gap to 4rem (Tailwind gap-x-16).
 func (r *StyleRefinement) GapX_16() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// GapX_20 is the "20" scale value.
+// GapX_20 sets the column gap to 5rem (Tailwind gap-x-20).
 func (r *StyleRefinement) GapX_20() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// GapX_24 is the "24" scale value.
+// GapX_24 sets the column gap to 6rem (Tailwind gap-x-24).
 func (r *StyleRefinement) GapX_24() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// GapX_32 is the "32" scale value.
+// GapX_32 sets the column gap to 8rem (Tailwind gap-x-32).
 func (r *StyleRefinement) GapX_32() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// GapX_40 is the "40" scale value.
+// GapX_40 sets the column gap to 10rem (Tailwind gap-x-40).
 func (r *StyleRefinement) GapX_40() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// GapX_48 is the "48" scale value.
+// GapX_48 sets the column gap to 12rem (Tailwind gap-x-48).
 func (r *StyleRefinement) GapX_48() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// GapX_56 is the "56" scale value.
+// GapX_56 sets the column gap to 14rem (Tailwind gap-x-56).
 func (r *StyleRefinement) GapX_56() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// GapX_64 is the "64" scale value.
+// GapX_64 sets the column gap to 16rem (Tailwind gap-x-64).
 func (r *StyleRefinement) GapX_64() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// GapX_72 is the "72" scale value.
+// GapX_72 sets the column gap to 18rem (Tailwind gap-x-72).
 func (r *StyleRefinement) GapX_72() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// GapX_80 is the "80" scale value.
+// GapX_80 sets the column gap to 20rem (Tailwind gap-x-80).
 func (r *StyleRefinement) GapX_80() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// GapX_96 is the "96" scale value.
+// GapX_96 sets the column gap to 24rem (Tailwind gap-x-96).
 func (r *StyleRefinement) GapX_96() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// GapX_112 is the "112" scale value.
+// GapX_112 sets the column gap to 28rem (Tailwind gap-x-112).
 func (r *StyleRefinement) GapX_112() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// GapX_128 is the "128" scale value.
+// GapX_128 sets the column gap to 32rem (Tailwind gap-x-128).
 func (r *StyleRefinement) GapX_128() *StyleRefinement {
 	return r.SetGapX(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// GapX_Px is the "px" scale value.
+// GapX_Px sets the column gap to 1px (Tailwind gap-x-px).
 func (r *StyleRefinement) GapX_Px() *StyleRefinement {
 	return r.SetGapX(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// GapX_1_2 is the "1_2" scale value.
+// GapX_1_2 sets the column gap to 50% of the parent size (Tailwind gap-x-1/2).
 func (r *StyleRefinement) GapX_1_2() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.5))
 }
 
-// GapX_1_3 is the "1_3" scale value.
+// GapX_1_3 sets the column gap to 33.33% of the parent size (Tailwind gap-x-1/3).
 func (r *StyleRefinement) GapX_1_3() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// GapX_2_3 is the "2_3" scale value.
+// GapX_2_3 sets the column gap to 66.67% of the parent size (Tailwind gap-x-2/3).
 func (r *StyleRefinement) GapX_2_3() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// GapX_1_4 is the "1_4" scale value.
+// GapX_1_4 sets the column gap to 25% of the parent size (Tailwind gap-x-1/4).
 func (r *StyleRefinement) GapX_1_4() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.25))
 }
 
-// GapX_2_4 is the "2_4" scale value.
+// GapX_2_4 sets the column gap to 50% of the parent size (Tailwind gap-x-2/4).
 func (r *StyleRefinement) GapX_2_4() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.5))
 }
 
-// GapX_3_4 is the "3_4" scale value.
+// GapX_3_4 sets the column gap to 75% of the parent size (Tailwind gap-x-3/4).
 func (r *StyleRefinement) GapX_3_4() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.75))
 }
 
-// GapX_1_5 is the "1_5" scale value.
+// GapX_1_5 sets the column gap to 20% of the parent size (Tailwind gap-x-1/5).
 func (r *StyleRefinement) GapX_1_5() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.2))
 }
 
-// GapX_2_5 is the "2_5" scale value.
+// GapX_2_5 sets the column gap to 40% of the parent size (Tailwind gap-x-2/5).
 func (r *StyleRefinement) GapX_2_5() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.4))
 }
 
-// GapX_3_5 is the "3_5" scale value.
+// GapX_3_5 sets the column gap to 60% of the parent size (Tailwind gap-x-3/5).
 func (r *StyleRefinement) GapX_3_5() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.6))
 }
 
-// GapX_4_5 is the "4_5" scale value.
+// GapX_4_5 sets the column gap to 80% of the parent size (Tailwind gap-x-4/5).
 func (r *StyleRefinement) GapX_4_5() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(0.8))
 }
 
-// GapX_1_6 is the "1_6" scale value.
+// GapX_1_6 sets the column gap to 16.67% of the parent size (Tailwind gap-x-1/6).
 func (r *StyleRefinement) GapX_1_6() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// GapX_5_6 is the "5_6" scale value.
+// GapX_5_6 sets the column gap to 83.33% of the parent size (Tailwind gap-x-5/6).
 func (r *StyleRefinement) GapX_5_6() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// GapX_1_12 is the "1_12" scale value.
+// GapX_1_12 sets the column gap to 8.333% of the parent size (Tailwind gap-x-1/12).
 func (r *StyleRefinement) GapX_1_12() *StyleRefinement {
 	return r.SetGapX(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// GapY_0 is the "0" scale value.
+// GapY_0 sets the row gap to 0px (Tailwind gap-y-0).
 func (r *StyleRefinement) GapY_0() *StyleRefinement {
 	return r.SetGapY(geometry.PixelsDefinite(geometry.Px(0)))
 }
 
-// GapY_0p5 is the "0p5" scale value.
+// GapY_0p5 sets the row gap to 0.125rem (Tailwind gap-y-0.5).
 func (r *StyleRefinement) GapY_0p5() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(0.125)))
 }
 
-// GapY_1 is the "1" scale value.
+// GapY_1 sets the row gap to 0.25rem (Tailwind gap-y-1).
 func (r *StyleRefinement) GapY_1() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(0.25)))
 }
 
-// GapY_1p5 is the "1p5" scale value.
+// GapY_1p5 sets the row gap to 0.375rem (Tailwind gap-y-1.5).
 func (r *StyleRefinement) GapY_1p5() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(0.375)))
 }
 
-// GapY_2 is the "2" scale value.
+// GapY_2 sets the row gap to 0.5rem (Tailwind gap-y-2).
 func (r *StyleRefinement) GapY_2() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(0.5)))
 }
 
-// GapY_2p5 is the "2p5" scale value.
+// GapY_2p5 sets the row gap to 0.625rem (Tailwind gap-y-2.5).
 func (r *StyleRefinement) GapY_2p5() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(0.625)))
 }
 
-// GapY_3 is the "3" scale value.
+// GapY_3 sets the row gap to 0.75rem (Tailwind gap-y-3).
 func (r *StyleRefinement) GapY_3() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(0.75)))
 }
 
-// GapY_3p5 is the "3p5" scale value.
+// GapY_3p5 sets the row gap to 0.875rem (Tailwind gap-y-3.5).
 func (r *StyleRefinement) GapY_3p5() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(0.875)))
 }
 
-// GapY_4 is the "4" scale value.
+// GapY_4 sets the row gap to 1rem (Tailwind gap-y-4).
 func (r *StyleRefinement) GapY_4() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(1.0)))
 }
 
-// GapY_5 is the "5" scale value.
+// GapY_5 sets the row gap to 1.25rem (Tailwind gap-y-5).
 func (r *StyleRefinement) GapY_5() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(1.25)))
 }
 
-// GapY_6 is the "6" scale value.
+// GapY_6 sets the row gap to 1.5rem (Tailwind gap-y-6).
 func (r *StyleRefinement) GapY_6() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(1.5)))
 }
 
-// GapY_7 is the "7" scale value.
+// GapY_7 sets the row gap to 1.75rem (Tailwind gap-y-7).
 func (r *StyleRefinement) GapY_7() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(1.75)))
 }
 
-// GapY_8 is the "8" scale value.
+// GapY_8 sets the row gap to 2rem (Tailwind gap-y-8).
 func (r *StyleRefinement) GapY_8() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(2.0)))
 }
 
-// GapY_9 is the "9" scale value.
+// GapY_9 sets the row gap to 2.25rem (Tailwind gap-y-9).
 func (r *StyleRefinement) GapY_9() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(2.25)))
 }
 
-// GapY_10 is the "10" scale value.
+// GapY_10 sets the row gap to 2.5rem (Tailwind gap-y-10).
 func (r *StyleRefinement) GapY_10() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(2.5)))
 }
 
-// GapY_11 is the "11" scale value.
+// GapY_11 sets the row gap to 2.75rem (Tailwind gap-y-11).
 func (r *StyleRefinement) GapY_11() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(2.75)))
 }
 
-// GapY_12 is the "12" scale value.
+// GapY_12 sets the row gap to 3rem (Tailwind gap-y-12).
 func (r *StyleRefinement) GapY_12() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(3.0)))
 }
 
-// GapY_16 is the "16" scale value.
+// GapY_16 sets the row gap to 4rem (Tailwind gap-y-16).
 func (r *StyleRefinement) GapY_16() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(4.0)))
 }
 
-// GapY_20 is the "20" scale value.
+// GapY_20 sets the row gap to 5rem (Tailwind gap-y-20).
 func (r *StyleRefinement) GapY_20() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(5.0)))
 }
 
-// GapY_24 is the "24" scale value.
+// GapY_24 sets the row gap to 6rem (Tailwind gap-y-24).
 func (r *StyleRefinement) GapY_24() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(6.0)))
 }
 
-// GapY_32 is the "32" scale value.
+// GapY_32 sets the row gap to 8rem (Tailwind gap-y-32).
 func (r *StyleRefinement) GapY_32() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(8.0)))
 }
 
-// GapY_40 is the "40" scale value.
+// GapY_40 sets the row gap to 10rem (Tailwind gap-y-40).
 func (r *StyleRefinement) GapY_40() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(10.0)))
 }
 
-// GapY_48 is the "48" scale value.
+// GapY_48 sets the row gap to 12rem (Tailwind gap-y-48).
 func (r *StyleRefinement) GapY_48() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(12.0)))
 }
 
-// GapY_56 is the "56" scale value.
+// GapY_56 sets the row gap to 14rem (Tailwind gap-y-56).
 func (r *StyleRefinement) GapY_56() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(14.0)))
 }
 
-// GapY_64 is the "64" scale value.
+// GapY_64 sets the row gap to 16rem (Tailwind gap-y-64).
 func (r *StyleRefinement) GapY_64() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(16.0)))
 }
 
-// GapY_72 is the "72" scale value.
+// GapY_72 sets the row gap to 18rem (Tailwind gap-y-72).
 func (r *StyleRefinement) GapY_72() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(18.0)))
 }
 
-// GapY_80 is the "80" scale value.
+// GapY_80 sets the row gap to 20rem (Tailwind gap-y-80).
 func (r *StyleRefinement) GapY_80() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(20.0)))
 }
 
-// GapY_96 is the "96" scale value.
+// GapY_96 sets the row gap to 24rem (Tailwind gap-y-96).
 func (r *StyleRefinement) GapY_96() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(24.0)))
 }
 
-// GapY_112 is the "112" scale value.
+// GapY_112 sets the row gap to 28rem (Tailwind gap-y-112).
 func (r *StyleRefinement) GapY_112() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(28.0)))
 }
 
-// GapY_128 is the "128" scale value.
+// GapY_128 sets the row gap to 32rem (Tailwind gap-y-128).
 func (r *StyleRefinement) GapY_128() *StyleRefinement {
 	return r.SetGapY(geometry.RemsDefinite(geometry.Rems(32.0)))
 }
 
-// GapY_Px is the "px" scale value.
+// GapY_Px sets the row gap to 1px (Tailwind gap-y-px).
 func (r *StyleRefinement) GapY_Px() *StyleRefinement {
 	return r.SetGapY(geometry.PixelsDefinite(geometry.Px(1)))
 }
 
-// GapY_1_2 is the "1_2" scale value.
+// GapY_1_2 sets the row gap to 50% of the parent size (Tailwind gap-y-1/2).
 func (r *StyleRefinement) GapY_1_2() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.5))
 }
 
-// GapY_1_3 is the "1_3" scale value.
+// GapY_1_3 sets the row gap to 33.33% of the parent size (Tailwind gap-y-1/3).
 func (r *StyleRefinement) GapY_1_3() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(1.0 / 3.0))
 }
 
-// GapY_2_3 is the "2_3" scale value.
+// GapY_2_3 sets the row gap to 66.67% of the parent size (Tailwind gap-y-2/3).
 func (r *StyleRefinement) GapY_2_3() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(2.0 / 3.0))
 }
 
-// GapY_1_4 is the "1_4" scale value.
+// GapY_1_4 sets the row gap to 25% of the parent size (Tailwind gap-y-1/4).
 func (r *StyleRefinement) GapY_1_4() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.25))
 }
 
-// GapY_2_4 is the "2_4" scale value.
+// GapY_2_4 sets the row gap to 50% of the parent size (Tailwind gap-y-2/4).
 func (r *StyleRefinement) GapY_2_4() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.5))
 }
 
-// GapY_3_4 is the "3_4" scale value.
+// GapY_3_4 sets the row gap to 75% of the parent size (Tailwind gap-y-3/4).
 func (r *StyleRefinement) GapY_3_4() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.75))
 }
 
-// GapY_1_5 is the "1_5" scale value.
+// GapY_1_5 sets the row gap to 20% of the parent size (Tailwind gap-y-1/5).
 func (r *StyleRefinement) GapY_1_5() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.2))
 }
 
-// GapY_2_5 is the "2_5" scale value.
+// GapY_2_5 sets the row gap to 40% of the parent size (Tailwind gap-y-2/5).
 func (r *StyleRefinement) GapY_2_5() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.4))
 }
 
-// GapY_3_5 is the "3_5" scale value.
+// GapY_3_5 sets the row gap to 60% of the parent size (Tailwind gap-y-3/5).
 func (r *StyleRefinement) GapY_3_5() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.6))
 }
 
-// GapY_4_5 is the "4_5" scale value.
+// GapY_4_5 sets the row gap to 80% of the parent size (Tailwind gap-y-4/5).
 func (r *StyleRefinement) GapY_4_5() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(0.8))
 }
 
-// GapY_1_6 is the "1_6" scale value.
+// GapY_1_6 sets the row gap to 16.67% of the parent size (Tailwind gap-y-1/6).
 func (r *StyleRefinement) GapY_1_6() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(1.0 / 6.0))
 }
 
-// GapY_5_6 is the "5_6" scale value.
+// GapY_5_6 sets the row gap to 83.33% of the parent size (Tailwind gap-y-5/6).
 func (r *StyleRefinement) GapY_5_6() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(5.0 / 6.0))
 }
 
-// GapY_1_12 is the "1_12" scale value.
+// GapY_1_12 sets the row gap to 8.333% of the parent size (Tailwind gap-y-1/12).
 func (r *StyleRefinement) GapY_1_12() *StyleRefinement {
 	return r.SetGapY(geometry.RelativeDefinite(1.0 / 12.0))
 }
 
-// Top_0 is the "0" scale value.
+// Top_0 sets the top inset to 0rem (Tailwind top-0).
 func (r *StyleRefinement) Top_0() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Top_0p5 is the "0p5" scale value.
+// Top_0p5 sets the top inset to 0.125rem (Tailwind top-0.5).
 func (r *StyleRefinement) Top_0p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Top_1 is the "1" scale value.
+// Top_1 sets the top inset to 0.25rem (Tailwind top-1).
 func (r *StyleRefinement) Top_1() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Top_1p5 is the "1p5" scale value.
+// Top_1p5 sets the top inset to 0.375rem (Tailwind top-1.5).
 func (r *StyleRefinement) Top_1p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Top_2 is the "2" scale value.
+// Top_2 sets the top inset to 0.5rem (Tailwind top-2).
 func (r *StyleRefinement) Top_2() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Top_2p5 is the "2p5" scale value.
+// Top_2p5 sets the top inset to 0.625rem (Tailwind top-2.5).
 func (r *StyleRefinement) Top_2p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Top_3 is the "3" scale value.
+// Top_3 sets the top inset to 0.75rem (Tailwind top-3).
 func (r *StyleRefinement) Top_3() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Top_3p5 is the "3p5" scale value.
+// Top_3p5 sets the top inset to 0.875rem (Tailwind top-3.5).
 func (r *StyleRefinement) Top_3p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Top_4 is the "4" scale value.
+// Top_4 sets the top inset to 1rem (Tailwind top-4).
 func (r *StyleRefinement) Top_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Top_5 is the "5" scale value.
+// Top_5 sets the top inset to 1.25rem (Tailwind top-5).
 func (r *StyleRefinement) Top_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Top_6 is the "6" scale value.
+// Top_6 sets the top inset to 1.5rem (Tailwind top-6).
 func (r *StyleRefinement) Top_6() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Top_7 is the "7" scale value.
+// Top_7 sets the top inset to 1.75rem (Tailwind top-7).
 func (r *StyleRefinement) Top_7() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Top_8 is the "8" scale value.
+// Top_8 sets the top inset to 2rem (Tailwind top-8).
 func (r *StyleRefinement) Top_8() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Top_9 is the "9" scale value.
+// Top_9 sets the top inset to 2.25rem (Tailwind top-9).
 func (r *StyleRefinement) Top_9() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Top_10 is the "10" scale value.
+// Top_10 sets the top inset to 2.5rem (Tailwind top-10).
 func (r *StyleRefinement) Top_10() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Top_11 is the "11" scale value.
+// Top_11 sets the top inset to 2.75rem (Tailwind top-11).
 func (r *StyleRefinement) Top_11() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Top_12 is the "12" scale value.
+// Top_12 sets the top inset to 3rem (Tailwind top-12).
 func (r *StyleRefinement) Top_12() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Top_16 is the "16" scale value.
+// Top_16 sets the top inset to 4rem (Tailwind top-16).
 func (r *StyleRefinement) Top_16() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Top_20 is the "20" scale value.
+// Top_20 sets the top inset to 5rem (Tailwind top-20).
 func (r *StyleRefinement) Top_20() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Top_24 is the "24" scale value.
+// Top_24 sets the top inset to 6rem (Tailwind top-24).
 func (r *StyleRefinement) Top_24() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Top_32 is the "32" scale value.
+// Top_32 sets the top inset to 8rem (Tailwind top-32).
 func (r *StyleRefinement) Top_32() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Top_40 is the "40" scale value.
+// Top_40 sets the top inset to 10rem (Tailwind top-40).
 func (r *StyleRefinement) Top_40() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Top_48 is the "48" scale value.
+// Top_48 sets the top inset to 12rem (Tailwind top-48).
 func (r *StyleRefinement) Top_48() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Top_56 is the "56" scale value.
+// Top_56 sets the top inset to 14rem (Tailwind top-56).
 func (r *StyleRefinement) Top_56() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Top_64 is the "64" scale value.
+// Top_64 sets the top inset to 16rem (Tailwind top-64).
 func (r *StyleRefinement) Top_64() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Top_72 is the "72" scale value.
+// Top_72 sets the top inset to 18rem (Tailwind top-72).
 func (r *StyleRefinement) Top_72() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Top_80 is the "80" scale value.
+// Top_80 sets the top inset to 20rem (Tailwind top-80).
 func (r *StyleRefinement) Top_80() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Top_96 is the "96" scale value.
+// Top_96 sets the top inset to 24rem (Tailwind top-96).
 func (r *StyleRefinement) Top_96() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Top_112 is the "112" scale value.
+// Top_112 sets the top inset to 28rem (Tailwind top-112).
 func (r *StyleRefinement) Top_112() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Top_128 is the "128" scale value.
+// Top_128 sets the top inset to 32rem (Tailwind top-128).
 func (r *StyleRefinement) Top_128() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Top_Px is the "px" scale value.
+// Top_Px sets the top inset to 1px (Tailwind top-px).
 func (r *StyleRefinement) Top_Px() *StyleRefinement {
 	return r.Top(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Top_Neg_0p5 is the "neg_0p5" scale value.
+// Top_Neg_0p5 sets the top inset to -0.125rem (Tailwind -top-0.5).
 func (r *StyleRefinement) Top_Neg_0p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Top_Neg_1 is the "neg_1" scale value.
+// Top_Neg_1 sets the top inset to -0.25rem (Tailwind -top-1).
 func (r *StyleRefinement) Top_Neg_1() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Top_Neg_1p5 is the "neg_1p5" scale value.
+// Top_Neg_1p5 sets the top inset to -0.375rem (Tailwind -top-1.5).
 func (r *StyleRefinement) Top_Neg_1p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Top_Neg_2 is the "neg_2" scale value.
+// Top_Neg_2 sets the top inset to -0.5rem (Tailwind -top-2).
 func (r *StyleRefinement) Top_Neg_2() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Top_Neg_2p5 is the "neg_2p5" scale value.
+// Top_Neg_2p5 sets the top inset to -0.625rem (Tailwind -top-2.5).
 func (r *StyleRefinement) Top_Neg_2p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Top_Neg_3 is the "neg_3" scale value.
+// Top_Neg_3 sets the top inset to -0.75rem (Tailwind -top-3).
 func (r *StyleRefinement) Top_Neg_3() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Top_Neg_3p5 is the "neg_3p5" scale value.
+// Top_Neg_3p5 sets the top inset to -0.875rem (Tailwind -top-3.5).
 func (r *StyleRefinement) Top_Neg_3p5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Top_Neg_4 is the "neg_4" scale value.
+// Top_Neg_4 sets the top inset to -1rem (Tailwind -top-4).
 func (r *StyleRefinement) Top_Neg_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Top_Neg_5 is the "neg_5" scale value.
+// Top_Neg_5 sets the top inset to -1.25rem (Tailwind -top-5).
 func (r *StyleRefinement) Top_Neg_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Top_Neg_6 is the "neg_6" scale value.
+// Top_Neg_6 sets the top inset to -1.5rem (Tailwind -top-6).
 func (r *StyleRefinement) Top_Neg_6() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Top_Neg_7 is the "neg_7" scale value.
+// Top_Neg_7 sets the top inset to -1.75rem (Tailwind -top-7).
 func (r *StyleRefinement) Top_Neg_7() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Top_Neg_8 is the "neg_8" scale value.
+// Top_Neg_8 sets the top inset to -2rem (Tailwind -top-8).
 func (r *StyleRefinement) Top_Neg_8() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Top_Neg_9 is the "neg_9" scale value.
+// Top_Neg_9 sets the top inset to -2.25rem (Tailwind -top-9).
 func (r *StyleRefinement) Top_Neg_9() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Top_Neg_10 is the "neg_10" scale value.
+// Top_Neg_10 sets the top inset to -2.5rem (Tailwind -top-10).
 func (r *StyleRefinement) Top_Neg_10() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Top_Neg_11 is the "neg_11" scale value.
+// Top_Neg_11 sets the top inset to -2.75rem (Tailwind -top-11).
 func (r *StyleRefinement) Top_Neg_11() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Top_Neg_12 is the "neg_12" scale value.
+// Top_Neg_12 sets the top inset to -3rem (Tailwind -top-12).
 func (r *StyleRefinement) Top_Neg_12() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Top_Neg_16 is the "neg_16" scale value.
+// Top_Neg_16 sets the top inset to -4rem (Tailwind -top-16).
 func (r *StyleRefinement) Top_Neg_16() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Top_Neg_20 is the "neg_20" scale value.
+// Top_Neg_20 sets the top inset to -5rem (Tailwind -top-20).
 func (r *StyleRefinement) Top_Neg_20() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Top_Neg_24 is the "neg_24" scale value.
+// Top_Neg_24 sets the top inset to -6rem (Tailwind -top-24).
 func (r *StyleRefinement) Top_Neg_24() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Top_Neg_32 is the "neg_32" scale value.
+// Top_Neg_32 sets the top inset to -8rem (Tailwind -top-32).
 func (r *StyleRefinement) Top_Neg_32() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Top_Neg_40 is the "neg_40" scale value.
+// Top_Neg_40 sets the top inset to -10rem (Tailwind -top-40).
 func (r *StyleRefinement) Top_Neg_40() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Top_Neg_48 is the "neg_48" scale value.
+// Top_Neg_48 sets the top inset to -12rem (Tailwind -top-48).
 func (r *StyleRefinement) Top_Neg_48() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Top_Neg_56 is the "neg_56" scale value.
+// Top_Neg_56 sets the top inset to -14rem (Tailwind -top-56).
 func (r *StyleRefinement) Top_Neg_56() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Top_Neg_64 is the "neg_64" scale value.
+// Top_Neg_64 sets the top inset to -16rem (Tailwind -top-64).
 func (r *StyleRefinement) Top_Neg_64() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Top_Neg_72 is the "neg_72" scale value.
+// Top_Neg_72 sets the top inset to -18rem (Tailwind -top-72).
 func (r *StyleRefinement) Top_Neg_72() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Top_Neg_80 is the "neg_80" scale value.
+// Top_Neg_80 sets the top inset to -20rem (Tailwind -top-80).
 func (r *StyleRefinement) Top_Neg_80() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Top_Neg_96 is the "neg_96" scale value.
+// Top_Neg_96 sets the top inset to -24rem (Tailwind -top-96).
 func (r *StyleRefinement) Top_Neg_96() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Top_Neg_112 is the "neg_112" scale value.
+// Top_Neg_112 sets the top inset to -28rem (Tailwind -top-112).
 func (r *StyleRefinement) Top_Neg_112() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Top_Neg_128 is the "neg_128" scale value.
+// Top_Neg_128 sets the top inset to -32rem (Tailwind -top-128).
 func (r *StyleRefinement) Top_Neg_128() *StyleRefinement {
 	return r.Top(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Top_Neg_px is the "neg_px" scale value.
+// Top_Neg_px sets the top inset to -1px (Tailwind -top-px).
 func (r *StyleRefinement) Top_Neg_px() *StyleRefinement {
 	return r.Top(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Top_Auto sets the value to auto.
+// Top_Auto sets the top inset to auto (Tailwind top-auto).
 func (r *StyleRefinement) Top_Auto() *StyleRefinement { return r.Top(geometry.AutoLength()) }
 
-// Top_Full is the "full" scale value.
+// Top_Full sets the top inset to 100% of the parent size (Tailwind top-full).
 func (r *StyleRefinement) Top_Full() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// Top_1_2 is the "1_2" scale value.
+// Top_1_2 sets the top inset to 50% of the parent size (Tailwind top-1/2).
 func (r *StyleRefinement) Top_1_2() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Top_Neg_1_2 is the "neg_1_2" scale value.
+// Top_Neg_1_2 sets the top inset to -50% of the parent size (Tailwind -top-1/2).
 func (r *StyleRefinement) Top_Neg_1_2() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Top_1_3 is the "1_3" scale value.
+// Top_1_3 sets the top inset to 33.33% of the parent size (Tailwind top-1/3).
 func (r *StyleRefinement) Top_1_3() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Top_Neg_1_3 is the "neg_1_3" scale value.
+// Top_Neg_1_3 sets the top inset to -33.33% of the parent size (Tailwind -top-1/3).
 func (r *StyleRefinement) Top_Neg_1_3() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Top_2_3 is the "2_3" scale value.
+// Top_2_3 sets the top inset to 66.67% of the parent size (Tailwind top-2/3).
 func (r *StyleRefinement) Top_2_3() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Top_Neg_2_3 is the "neg_2_3" scale value.
+// Top_Neg_2_3 sets the top inset to -66.67% of the parent size (Tailwind -top-2/3).
 func (r *StyleRefinement) Top_Neg_2_3() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Top_1_4 is the "1_4" scale value.
+// Top_1_4 sets the top inset to 25% of the parent size (Tailwind top-1/4).
 func (r *StyleRefinement) Top_1_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Top_Neg_1_4 is the "neg_1_4" scale value.
+// Top_Neg_1_4 sets the top inset to -25% of the parent size (Tailwind -top-1/4).
 func (r *StyleRefinement) Top_Neg_1_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Top_2_4 is the "2_4" scale value.
+// Top_2_4 sets the top inset to 50% of the parent size (Tailwind top-2/4).
 func (r *StyleRefinement) Top_2_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Top_Neg_2_4 is the "neg_2_4" scale value.
+// Top_Neg_2_4 sets the top inset to -50% of the parent size (Tailwind -top-2/4).
 func (r *StyleRefinement) Top_Neg_2_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Top_3_4 is the "3_4" scale value.
+// Top_3_4 sets the top inset to 75% of the parent size (Tailwind top-3/4).
 func (r *StyleRefinement) Top_3_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Top_Neg_3_4 is the "neg_3_4" scale value.
+// Top_Neg_3_4 sets the top inset to -75% of the parent size (Tailwind -top-3/4).
 func (r *StyleRefinement) Top_Neg_3_4() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Top_1_5 is the "1_5" scale value.
+// Top_1_5 sets the top inset to 20% of the parent size (Tailwind top-1/5).
 func (r *StyleRefinement) Top_1_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Top_Neg_1_5 is the "neg_1_5" scale value.
+// Top_Neg_1_5 sets the top inset to -20% of the parent size (Tailwind -top-1/5).
 func (r *StyleRefinement) Top_Neg_1_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Top_2_5 is the "2_5" scale value.
+// Top_2_5 sets the top inset to 40% of the parent size (Tailwind top-2/5).
 func (r *StyleRefinement) Top_2_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Top_Neg_2_5 is the "neg_2_5" scale value.
+// Top_Neg_2_5 sets the top inset to -40% of the parent size (Tailwind -top-2/5).
 func (r *StyleRefinement) Top_Neg_2_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Top_3_5 is the "3_5" scale value.
+// Top_3_5 sets the top inset to 60% of the parent size (Tailwind top-3/5).
 func (r *StyleRefinement) Top_3_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Top_Neg_3_5 is the "neg_3_5" scale value.
+// Top_Neg_3_5 sets the top inset to -60% of the parent size (Tailwind -top-3/5).
 func (r *StyleRefinement) Top_Neg_3_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Top_4_5 is the "4_5" scale value.
+// Top_4_5 sets the top inset to 80% of the parent size (Tailwind top-4/5).
 func (r *StyleRefinement) Top_4_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Top_Neg_4_5 is the "neg_4_5" scale value.
+// Top_Neg_4_5 sets the top inset to -80% of the parent size (Tailwind -top-4/5).
 func (r *StyleRefinement) Top_Neg_4_5() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Top_1_6 is the "1_6" scale value.
+// Top_1_6 sets the top inset to 16.67% of the parent size (Tailwind top-1/6).
 func (r *StyleRefinement) Top_1_6() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Top_Neg_1_6 is the "neg_1_6" scale value.
+// Top_Neg_1_6 sets the top inset to -16.67% of the parent size (Tailwind -top-1/6).
 func (r *StyleRefinement) Top_Neg_1_6() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Top_5_6 is the "5_6" scale value.
+// Top_5_6 sets the top inset to 83.33% of the parent size (Tailwind top-5/6).
 func (r *StyleRefinement) Top_5_6() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Top_Neg_5_6 is the "neg_5_6" scale value.
+// Top_Neg_5_6 sets the top inset to -83.33% of the parent size (Tailwind -top-5/6).
 func (r *StyleRefinement) Top_Neg_5_6() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Top_1_12 is the "1_12" scale value.
+// Top_1_12 sets the top inset to 8.333% of the parent size (Tailwind top-1/12).
 func (r *StyleRefinement) Top_1_12() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Top_Neg_1_12 is the "neg_1_12" scale value.
+// Top_Neg_1_12 sets the top inset to -8.333% of the parent size (Tailwind -top-1/12).
 func (r *StyleRefinement) Top_Neg_1_12() *StyleRefinement {
 	return r.Top(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Bottom_0 is the "0" scale value.
+// Bottom_0 sets the bottom inset to 0rem (Tailwind bottom-0).
 func (r *StyleRefinement) Bottom_0() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Bottom_0p5 is the "0p5" scale value.
+// Bottom_0p5 sets the bottom inset to 0.125rem (Tailwind bottom-0.5).
 func (r *StyleRefinement) Bottom_0p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Bottom_1 is the "1" scale value.
+// Bottom_1 sets the bottom inset to 0.25rem (Tailwind bottom-1).
 func (r *StyleRefinement) Bottom_1() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Bottom_1p5 is the "1p5" scale value.
+// Bottom_1p5 sets the bottom inset to 0.375rem (Tailwind bottom-1.5).
 func (r *StyleRefinement) Bottom_1p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Bottom_2 is the "2" scale value.
+// Bottom_2 sets the bottom inset to 0.5rem (Tailwind bottom-2).
 func (r *StyleRefinement) Bottom_2() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Bottom_2p5 is the "2p5" scale value.
+// Bottom_2p5 sets the bottom inset to 0.625rem (Tailwind bottom-2.5).
 func (r *StyleRefinement) Bottom_2p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Bottom_3 is the "3" scale value.
+// Bottom_3 sets the bottom inset to 0.75rem (Tailwind bottom-3).
 func (r *StyleRefinement) Bottom_3() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Bottom_3p5 is the "3p5" scale value.
+// Bottom_3p5 sets the bottom inset to 0.875rem (Tailwind bottom-3.5).
 func (r *StyleRefinement) Bottom_3p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Bottom_4 is the "4" scale value.
+// Bottom_4 sets the bottom inset to 1rem (Tailwind bottom-4).
 func (r *StyleRefinement) Bottom_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Bottom_5 is the "5" scale value.
+// Bottom_5 sets the bottom inset to 1.25rem (Tailwind bottom-5).
 func (r *StyleRefinement) Bottom_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Bottom_6 is the "6" scale value.
+// Bottom_6 sets the bottom inset to 1.5rem (Tailwind bottom-6).
 func (r *StyleRefinement) Bottom_6() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Bottom_7 is the "7" scale value.
+// Bottom_7 sets the bottom inset to 1.75rem (Tailwind bottom-7).
 func (r *StyleRefinement) Bottom_7() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Bottom_8 is the "8" scale value.
+// Bottom_8 sets the bottom inset to 2rem (Tailwind bottom-8).
 func (r *StyleRefinement) Bottom_8() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Bottom_9 is the "9" scale value.
+// Bottom_9 sets the bottom inset to 2.25rem (Tailwind bottom-9).
 func (r *StyleRefinement) Bottom_9() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Bottom_10 is the "10" scale value.
+// Bottom_10 sets the bottom inset to 2.5rem (Tailwind bottom-10).
 func (r *StyleRefinement) Bottom_10() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Bottom_11 is the "11" scale value.
+// Bottom_11 sets the bottom inset to 2.75rem (Tailwind bottom-11).
 func (r *StyleRefinement) Bottom_11() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Bottom_12 is the "12" scale value.
+// Bottom_12 sets the bottom inset to 3rem (Tailwind bottom-12).
 func (r *StyleRefinement) Bottom_12() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Bottom_16 is the "16" scale value.
+// Bottom_16 sets the bottom inset to 4rem (Tailwind bottom-16).
 func (r *StyleRefinement) Bottom_16() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Bottom_20 is the "20" scale value.
+// Bottom_20 sets the bottom inset to 5rem (Tailwind bottom-20).
 func (r *StyleRefinement) Bottom_20() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Bottom_24 is the "24" scale value.
+// Bottom_24 sets the bottom inset to 6rem (Tailwind bottom-24).
 func (r *StyleRefinement) Bottom_24() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Bottom_32 is the "32" scale value.
+// Bottom_32 sets the bottom inset to 8rem (Tailwind bottom-32).
 func (r *StyleRefinement) Bottom_32() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Bottom_40 is the "40" scale value.
+// Bottom_40 sets the bottom inset to 10rem (Tailwind bottom-40).
 func (r *StyleRefinement) Bottom_40() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Bottom_48 is the "48" scale value.
+// Bottom_48 sets the bottom inset to 12rem (Tailwind bottom-48).
 func (r *StyleRefinement) Bottom_48() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Bottom_56 is the "56" scale value.
+// Bottom_56 sets the bottom inset to 14rem (Tailwind bottom-56).
 func (r *StyleRefinement) Bottom_56() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Bottom_64 is the "64" scale value.
+// Bottom_64 sets the bottom inset to 16rem (Tailwind bottom-64).
 func (r *StyleRefinement) Bottom_64() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Bottom_72 is the "72" scale value.
+// Bottom_72 sets the bottom inset to 18rem (Tailwind bottom-72).
 func (r *StyleRefinement) Bottom_72() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Bottom_80 is the "80" scale value.
+// Bottom_80 sets the bottom inset to 20rem (Tailwind bottom-80).
 func (r *StyleRefinement) Bottom_80() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Bottom_96 is the "96" scale value.
+// Bottom_96 sets the bottom inset to 24rem (Tailwind bottom-96).
 func (r *StyleRefinement) Bottom_96() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Bottom_112 is the "112" scale value.
+// Bottom_112 sets the bottom inset to 28rem (Tailwind bottom-112).
 func (r *StyleRefinement) Bottom_112() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Bottom_128 is the "128" scale value.
+// Bottom_128 sets the bottom inset to 32rem (Tailwind bottom-128).
 func (r *StyleRefinement) Bottom_128() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Bottom_Px is the "px" scale value.
+// Bottom_Px sets the bottom inset to 1px (Tailwind bottom-px).
 func (r *StyleRefinement) Bottom_Px() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Bottom_Neg_0p5 is the "neg_0p5" scale value.
+// Bottom_Neg_0p5 sets the bottom inset to -0.125rem (Tailwind -bottom-0.5).
 func (r *StyleRefinement) Bottom_Neg_0p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Bottom_Neg_1 is the "neg_1" scale value.
+// Bottom_Neg_1 sets the bottom inset to -0.25rem (Tailwind -bottom-1).
 func (r *StyleRefinement) Bottom_Neg_1() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Bottom_Neg_1p5 is the "neg_1p5" scale value.
+// Bottom_Neg_1p5 sets the bottom inset to -0.375rem (Tailwind -bottom-1.5).
 func (r *StyleRefinement) Bottom_Neg_1p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Bottom_Neg_2 is the "neg_2" scale value.
+// Bottom_Neg_2 sets the bottom inset to -0.5rem (Tailwind -bottom-2).
 func (r *StyleRefinement) Bottom_Neg_2() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Bottom_Neg_2p5 is the "neg_2p5" scale value.
+// Bottom_Neg_2p5 sets the bottom inset to -0.625rem (Tailwind -bottom-2.5).
 func (r *StyleRefinement) Bottom_Neg_2p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Bottom_Neg_3 is the "neg_3" scale value.
+// Bottom_Neg_3 sets the bottom inset to -0.75rem (Tailwind -bottom-3).
 func (r *StyleRefinement) Bottom_Neg_3() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Bottom_Neg_3p5 is the "neg_3p5" scale value.
+// Bottom_Neg_3p5 sets the bottom inset to -0.875rem (Tailwind -bottom-3.5).
 func (r *StyleRefinement) Bottom_Neg_3p5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Bottom_Neg_4 is the "neg_4" scale value.
+// Bottom_Neg_4 sets the bottom inset to -1rem (Tailwind -bottom-4).
 func (r *StyleRefinement) Bottom_Neg_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Bottom_Neg_5 is the "neg_5" scale value.
+// Bottom_Neg_5 sets the bottom inset to -1.25rem (Tailwind -bottom-5).
 func (r *StyleRefinement) Bottom_Neg_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Bottom_Neg_6 is the "neg_6" scale value.
+// Bottom_Neg_6 sets the bottom inset to -1.5rem (Tailwind -bottom-6).
 func (r *StyleRefinement) Bottom_Neg_6() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Bottom_Neg_7 is the "neg_7" scale value.
+// Bottom_Neg_7 sets the bottom inset to -1.75rem (Tailwind -bottom-7).
 func (r *StyleRefinement) Bottom_Neg_7() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Bottom_Neg_8 is the "neg_8" scale value.
+// Bottom_Neg_8 sets the bottom inset to -2rem (Tailwind -bottom-8).
 func (r *StyleRefinement) Bottom_Neg_8() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Bottom_Neg_9 is the "neg_9" scale value.
+// Bottom_Neg_9 sets the bottom inset to -2.25rem (Tailwind -bottom-9).
 func (r *StyleRefinement) Bottom_Neg_9() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Bottom_Neg_10 is the "neg_10" scale value.
+// Bottom_Neg_10 sets the bottom inset to -2.5rem (Tailwind -bottom-10).
 func (r *StyleRefinement) Bottom_Neg_10() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Bottom_Neg_11 is the "neg_11" scale value.
+// Bottom_Neg_11 sets the bottom inset to -2.75rem (Tailwind -bottom-11).
 func (r *StyleRefinement) Bottom_Neg_11() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Bottom_Neg_12 is the "neg_12" scale value.
+// Bottom_Neg_12 sets the bottom inset to -3rem (Tailwind -bottom-12).
 func (r *StyleRefinement) Bottom_Neg_12() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Bottom_Neg_16 is the "neg_16" scale value.
+// Bottom_Neg_16 sets the bottom inset to -4rem (Tailwind -bottom-16).
 func (r *StyleRefinement) Bottom_Neg_16() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Bottom_Neg_20 is the "neg_20" scale value.
+// Bottom_Neg_20 sets the bottom inset to -5rem (Tailwind -bottom-20).
 func (r *StyleRefinement) Bottom_Neg_20() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Bottom_Neg_24 is the "neg_24" scale value.
+// Bottom_Neg_24 sets the bottom inset to -6rem (Tailwind -bottom-24).
 func (r *StyleRefinement) Bottom_Neg_24() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Bottom_Neg_32 is the "neg_32" scale value.
+// Bottom_Neg_32 sets the bottom inset to -8rem (Tailwind -bottom-32).
 func (r *StyleRefinement) Bottom_Neg_32() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Bottom_Neg_40 is the "neg_40" scale value.
+// Bottom_Neg_40 sets the bottom inset to -10rem (Tailwind -bottom-40).
 func (r *StyleRefinement) Bottom_Neg_40() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Bottom_Neg_48 is the "neg_48" scale value.
+// Bottom_Neg_48 sets the bottom inset to -12rem (Tailwind -bottom-48).
 func (r *StyleRefinement) Bottom_Neg_48() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Bottom_Neg_56 is the "neg_56" scale value.
+// Bottom_Neg_56 sets the bottom inset to -14rem (Tailwind -bottom-56).
 func (r *StyleRefinement) Bottom_Neg_56() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Bottom_Neg_64 is the "neg_64" scale value.
+// Bottom_Neg_64 sets the bottom inset to -16rem (Tailwind -bottom-64).
 func (r *StyleRefinement) Bottom_Neg_64() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Bottom_Neg_72 is the "neg_72" scale value.
+// Bottom_Neg_72 sets the bottom inset to -18rem (Tailwind -bottom-72).
 func (r *StyleRefinement) Bottom_Neg_72() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Bottom_Neg_80 is the "neg_80" scale value.
+// Bottom_Neg_80 sets the bottom inset to -20rem (Tailwind -bottom-80).
 func (r *StyleRefinement) Bottom_Neg_80() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Bottom_Neg_96 is the "neg_96" scale value.
+// Bottom_Neg_96 sets the bottom inset to -24rem (Tailwind -bottom-96).
 func (r *StyleRefinement) Bottom_Neg_96() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Bottom_Neg_112 is the "neg_112" scale value.
+// Bottom_Neg_112 sets the bottom inset to -28rem (Tailwind -bottom-112).
 func (r *StyleRefinement) Bottom_Neg_112() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Bottom_Neg_128 is the "neg_128" scale value.
+// Bottom_Neg_128 sets the bottom inset to -32rem (Tailwind -bottom-128).
 func (r *StyleRefinement) Bottom_Neg_128() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Bottom_Neg_px is the "neg_px" scale value.
+// Bottom_Neg_px sets the bottom inset to -1px (Tailwind -bottom-px).
 func (r *StyleRefinement) Bottom_Neg_px() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Bottom_Auto sets the value to auto.
+// Bottom_Auto sets the bottom inset to auto (Tailwind bottom-auto).
 func (r *StyleRefinement) Bottom_Auto() *StyleRefinement { return r.Bottom(geometry.AutoLength()) }
 
-// Bottom_Full is the "full" scale value.
+// Bottom_Full sets the bottom inset to 100% of the parent size (Tailwind bottom-full).
 func (r *StyleRefinement) Bottom_Full() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// Bottom_1_2 is the "1_2" scale value.
+// Bottom_1_2 sets the bottom inset to 50% of the parent size (Tailwind bottom-1/2).
 func (r *StyleRefinement) Bottom_1_2() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Bottom_Neg_1_2 is the "neg_1_2" scale value.
+// Bottom_Neg_1_2 sets the bottom inset to -50% of the parent size (Tailwind -bottom-1/2).
 func (r *StyleRefinement) Bottom_Neg_1_2() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Bottom_1_3 is the "1_3" scale value.
+// Bottom_1_3 sets the bottom inset to 33.33% of the parent size (Tailwind bottom-1/3).
 func (r *StyleRefinement) Bottom_1_3() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Bottom_Neg_1_3 is the "neg_1_3" scale value.
+// Bottom_Neg_1_3 sets the bottom inset to -33.33% of the parent size (Tailwind -bottom-1/3).
 func (r *StyleRefinement) Bottom_Neg_1_3() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Bottom_2_3 is the "2_3" scale value.
+// Bottom_2_3 sets the bottom inset to 66.67% of the parent size (Tailwind bottom-2/3).
 func (r *StyleRefinement) Bottom_2_3() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Bottom_Neg_2_3 is the "neg_2_3" scale value.
+// Bottom_Neg_2_3 sets the bottom inset to -66.67% of the parent size (Tailwind -bottom-2/3).
 func (r *StyleRefinement) Bottom_Neg_2_3() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Bottom_1_4 is the "1_4" scale value.
+// Bottom_1_4 sets the bottom inset to 25% of the parent size (Tailwind bottom-1/4).
 func (r *StyleRefinement) Bottom_1_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Bottom_Neg_1_4 is the "neg_1_4" scale value.
+// Bottom_Neg_1_4 sets the bottom inset to -25% of the parent size (Tailwind -bottom-1/4).
 func (r *StyleRefinement) Bottom_Neg_1_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Bottom_2_4 is the "2_4" scale value.
+// Bottom_2_4 sets the bottom inset to 50% of the parent size (Tailwind bottom-2/4).
 func (r *StyleRefinement) Bottom_2_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Bottom_Neg_2_4 is the "neg_2_4" scale value.
+// Bottom_Neg_2_4 sets the bottom inset to -50% of the parent size (Tailwind -bottom-2/4).
 func (r *StyleRefinement) Bottom_Neg_2_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Bottom_3_4 is the "3_4" scale value.
+// Bottom_3_4 sets the bottom inset to 75% of the parent size (Tailwind bottom-3/4).
 func (r *StyleRefinement) Bottom_3_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Bottom_Neg_3_4 is the "neg_3_4" scale value.
+// Bottom_Neg_3_4 sets the bottom inset to -75% of the parent size (Tailwind -bottom-3/4).
 func (r *StyleRefinement) Bottom_Neg_3_4() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Bottom_1_5 is the "1_5" scale value.
+// Bottom_1_5 sets the bottom inset to 20% of the parent size (Tailwind bottom-1/5).
 func (r *StyleRefinement) Bottom_1_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Bottom_Neg_1_5 is the "neg_1_5" scale value.
+// Bottom_Neg_1_5 sets the bottom inset to -20% of the parent size (Tailwind -bottom-1/5).
 func (r *StyleRefinement) Bottom_Neg_1_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Bottom_2_5 is the "2_5" scale value.
+// Bottom_2_5 sets the bottom inset to 40% of the parent size (Tailwind bottom-2/5).
 func (r *StyleRefinement) Bottom_2_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Bottom_Neg_2_5 is the "neg_2_5" scale value.
+// Bottom_Neg_2_5 sets the bottom inset to -40% of the parent size (Tailwind -bottom-2/5).
 func (r *StyleRefinement) Bottom_Neg_2_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Bottom_3_5 is the "3_5" scale value.
+// Bottom_3_5 sets the bottom inset to 60% of the parent size (Tailwind bottom-3/5).
 func (r *StyleRefinement) Bottom_3_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Bottom_Neg_3_5 is the "neg_3_5" scale value.
+// Bottom_Neg_3_5 sets the bottom inset to -60% of the parent size (Tailwind -bottom-3/5).
 func (r *StyleRefinement) Bottom_Neg_3_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Bottom_4_5 is the "4_5" scale value.
+// Bottom_4_5 sets the bottom inset to 80% of the parent size (Tailwind bottom-4/5).
 func (r *StyleRefinement) Bottom_4_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Bottom_Neg_4_5 is the "neg_4_5" scale value.
+// Bottom_Neg_4_5 sets the bottom inset to -80% of the parent size (Tailwind -bottom-4/5).
 func (r *StyleRefinement) Bottom_Neg_4_5() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Bottom_1_6 is the "1_6" scale value.
+// Bottom_1_6 sets the bottom inset to 16.67% of the parent size (Tailwind bottom-1/6).
 func (r *StyleRefinement) Bottom_1_6() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Bottom_Neg_1_6 is the "neg_1_6" scale value.
+// Bottom_Neg_1_6 sets the bottom inset to -16.67% of the parent size (Tailwind -bottom-1/6).
 func (r *StyleRefinement) Bottom_Neg_1_6() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Bottom_5_6 is the "5_6" scale value.
+// Bottom_5_6 sets the bottom inset to 83.33% of the parent size (Tailwind bottom-5/6).
 func (r *StyleRefinement) Bottom_5_6() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Bottom_Neg_5_6 is the "neg_5_6" scale value.
+// Bottom_Neg_5_6 sets the bottom inset to -83.33% of the parent size (Tailwind -bottom-5/6).
 func (r *StyleRefinement) Bottom_Neg_5_6() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Bottom_1_12 is the "1_12" scale value.
+// Bottom_1_12 sets the bottom inset to 8.333% of the parent size (Tailwind bottom-1/12).
 func (r *StyleRefinement) Bottom_1_12() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Bottom_Neg_1_12 is the "neg_1_12" scale value.
+// Bottom_Neg_1_12 sets the bottom inset to -8.333% of the parent size (Tailwind -bottom-1/12).
 func (r *StyleRefinement) Bottom_Neg_1_12() *StyleRefinement {
 	return r.Bottom(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Left_0 is the "0" scale value.
+// Left_0 sets the left inset to 0rem (Tailwind left-0).
 func (r *StyleRefinement) Left_0() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Left_0p5 is the "0p5" scale value.
+// Left_0p5 sets the left inset to 0.125rem (Tailwind left-0.5).
 func (r *StyleRefinement) Left_0p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Left_1 is the "1" scale value.
+// Left_1 sets the left inset to 0.25rem (Tailwind left-1).
 func (r *StyleRefinement) Left_1() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Left_1p5 is the "1p5" scale value.
+// Left_1p5 sets the left inset to 0.375rem (Tailwind left-1.5).
 func (r *StyleRefinement) Left_1p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Left_2 is the "2" scale value.
+// Left_2 sets the left inset to 0.5rem (Tailwind left-2).
 func (r *StyleRefinement) Left_2() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Left_2p5 is the "2p5" scale value.
+// Left_2p5 sets the left inset to 0.625rem (Tailwind left-2.5).
 func (r *StyleRefinement) Left_2p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Left_3 is the "3" scale value.
+// Left_3 sets the left inset to 0.75rem (Tailwind left-3).
 func (r *StyleRefinement) Left_3() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Left_3p5 is the "3p5" scale value.
+// Left_3p5 sets the left inset to 0.875rem (Tailwind left-3.5).
 func (r *StyleRefinement) Left_3p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Left_4 is the "4" scale value.
+// Left_4 sets the left inset to 1rem (Tailwind left-4).
 func (r *StyleRefinement) Left_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Left_5 is the "5" scale value.
+// Left_5 sets the left inset to 1.25rem (Tailwind left-5).
 func (r *StyleRefinement) Left_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Left_6 is the "6" scale value.
+// Left_6 sets the left inset to 1.5rem (Tailwind left-6).
 func (r *StyleRefinement) Left_6() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Left_7 is the "7" scale value.
+// Left_7 sets the left inset to 1.75rem (Tailwind left-7).
 func (r *StyleRefinement) Left_7() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Left_8 is the "8" scale value.
+// Left_8 sets the left inset to 2rem (Tailwind left-8).
 func (r *StyleRefinement) Left_8() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Left_9 is the "9" scale value.
+// Left_9 sets the left inset to 2.25rem (Tailwind left-9).
 func (r *StyleRefinement) Left_9() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Left_10 is the "10" scale value.
+// Left_10 sets the left inset to 2.5rem (Tailwind left-10).
 func (r *StyleRefinement) Left_10() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Left_11 is the "11" scale value.
+// Left_11 sets the left inset to 2.75rem (Tailwind left-11).
 func (r *StyleRefinement) Left_11() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Left_12 is the "12" scale value.
+// Left_12 sets the left inset to 3rem (Tailwind left-12).
 func (r *StyleRefinement) Left_12() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Left_16 is the "16" scale value.
+// Left_16 sets the left inset to 4rem (Tailwind left-16).
 func (r *StyleRefinement) Left_16() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Left_20 is the "20" scale value.
+// Left_20 sets the left inset to 5rem (Tailwind left-20).
 func (r *StyleRefinement) Left_20() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Left_24 is the "24" scale value.
+// Left_24 sets the left inset to 6rem (Tailwind left-24).
 func (r *StyleRefinement) Left_24() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Left_32 is the "32" scale value.
+// Left_32 sets the left inset to 8rem (Tailwind left-32).
 func (r *StyleRefinement) Left_32() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Left_40 is the "40" scale value.
+// Left_40 sets the left inset to 10rem (Tailwind left-40).
 func (r *StyleRefinement) Left_40() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Left_48 is the "48" scale value.
+// Left_48 sets the left inset to 12rem (Tailwind left-48).
 func (r *StyleRefinement) Left_48() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Left_56 is the "56" scale value.
+// Left_56 sets the left inset to 14rem (Tailwind left-56).
 func (r *StyleRefinement) Left_56() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Left_64 is the "64" scale value.
+// Left_64 sets the left inset to 16rem (Tailwind left-64).
 func (r *StyleRefinement) Left_64() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Left_72 is the "72" scale value.
+// Left_72 sets the left inset to 18rem (Tailwind left-72).
 func (r *StyleRefinement) Left_72() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Left_80 is the "80" scale value.
+// Left_80 sets the left inset to 20rem (Tailwind left-80).
 func (r *StyleRefinement) Left_80() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Left_96 is the "96" scale value.
+// Left_96 sets the left inset to 24rem (Tailwind left-96).
 func (r *StyleRefinement) Left_96() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Left_112 is the "112" scale value.
+// Left_112 sets the left inset to 28rem (Tailwind left-112).
 func (r *StyleRefinement) Left_112() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Left_128 is the "128" scale value.
+// Left_128 sets the left inset to 32rem (Tailwind left-128).
 func (r *StyleRefinement) Left_128() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Left_Px is the "px" scale value.
+// Left_Px sets the left inset to 1px (Tailwind left-px).
 func (r *StyleRefinement) Left_Px() *StyleRefinement {
 	return r.Left(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Left_Neg_0p5 is the "neg_0p5" scale value.
+// Left_Neg_0p5 sets the left inset to -0.125rem (Tailwind -left-0.5).
 func (r *StyleRefinement) Left_Neg_0p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Left_Neg_1 is the "neg_1" scale value.
+// Left_Neg_1 sets the left inset to -0.25rem (Tailwind -left-1).
 func (r *StyleRefinement) Left_Neg_1() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Left_Neg_1p5 is the "neg_1p5" scale value.
+// Left_Neg_1p5 sets the left inset to -0.375rem (Tailwind -left-1.5).
 func (r *StyleRefinement) Left_Neg_1p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Left_Neg_2 is the "neg_2" scale value.
+// Left_Neg_2 sets the left inset to -0.5rem (Tailwind -left-2).
 func (r *StyleRefinement) Left_Neg_2() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Left_Neg_2p5 is the "neg_2p5" scale value.
+// Left_Neg_2p5 sets the left inset to -0.625rem (Tailwind -left-2.5).
 func (r *StyleRefinement) Left_Neg_2p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Left_Neg_3 is the "neg_3" scale value.
+// Left_Neg_3 sets the left inset to -0.75rem (Tailwind -left-3).
 func (r *StyleRefinement) Left_Neg_3() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Left_Neg_3p5 is the "neg_3p5" scale value.
+// Left_Neg_3p5 sets the left inset to -0.875rem (Tailwind -left-3.5).
 func (r *StyleRefinement) Left_Neg_3p5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Left_Neg_4 is the "neg_4" scale value.
+// Left_Neg_4 sets the left inset to -1rem (Tailwind -left-4).
 func (r *StyleRefinement) Left_Neg_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Left_Neg_5 is the "neg_5" scale value.
+// Left_Neg_5 sets the left inset to -1.25rem (Tailwind -left-5).
 func (r *StyleRefinement) Left_Neg_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Left_Neg_6 is the "neg_6" scale value.
+// Left_Neg_6 sets the left inset to -1.5rem (Tailwind -left-6).
 func (r *StyleRefinement) Left_Neg_6() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Left_Neg_7 is the "neg_7" scale value.
+// Left_Neg_7 sets the left inset to -1.75rem (Tailwind -left-7).
 func (r *StyleRefinement) Left_Neg_7() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Left_Neg_8 is the "neg_8" scale value.
+// Left_Neg_8 sets the left inset to -2rem (Tailwind -left-8).
 func (r *StyleRefinement) Left_Neg_8() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Left_Neg_9 is the "neg_9" scale value.
+// Left_Neg_9 sets the left inset to -2.25rem (Tailwind -left-9).
 func (r *StyleRefinement) Left_Neg_9() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Left_Neg_10 is the "neg_10" scale value.
+// Left_Neg_10 sets the left inset to -2.5rem (Tailwind -left-10).
 func (r *StyleRefinement) Left_Neg_10() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Left_Neg_11 is the "neg_11" scale value.
+// Left_Neg_11 sets the left inset to -2.75rem (Tailwind -left-11).
 func (r *StyleRefinement) Left_Neg_11() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Left_Neg_12 is the "neg_12" scale value.
+// Left_Neg_12 sets the left inset to -3rem (Tailwind -left-12).
 func (r *StyleRefinement) Left_Neg_12() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Left_Neg_16 is the "neg_16" scale value.
+// Left_Neg_16 sets the left inset to -4rem (Tailwind -left-16).
 func (r *StyleRefinement) Left_Neg_16() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Left_Neg_20 is the "neg_20" scale value.
+// Left_Neg_20 sets the left inset to -5rem (Tailwind -left-20).
 func (r *StyleRefinement) Left_Neg_20() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Left_Neg_24 is the "neg_24" scale value.
+// Left_Neg_24 sets the left inset to -6rem (Tailwind -left-24).
 func (r *StyleRefinement) Left_Neg_24() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Left_Neg_32 is the "neg_32" scale value.
+// Left_Neg_32 sets the left inset to -8rem (Tailwind -left-32).
 func (r *StyleRefinement) Left_Neg_32() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Left_Neg_40 is the "neg_40" scale value.
+// Left_Neg_40 sets the left inset to -10rem (Tailwind -left-40).
 func (r *StyleRefinement) Left_Neg_40() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Left_Neg_48 is the "neg_48" scale value.
+// Left_Neg_48 sets the left inset to -12rem (Tailwind -left-48).
 func (r *StyleRefinement) Left_Neg_48() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Left_Neg_56 is the "neg_56" scale value.
+// Left_Neg_56 sets the left inset to -14rem (Tailwind -left-56).
 func (r *StyleRefinement) Left_Neg_56() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Left_Neg_64 is the "neg_64" scale value.
+// Left_Neg_64 sets the left inset to -16rem (Tailwind -left-64).
 func (r *StyleRefinement) Left_Neg_64() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Left_Neg_72 is the "neg_72" scale value.
+// Left_Neg_72 sets the left inset to -18rem (Tailwind -left-72).
 func (r *StyleRefinement) Left_Neg_72() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Left_Neg_80 is the "neg_80" scale value.
+// Left_Neg_80 sets the left inset to -20rem (Tailwind -left-80).
 func (r *StyleRefinement) Left_Neg_80() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Left_Neg_96 is the "neg_96" scale value.
+// Left_Neg_96 sets the left inset to -24rem (Tailwind -left-96).
 func (r *StyleRefinement) Left_Neg_96() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Left_Neg_112 is the "neg_112" scale value.
+// Left_Neg_112 sets the left inset to -28rem (Tailwind -left-112).
 func (r *StyleRefinement) Left_Neg_112() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Left_Neg_128 is the "neg_128" scale value.
+// Left_Neg_128 sets the left inset to -32rem (Tailwind -left-128).
 func (r *StyleRefinement) Left_Neg_128() *StyleRefinement {
 	return r.Left(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Left_Neg_px is the "neg_px" scale value.
+// Left_Neg_px sets the left inset to -1px (Tailwind -left-px).
 func (r *StyleRefinement) Left_Neg_px() *StyleRefinement {
 	return r.Left(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Left_Auto sets the value to auto.
+// Left_Auto sets the left inset to auto (Tailwind left-auto).
 func (r *StyleRefinement) Left_Auto() *StyleRefinement { return r.Left(geometry.AutoLength()) }
 
-// Left_Full is the "full" scale value.
+// Left_Full sets the left inset to 100% of the parent size (Tailwind left-full).
 func (r *StyleRefinement) Left_Full() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// Left_1_2 is the "1_2" scale value.
+// Left_1_2 sets the left inset to 50% of the parent size (Tailwind left-1/2).
 func (r *StyleRefinement) Left_1_2() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Left_Neg_1_2 is the "neg_1_2" scale value.
+// Left_Neg_1_2 sets the left inset to -50% of the parent size (Tailwind -left-1/2).
 func (r *StyleRefinement) Left_Neg_1_2() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Left_1_3 is the "1_3" scale value.
+// Left_1_3 sets the left inset to 33.33% of the parent size (Tailwind left-1/3).
 func (r *StyleRefinement) Left_1_3() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Left_Neg_1_3 is the "neg_1_3" scale value.
+// Left_Neg_1_3 sets the left inset to -33.33% of the parent size (Tailwind -left-1/3).
 func (r *StyleRefinement) Left_Neg_1_3() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Left_2_3 is the "2_3" scale value.
+// Left_2_3 sets the left inset to 66.67% of the parent size (Tailwind left-2/3).
 func (r *StyleRefinement) Left_2_3() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Left_Neg_2_3 is the "neg_2_3" scale value.
+// Left_Neg_2_3 sets the left inset to -66.67% of the parent size (Tailwind -left-2/3).
 func (r *StyleRefinement) Left_Neg_2_3() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Left_1_4 is the "1_4" scale value.
+// Left_1_4 sets the left inset to 25% of the parent size (Tailwind left-1/4).
 func (r *StyleRefinement) Left_1_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Left_Neg_1_4 is the "neg_1_4" scale value.
+// Left_Neg_1_4 sets the left inset to -25% of the parent size (Tailwind -left-1/4).
 func (r *StyleRefinement) Left_Neg_1_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Left_2_4 is the "2_4" scale value.
+// Left_2_4 sets the left inset to 50% of the parent size (Tailwind left-2/4).
 func (r *StyleRefinement) Left_2_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Left_Neg_2_4 is the "neg_2_4" scale value.
+// Left_Neg_2_4 sets the left inset to -50% of the parent size (Tailwind -left-2/4).
 func (r *StyleRefinement) Left_Neg_2_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Left_3_4 is the "3_4" scale value.
+// Left_3_4 sets the left inset to 75% of the parent size (Tailwind left-3/4).
 func (r *StyleRefinement) Left_3_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Left_Neg_3_4 is the "neg_3_4" scale value.
+// Left_Neg_3_4 sets the left inset to -75% of the parent size (Tailwind -left-3/4).
 func (r *StyleRefinement) Left_Neg_3_4() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Left_1_5 is the "1_5" scale value.
+// Left_1_5 sets the left inset to 20% of the parent size (Tailwind left-1/5).
 func (r *StyleRefinement) Left_1_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Left_Neg_1_5 is the "neg_1_5" scale value.
+// Left_Neg_1_5 sets the left inset to -20% of the parent size (Tailwind -left-1/5).
 func (r *StyleRefinement) Left_Neg_1_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Left_2_5 is the "2_5" scale value.
+// Left_2_5 sets the left inset to 40% of the parent size (Tailwind left-2/5).
 func (r *StyleRefinement) Left_2_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Left_Neg_2_5 is the "neg_2_5" scale value.
+// Left_Neg_2_5 sets the left inset to -40% of the parent size (Tailwind -left-2/5).
 func (r *StyleRefinement) Left_Neg_2_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Left_3_5 is the "3_5" scale value.
+// Left_3_5 sets the left inset to 60% of the parent size (Tailwind left-3/5).
 func (r *StyleRefinement) Left_3_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Left_Neg_3_5 is the "neg_3_5" scale value.
+// Left_Neg_3_5 sets the left inset to -60% of the parent size (Tailwind -left-3/5).
 func (r *StyleRefinement) Left_Neg_3_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Left_4_5 is the "4_5" scale value.
+// Left_4_5 sets the left inset to 80% of the parent size (Tailwind left-4/5).
 func (r *StyleRefinement) Left_4_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Left_Neg_4_5 is the "neg_4_5" scale value.
+// Left_Neg_4_5 sets the left inset to -80% of the parent size (Tailwind -left-4/5).
 func (r *StyleRefinement) Left_Neg_4_5() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Left_1_6 is the "1_6" scale value.
+// Left_1_6 sets the left inset to 16.67% of the parent size (Tailwind left-1/6).
 func (r *StyleRefinement) Left_1_6() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Left_Neg_1_6 is the "neg_1_6" scale value.
+// Left_Neg_1_6 sets the left inset to -16.67% of the parent size (Tailwind -left-1/6).
 func (r *StyleRefinement) Left_Neg_1_6() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Left_5_6 is the "5_6" scale value.
+// Left_5_6 sets the left inset to 83.33% of the parent size (Tailwind left-5/6).
 func (r *StyleRefinement) Left_5_6() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Left_Neg_5_6 is the "neg_5_6" scale value.
+// Left_Neg_5_6 sets the left inset to -83.33% of the parent size (Tailwind -left-5/6).
 func (r *StyleRefinement) Left_Neg_5_6() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Left_1_12 is the "1_12" scale value.
+// Left_1_12 sets the left inset to 8.333% of the parent size (Tailwind left-1/12).
 func (r *StyleRefinement) Left_1_12() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Left_Neg_1_12 is the "neg_1_12" scale value.
+// Left_Neg_1_12 sets the left inset to -8.333% of the parent size (Tailwind -left-1/12).
 func (r *StyleRefinement) Left_Neg_1_12() *StyleRefinement {
 	return r.Left(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Right_0 is the "0" scale value.
+// Right_0 sets the right inset to 0rem (Tailwind right-0).
 func (r *StyleRefinement) Right_0() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Right_0p5 is the "0p5" scale value.
+// Right_0p5 sets the right inset to 0.125rem (Tailwind right-0.5).
 func (r *StyleRefinement) Right_0p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Right_1 is the "1" scale value.
+// Right_1 sets the right inset to 0.25rem (Tailwind right-1).
 func (r *StyleRefinement) Right_1() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Right_1p5 is the "1p5" scale value.
+// Right_1p5 sets the right inset to 0.375rem (Tailwind right-1.5).
 func (r *StyleRefinement) Right_1p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Right_2 is the "2" scale value.
+// Right_2 sets the right inset to 0.5rem (Tailwind right-2).
 func (r *StyleRefinement) Right_2() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Right_2p5 is the "2p5" scale value.
+// Right_2p5 sets the right inset to 0.625rem (Tailwind right-2.5).
 func (r *StyleRefinement) Right_2p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Right_3 is the "3" scale value.
+// Right_3 sets the right inset to 0.75rem (Tailwind right-3).
 func (r *StyleRefinement) Right_3() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Right_3p5 is the "3p5" scale value.
+// Right_3p5 sets the right inset to 0.875rem (Tailwind right-3.5).
 func (r *StyleRefinement) Right_3p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Right_4 is the "4" scale value.
+// Right_4 sets the right inset to 1rem (Tailwind right-4).
 func (r *StyleRefinement) Right_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Right_5 is the "5" scale value.
+// Right_5 sets the right inset to 1.25rem (Tailwind right-5).
 func (r *StyleRefinement) Right_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Right_6 is the "6" scale value.
+// Right_6 sets the right inset to 1.5rem (Tailwind right-6).
 func (r *StyleRefinement) Right_6() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Right_7 is the "7" scale value.
+// Right_7 sets the right inset to 1.75rem (Tailwind right-7).
 func (r *StyleRefinement) Right_7() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Right_8 is the "8" scale value.
+// Right_8 sets the right inset to 2rem (Tailwind right-8).
 func (r *StyleRefinement) Right_8() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Right_9 is the "9" scale value.
+// Right_9 sets the right inset to 2.25rem (Tailwind right-9).
 func (r *StyleRefinement) Right_9() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Right_10 is the "10" scale value.
+// Right_10 sets the right inset to 2.5rem (Tailwind right-10).
 func (r *StyleRefinement) Right_10() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Right_11 is the "11" scale value.
+// Right_11 sets the right inset to 2.75rem (Tailwind right-11).
 func (r *StyleRefinement) Right_11() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Right_12 is the "12" scale value.
+// Right_12 sets the right inset to 3rem (Tailwind right-12).
 func (r *StyleRefinement) Right_12() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Right_16 is the "16" scale value.
+// Right_16 sets the right inset to 4rem (Tailwind right-16).
 func (r *StyleRefinement) Right_16() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Right_20 is the "20" scale value.
+// Right_20 sets the right inset to 5rem (Tailwind right-20).
 func (r *StyleRefinement) Right_20() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Right_24 is the "24" scale value.
+// Right_24 sets the right inset to 6rem (Tailwind right-24).
 func (r *StyleRefinement) Right_24() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Right_32 is the "32" scale value.
+// Right_32 sets the right inset to 8rem (Tailwind right-32).
 func (r *StyleRefinement) Right_32() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Right_40 is the "40" scale value.
+// Right_40 sets the right inset to 10rem (Tailwind right-40).
 func (r *StyleRefinement) Right_40() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Right_48 is the "48" scale value.
+// Right_48 sets the right inset to 12rem (Tailwind right-48).
 func (r *StyleRefinement) Right_48() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Right_56 is the "56" scale value.
+// Right_56 sets the right inset to 14rem (Tailwind right-56).
 func (r *StyleRefinement) Right_56() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Right_64 is the "64" scale value.
+// Right_64 sets the right inset to 16rem (Tailwind right-64).
 func (r *StyleRefinement) Right_64() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Right_72 is the "72" scale value.
+// Right_72 sets the right inset to 18rem (Tailwind right-72).
 func (r *StyleRefinement) Right_72() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Right_80 is the "80" scale value.
+// Right_80 sets the right inset to 20rem (Tailwind right-80).
 func (r *StyleRefinement) Right_80() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Right_96 is the "96" scale value.
+// Right_96 sets the right inset to 24rem (Tailwind right-96).
 func (r *StyleRefinement) Right_96() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Right_112 is the "112" scale value.
+// Right_112 sets the right inset to 28rem (Tailwind right-112).
 func (r *StyleRefinement) Right_112() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Right_128 is the "128" scale value.
+// Right_128 sets the right inset to 32rem (Tailwind right-128).
 func (r *StyleRefinement) Right_128() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Right_Px is the "px" scale value.
+// Right_Px sets the right inset to 1px (Tailwind right-px).
 func (r *StyleRefinement) Right_Px() *StyleRefinement {
 	return r.Right(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Right_Neg_0p5 is the "neg_0p5" scale value.
+// Right_Neg_0p5 sets the right inset to -0.125rem (Tailwind -right-0.5).
 func (r *StyleRefinement) Right_Neg_0p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Right_Neg_1 is the "neg_1" scale value.
+// Right_Neg_1 sets the right inset to -0.25rem (Tailwind -right-1).
 func (r *StyleRefinement) Right_Neg_1() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Right_Neg_1p5 is the "neg_1p5" scale value.
+// Right_Neg_1p5 sets the right inset to -0.375rem (Tailwind -right-1.5).
 func (r *StyleRefinement) Right_Neg_1p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Right_Neg_2 is the "neg_2" scale value.
+// Right_Neg_2 sets the right inset to -0.5rem (Tailwind -right-2).
 func (r *StyleRefinement) Right_Neg_2() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Right_Neg_2p5 is the "neg_2p5" scale value.
+// Right_Neg_2p5 sets the right inset to -0.625rem (Tailwind -right-2.5).
 func (r *StyleRefinement) Right_Neg_2p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Right_Neg_3 is the "neg_3" scale value.
+// Right_Neg_3 sets the right inset to -0.75rem (Tailwind -right-3).
 func (r *StyleRefinement) Right_Neg_3() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Right_Neg_3p5 is the "neg_3p5" scale value.
+// Right_Neg_3p5 sets the right inset to -0.875rem (Tailwind -right-3.5).
 func (r *StyleRefinement) Right_Neg_3p5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Right_Neg_4 is the "neg_4" scale value.
+// Right_Neg_4 sets the right inset to -1rem (Tailwind -right-4).
 func (r *StyleRefinement) Right_Neg_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Right_Neg_5 is the "neg_5" scale value.
+// Right_Neg_5 sets the right inset to -1.25rem (Tailwind -right-5).
 func (r *StyleRefinement) Right_Neg_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Right_Neg_6 is the "neg_6" scale value.
+// Right_Neg_6 sets the right inset to -1.5rem (Tailwind -right-6).
 func (r *StyleRefinement) Right_Neg_6() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Right_Neg_7 is the "neg_7" scale value.
+// Right_Neg_7 sets the right inset to -1.75rem (Tailwind -right-7).
 func (r *StyleRefinement) Right_Neg_7() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Right_Neg_8 is the "neg_8" scale value.
+// Right_Neg_8 sets the right inset to -2rem (Tailwind -right-8).
 func (r *StyleRefinement) Right_Neg_8() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Right_Neg_9 is the "neg_9" scale value.
+// Right_Neg_9 sets the right inset to -2.25rem (Tailwind -right-9).
 func (r *StyleRefinement) Right_Neg_9() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Right_Neg_10 is the "neg_10" scale value.
+// Right_Neg_10 sets the right inset to -2.5rem (Tailwind -right-10).
 func (r *StyleRefinement) Right_Neg_10() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Right_Neg_11 is the "neg_11" scale value.
+// Right_Neg_11 sets the right inset to -2.75rem (Tailwind -right-11).
 func (r *StyleRefinement) Right_Neg_11() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Right_Neg_12 is the "neg_12" scale value.
+// Right_Neg_12 sets the right inset to -3rem (Tailwind -right-12).
 func (r *StyleRefinement) Right_Neg_12() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Right_Neg_16 is the "neg_16" scale value.
+// Right_Neg_16 sets the right inset to -4rem (Tailwind -right-16).
 func (r *StyleRefinement) Right_Neg_16() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Right_Neg_20 is the "neg_20" scale value.
+// Right_Neg_20 sets the right inset to -5rem (Tailwind -right-20).
 func (r *StyleRefinement) Right_Neg_20() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Right_Neg_24 is the "neg_24" scale value.
+// Right_Neg_24 sets the right inset to -6rem (Tailwind -right-24).
 func (r *StyleRefinement) Right_Neg_24() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Right_Neg_32 is the "neg_32" scale value.
+// Right_Neg_32 sets the right inset to -8rem (Tailwind -right-32).
 func (r *StyleRefinement) Right_Neg_32() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Right_Neg_40 is the "neg_40" scale value.
+// Right_Neg_40 sets the right inset to -10rem (Tailwind -right-40).
 func (r *StyleRefinement) Right_Neg_40() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Right_Neg_48 is the "neg_48" scale value.
+// Right_Neg_48 sets the right inset to -12rem (Tailwind -right-48).
 func (r *StyleRefinement) Right_Neg_48() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Right_Neg_56 is the "neg_56" scale value.
+// Right_Neg_56 sets the right inset to -14rem (Tailwind -right-56).
 func (r *StyleRefinement) Right_Neg_56() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Right_Neg_64 is the "neg_64" scale value.
+// Right_Neg_64 sets the right inset to -16rem (Tailwind -right-64).
 func (r *StyleRefinement) Right_Neg_64() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Right_Neg_72 is the "neg_72" scale value.
+// Right_Neg_72 sets the right inset to -18rem (Tailwind -right-72).
 func (r *StyleRefinement) Right_Neg_72() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Right_Neg_80 is the "neg_80" scale value.
+// Right_Neg_80 sets the right inset to -20rem (Tailwind -right-80).
 func (r *StyleRefinement) Right_Neg_80() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Right_Neg_96 is the "neg_96" scale value.
+// Right_Neg_96 sets the right inset to -24rem (Tailwind -right-96).
 func (r *StyleRefinement) Right_Neg_96() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Right_Neg_112 is the "neg_112" scale value.
+// Right_Neg_112 sets the right inset to -28rem (Tailwind -right-112).
 func (r *StyleRefinement) Right_Neg_112() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Right_Neg_128 is the "neg_128" scale value.
+// Right_Neg_128 sets the right inset to -32rem (Tailwind -right-128).
 func (r *StyleRefinement) Right_Neg_128() *StyleRefinement {
 	return r.Right(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Right_Neg_px is the "neg_px" scale value.
+// Right_Neg_px sets the right inset to -1px (Tailwind -right-px).
 func (r *StyleRefinement) Right_Neg_px() *StyleRefinement {
 	return r.Right(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Right_Auto sets the value to auto.
+// Right_Auto sets the right inset to auto (Tailwind right-auto).
 func (r *StyleRefinement) Right_Auto() *StyleRefinement { return r.Right(geometry.AutoLength()) }
 
-// Right_Full is the "full" scale value.
+// Right_Full sets the right inset to 100% of the parent size (Tailwind right-full).
 func (r *StyleRefinement) Right_Full() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// Right_1_2 is the "1_2" scale value.
+// Right_1_2 sets the right inset to 50% of the parent size (Tailwind right-1/2).
 func (r *StyleRefinement) Right_1_2() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Right_Neg_1_2 is the "neg_1_2" scale value.
+// Right_Neg_1_2 sets the right inset to -50% of the parent size (Tailwind -right-1/2).
 func (r *StyleRefinement) Right_Neg_1_2() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Right_1_3 is the "1_3" scale value.
+// Right_1_3 sets the right inset to 33.33% of the parent size (Tailwind right-1/3).
 func (r *StyleRefinement) Right_1_3() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Right_Neg_1_3 is the "neg_1_3" scale value.
+// Right_Neg_1_3 sets the right inset to -33.33% of the parent size (Tailwind -right-1/3).
 func (r *StyleRefinement) Right_Neg_1_3() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Right_2_3 is the "2_3" scale value.
+// Right_2_3 sets the right inset to 66.67% of the parent size (Tailwind right-2/3).
 func (r *StyleRefinement) Right_2_3() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Right_Neg_2_3 is the "neg_2_3" scale value.
+// Right_Neg_2_3 sets the right inset to -66.67% of the parent size (Tailwind -right-2/3).
 func (r *StyleRefinement) Right_Neg_2_3() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Right_1_4 is the "1_4" scale value.
+// Right_1_4 sets the right inset to 25% of the parent size (Tailwind right-1/4).
 func (r *StyleRefinement) Right_1_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Right_Neg_1_4 is the "neg_1_4" scale value.
+// Right_Neg_1_4 sets the right inset to -25% of the parent size (Tailwind -right-1/4).
 func (r *StyleRefinement) Right_Neg_1_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Right_2_4 is the "2_4" scale value.
+// Right_2_4 sets the right inset to 50% of the parent size (Tailwind right-2/4).
 func (r *StyleRefinement) Right_2_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Right_Neg_2_4 is the "neg_2_4" scale value.
+// Right_Neg_2_4 sets the right inset to -50% of the parent size (Tailwind -right-2/4).
 func (r *StyleRefinement) Right_Neg_2_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Right_3_4 is the "3_4" scale value.
+// Right_3_4 sets the right inset to 75% of the parent size (Tailwind right-3/4).
 func (r *StyleRefinement) Right_3_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Right_Neg_3_4 is the "neg_3_4" scale value.
+// Right_Neg_3_4 sets the right inset to -75% of the parent size (Tailwind -right-3/4).
 func (r *StyleRefinement) Right_Neg_3_4() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Right_1_5 is the "1_5" scale value.
+// Right_1_5 sets the right inset to 20% of the parent size (Tailwind right-1/5).
 func (r *StyleRefinement) Right_1_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Right_Neg_1_5 is the "neg_1_5" scale value.
+// Right_Neg_1_5 sets the right inset to -20% of the parent size (Tailwind -right-1/5).
 func (r *StyleRefinement) Right_Neg_1_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Right_2_5 is the "2_5" scale value.
+// Right_2_5 sets the right inset to 40% of the parent size (Tailwind right-2/5).
 func (r *StyleRefinement) Right_2_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Right_Neg_2_5 is the "neg_2_5" scale value.
+// Right_Neg_2_5 sets the right inset to -40% of the parent size (Tailwind -right-2/5).
 func (r *StyleRefinement) Right_Neg_2_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Right_3_5 is the "3_5" scale value.
+// Right_3_5 sets the right inset to 60% of the parent size (Tailwind right-3/5).
 func (r *StyleRefinement) Right_3_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Right_Neg_3_5 is the "neg_3_5" scale value.
+// Right_Neg_3_5 sets the right inset to -60% of the parent size (Tailwind -right-3/5).
 func (r *StyleRefinement) Right_Neg_3_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Right_4_5 is the "4_5" scale value.
+// Right_4_5 sets the right inset to 80% of the parent size (Tailwind right-4/5).
 func (r *StyleRefinement) Right_4_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Right_Neg_4_5 is the "neg_4_5" scale value.
+// Right_Neg_4_5 sets the right inset to -80% of the parent size (Tailwind -right-4/5).
 func (r *StyleRefinement) Right_Neg_4_5() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Right_1_6 is the "1_6" scale value.
+// Right_1_6 sets the right inset to 16.67% of the parent size (Tailwind right-1/6).
 func (r *StyleRefinement) Right_1_6() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Right_Neg_1_6 is the "neg_1_6" scale value.
+// Right_Neg_1_6 sets the right inset to -16.67% of the parent size (Tailwind -right-1/6).
 func (r *StyleRefinement) Right_Neg_1_6() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Right_5_6 is the "5_6" scale value.
+// Right_5_6 sets the right inset to 83.33% of the parent size (Tailwind right-5/6).
 func (r *StyleRefinement) Right_5_6() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Right_Neg_5_6 is the "neg_5_6" scale value.
+// Right_Neg_5_6 sets the right inset to -83.33% of the parent size (Tailwind -right-5/6).
 func (r *StyleRefinement) Right_Neg_5_6() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Right_1_12 is the "1_12" scale value.
+// Right_1_12 sets the right inset to 8.333% of the parent size (Tailwind right-1/12).
 func (r *StyleRefinement) Right_1_12() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Right_Neg_1_12 is the "neg_1_12" scale value.
+// Right_Neg_1_12 sets the right inset to -8.333% of the parent size (Tailwind -right-1/12).
 func (r *StyleRefinement) Right_Neg_1_12() *StyleRefinement {
 	return r.Right(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Inset_0 is the "0" scale value.
+// Inset_0 sets the inset on all four sides to 0rem (Tailwind inset-0).
 func (r *StyleRefinement) Inset_0() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0)))
 }
 
-// Inset_0p5 is the "0p5" scale value.
+// Inset_0p5 sets the inset on all four sides to 0.125rem (Tailwind inset-0.5).
 func (r *StyleRefinement) Inset_0p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0.125)))
 }
 
-// Inset_1 is the "1" scale value.
+// Inset_1 sets the inset on all four sides to 0.25rem (Tailwind inset-1).
 func (r *StyleRefinement) Inset_1() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0.25)))
 }
 
-// Inset_1p5 is the "1p5" scale value.
+// Inset_1p5 sets the inset on all four sides to 0.375rem (Tailwind inset-1.5).
 func (r *StyleRefinement) Inset_1p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0.375)))
 }
 
-// Inset_2 is the "2" scale value.
+// Inset_2 sets the inset on all four sides to 0.5rem (Tailwind inset-2).
 func (r *StyleRefinement) Inset_2() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0.5)))
 }
 
-// Inset_2p5 is the "2p5" scale value.
+// Inset_2p5 sets the inset on all four sides to 0.625rem (Tailwind inset-2.5).
 func (r *StyleRefinement) Inset_2p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0.625)))
 }
 
-// Inset_3 is the "3" scale value.
+// Inset_3 sets the inset on all four sides to 0.75rem (Tailwind inset-3).
 func (r *StyleRefinement) Inset_3() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0.75)))
 }
 
-// Inset_3p5 is the "3p5" scale value.
+// Inset_3p5 sets the inset on all four sides to 0.875rem (Tailwind inset-3.5).
 func (r *StyleRefinement) Inset_3p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(0.875)))
 }
 
-// Inset_4 is the "4" scale value.
+// Inset_4 sets the inset on all four sides to 1rem (Tailwind inset-4).
 func (r *StyleRefinement) Inset_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(1.0)))
 }
 
-// Inset_5 is the "5" scale value.
+// Inset_5 sets the inset on all four sides to 1.25rem (Tailwind inset-5).
 func (r *StyleRefinement) Inset_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(1.25)))
 }
 
-// Inset_6 is the "6" scale value.
+// Inset_6 sets the inset on all four sides to 1.5rem (Tailwind inset-6).
 func (r *StyleRefinement) Inset_6() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(1.5)))
 }
 
-// Inset_7 is the "7" scale value.
+// Inset_7 sets the inset on all four sides to 1.75rem (Tailwind inset-7).
 func (r *StyleRefinement) Inset_7() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(1.75)))
 }
 
-// Inset_8 is the "8" scale value.
+// Inset_8 sets the inset on all four sides to 2rem (Tailwind inset-8).
 func (r *StyleRefinement) Inset_8() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(2.0)))
 }
 
-// Inset_9 is the "9" scale value.
+// Inset_9 sets the inset on all four sides to 2.25rem (Tailwind inset-9).
 func (r *StyleRefinement) Inset_9() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(2.25)))
 }
 
-// Inset_10 is the "10" scale value.
+// Inset_10 sets the inset on all four sides to 2.5rem (Tailwind inset-10).
 func (r *StyleRefinement) Inset_10() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(2.5)))
 }
 
-// Inset_11 is the "11" scale value.
+// Inset_11 sets the inset on all four sides to 2.75rem (Tailwind inset-11).
 func (r *StyleRefinement) Inset_11() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(2.75)))
 }
 
-// Inset_12 is the "12" scale value.
+// Inset_12 sets the inset on all four sides to 3rem (Tailwind inset-12).
 func (r *StyleRefinement) Inset_12() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(3.0)))
 }
 
-// Inset_16 is the "16" scale value.
+// Inset_16 sets the inset on all four sides to 4rem (Tailwind inset-16).
 func (r *StyleRefinement) Inset_16() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(4.0)))
 }
 
-// Inset_20 is the "20" scale value.
+// Inset_20 sets the inset on all four sides to 5rem (Tailwind inset-20).
 func (r *StyleRefinement) Inset_20() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(5.0)))
 }
 
-// Inset_24 is the "24" scale value.
+// Inset_24 sets the inset on all four sides to 6rem (Tailwind inset-24).
 func (r *StyleRefinement) Inset_24() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(6.0)))
 }
 
-// Inset_32 is the "32" scale value.
+// Inset_32 sets the inset on all four sides to 8rem (Tailwind inset-32).
 func (r *StyleRefinement) Inset_32() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(8.0)))
 }
 
-// Inset_40 is the "40" scale value.
+// Inset_40 sets the inset on all four sides to 10rem (Tailwind inset-40).
 func (r *StyleRefinement) Inset_40() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(10.0)))
 }
 
-// Inset_48 is the "48" scale value.
+// Inset_48 sets the inset on all four sides to 12rem (Tailwind inset-48).
 func (r *StyleRefinement) Inset_48() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(12.0)))
 }
 
-// Inset_56 is the "56" scale value.
+// Inset_56 sets the inset on all four sides to 14rem (Tailwind inset-56).
 func (r *StyleRefinement) Inset_56() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(14.0)))
 }
 
-// Inset_64 is the "64" scale value.
+// Inset_64 sets the inset on all four sides to 16rem (Tailwind inset-64).
 func (r *StyleRefinement) Inset_64() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(16.0)))
 }
 
-// Inset_72 is the "72" scale value.
+// Inset_72 sets the inset on all four sides to 18rem (Tailwind inset-72).
 func (r *StyleRefinement) Inset_72() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(18.0)))
 }
 
-// Inset_80 is the "80" scale value.
+// Inset_80 sets the inset on all four sides to 20rem (Tailwind inset-80).
 func (r *StyleRefinement) Inset_80() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(20.0)))
 }
 
-// Inset_96 is the "96" scale value.
+// Inset_96 sets the inset on all four sides to 24rem (Tailwind inset-96).
 func (r *StyleRefinement) Inset_96() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(24.0)))
 }
 
-// Inset_112 is the "112" scale value.
+// Inset_112 sets the inset on all four sides to 28rem (Tailwind inset-112).
 func (r *StyleRefinement) Inset_112() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(28.0)))
 }
 
-// Inset_128 is the "128" scale value.
+// Inset_128 sets the inset on all four sides to 32rem (Tailwind inset-128).
 func (r *StyleRefinement) Inset_128() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(32.0)))
 }
 
-// Inset_Px is the "px" scale value.
+// Inset_Px sets the inset on all four sides to 1px (Tailwind inset-px).
 func (r *StyleRefinement) Inset_Px() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromPixels(geometry.Px(1)))
 }
 
-// Inset_Neg_0p5 is the "neg_0p5" scale value.
+// Inset_Neg_0p5 sets the inset on all four sides to -0.125rem (Tailwind -inset-0.5).
 func (r *StyleRefinement) Inset_Neg_0p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(0.125))))
 }
 
-// Inset_Neg_1 is the "neg_1" scale value.
+// Inset_Neg_1 sets the inset on all four sides to -0.25rem (Tailwind -inset-1).
 func (r *StyleRefinement) Inset_Neg_1() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(0.25))))
 }
 
-// Inset_Neg_1p5 is the "neg_1p5" scale value.
+// Inset_Neg_1p5 sets the inset on all four sides to -0.375rem (Tailwind -inset-1.5).
 func (r *StyleRefinement) Inset_Neg_1p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(0.375))))
 }
 
-// Inset_Neg_2 is the "neg_2" scale value.
+// Inset_Neg_2 sets the inset on all four sides to -0.5rem (Tailwind -inset-2).
 func (r *StyleRefinement) Inset_Neg_2() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(0.5))))
 }
 
-// Inset_Neg_2p5 is the "neg_2p5" scale value.
+// Inset_Neg_2p5 sets the inset on all four sides to -0.625rem (Tailwind -inset-2.5).
 func (r *StyleRefinement) Inset_Neg_2p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(0.625))))
 }
 
-// Inset_Neg_3 is the "neg_3" scale value.
+// Inset_Neg_3 sets the inset on all four sides to -0.75rem (Tailwind -inset-3).
 func (r *StyleRefinement) Inset_Neg_3() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(0.75))))
 }
 
-// Inset_Neg_3p5 is the "neg_3p5" scale value.
+// Inset_Neg_3p5 sets the inset on all four sides to -0.875rem (Tailwind -inset-3.5).
 func (r *StyleRefinement) Inset_Neg_3p5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(0.875))))
 }
 
-// Inset_Neg_4 is the "neg_4" scale value.
+// Inset_Neg_4 sets the inset on all four sides to -1rem (Tailwind -inset-4).
 func (r *StyleRefinement) Inset_Neg_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(1.0))))
 }
 
-// Inset_Neg_5 is the "neg_5" scale value.
+// Inset_Neg_5 sets the inset on all four sides to -1.25rem (Tailwind -inset-5).
 func (r *StyleRefinement) Inset_Neg_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(1.25))))
 }
 
-// Inset_Neg_6 is the "neg_6" scale value.
+// Inset_Neg_6 sets the inset on all four sides to -1.5rem (Tailwind -inset-6).
 func (r *StyleRefinement) Inset_Neg_6() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(1.5))))
 }
 
-// Inset_Neg_7 is the "neg_7" scale value.
+// Inset_Neg_7 sets the inset on all four sides to -1.75rem (Tailwind -inset-7).
 func (r *StyleRefinement) Inset_Neg_7() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(1.75))))
 }
 
-// Inset_Neg_8 is the "neg_8" scale value.
+// Inset_Neg_8 sets the inset on all four sides to -2rem (Tailwind -inset-8).
 func (r *StyleRefinement) Inset_Neg_8() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(2.0))))
 }
 
-// Inset_Neg_9 is the "neg_9" scale value.
+// Inset_Neg_9 sets the inset on all four sides to -2.25rem (Tailwind -inset-9).
 func (r *StyleRefinement) Inset_Neg_9() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(2.25))))
 }
 
-// Inset_Neg_10 is the "neg_10" scale value.
+// Inset_Neg_10 sets the inset on all four sides to -2.5rem (Tailwind -inset-10).
 func (r *StyleRefinement) Inset_Neg_10() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(2.5))))
 }
 
-// Inset_Neg_11 is the "neg_11" scale value.
+// Inset_Neg_11 sets the inset on all four sides to -2.75rem (Tailwind -inset-11).
 func (r *StyleRefinement) Inset_Neg_11() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(2.75))))
 }
 
-// Inset_Neg_12 is the "neg_12" scale value.
+// Inset_Neg_12 sets the inset on all four sides to -3rem (Tailwind -inset-12).
 func (r *StyleRefinement) Inset_Neg_12() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(3.0))))
 }
 
-// Inset_Neg_16 is the "neg_16" scale value.
+// Inset_Neg_16 sets the inset on all four sides to -4rem (Tailwind -inset-16).
 func (r *StyleRefinement) Inset_Neg_16() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(4.0))))
 }
 
-// Inset_Neg_20 is the "neg_20" scale value.
+// Inset_Neg_20 sets the inset on all four sides to -5rem (Tailwind -inset-20).
 func (r *StyleRefinement) Inset_Neg_20() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(5.0))))
 }
 
-// Inset_Neg_24 is the "neg_24" scale value.
+// Inset_Neg_24 sets the inset on all four sides to -6rem (Tailwind -inset-24).
 func (r *StyleRefinement) Inset_Neg_24() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(6.0))))
 }
 
-// Inset_Neg_32 is the "neg_32" scale value.
+// Inset_Neg_32 sets the inset on all four sides to -8rem (Tailwind -inset-32).
 func (r *StyleRefinement) Inset_Neg_32() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(8.0))))
 }
 
-// Inset_Neg_40 is the "neg_40" scale value.
+// Inset_Neg_40 sets the inset on all four sides to -10rem (Tailwind -inset-40).
 func (r *StyleRefinement) Inset_Neg_40() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(10.0))))
 }
 
-// Inset_Neg_48 is the "neg_48" scale value.
+// Inset_Neg_48 sets the inset on all four sides to -12rem (Tailwind -inset-48).
 func (r *StyleRefinement) Inset_Neg_48() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(12.0))))
 }
 
-// Inset_Neg_56 is the "neg_56" scale value.
+// Inset_Neg_56 sets the inset on all four sides to -14rem (Tailwind -inset-56).
 func (r *StyleRefinement) Inset_Neg_56() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(14.0))))
 }
 
-// Inset_Neg_64 is the "neg_64" scale value.
+// Inset_Neg_64 sets the inset on all four sides to -16rem (Tailwind -inset-64).
 func (r *StyleRefinement) Inset_Neg_64() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(16.0))))
 }
 
-// Inset_Neg_72 is the "neg_72" scale value.
+// Inset_Neg_72 sets the inset on all four sides to -18rem (Tailwind -inset-72).
 func (r *StyleRefinement) Inset_Neg_72() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(18.0))))
 }
 
-// Inset_Neg_80 is the "neg_80" scale value.
+// Inset_Neg_80 sets the inset on all four sides to -20rem (Tailwind -inset-80).
 func (r *StyleRefinement) Inset_Neg_80() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(20.0))))
 }
 
-// Inset_Neg_96 is the "neg_96" scale value.
+// Inset_Neg_96 sets the inset on all four sides to -24rem (Tailwind -inset-96).
 func (r *StyleRefinement) Inset_Neg_96() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(24.0))))
 }
 
-// Inset_Neg_112 is the "neg_112" scale value.
+// Inset_Neg_112 sets the inset on all four sides to -28rem (Tailwind -inset-112).
 func (r *StyleRefinement) Inset_Neg_112() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(28.0))))
 }
 
-// Inset_Neg_128 is the "neg_128" scale value.
+// Inset_Neg_128 sets the inset on all four sides to -32rem (Tailwind -inset-128).
 func (r *StyleRefinement) Inset_Neg_128() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromRems(geometry.Rems(-(32.0))))
 }
 
-// Inset_Neg_px is the "neg_px" scale value.
+// Inset_Neg_px sets the inset on all four sides to -1px (Tailwind -inset-px).
 func (r *StyleRefinement) Inset_Neg_px() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromPixels(geometry.Px(-(1))))
 }
 
-// Inset_Auto sets the value to auto.
+// Inset_Auto sets the inset on all four sides to auto (Tailwind inset-auto).
 func (r *StyleRefinement) Inset_Auto() *StyleRefinement { return r.SetInset(geometry.AutoLength()) }
 
-// Inset_Full is the "full" scale value.
+// Inset_Full sets the inset on all four sides to 100% of the parent size (Tailwind inset-full).
 func (r *StyleRefinement) Inset_Full() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(1)))
 }
 
-// Inset_1_2 is the "1_2" scale value.
+// Inset_1_2 sets the inset on all four sides to 50% of the parent size (Tailwind inset-1/2).
 func (r *StyleRefinement) Inset_1_2() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Inset_Neg_1_2 is the "neg_1_2" scale value.
+// Inset_Neg_1_2 sets the inset on all four sides to -50% of the parent size (Tailwind -inset-1/2).
 func (r *StyleRefinement) Inset_Neg_1_2() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Inset_1_3 is the "1_3" scale value.
+// Inset_1_3 sets the inset on all four sides to 33.33% of the parent size (Tailwind inset-1/3).
 func (r *StyleRefinement) Inset_1_3() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 3.0)))
 }
 
-// Inset_Neg_1_3 is the "neg_1_3" scale value.
+// Inset_Neg_1_3 sets the inset on all four sides to -33.33% of the parent size (Tailwind -inset-1/3).
 func (r *StyleRefinement) Inset_Neg_1_3() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 3.0))))
 }
 
-// Inset_2_3 is the "2_3" scale value.
+// Inset_2_3 sets the inset on all four sides to 66.67% of the parent size (Tailwind inset-2/3).
 func (r *StyleRefinement) Inset_2_3() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(2.0 / 3.0)))
 }
 
-// Inset_Neg_2_3 is the "neg_2_3" scale value.
+// Inset_Neg_2_3 sets the inset on all four sides to -66.67% of the parent size (Tailwind -inset-2/3).
 func (r *StyleRefinement) Inset_Neg_2_3() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(2.0 / 3.0))))
 }
 
-// Inset_1_4 is the "1_4" scale value.
+// Inset_1_4 sets the inset on all four sides to 25% of the parent size (Tailwind inset-1/4).
 func (r *StyleRefinement) Inset_1_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.25)))
 }
 
-// Inset_Neg_1_4 is the "neg_1_4" scale value.
+// Inset_Neg_1_4 sets the inset on all four sides to -25% of the parent size (Tailwind -inset-1/4).
 func (r *StyleRefinement) Inset_Neg_1_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.25))))
 }
 
-// Inset_2_4 is the "2_4" scale value.
+// Inset_2_4 sets the inset on all four sides to 50% of the parent size (Tailwind inset-2/4).
 func (r *StyleRefinement) Inset_2_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.5)))
 }
 
-// Inset_Neg_2_4 is the "neg_2_4" scale value.
+// Inset_Neg_2_4 sets the inset on all four sides to -50% of the parent size (Tailwind -inset-2/4).
 func (r *StyleRefinement) Inset_Neg_2_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.5))))
 }
 
-// Inset_3_4 is the "3_4" scale value.
+// Inset_3_4 sets the inset on all four sides to 75% of the parent size (Tailwind inset-3/4).
 func (r *StyleRefinement) Inset_3_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.75)))
 }
 
-// Inset_Neg_3_4 is the "neg_3_4" scale value.
+// Inset_Neg_3_4 sets the inset on all four sides to -75% of the parent size (Tailwind -inset-3/4).
 func (r *StyleRefinement) Inset_Neg_3_4() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.75))))
 }
 
-// Inset_1_5 is the "1_5" scale value.
+// Inset_1_5 sets the inset on all four sides to 20% of the parent size (Tailwind inset-1/5).
 func (r *StyleRefinement) Inset_1_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.2)))
 }
 
-// Inset_Neg_1_5 is the "neg_1_5" scale value.
+// Inset_Neg_1_5 sets the inset on all four sides to -20% of the parent size (Tailwind -inset-1/5).
 func (r *StyleRefinement) Inset_Neg_1_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.2))))
 }
 
-// Inset_2_5 is the "2_5" scale value.
+// Inset_2_5 sets the inset on all four sides to 40% of the parent size (Tailwind inset-2/5).
 func (r *StyleRefinement) Inset_2_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.4)))
 }
 
-// Inset_Neg_2_5 is the "neg_2_5" scale value.
+// Inset_Neg_2_5 sets the inset on all four sides to -40% of the parent size (Tailwind -inset-2/5).
 func (r *StyleRefinement) Inset_Neg_2_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.4))))
 }
 
-// Inset_3_5 is the "3_5" scale value.
+// Inset_3_5 sets the inset on all four sides to 60% of the parent size (Tailwind inset-3/5).
 func (r *StyleRefinement) Inset_3_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.6)))
 }
 
-// Inset_Neg_3_5 is the "neg_3_5" scale value.
+// Inset_Neg_3_5 sets the inset on all four sides to -60% of the parent size (Tailwind -inset-3/5).
 func (r *StyleRefinement) Inset_Neg_3_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.6))))
 }
 
-// Inset_4_5 is the "4_5" scale value.
+// Inset_4_5 sets the inset on all four sides to 80% of the parent size (Tailwind inset-4/5).
 func (r *StyleRefinement) Inset_4_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(0.8)))
 }
 
-// Inset_Neg_4_5 is the "neg_4_5" scale value.
+// Inset_Neg_4_5 sets the inset on all four sides to -80% of the parent size (Tailwind -inset-4/5).
 func (r *StyleRefinement) Inset_Neg_4_5() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(0.8))))
 }
 
-// Inset_1_6 is the "1_6" scale value.
+// Inset_1_6 sets the inset on all four sides to 16.67% of the parent size (Tailwind inset-1/6).
 func (r *StyleRefinement) Inset_1_6() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 6.0)))
 }
 
-// Inset_Neg_1_6 is the "neg_1_6" scale value.
+// Inset_Neg_1_6 sets the inset on all four sides to -16.67% of the parent size (Tailwind -inset-1/6).
 func (r *StyleRefinement) Inset_Neg_1_6() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 6.0))))
 }
 
-// Inset_5_6 is the "5_6" scale value.
+// Inset_5_6 sets the inset on all four sides to 83.33% of the parent size (Tailwind inset-5/6).
 func (r *StyleRefinement) Inset_5_6() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(5.0 / 6.0)))
 }
 
-// Inset_Neg_5_6 is the "neg_5_6" scale value.
+// Inset_Neg_5_6 sets the inset on all four sides to -83.33% of the parent size (Tailwind -inset-5/6).
 func (r *StyleRefinement) Inset_Neg_5_6() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(5.0 / 6.0))))
 }
 
-// Inset_1_12 is the "1_12" scale value.
+// Inset_1_12 sets the inset on all four sides to 8.333% of the parent size (Tailwind inset-1/12).
 func (r *StyleRefinement) Inset_1_12() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(1.0 / 12.0)))
 }
 
-// Inset_Neg_1_12 is the "neg_1_12" scale value.
+// Inset_Neg_1_12 sets the inset on all four sides to -8.333% of the parent size (Tailwind -inset-1/12).
 func (r *StyleRefinement) Inset_Neg_1_12() *StyleRefinement {
 	return r.SetInset(geometry.LengthFromDefinite(geometry.RelativeDefinite(-(1.0 / 12.0))))
 }
 
-// Border_0 sets the border width to 0px.
+// Border_0 sets the border width on all sides to 0px (Tailwind border-0).
 func (r *StyleRefinement) Border_0() *StyleRefinement {
 	return r.Border(geometry.PixelsLength(geometry.Px(0)))
 }
 
-// Border_1 sets the border width to 1px.
+// Border_1 sets the border width on all sides to 1px (Tailwind border-1).
 func (r *StyleRefinement) Border_1() *StyleRefinement {
 	return r.Border(geometry.PixelsLength(geometry.Px(1)))
 }
 
-// Border_2 sets the border width to 2px.
+// Border_2 sets the border width on all sides to 2px (Tailwind border-2).
 func (r *StyleRefinement) Border_2() *StyleRefinement {
 	return r.Border(geometry.PixelsLength(geometry.Px(2)))
 }
 
-// Border_4 sets the border width to 4px.
+// Border_4 sets the border width on all sides to 4px (Tailwind border-4).
 func (r *StyleRefinement) Border_4() *StyleRefinement {
 	return r.Border(geometry.PixelsLength(geometry.Px(4)))
 }
 
-// Border_8 sets the border width to 8px.
+// Border_8 sets the border width on all sides to 8px (Tailwind border-8).
 func (r *StyleRefinement) Border_8() *StyleRefinement {
 	return r.Border(geometry.PixelsLength(geometry.Px(8)))
 }
 
-// BorderT_0 sets the border width to 0px.
+// BorderT_0 sets the border width on the top side to 0px (Tailwind border-t-0).
 func (r *StyleRefinement) BorderT_0() *StyleRefinement {
 	return r.BorderT(geometry.PixelsLength(geometry.Px(0)))
 }
 
-// BorderT_1 sets the border width to 1px.
+// BorderT_1 sets the border width on the top side to 1px (Tailwind border-t-1).
 func (r *StyleRefinement) BorderT_1() *StyleRefinement {
 	return r.BorderT(geometry.PixelsLength(geometry.Px(1)))
 }
 
-// BorderT_2 sets the border width to 2px.
+// BorderT_2 sets the border width on the top side to 2px (Tailwind border-t-2).
 func (r *StyleRefinement) BorderT_2() *StyleRefinement {
 	return r.BorderT(geometry.PixelsLength(geometry.Px(2)))
 }
 
-// BorderT_4 sets the border width to 4px.
+// BorderT_4 sets the border width on the top side to 4px (Tailwind border-t-4).
 func (r *StyleRefinement) BorderT_4() *StyleRefinement {
 	return r.BorderT(geometry.PixelsLength(geometry.Px(4)))
 }
 
-// BorderT_8 sets the border width to 8px.
+// BorderT_8 sets the border width on the top side to 8px (Tailwind border-t-8).
 func (r *StyleRefinement) BorderT_8() *StyleRefinement {
 	return r.BorderT(geometry.PixelsLength(geometry.Px(8)))
 }
 
-// BorderR_0 sets the border width to 0px.
+// BorderR_0 sets the border width on the right side to 0px (Tailwind border-r-0).
 func (r *StyleRefinement) BorderR_0() *StyleRefinement {
 	return r.BorderR(geometry.PixelsLength(geometry.Px(0)))
 }
 
-// BorderR_1 sets the border width to 1px.
+// BorderR_1 sets the border width on the right side to 1px (Tailwind border-r-1).
 func (r *StyleRefinement) BorderR_1() *StyleRefinement {
 	return r.BorderR(geometry.PixelsLength(geometry.Px(1)))
 }
 
-// BorderR_2 sets the border width to 2px.
+// BorderR_2 sets the border width on the right side to 2px (Tailwind border-r-2).
 func (r *StyleRefinement) BorderR_2() *StyleRefinement {
 	return r.BorderR(geometry.PixelsLength(geometry.Px(2)))
 }
 
-// BorderR_4 sets the border width to 4px.
+// BorderR_4 sets the border width on the right side to 4px (Tailwind border-r-4).
 func (r *StyleRefinement) BorderR_4() *StyleRefinement {
 	return r.BorderR(geometry.PixelsLength(geometry.Px(4)))
 }
 
-// BorderR_8 sets the border width to 8px.
+// BorderR_8 sets the border width on the right side to 8px (Tailwind border-r-8).
 func (r *StyleRefinement) BorderR_8() *StyleRefinement {
 	return r.BorderR(geometry.PixelsLength(geometry.Px(8)))
 }
 
-// BorderB_0 sets the border width to 0px.
+// BorderB_0 sets the border width on the bottom side to 0px (Tailwind border-b-0).
 func (r *StyleRefinement) BorderB_0() *StyleRefinement {
 	return r.BorderB(geometry.PixelsLength(geometry.Px(0)))
 }
 
-// BorderB_1 sets the border width to 1px.
+// BorderB_1 sets the border width on the bottom side to 1px (Tailwind border-b-1).
 func (r *StyleRefinement) BorderB_1() *StyleRefinement {
 	return r.BorderB(geometry.PixelsLength(geometry.Px(1)))
 }
 
-// BorderB_2 sets the border width to 2px.
+// BorderB_2 sets the border width on the bottom side to 2px (Tailwind border-b-2).
 func (r *StyleRefinement) BorderB_2() *StyleRefinement {
 	return r.BorderB(geometry.PixelsLength(geometry.Px(2)))
 }
 
-// BorderB_4 sets the border width to 4px.
+// BorderB_4 sets the border width on the bottom side to 4px (Tailwind border-b-4).
 func (r *StyleRefinement) BorderB_4() *StyleRefinement {
 	return r.BorderB(geometry.PixelsLength(geometry.Px(4)))
 }
 
-// BorderB_8 sets the border width to 8px.
+// BorderB_8 sets the border width on the bottom side to 8px (Tailwind border-b-8).
 func (r *StyleRefinement) BorderB_8() *StyleRefinement {
 	return r.BorderB(geometry.PixelsLength(geometry.Px(8)))
 }
 
-// BorderL_0 sets the border width to 0px.
+// BorderL_0 sets the border width on the left side to 0px (Tailwind border-l-0).
 func (r *StyleRefinement) BorderL_0() *StyleRefinement {
 	return r.BorderL(geometry.PixelsLength(geometry.Px(0)))
 }
 
-// BorderL_1 sets the border width to 1px.
+// BorderL_1 sets the border width on the left side to 1px (Tailwind border-l-1).
 func (r *StyleRefinement) BorderL_1() *StyleRefinement {
 	return r.BorderL(geometry.PixelsLength(geometry.Px(1)))
 }
 
-// BorderL_2 sets the border width to 2px.
+// BorderL_2 sets the border width on the left side to 2px (Tailwind border-l-2).
 func (r *StyleRefinement) BorderL_2() *StyleRefinement {
 	return r.BorderL(geometry.PixelsLength(geometry.Px(2)))
 }
 
-// BorderL_4 sets the border width to 4px.
+// BorderL_4 sets the border width on the left side to 4px (Tailwind border-l-4).
 func (r *StyleRefinement) BorderL_4() *StyleRefinement {
 	return r.BorderL(geometry.PixelsLength(geometry.Px(4)))
 }
 
-// BorderL_8 sets the border width to 8px.
+// BorderL_8 sets the border width on the left side to 8px (Tailwind border-l-8).
 func (r *StyleRefinement) BorderL_8() *StyleRefinement {
 	return r.BorderL(geometry.PixelsLength(geometry.Px(8)))
 }
 
-// BorderX_0 sets the border width to 0px.
+// BorderX_0 sets the border width on the left and right sides to 0px (Tailwind border-x-0).
 func (r *StyleRefinement) BorderX_0() *StyleRefinement {
 	return r.BorderX(geometry.PixelsLength(geometry.Px(0)))
 }
 
-// BorderX_1 sets the border width to 1px.
+// BorderX_1 sets the border width on the left and right sides to 1px (Tailwind border-x-1).
 func (r *StyleRefinement) BorderX_1() *StyleRefinement {
 	return r.BorderX(geometry.PixelsLength(geometry.Px(1)))
 }
 
-// BorderX_2 sets the border width to 2px.
+// BorderX_2 sets the border width on the left and right sides to 2px (Tailwind border-x-2).
 func (r *StyleRefinement) BorderX_2() *StyleRefinement {
 	return r.BorderX(geometry.PixelsLength(geometry.Px(2)))
 }
 
-// BorderX_4 sets the border width to 4px.
+// BorderX_4 sets the border width on the left and right sides to 4px (Tailwind border-x-4).
 func (r *StyleRefinement) BorderX_4() *StyleRefinement {
 	return r.BorderX(geometry.PixelsLength(geometry.Px(4)))
 }
 
-// BorderX_8 sets the border width to 8px.
+// BorderX_8 sets the border width on the left and right sides to 8px (Tailwind border-x-8).
 func (r *StyleRefinement) BorderX_8() *StyleRefinement {
 	return r.BorderX(geometry.PixelsLength(geometry.Px(8)))
 }
 
-// BorderY_0 sets the border width to 0px.
+// BorderY_0 sets the border width on the top and bottom sides to 0px (Tailwind border-y-0).
 func (r *StyleRefinement) BorderY_0() *StyleRefinement {
 	return r.BorderY(geometry.PixelsLength(geometry.Px(0)))
 }
 
-// BorderY_1 sets the border width to 1px.
+// BorderY_1 sets the border width on the top and bottom sides to 1px (Tailwind border-y-1).
 func (r *StyleRefinement) BorderY_1() *StyleRefinement {
 	return r.BorderY(geometry.PixelsLength(geometry.Px(1)))
 }
 
-// BorderY_2 sets the border width to 2px.
+// BorderY_2 sets the border width on the top and bottom sides to 2px (Tailwind border-y-2).
 func (r *StyleRefinement) BorderY_2() *StyleRefinement {
 	return r.BorderY(geometry.PixelsLength(geometry.Px(2)))
 }
 
-// BorderY_4 sets the border width to 4px.
+// BorderY_4 sets the border width on the top and bottom sides to 4px (Tailwind border-y-4).
 func (r *StyleRefinement) BorderY_4() *StyleRefinement {
 	return r.BorderY(geometry.PixelsLength(geometry.Px(4)))
 }
 
-// BorderY_8 sets the border width to 8px.
+// BorderY_8 sets the border width on the top and bottom sides to 8px (Tailwind border-y-8).
 func (r *StyleRefinement) BorderY_8() *StyleRefinement {
 	return r.BorderY(geometry.PixelsLength(geometry.Px(8)))
 }
 
-// Rounded_None sets the corner radius to none.
+// Rounded_None sets the corner radius of all corners to 0 (Tailwind rounded-none).
 func (r *StyleRefinement) Rounded_None() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// Rounded_Xs sets the corner radius to xs.
+// Rounded_Xs sets the corner radius of all corners to 0.125rem (Tailwind rounded-xs).
 func (r *StyleRefinement) Rounded_Xs() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// Rounded_Sm sets the corner radius to sm.
+// Rounded_Sm sets the corner radius of all corners to 0.25rem (Tailwind rounded-sm).
 func (r *StyleRefinement) Rounded_Sm() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// Rounded_Md sets the corner radius to md.
+// Rounded_Md sets the corner radius of all corners to 0.375rem (Tailwind rounded-md).
 func (r *StyleRefinement) Rounded_Md() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// Rounded_Lg sets the corner radius to lg.
+// Rounded_Lg sets the corner radius of all corners to 0.5rem (Tailwind rounded-lg).
 func (r *StyleRefinement) Rounded_Lg() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// Rounded_Xl sets the corner radius to xl.
+// Rounded_Xl sets the corner radius of all corners to 0.75rem (Tailwind rounded-xl).
 func (r *StyleRefinement) Rounded_Xl() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// Rounded_2xl sets the corner radius to 2xl.
+// Rounded_2xl sets the corner radius of all corners to 1.0rem (Tailwind rounded-2xl).
 func (r *StyleRefinement) Rounded_2xl() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// Rounded_3xl sets the corner radius to 3xl.
+// Rounded_3xl sets the corner radius of all corners to 1.5rem (Tailwind rounded-3xl).
 func (r *StyleRefinement) Rounded_3xl() *StyleRefinement {
 	return r.Rounded(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// Rounded_Full sets a fully rounded corner.
+// Rounded_Full sets the corner radius of all corners to 9999px
+// (Tailwind rounded-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) Rounded_Full() *StyleRefinement {
 	return r.Rounded(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedT_None sets the corner radius to none.
+// RoundedT_None sets the corner radius of the top corners to 0 (Tailwind rounded-t-none).
 func (r *StyleRefinement) RoundedT_None() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedT_Xs sets the corner radius to xs.
+// RoundedT_Xs sets the corner radius of the top corners to 0.125rem (Tailwind rounded-t-xs).
 func (r *StyleRefinement) RoundedT_Xs() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedT_Sm sets the corner radius to sm.
+// RoundedT_Sm sets the corner radius of the top corners to 0.25rem (Tailwind rounded-t-sm).
 func (r *StyleRefinement) RoundedT_Sm() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedT_Md sets the corner radius to md.
+// RoundedT_Md sets the corner radius of the top corners to 0.375rem (Tailwind rounded-t-md).
 func (r *StyleRefinement) RoundedT_Md() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedT_Lg sets the corner radius to lg.
+// RoundedT_Lg sets the corner radius of the top corners to 0.5rem (Tailwind rounded-t-lg).
 func (r *StyleRefinement) RoundedT_Lg() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedT_Xl sets the corner radius to xl.
+// RoundedT_Xl sets the corner radius of the top corners to 0.75rem (Tailwind rounded-t-xl).
 func (r *StyleRefinement) RoundedT_Xl() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedT_2xl sets the corner radius to 2xl.
+// RoundedT_2xl sets the corner radius of the top corners to 1.0rem (Tailwind rounded-t-2xl).
 func (r *StyleRefinement) RoundedT_2xl() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedT_3xl sets the corner radius to 3xl.
+// RoundedT_3xl sets the corner radius of the top corners to 1.5rem (Tailwind rounded-t-3xl).
 func (r *StyleRefinement) RoundedT_3xl() *StyleRefinement {
 	return r.RoundedT(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedT_Full sets a fully rounded corner.
+// RoundedT_Full sets the corner radius of the top corners to 9999px
+// (Tailwind rounded-t-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedT_Full() *StyleRefinement {
 	return r.RoundedT(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedB_None sets the corner radius to none.
+// RoundedB_None sets the corner radius of the bottom corners to 0 (Tailwind rounded-b-none).
 func (r *StyleRefinement) RoundedB_None() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedB_Xs sets the corner radius to xs.
+// RoundedB_Xs sets the corner radius of the bottom corners to 0.125rem (Tailwind rounded-b-xs).
 func (r *StyleRefinement) RoundedB_Xs() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedB_Sm sets the corner radius to sm.
+// RoundedB_Sm sets the corner radius of the bottom corners to 0.25rem (Tailwind rounded-b-sm).
 func (r *StyleRefinement) RoundedB_Sm() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedB_Md sets the corner radius to md.
+// RoundedB_Md sets the corner radius of the bottom corners to 0.375rem (Tailwind rounded-b-md).
 func (r *StyleRefinement) RoundedB_Md() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedB_Lg sets the corner radius to lg.
+// RoundedB_Lg sets the corner radius of the bottom corners to 0.5rem (Tailwind rounded-b-lg).
 func (r *StyleRefinement) RoundedB_Lg() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedB_Xl sets the corner radius to xl.
+// RoundedB_Xl sets the corner radius of the bottom corners to 0.75rem (Tailwind rounded-b-xl).
 func (r *StyleRefinement) RoundedB_Xl() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedB_2xl sets the corner radius to 2xl.
+// RoundedB_2xl sets the corner radius of the bottom corners to 1.0rem (Tailwind rounded-b-2xl).
 func (r *StyleRefinement) RoundedB_2xl() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedB_3xl sets the corner radius to 3xl.
+// RoundedB_3xl sets the corner radius of the bottom corners to 1.5rem (Tailwind rounded-b-3xl).
 func (r *StyleRefinement) RoundedB_3xl() *StyleRefinement {
 	return r.RoundedB(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedB_Full sets a fully rounded corner.
+// RoundedB_Full sets the corner radius of the bottom corners to 9999px
+// (Tailwind rounded-b-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedB_Full() *StyleRefinement {
 	return r.RoundedB(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedR_None sets the corner radius to none.
+// RoundedR_None sets the corner radius of the right corners to 0 (Tailwind rounded-r-none).
 func (r *StyleRefinement) RoundedR_None() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedR_Xs sets the corner radius to xs.
+// RoundedR_Xs sets the corner radius of the right corners to 0.125rem (Tailwind rounded-r-xs).
 func (r *StyleRefinement) RoundedR_Xs() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedR_Sm sets the corner radius to sm.
+// RoundedR_Sm sets the corner radius of the right corners to 0.25rem (Tailwind rounded-r-sm).
 func (r *StyleRefinement) RoundedR_Sm() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedR_Md sets the corner radius to md.
+// RoundedR_Md sets the corner radius of the right corners to 0.375rem (Tailwind rounded-r-md).
 func (r *StyleRefinement) RoundedR_Md() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedR_Lg sets the corner radius to lg.
+// RoundedR_Lg sets the corner radius of the right corners to 0.5rem (Tailwind rounded-r-lg).
 func (r *StyleRefinement) RoundedR_Lg() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedR_Xl sets the corner radius to xl.
+// RoundedR_Xl sets the corner radius of the right corners to 0.75rem (Tailwind rounded-r-xl).
 func (r *StyleRefinement) RoundedR_Xl() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedR_2xl sets the corner radius to 2xl.
+// RoundedR_2xl sets the corner radius of the right corners to 1.0rem (Tailwind rounded-r-2xl).
 func (r *StyleRefinement) RoundedR_2xl() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedR_3xl sets the corner radius to 3xl.
+// RoundedR_3xl sets the corner radius of the right corners to 1.5rem (Tailwind rounded-r-3xl).
 func (r *StyleRefinement) RoundedR_3xl() *StyleRefinement {
 	return r.RoundedR(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedR_Full sets a fully rounded corner.
+// RoundedR_Full sets the corner radius of the right corners to 9999px
+// (Tailwind rounded-r-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedR_Full() *StyleRefinement {
 	return r.RoundedR(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedL_None sets the corner radius to none.
+// RoundedL_None sets the corner radius of the left corners to 0 (Tailwind rounded-l-none).
 func (r *StyleRefinement) RoundedL_None() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedL_Xs sets the corner radius to xs.
+// RoundedL_Xs sets the corner radius of the left corners to 0.125rem (Tailwind rounded-l-xs).
 func (r *StyleRefinement) RoundedL_Xs() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedL_Sm sets the corner radius to sm.
+// RoundedL_Sm sets the corner radius of the left corners to 0.25rem (Tailwind rounded-l-sm).
 func (r *StyleRefinement) RoundedL_Sm() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedL_Md sets the corner radius to md.
+// RoundedL_Md sets the corner radius of the left corners to 0.375rem (Tailwind rounded-l-md).
 func (r *StyleRefinement) RoundedL_Md() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedL_Lg sets the corner radius to lg.
+// RoundedL_Lg sets the corner radius of the left corners to 0.5rem (Tailwind rounded-l-lg).
 func (r *StyleRefinement) RoundedL_Lg() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedL_Xl sets the corner radius to xl.
+// RoundedL_Xl sets the corner radius of the left corners to 0.75rem (Tailwind rounded-l-xl).
 func (r *StyleRefinement) RoundedL_Xl() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedL_2xl sets the corner radius to 2xl.
+// RoundedL_2xl sets the corner radius of the left corners to 1.0rem (Tailwind rounded-l-2xl).
 func (r *StyleRefinement) RoundedL_2xl() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedL_3xl sets the corner radius to 3xl.
+// RoundedL_3xl sets the corner radius of the left corners to 1.5rem (Tailwind rounded-l-3xl).
 func (r *StyleRefinement) RoundedL_3xl() *StyleRefinement {
 	return r.RoundedL(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedL_Full sets a fully rounded corner.
+// RoundedL_Full sets the corner radius of the left corners to 9999px
+// (Tailwind rounded-l-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedL_Full() *StyleRefinement {
 	return r.RoundedL(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedTl_None sets the corner radius to none.
+// RoundedTl_None sets the corner radius of the top-left corner to 0 (Tailwind rounded-tl-none).
 func (r *StyleRefinement) RoundedTl_None() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedTl_Xs sets the corner radius to xs.
+// RoundedTl_Xs sets the corner radius of the top-left corner to 0.125rem (Tailwind rounded-tl-xs).
 func (r *StyleRefinement) RoundedTl_Xs() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedTl_Sm sets the corner radius to sm.
+// RoundedTl_Sm sets the corner radius of the top-left corner to 0.25rem (Tailwind rounded-tl-sm).
 func (r *StyleRefinement) RoundedTl_Sm() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedTl_Md sets the corner radius to md.
+// RoundedTl_Md sets the corner radius of the top-left corner to 0.375rem (Tailwind rounded-tl-md).
 func (r *StyleRefinement) RoundedTl_Md() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedTl_Lg sets the corner radius to lg.
+// RoundedTl_Lg sets the corner radius of the top-left corner to 0.5rem (Tailwind rounded-tl-lg).
 func (r *StyleRefinement) RoundedTl_Lg() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedTl_Xl sets the corner radius to xl.
+// RoundedTl_Xl sets the corner radius of the top-left corner to 0.75rem (Tailwind rounded-tl-xl).
 func (r *StyleRefinement) RoundedTl_Xl() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedTl_2xl sets the corner radius to 2xl.
+// RoundedTl_2xl sets the corner radius of the top-left corner to 1.0rem (Tailwind rounded-tl-2xl).
 func (r *StyleRefinement) RoundedTl_2xl() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedTl_3xl sets the corner radius to 3xl.
+// RoundedTl_3xl sets the corner radius of the top-left corner to 1.5rem (Tailwind rounded-tl-3xl).
 func (r *StyleRefinement) RoundedTl_3xl() *StyleRefinement {
 	return r.RoundedTL(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedTl_Full sets a fully rounded corner.
+// RoundedTl_Full sets the corner radius of the top-left corner to 9999px
+// (Tailwind rounded-tl-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedTl_Full() *StyleRefinement {
 	return r.RoundedTL(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedTr_None sets the corner radius to none.
+// RoundedTr_None sets the corner radius of the top-right corner to 0 (Tailwind rounded-tr-none).
 func (r *StyleRefinement) RoundedTr_None() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedTr_Xs sets the corner radius to xs.
+// RoundedTr_Xs sets the corner radius of the top-right corner to 0.125rem (Tailwind rounded-tr-xs).
 func (r *StyleRefinement) RoundedTr_Xs() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedTr_Sm sets the corner radius to sm.
+// RoundedTr_Sm sets the corner radius of the top-right corner to 0.25rem (Tailwind rounded-tr-sm).
 func (r *StyleRefinement) RoundedTr_Sm() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedTr_Md sets the corner radius to md.
+// RoundedTr_Md sets the corner radius of the top-right corner to 0.375rem (Tailwind rounded-tr-md).
 func (r *StyleRefinement) RoundedTr_Md() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedTr_Lg sets the corner radius to lg.
+// RoundedTr_Lg sets the corner radius of the top-right corner to 0.5rem (Tailwind rounded-tr-lg).
 func (r *StyleRefinement) RoundedTr_Lg() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedTr_Xl sets the corner radius to xl.
+// RoundedTr_Xl sets the corner radius of the top-right corner to 0.75rem (Tailwind rounded-tr-xl).
 func (r *StyleRefinement) RoundedTr_Xl() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedTr_2xl sets the corner radius to 2xl.
+// RoundedTr_2xl sets the corner radius of the top-right corner to 1.0rem (Tailwind rounded-tr-2xl).
 func (r *StyleRefinement) RoundedTr_2xl() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedTr_3xl sets the corner radius to 3xl.
+// RoundedTr_3xl sets the corner radius of the top-right corner to 1.5rem (Tailwind rounded-tr-3xl).
 func (r *StyleRefinement) RoundedTr_3xl() *StyleRefinement {
 	return r.RoundedTR(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedTr_Full sets a fully rounded corner.
+// RoundedTr_Full sets the corner radius of the top-right corner to 9999px
+// (Tailwind rounded-tr-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedTr_Full() *StyleRefinement {
 	return r.RoundedTR(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedBl_None sets the corner radius to none.
+// RoundedBl_None sets the corner radius of the bottom-left corner to 0 (Tailwind rounded-bl-none).
 func (r *StyleRefinement) RoundedBl_None() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedBl_Xs sets the corner radius to xs.
+// RoundedBl_Xs sets the corner radius of the bottom-left corner to 0.125rem (Tailwind rounded-bl-xs).
 func (r *StyleRefinement) RoundedBl_Xs() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedBl_Sm sets the corner radius to sm.
+// RoundedBl_Sm sets the corner radius of the bottom-left corner to 0.25rem (Tailwind rounded-bl-sm).
 func (r *StyleRefinement) RoundedBl_Sm() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedBl_Md sets the corner radius to md.
+// RoundedBl_Md sets the corner radius of the bottom-left corner to 0.375rem (Tailwind rounded-bl-md).
 func (r *StyleRefinement) RoundedBl_Md() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedBl_Lg sets the corner radius to lg.
+// RoundedBl_Lg sets the corner radius of the bottom-left corner to 0.5rem (Tailwind rounded-bl-lg).
 func (r *StyleRefinement) RoundedBl_Lg() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedBl_Xl sets the corner radius to xl.
+// RoundedBl_Xl sets the corner radius of the bottom-left corner to 0.75rem (Tailwind rounded-bl-xl).
 func (r *StyleRefinement) RoundedBl_Xl() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedBl_2xl sets the corner radius to 2xl.
+// RoundedBl_2xl sets the corner radius of the bottom-left corner to 1.0rem (Tailwind rounded-bl-2xl).
 func (r *StyleRefinement) RoundedBl_2xl() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedBl_3xl sets the corner radius to 3xl.
+// RoundedBl_3xl sets the corner radius of the bottom-left corner to 1.5rem (Tailwind rounded-bl-3xl).
 func (r *StyleRefinement) RoundedBl_3xl() *StyleRefinement {
 	return r.RoundedBL(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedBl_Full sets a fully rounded corner.
+// RoundedBl_Full sets the corner radius of the bottom-left corner to 9999px
+// (Tailwind rounded-bl-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedBl_Full() *StyleRefinement {
 	return r.RoundedBL(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// RoundedBr_None sets the corner radius to none.
+// RoundedBr_None sets the corner radius of the bottom-right corner to 0 (Tailwind rounded-br-none).
 func (r *StyleRefinement) RoundedBr_None() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(0)))
 }
 
-// RoundedBr_Xs sets the corner radius to xs.
+// RoundedBr_Xs sets the corner radius of the bottom-right corner to 0.125rem (Tailwind rounded-br-xs).
 func (r *StyleRefinement) RoundedBr_Xs() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(0.125)))
 }
 
-// RoundedBr_Sm sets the corner radius to sm.
+// RoundedBr_Sm sets the corner radius of the bottom-right corner to 0.25rem (Tailwind rounded-br-sm).
 func (r *StyleRefinement) RoundedBr_Sm() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(0.25)))
 }
 
-// RoundedBr_Md sets the corner radius to md.
+// RoundedBr_Md sets the corner radius of the bottom-right corner to 0.375rem (Tailwind rounded-br-md).
 func (r *StyleRefinement) RoundedBr_Md() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(0.375)))
 }
 
-// RoundedBr_Lg sets the corner radius to lg.
+// RoundedBr_Lg sets the corner radius of the bottom-right corner to 0.5rem (Tailwind rounded-br-lg).
 func (r *StyleRefinement) RoundedBr_Lg() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(0.5)))
 }
 
-// RoundedBr_Xl sets the corner radius to xl.
+// RoundedBr_Xl sets the corner radius of the bottom-right corner to 0.75rem (Tailwind rounded-br-xl).
 func (r *StyleRefinement) RoundedBr_Xl() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// RoundedBr_2xl sets the corner radius to 2xl.
+// RoundedBr_2xl sets the corner radius of the bottom-right corner to 1.0rem (Tailwind rounded-br-2xl).
 func (r *StyleRefinement) RoundedBr_2xl() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// RoundedBr_3xl sets the corner radius to 3xl.
+// RoundedBr_3xl sets the corner radius of the bottom-right corner to 1.5rem (Tailwind rounded-br-3xl).
 func (r *StyleRefinement) RoundedBr_3xl() *StyleRefinement {
 	return r.RoundedBR(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// RoundedBr_Full sets a fully rounded corner.
+// RoundedBr_Full sets the corner radius of the bottom-right corner to 9999px
+// (Tailwind rounded-br-full). Painting clamps radii to half the shorter side, so the result
+// is a pill or circle.
 func (r *StyleRefinement) RoundedBr_Full() *StyleRefinement {
 	return r.RoundedBR(geometry.PixelsLength(geometry.Px(9999)))
 }
 
-// Shadow sets the box shadows.
+// Shadow replaces the box shadow list with shadows (CSS box-shadow). The shadows
+// paint in order; see [BoxShadow] and [NewBoxShadow]. A nil slice leaves the
+// shadow unset (inherited from the cascade), unlike [StyleRefinement.ShadowNone].
 func (r *StyleRefinement) Shadow(shadows []BoxShadow) *StyleRefinement {
 	r.BoxShadow = shadows
 	return r
 }
 
-// ShadowNone clears the box shadow.
+// ShadowNone sets an explicit empty shadow list, removing any shadow set by an
+// earlier layer of the cascade (Tailwind shadow-none).
 func (r *StyleRefinement) ShadowNone() *StyleRefinement { r.BoxShadow = []BoxShadow{}; return r }
 
-// Shadow2xs sets a 2xs box shadow.
+// Shadow2xs sets a single 1px-offset shadow at 5% black opacity (Tailwind shadow-2xs).
 func (r *StyleRefinement) Shadow2xs() *StyleRefinement {
 	return r.Shadow([]BoxShadow{NewBoxShadow(0, 1, gc.HSLA(0, 0, 0, 0.05))})
 }
 
-// ShadowXs sets an xs box shadow.
+// ShadowXs sets a 1px-offset, 2px-blur shadow at 5% black opacity (Tailwind shadow-xs).
 func (r *StyleRefinement) ShadowXs() *StyleRefinement {
 	return r.Shadow([]BoxShadow{NewBoxShadow(0, 1, gc.HSLA(0, 0, 0, 0.05)).WithBlurRadius(2)})
 }
 
-// ShadowSm sets a sm box shadow.
+// ShadowSm sets the two-layer small shadow at 10% black opacity (Tailwind shadow-sm).
 func (r *StyleRefinement) ShadowSm() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 1, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(3),
@@ -9549,7 +9570,7 @@ func (r *StyleRefinement) ShadowSm() *StyleRefinement {
 	})
 }
 
-// ShadowMd sets an md box shadow.
+// ShadowMd sets the two-layer medium shadow at 10% black opacity (Tailwind shadow-md).
 func (r *StyleRefinement) ShadowMd() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 4, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(6).WithSpreadRadius(-1),
@@ -9557,7 +9578,7 @@ func (r *StyleRefinement) ShadowMd() *StyleRefinement {
 	})
 }
 
-// ShadowLg sets an lg box shadow.
+// ShadowLg sets the two-layer large shadow at 10% black opacity (Tailwind shadow-lg).
 func (r *StyleRefinement) ShadowLg() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 10, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(15).WithSpreadRadius(-3),
@@ -9565,7 +9586,7 @@ func (r *StyleRefinement) ShadowLg() *StyleRefinement {
 	})
 }
 
-// ShadowXl sets an xl box shadow.
+// ShadowXl sets the two-layer extra-large shadow at 10% black opacity (Tailwind shadow-xl).
 func (r *StyleRefinement) ShadowXl() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 20, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(25).WithSpreadRadius(-5),
@@ -9573,7 +9594,7 @@ func (r *StyleRefinement) ShadowXl() *StyleRefinement {
 	})
 }
 
-// Shadow2xl sets a 2xl box shadow.
+// Shadow2xl sets the two-layer 2xl shadow at 10% black opacity (Tailwind shadow-2xl).
 func (r *StyleRefinement) Shadow2xl() *StyleRefinement {
 	return r.Shadow([]BoxShadow{
 		NewBoxShadow(0, 25, gc.HSLA(0, 0, 0, 0.1)).WithBlurRadius(50).WithSpreadRadius(-12),
@@ -9581,37 +9602,37 @@ func (r *StyleRefinement) Shadow2xl() *StyleRefinement {
 	})
 }
 
-// TextXs sets the font size to 0.75rem.
+// TextXs sets the font size to 0.75rem (Tailwind text-xs). The line height is not changed.
 func (r *StyleRefinement) TextXs() *StyleRefinement {
 	return r.TextSize(geometry.RemsLength(geometry.Rems(0.75)))
 }
 
-// TextSm sets the font size to 0.875rem.
+// TextSm sets the font size to 0.875rem (Tailwind text-sm). The line height is not changed.
 func (r *StyleRefinement) TextSm() *StyleRefinement {
 	return r.TextSize(geometry.RemsLength(geometry.Rems(0.875)))
 }
 
-// TextBase sets the font size to 1.0rem.
+// TextBase sets the font size to 1.0rem (Tailwind text-base). The line height is not changed.
 func (r *StyleRefinement) TextBase() *StyleRefinement {
 	return r.TextSize(geometry.RemsLength(geometry.Rems(1.0)))
 }
 
-// TextLg sets the font size to 1.125rem.
+// TextLg sets the font size to 1.125rem (Tailwind text-lg). The line height is not changed.
 func (r *StyleRefinement) TextLg() *StyleRefinement {
 	return r.TextSize(geometry.RemsLength(geometry.Rems(1.125)))
 }
 
-// TextXl sets the font size to 1.25rem.
+// TextXl sets the font size to 1.25rem (Tailwind text-xl). The line height is not changed.
 func (r *StyleRefinement) TextXl() *StyleRefinement {
 	return r.TextSize(geometry.RemsLength(geometry.Rems(1.25)))
 }
 
-// Text2xl sets the font size to 1.5rem.
+// Text2xl sets the font size to 1.5rem (Tailwind text-2xl). The line height is not changed.
 func (r *StyleRefinement) Text2xl() *StyleRefinement {
 	return r.TextSize(geometry.RemsLength(geometry.Rems(1.5)))
 }
 
-// Text3xl sets the font size to 1.875rem.
+// Text3xl sets the font size to 1.875rem (Tailwind text-3xl). The line height is not changed.
 func (r *StyleRefinement) Text3xl() *StyleRefinement {
 	return r.TextSize(geometry.RemsLength(geometry.Rems(1.875)))
 }

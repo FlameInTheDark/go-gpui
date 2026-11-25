@@ -25,6 +25,7 @@ type Action interface {
 // Buildable can be constructed from JSON input (keymap loading).
 type Buildable interface {
 	Action
+	// BuildAction initializes the action from its JSON input.
 	BuildAction(input json.RawMessage) error
 }
 

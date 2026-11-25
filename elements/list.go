@@ -72,7 +72,9 @@ type List struct {
 	showScrollbar bool
 }
 
-// NewList creates a list.
+// NewList creates a virtualized list of itemCount variable-height rows.
+// renderItem builds the element for an index as needed during layout and
+// painting. See List for scrolling and scrollbar options.
 func NewList(itemCount int, renderItem ListItemRender) *List {
 	return &List{
 		st:         style.NewStyleRefinement(),

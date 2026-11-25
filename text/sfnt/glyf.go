@@ -19,7 +19,7 @@ type Outline struct {
 // Point is one outline point in font units.
 type Point struct{ X, Y float32 }
 
-// GlyphOutline returns the TrueType outline of a glyph (empty for CFF or
+// GlyphOutline returns the outline of a TrueType or supported CFF glyph (empty for
 // missing glyphs).
 func (f *Font) GlyphOutline(gid uint16) Outline {
 	if f.isCFF && f.cff != nil {
