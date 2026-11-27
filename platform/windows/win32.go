@@ -157,6 +157,7 @@ const (
 	// Window messages.
 	WM_CREATE               = 1
 	WM_DESTROY              = 2
+	WM_MOVE                 = 3
 	WM_SIZE                 = 5
 	WM_ACTIVATE             = 6
 	WM_SETFOCUS             = 7
@@ -196,9 +197,13 @@ const (
 	WM_NCHITTEST            = 0x0084
 	WM_NCACTIVATE           = 0x0086
 	WM_NCLBUTTONDOWN        = 0x00A1
-	WM_APP_DISPATCH         = 0x8000 // posts queued Go closures on the UI thread
-	WM_APP_CLOSEALL         = 0x8001 // asks the dispatch window to end the loop
-	WM_APP_PROBE            = 0x8002 // liveness probe answered by the dispatch window
+	// The move/size modal loop (title-bar drag, snap, manual resize, the
+	// drag-restore of a maximized window) is bracketed by these.
+	WM_ENTERSIZEMOVE = 0x0231
+	WM_EXITSIZEMOVE  = 0x0232
+	WM_APP_DISPATCH  = 0x8000 // posts queued Go closures on the UI thread
+	WM_APP_CLOSEALL  = 0x8001 // asks the dispatch window to end the loop
+	WM_APP_PROBE     = 0x8002 // liveness probe answered by the dispatch window
 
 	WM_TIMER = 0x0113 // one-shot repaint timer (software fallback pacing)
 
@@ -1326,6 +1331,171 @@ func drainDispatchQueue() {
 var procGetCurrentThreadIdSafe = kernel32.NewProc("GetCurrentThreadId")
 
 // ---------------------------------------------------------------------------
+// Client-side decorations: the frameless client rect (WM_NCCALCSIZE)
+// ---------------------------------------------------------------------------
+
+// Invariant this section maintains: a custom-decorations window keeps
+// WS_OVERLAPPEDWINDOW (and with it WS_CAPTION) in its style — that is what
+// preserves the DWM shadow, snap and the resize borders — and DWM paints
+// the native caption into any non-client band the client leaves at the
+// window's top edge. So while the window is not maximized the client rect
+// must equal the window rect: client.Top == window.Top, no exceptions. The
+// historical bugs were exactly mismatches of this kind:
+//
+//   - (A) during the SC_MOVE drag-restore of a maximized window a
+//     WM_NCCALCSIZE can arrive while IsZoomed still reports TRUE and the
+//     proposed rect is already the restored on-screen rect; classifying
+//     "maximized" from IsZoomed alone then overwrote the client with the
+//     work area — a rect unrelated to the window — and the mismatch band
+//     stayed visible after the drag (nothing re-sends WM_NCCALCSIZE once
+//     the modal loop ends) until a zoom toggle forced a fresh frame;
+//   - (B) the Aero-snap bleed clamp also fired for a merely dragged
+//     window whose top hung a few pixels above the work area, pushing
+//     client.Top below window.Top — the strip in between became
+//     non-client area and DWM painted the native caption there.
+
+// frameTolerancePx bounds the "already the work area" classification:
+// maximized placements recomputed across DPI changes can differ from the
+// work area by a rounding pixel or two; anything within this tolerance is
+// the maximize fit, not a distinct placement.
+const frameTolerancePx = int32(2)
+
+// needsFrameResync reports whether msg ends a native move/size gesture
+// whose final placement must re-run WM_NCCALCSIZE. The loop's intermediate
+// frame passes are computed while the window moves and its zoom state is
+// in flux; nothing re-sends the frame calculation after the loop ends, so
+// without this a client rect derived from a stale maximized state persists
+// until the next zoom toggle. WM_ENTERSIZEMOVE opens the loop (the
+// placement is not final) and ordinary position messages arrive during it;
+// neither may re-sync.
+func needsFrameResync(msg uint32) bool {
+	return msg == WM_EXITSIZEMOVE
+}
+
+// Test seams over the win32 state the frameless client computation needs
+// (the nearest monitor's work area and the per-DPI resize frame). The
+// production assignments below are what wndProc runs; decorations_test.go
+// substitutes a synthetic monitor and frame width to drive the classification
+// through its cases without a real window.
+var (
+	// nearestMonitorWorkArea returns the work area of the monitor nearest
+	// hwnd, ok=false when there is none (a synthetic or dying hwnd).
+	nearestMonitorWorkArea = func(hwnd syscall.Handle) (RECT, bool) {
+		mon, _, _ := procMonitorFromWindow.Call(uintptr(hwnd), MONITOR_DEFAULTTONEAREST)
+		if mon == 0 {
+			return RECT{}, false
+		}
+		var mi MONITORINFO
+		mi.CbSize = uint32(unsafe.Sizeof(mi))
+		procGetMonitorInfoW.Call(mon, uintptr(unsafe.Pointer(&mi)))
+		return mi.RcWork, true
+	}
+	// resizeFrameMetrics returns the invisible resize border the system
+	// wraps around a WS_OVERLAPPEDWINDOW window per axis (SM_CXSIZEFRAME
+	// or SM_CYSIZEFRAME, plus SM_CXPADDEDBORDER). Aero snap inflates a
+	// snapped window by exactly this width; for a per-monitor-aware
+	// process the metrics already come back scaled to the window's DPI.
+	resizeFrameMetrics = func() (int32, int32) {
+		pad := int32(callI32(procGetSystemMetrics, SM_CXPADDEDBORDER))
+		fx := int32(callI32(procGetSystemMetrics, SM_CXSIZEFRAME)) + pad
+		fy := int32(callI32(procGetSystemMetrics, SM_CYSIZEFRAME)) + pad
+		return fx, fy
+	}
+)
+
+// workAreaAligned reports whether every edge of rc sits within tolerance
+// of the work area.
+func workAreaAligned(rc, work RECT, tolerance int32) bool {
+	closeTo := func(a, b int32) bool {
+		d := a - b
+		if d < 0 {
+			d = -d
+		}
+		return d <= tolerance
+	}
+	return closeTo(rc.Left, work.Left) && closeTo(rc.Top, work.Top) &&
+		closeTo(rc.Right, work.Right) && closeTo(rc.Bottom, work.Bottom)
+}
+
+// maximizedPlacement reports whether rc is the window rect of a maximized
+// window: a maximized placement covers the whole work area and extends
+// past every one of its edges (Windows maximizes past the monitor by the
+// invisible resize frame — the bleed the work-area fit corrects).
+func maximizedPlacement(rc, work RECT) bool {
+	return rc.Left <= work.Left && rc.Top <= work.Top &&
+		rc.Right >= work.Right && rc.Bottom >= work.Bottom
+}
+
+// clampSnapBleed pulls an Aero-snap frame bleed back to the work area.
+// The snap engine places a snapped window at its tile inflated by the
+// invisible resize frame on every side, so a genuine bleed is at most
+// frameX/frameY pixels deep AND the window spans the whole work area along
+// the bleeding edge's perpendicular axis (the tile fills it). A window
+// that is merely dragged — its top hanging a few pixels above the work
+// area, say — fails the span test and keeps client == window rect, so DWM
+// never gets a band to paint the native caption into. Excesses deeper than
+// the resize frame are ordinary placements and stay untouched.
+func clampSnapBleed(rc *RECT, work RECT, frameX, frameY int32) {
+	// The perpendicular spans are read from the proposed rect before any
+	// edge moves: whether a side is a snap bleed must not depend on the
+	// order the edges are visited in.
+	spansX := rc.Left <= work.Left && rc.Right >= work.Right
+	spansY := rc.Top <= work.Top && rc.Bottom >= work.Bottom
+	if d := work.Left - rc.Left; d > 0 && d <= frameX && spansY {
+		rc.Left = work.Left
+	}
+	if d := work.Top - rc.Top; d > 0 && d <= frameY && spansX {
+		rc.Top = work.Top
+	}
+	if d := rc.Right - work.Right; d > 0 && d <= frameX && spansY {
+		rc.Right = work.Right
+	}
+	if d := rc.Bottom - work.Bottom; d > 0 && d <= frameY && spansX {
+		rc.Bottom = work.Bottom
+	}
+}
+
+// calcFramelessClientRect computes the client rect of a frameless
+// (client-side-decorations) window from the proposed window rect in rc.
+// It is the WM_NCCALCSIZE (wParam TRUE) body for custom decorations:
+//
+//   - a genuinely maximized placement fits the monitor's work area exactly
+//     (Windows maximizes past it by the resize frame; without the fit the
+//     content would extend under the taskbar);
+//   - every other placement — including the drag-restore moment when
+//     IsZoomed still reports TRUE while rc is already the restored
+//     on-screen rect — keeps client == proposed window rect, with a real
+//     Aero-snap bleed pulled back where one exists.
+//
+// zoomed (one cheap IsZoomed call by the caller) never overrides the rect
+// on its own: classifying maximized purely from the zoom flag is what once
+// painted a native caption strip over dragged windows. The return value is
+// the WM_NCCALCSIZE result: 0 — the client covers the (possibly adjusted)
+// proposed rect, no non-client band is reserved.
+func calcFramelessClientRect(w *Window, hwnd syscall.Handle, rc *RECT, zoomed bool) uintptr {
+	work, ok := nearestMonitorWorkArea(hwnd)
+	if !ok {
+		// No monitor (synthetic hwnd, dying window): the proposed rect
+		// stands verbatim — frameless, nothing reserved.
+		return 0
+	}
+	if zoomed && (workAreaAligned(*rc, work, frameTolerancePx) || maximizedPlacement(*rc, work)) {
+		// Maximized on the work area — aligned to it, or sitting at the
+		// full-monitor placement with its offscreen bleed. The client
+		// covers exactly the work area, keeping content above the taskbar.
+		*rc = work
+		return 0
+	}
+	// Restored geometry. This branch also runs mid-drag-restore while
+	// IsZoomed is momentarily TRUE but rc is already the restored on-screen
+	// rect: overwriting it with the work area would detach the client from
+	// the window and leave the native caption band behind (mechanism A).
+	fx, fy := resizeFrameMetrics()
+	clampSnapBleed(rc, work, fx, fy)
+	return 0
+}
+
+// ---------------------------------------------------------------------------
 // wndProc
 // ---------------------------------------------------------------------------
 
@@ -1333,46 +1503,22 @@ func wndProc(hwnd syscall.Handle, msg uint32, wParam, lParam uintptr) uintptr {
 	w := windowForHWND(hwnd)
 	switch msg {
 	case WM_NCCALCSIZE:
-		// Client-side decorations: remove the standard frame — the app
-		// paints its own title bar over the whole window. Maximized
-		// windows are inset to the monitor's work area (Windows
-		// maximizes to the monitor plus a frame bleed, which would put
-		// our content under the taskbar); snapped windows carry a small
-		// offscreen bleed that is pulled back too. wParam==0 (style
-		// queries) falls through to DefWindowProc.
-		if w != nil && w.customDecorations && wParam != 0 {
-			rc := (*RECT)(ptrFromUintptr(lParam))
-			mon, _, _ := procMonitorFromWindow.Call(uintptr(hwnd), MONITOR_DEFAULTTONEAREST)
-			var mi MONITORINFO
-			mi.CbSize = uint32(unsafe.Sizeof(mi))
-			if mon != 0 {
-				procGetMonitorInfoW.Call(mon, uintptr(unsafe.Pointer(&mi)))
-			} else {
+		// Client-side decorations: the app paints its own title bar
+		// over the whole window, so no non-client band may ever be
+		// reserved for the removed standard frame. Both NCCALCSIZE
+		// variants are answered here: letting DefWindowProc handle
+		// any of them would re-introduce the OS frame (WS_CAPTION is
+		// still in the style, so DWM paints the native caption into
+		// whatever band a reserved frame leaves at the top edge).
+		if w != nil && w.customDecorations {
+			if wParam == 0 {
+				// Size/style-query variant: the proposed client
+				// rect stands as-is; report "no adjustment".
 				return 0
 			}
-			if zoomed, _, _ := procIsZoomed.Call(uintptr(hwnd)); zoomed != 0 {
-				// The client covers exactly the work area.
-				*rc = mi.RcWork
-			} else {
-				// Aero snap sizes the window with the frame bleeding
-				// a few pixels offscreen; clamp tiny excesses back
-				// (a user-dragged window can sit far offscreen and
-				// must NOT be clamped).
-				const maxBleed = int32(16)
-				if d := mi.RcWork.Left - rc.Left; d > 0 && d <= maxBleed {
-					rc.Left = mi.RcWork.Left
-				}
-				if d := mi.RcWork.Top - rc.Top; d > 0 && d <= maxBleed {
-					rc.Top = mi.RcWork.Top
-				}
-				if d := rc.Right - mi.RcWork.Right; d > 0 && d <= maxBleed {
-					rc.Right = mi.RcWork.Right
-				}
-				if d := rc.Bottom - mi.RcWork.Bottom; d > 0 && d <= maxBleed {
-					rc.Bottom = mi.RcWork.Bottom
-				}
-			}
-			return 0
+			rc := (*RECT)(ptrFromUintptr(lParam))
+			zoomed, _, _ := procIsZoomed.Call(uintptr(hwnd))
+			return calcFramelessClientRect(w, hwnd, rc, zoomed != 0)
 		}
 	case WM_NCHITTEST:
 		// With the frame removed, DefWindowProc reports HTCLIENT everywhere
@@ -1490,6 +1636,23 @@ func wndProc(hwnd syscall.Handle, msg uint32, wParam, lParam uintptr) uintptr {
 			w.sizeChanged(int(width), int(height))
 		}
 		return 0
+	case WM_EXITSIZEMOVE:
+		// A native move/size modal loop (title-bar drag, snap, manual
+		// resize, the drag-restore of a maximized window) just ended.
+		// Its intermediate WM_NCCALCSIZE passes ran while the window
+		// moved and the zoom state was in flux; nothing re-sends the
+		// frame calculation once the placement settles, so a client
+		// rect computed mid-loop would persist — with DWM keeping the
+		// native caption it painted into the mismatch band — until a
+		// zoom toggle forced a fresh frame. Re-run the calculation
+		// against the final placement: SWP_FRAMECHANGED re-sends
+		// WM_NCCALCSIZE synchronously and enters no modal loop, so
+		// this cannot recurse back into WM_EXITSIZEMOVE.
+		if w != nil && w.customDecorations && needsFrameResync(msg) {
+			procSetWindowPos.Call(uintptr(hwnd), 0, 0, 0, 0, 0,
+				SWP_FRAMECHANGED|SWP_NOMOVE|SWP_NOSIZE|SWP_NOZORDER|SWP_NOACTIVATE)
+			return 0
+		}
 	case WM_DPICHANGED:
 		if w != nil {
 			dpi := int32(wParam & 0xFFFF)

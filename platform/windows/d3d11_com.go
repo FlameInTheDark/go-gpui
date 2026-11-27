@@ -11,7 +11,7 @@ import (
 
 // comVTable returns the vtable pointer of a COM interface.
 func comVTable(iface uintptr) uintptr {
-	return *(*uintptr)(unsafe.Pointer(iface))
+	return *(*uintptr)(ptrFromUintptr(iface))
 }
 
 // comCall invokes vtable method index with args (this passed implicitly as
@@ -22,7 +22,7 @@ func comVTable(iface uintptr) uintptr {
 //go:uintptrescapes
 func comCall(iface uintptr, method int, args ...uintptr) uintptr {
 	vtbl := comVTable(iface)
-	fn := *(*uintptr)(unsafe.Pointer(vtbl + uintptr(method)*unsafe.Sizeof(uintptr(0))))
+	fn := *(*uintptr)(ptrFromUintptr(vtbl + uintptr(method)*unsafe.Sizeof(uintptr(0))))
 	r1, _, _ := syscall.SyscallN(fn, append([]uintptr{iface}, args...)...)
 	return r1
 }
@@ -48,7 +48,7 @@ func comRelease(iface uintptr) {
 func blobSize(b uintptr) int { return int(comCall(b, slotBlobGetBufferSize)) }
 
 // blobPtr returns an ID3DBlob's buffer pointer.
-func blobPtr(b uintptr) unsafe.Pointer { return unsafe.Pointer(comCall(b, slotBlobGetBufferPointer)) }
+func blobPtr(b uintptr) unsafe.Pointer { return ptrFromUintptr(comCall(b, slotBlobGetBufferPointer)) }
 
 // ---------------------------------------------------------------------------
 // Typed COM calls. The signatures mirror the d3d11.h / dxgi.h declarations

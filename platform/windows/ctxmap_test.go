@@ -24,7 +24,7 @@ var ctxMapFailStub = syscall.NewCallback(func(this, resource, sub, kind, flags, 
 // sentinel and returns 0.
 var ctxMapOKStub = syscall.NewCallback(func(this, resource, sub, kind, flags, out uintptr) uintptr {
 	if out != 0 {
-		m := (*d3d11MappedSubresource)(unsafe.Pointer(out))
+		m := (*d3d11MappedSubresource)(ptrFromUintptr(out))
 		m.pData = unsafe.Pointer(&mapSentinel) // any non-nil pointer
 		m.RowPitch, m.DepthPitch = 64, 64
 	}
